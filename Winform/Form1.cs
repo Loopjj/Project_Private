@@ -128,14 +128,14 @@ public struct stSysValue
 
         private void Form1_Load(object sender, EventArgs e)  //폼이 로드되면
         {
-            comboBox_port.DataSource = SerialPort.GetPortNames(); //연결 가능한 시리얼포트 이름을 콤보박스에 가져오기 
+            comboBox_port1.DataSource = SerialPort.GetPortNames(); //연결 가능한 시리얼포트 이름을 콤보박스에 가져오기 
         }
 
         private void Button_connect_Click(object sender, EventArgs e)  //통신 연결하기 버튼
         {
             if (!serialPort1.IsOpen)  //시리얼포트가 열려 있지 않으면
             {
-                serialPort1.PortName = comboBox_port.Text;  //콤보박스의 선택된 COM포트명을 시리얼포트명으로 지정
+                serialPort1.PortName = comboBox_port1.Text;  //콤보박스의 선택된 COM포트명을 시리얼포트명으로 지정
                 serialPort1.BaudRate = 115200;  //보레이트 변경이 필요하면 숫자 변경하기
                 serialPort1.DataBits = 8;
                 serialPort1.StopBits = StopBits.One;
@@ -144,7 +144,7 @@ public struct stSysValue
 
                 serialPort1.Open();  //시리얼포트 열기
                 label_status.Text = "포트가 열렸습니다.";
-                comboBox_port.Enabled = false;  //COM포트설정 콤보박스 비활성화
+                comboBox_port1.Enabled = false;  //COM포트설정 콤보박스 비활성화
             }
             else  //시리얼포트가 열려 있으면
             {
@@ -173,7 +173,7 @@ public struct stSysValue
                     byte[] buff = new byte[iRecivedSize];
                     try
                     {
-                        textBox3.Text = iRecivedSize.ToString(); ;
+                        //textBox3.Text = iRecivedSize.ToString(); ;
                         serialPort1.Read(buff, 0, iRecivedSize);
                         richTextBox1.AppendText(DateTime.Now.ToString("\r\n[HH:mm:ss] [RX] ") + BitConverter.ToString(buff).Replace("-", " "));
                         //debugText.AppendText(Encoding.ASCII.GetString(buff));
