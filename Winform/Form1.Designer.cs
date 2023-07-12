@@ -33,13 +33,7 @@
             System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
             System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            this.textBox_send = new System.Windows.Forms.TextBox();
-            this.label_send = new System.Windows.Forms.Label();
-            this.button_send = new System.Windows.Forms.Button();
             this.serialPort1 = new System.IO.Ports.SerialPort(this.components);
-            this.label_status = new System.Windows.Forms.Label();
-            this.textBox_Size = new System.Windows.Forms.TextBox();
-            this.label15 = new System.Windows.Forms.Label();
             this.metroTabControl1 = new MetroFramework.Controls.MetroTabControl();
             this.metroTabPage1 = new MetroFramework.Controls.MetroTabPage();
             this.textBox_Valid = new MetroFramework.Controls.MetroTextBox();
@@ -164,6 +158,13 @@
             this.label_port = new System.Windows.Forms.Label();
             this.button_connect = new System.Windows.Forms.Button();
             this.button_disconnect = new System.Windows.Forms.Button();
+            this.label15 = new System.Windows.Forms.Label();
+            this.textBox_Size = new System.Windows.Forms.TextBox();
+            this.label_status = new System.Windows.Forms.Label();
+            this.button_send = new System.Windows.Forms.Button();
+            this.label_send = new System.Windows.Forms.Label();
+            this.textBox_send = new System.Windows.Forms.TextBox();
+            this.metroTabPage5 = new MetroFramework.Controls.MetroTabPage();
             this.metroTabControl1.SuspendLayout();
             this.metroTabPage1.SuspendLayout();
             this.metroTabPage2.SuspendLayout();
@@ -173,69 +174,19 @@
             this.metroPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // textBox_send
-            // 
-            this.textBox_send.Location = new System.Drawing.Point(47, 564);
-            this.textBox_send.Name = "textBox_send";
-            this.textBox_send.Size = new System.Drawing.Size(243, 21);
-            this.textBox_send.TabIndex = 2;
-            // 
-            // label_send
-            // 
-            this.label_send.AutoSize = true;
-            this.label_send.Location = new System.Drawing.Point(45, 543);
-            this.label_send.Name = "label_send";
-            this.label_send.Size = new System.Drawing.Size(29, 12);
-            this.label_send.TabIndex = 4;
-            this.label_send.Text = "송신";
-            // 
-            // button_send
-            // 
-            this.button_send.Location = new System.Drawing.Point(312, 559);
-            this.button_send.Name = "button_send";
-            this.button_send.Size = new System.Drawing.Size(91, 23);
-            this.button_send.TabIndex = 6;
-            this.button_send.Text = "보내기";
-            this.button_send.UseVisualStyleBackColor = true;
-            // 
-            // label_status
-            // 
-            this.label_status.AutoSize = true;
-            this.label_status.Location = new System.Drawing.Point(52, 512);
-            this.label_status.Name = "label_status";
-            this.label_status.Size = new System.Drawing.Size(53, 12);
-            this.label_status.TabIndex = 7;
-            this.label_status.Text = "연결상태";
-            // 
-            // textBox_Size
-            // 
-            this.textBox_Size.Location = new System.Drawing.Point(424, 431);
-            this.textBox_Size.Name = "textBox_Size";
-            this.textBox_Size.Size = new System.Drawing.Size(66, 21);
-            this.textBox_Size.TabIndex = 38;
-            // 
-            // label15
-            // 
-            this.label15.AutoSize = true;
-            this.label15.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.Location = new System.Drawing.Point(322, 431);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(96, 18);
-            this.label15.TabIndex = 39;
-            this.label15.Text = "Data Length";
-            // 
             // metroTabControl1
             // 
+            this.metroTabControl1.Controls.Add(this.metroTabPage5);
             this.metroTabControl1.Controls.Add(this.metroTabPage1);
             this.metroTabControl1.Controls.Add(this.metroTabPage2);
             this.metroTabControl1.Controls.Add(this.metroTabPage3);
             this.metroTabControl1.Controls.Add(this.metroTabPage4);
             this.metroTabControl1.FontSize = MetroFramework.MetroTabControlSize.Tall;
             this.metroTabControl1.FontWeight = MetroFramework.MetroTabControlWeight.Regular;
-            this.metroTabControl1.Location = new System.Drawing.Point(520, 468);
+            this.metroTabControl1.Location = new System.Drawing.Point(12, 86);
             this.metroTabControl1.Name = "metroTabControl1";
             this.metroTabControl1.SelectedIndex = 0;
-            this.metroTabControl1.Size = new System.Drawing.Size(584, 392);
+            this.metroTabControl1.Size = new System.Drawing.Size(1130, 712);
             this.metroTabControl1.TabIndex = 81;
             this.metroTabControl1.UseSelectable = true;
             // 
@@ -298,7 +249,7 @@
             this.metroTabPage1.HorizontalScrollbarSize = 10;
             this.metroTabPage1.Location = new System.Drawing.Point(4, 44);
             this.metroTabPage1.Name = "metroTabPage1";
-            this.metroTabPage1.Size = new System.Drawing.Size(576, 344);
+            this.metroTabPage1.Size = new System.Drawing.Size(1122, 664);
             this.metroTabPage1.TabIndex = 0;
             this.metroTabPage1.Text = "DPF";
             this.metroTabPage1.VerticalScrollbarBarColor = true;
@@ -1490,7 +1441,7 @@
             this.metroTabPage2.HorizontalScrollbarSize = 10;
             this.metroTabPage2.Location = new System.Drawing.Point(4, 44);
             this.metroTabPage2.Name = "metroTabPage2";
-            this.metroTabPage2.Size = new System.Drawing.Size(576, 344);
+            this.metroTabPage2.Size = new System.Drawing.Size(1122, 664);
             this.metroTabPage2.TabIndex = 1;
             this.metroTabPage2.Text = "SCR";
             this.metroTabPage2.VerticalScrollbarBarColor = true;
@@ -2789,13 +2740,19 @@
             // 
             // metroTabPage3
             // 
+            this.metroTabPage3.Controls.Add(this.label15);
+            this.metroTabPage3.Controls.Add(this.textBox_Size);
+            this.metroTabPage3.Controls.Add(this.label_status);
+            this.metroTabPage3.Controls.Add(this.button_send);
+            this.metroTabPage3.Controls.Add(this.label_send);
+            this.metroTabPage3.Controls.Add(this.textBox_send);
             this.metroTabPage3.Controls.Add(this.richTextBox1);
             this.metroTabPage3.HorizontalScrollbarBarColor = true;
             this.metroTabPage3.HorizontalScrollbarHighlightOnWheel = false;
             this.metroTabPage3.HorizontalScrollbarSize = 10;
             this.metroTabPage3.Location = new System.Drawing.Point(4, 44);
             this.metroTabPage3.Name = "metroTabPage3";
-            this.metroTabPage3.Size = new System.Drawing.Size(576, 344);
+            this.metroTabPage3.Size = new System.Drawing.Size(1122, 664);
             this.metroTabPage3.TabIndex = 2;
             this.metroTabPage3.Text = "Low Data";
             this.metroTabPage3.VerticalScrollbarBarColor = true;
@@ -2818,7 +2775,7 @@
             this.metroTabPage4.HorizontalScrollbarSize = 10;
             this.metroTabPage4.Location = new System.Drawing.Point(4, 44);
             this.metroTabPage4.Name = "metroTabPage4";
-            this.metroTabPage4.Size = new System.Drawing.Size(576, 344);
+            this.metroTabPage4.Size = new System.Drawing.Size(1122, 664);
             this.metroTabPage4.TabIndex = 3;
             this.metroTabPage4.Text = "Chart";
             this.metroTabPage4.VerticalScrollbarBarColor = true;
@@ -2883,7 +2840,8 @@
             // 
             // button_connect
             // 
-            this.button_connect.BackColor = System.Drawing.Color.LightGray;
+            this.button_connect.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.button_connect.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button_connect.Location = new System.Drawing.Point(146, 24);
             this.button_connect.Name = "button_connect";
             this.button_connect.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -2894,12 +2852,79 @@
             // 
             // button_disconnect
             // 
+            this.button_disconnect.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.button_disconnect.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button_disconnect.Location = new System.Drawing.Point(244, 24);
             this.button_disconnect.Name = "button_disconnect";
             this.button_disconnect.Size = new System.Drawing.Size(97, 30);
             this.button_disconnect.TabIndex = 87;
             this.button_disconnect.Text = "Com Close";
-            this.button_disconnect.UseVisualStyleBackColor = true;
+            this.button_disconnect.UseVisualStyleBackColor = false;
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label15.Location = new System.Drawing.Point(175, 147);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(96, 18);
+            this.label15.TabIndex = 87;
+            this.label15.Text = "Data Length";
+            // 
+            // textBox_Size
+            // 
+            this.textBox_Size.Location = new System.Drawing.Point(277, 147);
+            this.textBox_Size.Name = "textBox_Size";
+            this.textBox_Size.Size = new System.Drawing.Size(66, 21);
+            this.textBox_Size.TabIndex = 86;
+            // 
+            // label_status
+            // 
+            this.label_status.AutoSize = true;
+            this.label_status.Location = new System.Drawing.Point(116, 136);
+            this.label_status.Name = "label_status";
+            this.label_status.Size = new System.Drawing.Size(53, 12);
+            this.label_status.TabIndex = 85;
+            this.label_status.Text = "연결상태";
+            // 
+            // button_send
+            // 
+            this.button_send.Location = new System.Drawing.Point(376, 183);
+            this.button_send.Name = "button_send";
+            this.button_send.Size = new System.Drawing.Size(91, 23);
+            this.button_send.TabIndex = 84;
+            this.button_send.Text = "보내기";
+            this.button_send.UseVisualStyleBackColor = true;
+            // 
+            // label_send
+            // 
+            this.label_send.AutoSize = true;
+            this.label_send.Location = new System.Drawing.Point(109, 167);
+            this.label_send.Name = "label_send";
+            this.label_send.Size = new System.Drawing.Size(29, 12);
+            this.label_send.TabIndex = 83;
+            this.label_send.Text = "송신";
+            // 
+            // textBox_send
+            // 
+            this.textBox_send.Location = new System.Drawing.Point(111, 188);
+            this.textBox_send.Name = "textBox_send";
+            this.textBox_send.Size = new System.Drawing.Size(243, 21);
+            this.textBox_send.TabIndex = 82;
+            // 
+            // metroTabPage5
+            // 
+            this.metroTabPage5.HorizontalScrollbarBarColor = true;
+            this.metroTabPage5.HorizontalScrollbarHighlightOnWheel = false;
+            this.metroTabPage5.HorizontalScrollbarSize = 10;
+            this.metroTabPage5.Location = new System.Drawing.Point(4, 44);
+            this.metroTabPage5.Name = "metroTabPage5";
+            this.metroTabPage5.Size = new System.Drawing.Size(1122, 664);
+            this.metroTabPage5.TabIndex = 4;
+            this.metroTabPage5.Text = "Main ";
+            this.metroTabPage5.VerticalScrollbarBarColor = true;
+            this.metroTabPage5.VerticalScrollbarHighlightOnWheel = false;
+            this.metroTabPage5.VerticalScrollbarSize = 10;
             // 
             // Form1
             // 
@@ -2908,12 +2933,6 @@
             this.ClientSize = new System.Drawing.Size(1149, 808);
             this.Controls.Add(this.metroPanel1);
             this.Controls.Add(this.metroTabControl1);
-            this.Controls.Add(this.label15);
-            this.Controls.Add(this.textBox_Size);
-            this.Controls.Add(this.label_status);
-            this.Controls.Add(this.button_send);
-            this.Controls.Add(this.label_send);
-            this.Controls.Add(this.textBox_send);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
             this.Text = "SCR CONTROL";
@@ -2924,23 +2943,17 @@
             this.metroTabPage2.ResumeLayout(false);
             this.metroTabPage2.PerformLayout();
             this.metroTabPage3.ResumeLayout(false);
+            this.metroTabPage3.PerformLayout();
             this.metroTabPage4.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.chart1)).EndInit();
             this.metroPanel1.ResumeLayout(false);
             this.metroPanel1.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
-        private System.Windows.Forms.TextBox textBox_send;
-        private System.Windows.Forms.Label label_send;
-        private System.Windows.Forms.Button button_send;
         private System.IO.Ports.SerialPort serialPort1;
-        private System.Windows.Forms.Label label_status;
-        private System.Windows.Forms.TextBox textBox_Size;
-        private System.Windows.Forms.Label label15;
         private MetroFramework.Controls.MetroTabControl metroTabControl1;
         private MetroFramework.Controls.MetroTabPage metroTabPage1;
         private MetroFramework.Controls.MetroTabPage metroTabPage2;
@@ -3065,6 +3078,13 @@
         private System.Windows.Forms.Label label_port;
         private System.Windows.Forms.Button button_connect;
         private System.Windows.Forms.Button button_disconnect;
+        private MetroFramework.Controls.MetroTabPage metroTabPage5;
+        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.TextBox textBox_Size;
+        private System.Windows.Forms.Label label_status;
+        private System.Windows.Forms.Button button_send;
+        private System.Windows.Forms.Label label_send;
+        private System.Windows.Forms.TextBox textBox_send;
     }
 }
 
