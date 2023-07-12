@@ -121,10 +121,7 @@ public struct stSysValue
             InitializeComponent();
         }
 
-        private void metroLabel51_Click(object sender, EventArgs e)
-        {
 
-        }
 
         private void Form1_Load(object sender, EventArgs e)  //폼이 로드되면
         {
