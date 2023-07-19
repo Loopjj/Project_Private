@@ -164,9 +164,7 @@
             this.chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.comboBox_port1 = new MetroFramework.Controls.MetroComboBox();
             this.label_port = new System.Windows.Forms.Label();
-            this.button_connect = new System.Windows.Forms.Button();
-            this.button_disconnect = new System.Windows.Forms.Button();
-            this.metroPanel1 = new MetroFramework.Controls.MetroPanel();
+            this.panel13 = new System.Windows.Forms.Panel();
             this.metroTabControl1.SuspendLayout();
             this.metroTabPage1.SuspendLayout();
             this.metroTabPage2.SuspendLayout();
@@ -198,7 +196,7 @@
             this.metroTabPage5.HorizontalScrollbarSize = 10;
             this.metroTabPage5.Location = new System.Drawing.Point(4, 44);
             this.metroTabPage5.Name = "metroTabPage5";
-            this.metroTabPage5.Size = new System.Drawing.Size(1122, 664);
+            this.metroTabPage5.Size = new System.Drawing.Size(1122, 675);
             this.metroTabPage5.TabIndex = 4;
             this.metroTabPage5.Text = "Main ";
             this.metroTabPage5.VerticalScrollbarBarColor = true;
@@ -207,9 +205,7 @@
             // 
             // metroTabPage1
             // 
-            this.metroTabPage1.Controls.Add(this.button_connect);
             this.metroTabPage1.Controls.Add(this.textBox_Valid);
-            this.metroTabPage1.Controls.Add(this.button_disconnect);
             this.metroTabPage1.Controls.Add(this.metroLabel18);
             this.metroTabPage1.Controls.Add(this.textBox_Speed);
             this.metroTabPage1.Controls.Add(this.textBox_t_OFFSCR);
@@ -266,7 +262,7 @@
             this.metroTabPage1.HorizontalScrollbarSize = 10;
             this.metroTabPage1.Location = new System.Drawing.Point(4, 44);
             this.metroTabPage1.Name = "metroTabPage1";
-            this.metroTabPage1.Size = new System.Drawing.Size(1122, 664);
+            this.metroTabPage1.Size = new System.Drawing.Size(1122, 675);
             this.metroTabPage1.TabIndex = 0;
             this.metroTabPage1.Text = "DPF";
             this.metroTabPage1.VerticalScrollbarBarColor = true;
@@ -1415,7 +1411,6 @@
             // 
             // metroTabPage2
             // 
-            this.metroTabPage2.Controls.Add(this.metroPanel1);
             this.metroTabPage2.Controls.Add(this.textBox_H2k);
             this.metroTabPage2.Controls.Add(this.textBox_H1k);
             this.metroTabPage2.Controls.Add(this.textBox_Xc);
@@ -1504,7 +1499,7 @@
             this.textBox_H2k.CustomButton.Visible = false;
             this.textBox_H2k.FontSize = MetroFramework.MetroTextBoxSize.Tall;
             this.textBox_H2k.Lines = new string[0];
-            this.textBox_H2k.Location = new System.Drawing.Point(583, 448);
+            this.textBox_H2k.Location = new System.Drawing.Point(587, 448);
             this.textBox_H2k.MaxLength = 32767;
             this.textBox_H2k.Name = "textBox_H2k";
             this.textBox_H2k.PasswordChar = '\0';
@@ -1535,7 +1530,7 @@
             this.textBox_H1k.CustomButton.Visible = false;
             this.textBox_H1k.FontSize = MetroFramework.MetroTextBoxSize.Tall;
             this.textBox_H1k.Lines = new string[0];
-            this.textBox_H1k.Location = new System.Drawing.Point(583, 405);
+            this.textBox_H1k.Location = new System.Drawing.Point(587, 405);
             this.textBox_H1k.MaxLength = 32767;
             this.textBox_H1k.Name = "textBox_H1k";
             this.textBox_H1k.PasswordChar = '\0';
@@ -1566,7 +1561,7 @@
             this.textBox_Xc.CustomButton.Visible = false;
             this.textBox_Xc.FontSize = MetroFramework.MetroTextBoxSize.Tall;
             this.textBox_Xc.Lines = new string[0];
-            this.textBox_Xc.Location = new System.Drawing.Point(583, 359);
+            this.textBox_Xc.Location = new System.Drawing.Point(587, 359);
             this.textBox_Xc.MaxLength = 32767;
             this.textBox_Xc.Name = "textBox_Xc";
             this.textBox_Xc.PasswordChar = '\0';
@@ -1597,7 +1592,7 @@
             this.textBox_curXk.CustomButton.Visible = false;
             this.textBox_curXk.FontSize = MetroFramework.MetroTextBoxSize.Tall;
             this.textBox_curXk.Lines = new string[0];
-            this.textBox_curXk.Location = new System.Drawing.Point(583, 310);
+            this.textBox_curXk.Location = new System.Drawing.Point(587, 310);
             this.textBox_curXk.MaxLength = 32767;
             this.textBox_curXk.Name = "textBox_curXk";
             this.textBox_curXk.PasswordChar = '\0';
@@ -1617,7 +1612,7 @@
             this.metroLabel45.AutoSize = true;
             this.metroLabel45.FontSize = MetroFramework.MetroLabelSize.Tall;
             this.metroLabel45.FontWeight = MetroFramework.MetroLabelWeight.Regular;
-            this.metroLabel45.Location = new System.Drawing.Point(493, 448);
+            this.metroLabel45.Location = new System.Drawing.Point(498, 448);
             this.metroLabel45.Name = "metroLabel45";
             this.metroLabel45.Size = new System.Drawing.Size(44, 25);
             this.metroLabel45.Style = MetroFramework.MetroColorStyle.Black;
@@ -1629,7 +1624,7 @@
             this.metroLabel46.AutoSize = true;
             this.metroLabel46.FontSize = MetroFramework.MetroLabelSize.Tall;
             this.metroLabel46.FontWeight = MetroFramework.MetroLabelWeight.Regular;
-            this.metroLabel46.Location = new System.Drawing.Point(493, 405);
+            this.metroLabel46.Location = new System.Drawing.Point(498, 405);
             this.metroLabel46.Name = "metroLabel46";
             this.metroLabel46.Size = new System.Drawing.Size(44, 25);
             this.metroLabel46.Style = MetroFramework.MetroColorStyle.Black;
@@ -1641,7 +1636,7 @@
             this.metroLabel47.AutoSize = true;
             this.metroLabel47.FontSize = MetroFramework.MetroLabelSize.Tall;
             this.metroLabel47.FontWeight = MetroFramework.MetroLabelWeight.Regular;
-            this.metroLabel47.Location = new System.Drawing.Point(489, 359);
+            this.metroLabel47.Location = new System.Drawing.Point(494, 359);
             this.metroLabel47.Name = "metroLabel47";
             this.metroLabel47.Size = new System.Drawing.Size(68, 25);
             this.metroLabel47.Style = MetroFramework.MetroColorStyle.Black;
@@ -1653,7 +1648,7 @@
             this.metroLabel48.AutoSize = true;
             this.metroLabel48.FontSize = MetroFramework.MetroLabelSize.Tall;
             this.metroLabel48.FontWeight = MetroFramework.MetroLabelWeight.Regular;
-            this.metroLabel48.Location = new System.Drawing.Point(489, 310);
+            this.metroLabel48.Location = new System.Drawing.Point(494, 310);
             this.metroLabel48.Name = "metroLabel48";
             this.metroLabel48.Size = new System.Drawing.Size(59, 25);
             this.metroLabel48.Style = MetroFramework.MetroColorStyle.Black;
@@ -1676,7 +1671,7 @@
             this.textBox_TotalDosingRate.CustomButton.Visible = false;
             this.textBox_TotalDosingRate.FontSize = MetroFramework.MetroTextBoxSize.Tall;
             this.textBox_TotalDosingRate.Lines = new string[0];
-            this.textBox_TotalDosingRate.Location = new System.Drawing.Point(583, 260);
+            this.textBox_TotalDosingRate.Location = new System.Drawing.Point(587, 260);
             this.textBox_TotalDosingRate.MaxLength = 32767;
             this.textBox_TotalDosingRate.Name = "textBox_TotalDosingRate";
             this.textBox_TotalDosingRate.PasswordChar = '\0';
@@ -1707,7 +1702,7 @@
             this.textBox_DosingRatehouer.CustomButton.Visible = false;
             this.textBox_DosingRatehouer.FontSize = MetroFramework.MetroTextBoxSize.Tall;
             this.textBox_DosingRatehouer.Lines = new string[0];
-            this.textBox_DosingRatehouer.Location = new System.Drawing.Point(583, 217);
+            this.textBox_DosingRatehouer.Location = new System.Drawing.Point(587, 217);
             this.textBox_DosingRatehouer.MaxLength = 32767;
             this.textBox_DosingRatehouer.Name = "textBox_DosingRatehouer";
             this.textBox_DosingRatehouer.PasswordChar = '\0';
@@ -1738,7 +1733,7 @@
             this.textBox_ScrFlag.CustomButton.Visible = false;
             this.textBox_ScrFlag.FontSize = MetroFramework.MetroTextBoxSize.Tall;
             this.textBox_ScrFlag.Lines = new string[0];
-            this.textBox_ScrFlag.Location = new System.Drawing.Point(583, 171);
+            this.textBox_ScrFlag.Location = new System.Drawing.Point(587, 171);
             this.textBox_ScrFlag.MaxLength = 32767;
             this.textBox_ScrFlag.Name = "textBox_ScrFlag";
             this.textBox_ScrFlag.PasswordChar = '\0';
@@ -1769,7 +1764,7 @@
             this.textBox_SystemSignal.CustomButton.Visible = false;
             this.textBox_SystemSignal.FontSize = MetroFramework.MetroTextBoxSize.Tall;
             this.textBox_SystemSignal.Lines = new string[0];
-            this.textBox_SystemSignal.Location = new System.Drawing.Point(583, 122);
+            this.textBox_SystemSignal.Location = new System.Drawing.Point(587, 122);
             this.textBox_SystemSignal.MaxLength = 32767;
             this.textBox_SystemSignal.Name = "textBox_SystemSignal";
             this.textBox_SystemSignal.PasswordChar = '\0';
@@ -1800,7 +1795,7 @@
             this.textBox_SystemCheck.CustomButton.Visible = false;
             this.textBox_SystemCheck.FontSize = MetroFramework.MetroTextBoxSize.Tall;
             this.textBox_SystemCheck.Lines = new string[0];
-            this.textBox_SystemCheck.Location = new System.Drawing.Point(583, 71);
+            this.textBox_SystemCheck.Location = new System.Drawing.Point(587, 71);
             this.textBox_SystemCheck.MaxLength = 32767;
             this.textBox_SystemCheck.Name = "textBox_SystemCheck";
             this.textBox_SystemCheck.PasswordChar = '\0';
@@ -1831,7 +1826,7 @@
             this.textBox_SystemError.CustomButton.Visible = false;
             this.textBox_SystemError.FontSize = MetroFramework.MetroTextBoxSize.Tall;
             this.textBox_SystemError.Lines = new string[0];
-            this.textBox_SystemError.Location = new System.Drawing.Point(583, 25);
+            this.textBox_SystemError.Location = new System.Drawing.Point(587, 25);
             this.textBox_SystemError.MaxLength = 32767;
             this.textBox_SystemError.Name = "textBox_SystemError";
             this.textBox_SystemError.PasswordChar = '\0';
@@ -1851,7 +1846,7 @@
             this.metroLabel49.AutoSize = true;
             this.metroLabel49.FontSize = MetroFramework.MetroLabelSize.Tall;
             this.metroLabel49.FontWeight = MetroFramework.MetroLabelWeight.Regular;
-            this.metroLabel49.Location = new System.Drawing.Point(475, 260);
+            this.metroLabel49.Location = new System.Drawing.Point(480, 260);
             this.metroLabel49.Name = "metroLabel49";
             this.metroLabel49.Size = new System.Drawing.Size(106, 25);
             this.metroLabel49.Style = MetroFramework.MetroColorStyle.Black;
@@ -1863,7 +1858,7 @@
             this.metroLabel50.AutoSize = true;
             this.metroLabel50.FontSize = MetroFramework.MetroLabelSize.Tall;
             this.metroLabel50.FontWeight = MetroFramework.MetroLabelWeight.Regular;
-            this.metroLabel50.Location = new System.Drawing.Point(468, 217);
+            this.metroLabel50.Location = new System.Drawing.Point(473, 217);
             this.metroLabel50.Name = "metroLabel50";
             this.metroLabel50.Size = new System.Drawing.Size(117, 25);
             this.metroLabel50.Style = MetroFramework.MetroColorStyle.Black;
@@ -1875,7 +1870,7 @@
             this.metroLabel51.AutoSize = true;
             this.metroLabel51.FontSize = MetroFramework.MetroLabelSize.Tall;
             this.metroLabel51.FontWeight = MetroFramework.MetroLabelWeight.Regular;
-            this.metroLabel51.Location = new System.Drawing.Point(489, 171);
+            this.metroLabel51.Location = new System.Drawing.Point(494, 171);
             this.metroLabel51.Name = "metroLabel51";
             this.metroLabel51.Size = new System.Drawing.Size(82, 25);
             this.metroLabel51.Style = MetroFramework.MetroColorStyle.Black;
@@ -1887,7 +1882,7 @@
             this.metroLabel52.AutoSize = true;
             this.metroLabel52.FontSize = MetroFramework.MetroLabelSize.Tall;
             this.metroLabel52.FontWeight = MetroFramework.MetroLabelWeight.Regular;
-            this.metroLabel52.Location = new System.Drawing.Point(489, 122);
+            this.metroLabel52.Location = new System.Drawing.Point(494, 122);
             this.metroLabel52.Name = "metroLabel52";
             this.metroLabel52.Size = new System.Drawing.Size(91, 25);
             this.metroLabel52.Style = MetroFramework.MetroColorStyle.Black;
@@ -1899,7 +1894,7 @@
             this.metroLabel53.AutoSize = true;
             this.metroLabel53.FontSize = MetroFramework.MetroLabelSize.Tall;
             this.metroLabel53.FontWeight = MetroFramework.MetroLabelWeight.Regular;
-            this.metroLabel53.Location = new System.Drawing.Point(489, 77);
+            this.metroLabel53.Location = new System.Drawing.Point(494, 77);
             this.metroLabel53.Name = "metroLabel53";
             this.metroLabel53.Size = new System.Drawing.Size(90, 25);
             this.metroLabel53.Style = MetroFramework.MetroColorStyle.Black;
@@ -1911,7 +1906,7 @@
             this.metroLabel54.AutoSize = true;
             this.metroLabel54.FontSize = MetroFramework.MetroLabelSize.Tall;
             this.metroLabel54.FontWeight = MetroFramework.MetroLabelWeight.Regular;
-            this.metroLabel54.Location = new System.Drawing.Point(489, 34);
+            this.metroLabel54.Location = new System.Drawing.Point(494, 34);
             this.metroLabel54.Name = "metroLabel54";
             this.metroLabel54.Size = new System.Drawing.Size(81, 25);
             this.metroLabel54.Style = MetroFramework.MetroColorStyle.Black;
@@ -2792,7 +2787,7 @@
             this.metroTabPage3.HorizontalScrollbarSize = 10;
             this.metroTabPage3.Location = new System.Drawing.Point(4, 44);
             this.metroTabPage3.Name = "metroTabPage3";
-            this.metroTabPage3.Size = new System.Drawing.Size(1122, 664);
+            this.metroTabPage3.Size = new System.Drawing.Size(1122, 675);
             this.metroTabPage3.TabIndex = 2;
             this.metroTabPage3.Text = "Low Data";
             this.metroTabPage3.VerticalScrollbarBarColor = true;
@@ -2866,7 +2861,7 @@
             this.metroTabPage4.HorizontalScrollbarSize = 10;
             this.metroTabPage4.Location = new System.Drawing.Point(4, 44);
             this.metroTabPage4.Name = "metroTabPage4";
-            this.metroTabPage4.Size = new System.Drawing.Size(1122, 664);
+            this.metroTabPage4.Size = new System.Drawing.Size(1122, 675);
             this.metroTabPage4.TabIndex = 3;
             this.metroTabPage4.Text = "Chart";
             this.metroTabPage4.VerticalScrollbarBarColor = true;
@@ -2911,50 +2906,20 @@
             this.label_port.TabIndex = 88;
             this.label_port.Text = "Port";
             // 
-            // button_connect
+            // panel13
             // 
-            this.button_connect.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.button_connect.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button_connect.Location = new System.Drawing.Point(870, 165);
-            this.button_connect.Name = "button_connect";
-            this.button_connect.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.button_connect.Size = new System.Drawing.Size(90, 30);
-            this.button_connect.TabIndex = 86;
-            this.button_connect.Text = "Com Open";
-            this.button_connect.UseVisualStyleBackColor = false;
-            // 
-            // button_disconnect
-            // 
-            this.button_disconnect.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.button_disconnect.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button_disconnect.Location = new System.Drawing.Point(968, 165);
-            this.button_disconnect.Name = "button_disconnect";
-            this.button_disconnect.Size = new System.Drawing.Size(97, 30);
-            this.button_disconnect.TabIndex = 87;
-            this.button_disconnect.Text = "Com Close";
-            this.button_disconnect.UseVisualStyleBackColor = false;
-            // 
-            // metroPanel1
-            // 
-            this.metroPanel1.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.metroPanel1.ForeColor = System.Drawing.SystemColors.ActiveCaption;
-            this.metroPanel1.HorizontalScrollbarBarColor = true;
-            this.metroPanel1.HorizontalScrollbarHighlightOnWheel = false;
-            this.metroPanel1.HorizontalScrollbarSize = 10;
-            this.metroPanel1.Location = new System.Drawing.Point(820, 96);
-            this.metroPanel1.Name = "metroPanel1";
-            this.metroPanel1.Size = new System.Drawing.Size(200, 127);
-            this.metroPanel1.Style = MetroFramework.MetroColorStyle.Blue;
-            this.metroPanel1.TabIndex = 86;
-            this.metroPanel1.VerticalScrollbarBarColor = true;
-            this.metroPanel1.VerticalScrollbarHighlightOnWheel = false;
-            this.metroPanel1.VerticalScrollbarSize = 10;
+            this.panel13.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.panel13.Location = new System.Drawing.Point(22, 61);
+            this.panel13.Name = "panel13";
+            this.panel13.Size = new System.Drawing.Size(160, 3);
+            this.panel13.TabIndex = 93;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1149, 808);
+            this.Controls.Add(this.panel13);
             this.Controls.Add(this.metroButton2);
             this.Controls.Add(this.metroTabControl1);
             this.Controls.Add(this.comboBox_port1);
@@ -3101,8 +3066,6 @@
         private System.Windows.Forms.DataVisualization.Charting.Chart chart1;
         private MetroFramework.Controls.MetroComboBox comboBox_port1;
         private System.Windows.Forms.Label label_port;
-        private System.Windows.Forms.Button button_connect;
-        private System.Windows.Forms.Button button_disconnect;
         private MetroFramework.Controls.MetroTabPage metroTabPage5;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.TextBox textBox_Size;
@@ -3112,7 +3075,7 @@
         private System.Windows.Forms.TextBox textBox_send;
         private MetroFramework.Controls.MetroButton metroButton2;
         private MetroFramework.Controls.MetroButton metroButton1;
-        private MetroFramework.Controls.MetroPanel metroPanel1;
+        private System.Windows.Forms.Panel panel13;
     }
 }
 
