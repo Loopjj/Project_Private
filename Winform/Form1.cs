@@ -440,11 +440,6 @@ public struct stSysValue
                     textBox_UreaQuality.Text = ScrValue.UreaQuality.ToString();
                     textBox_NoxReduction.Text = ScrValue.NoxReduction.ToString();
                     textBox_SystemError.Text = ScrValue.SystemError.ToString();
-
-
-
-
-
                     break;
             }
         }   
