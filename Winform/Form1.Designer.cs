@@ -228,6 +228,7 @@
             this.panel13 = new System.Windows.Forms.Panel();
             this.htmlToolTip1 = new MetroFramework.Drawing.Html.HtmlToolTip();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.panel1 = new System.Windows.Forms.Panel();
             this.metroTabControl1.SuspendLayout();
             this.metroTabPage1.SuspendLayout();
             this.metroTabPage5.SuspendLayout();
@@ -1439,6 +1440,8 @@
             // 
             // metroTabPage5
             // 
+            this.metroTabPage5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.metroTabPage5.Controls.Add(this.panel1);
             this.metroTabPage5.Controls.Add(this.textBox26);
             this.metroTabPage5.Controls.Add(this.textBox27);
             this.metroTabPage5.Controls.Add(this.textBox28);
@@ -3696,6 +3699,15 @@
             this.contextMenuStrip1.Name = "contextMenuStrip1";
             this.contextMenuStrip1.Size = new System.Drawing.Size(61, 4);
             // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.SystemColors.Control;
+            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel1.Location = new System.Drawing.Point(727, 122);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(3, 534);
+            this.panel1.TabIndex = 94;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
@@ -3923,6 +3935,7 @@
         private System.Windows.Forms.Label label32;
         private System.Windows.Forms.Label label33;
         private System.Windows.Forms.Label label34;
+        private System.Windows.Forms.Panel panel1;
     }
 }
 
