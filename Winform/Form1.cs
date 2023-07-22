@@ -136,6 +136,11 @@ public struct stSysValue
 
         }
 
+        private void metroTabPage5_Click(object sender, EventArgs e)
+        {
+
+        }
+
         private void Button_connect_Click(object sender, EventArgs e)  //통신 연결하기 버튼
         {
             if (!serialPort1.IsOpen)  //시리얼포트가 열려 있지 않으면
