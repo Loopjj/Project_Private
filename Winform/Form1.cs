@@ -126,6 +126,23 @@ public struct stSysValue
             comboBox_port1.DataSource = SerialPort.GetPortNames(); //연결 가능한 시리얼포트 이름을 콤보박스에 가져오기 
         }
 
+        private void metroButton3_Click(object sender, EventArgs e)
+        {
+            //Setting form = new Setting();
+            //form.Show();
+            foreach (Form frm in Application.OpenForms)
+            {
+                if (frm.Name == "Setting")
+                {
+                    frm.Activate();
+                    return;
+                }
+            }
+
+            Setting sfrm = new Setting();
+            sfrm.Show();
+        }
+
         private void Button_connect_Click(object sender, EventArgs e)  //통신 연결하기 버튼
         {
             if (!serialPort1.IsOpen)  //시리얼포트가 열려 있지 않으면

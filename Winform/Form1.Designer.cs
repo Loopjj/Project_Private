@@ -1627,6 +1627,7 @@
             this.metroButton3.TabIndex = 146;
             this.metroButton3.Text = "Setting";
             this.metroButton3.UseSelectable = true;
+            this.metroButton3.Click += new System.EventHandler(this.metroButton3_Click);
             // 
             // label62
             // 

@@ -24,3 +24,4 @@ D:\Project_Private\Winform\obj\Debug\Serial_Communication.csproj.CoreCompileInpu
 D:\Project_Private\Winform\obj\Debug\Serial_Communication.csproj.CopyComplete
 D:\Project_Private\Winform\obj\Debug\Serial_Communication.exe
 D:\Project_Private\Winform\obj\Debug\Serial_Communication.pdb
+D:\Project_Private\Winform\obj\Debug\Serial_Communication.Setting.resources
