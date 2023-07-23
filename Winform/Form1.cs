@@ -126,21 +126,6 @@ public struct stSysValue
             comboBox_port1.DataSource = SerialPort.GetPortNames(); //연결 가능한 시리얼포트 이름을 콤보박스에 가져오기 
         }
 
-        private void label50_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label74_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void metroTabPage5_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void Button_connect_Click(object sender, EventArgs e)  //통신 연결하기 버튼
         {
             if (!serialPort1.IsOpen)  //시리얼포트가 열려 있지 않으면

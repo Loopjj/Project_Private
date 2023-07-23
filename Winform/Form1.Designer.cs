@@ -1618,7 +1618,6 @@
             this.metroTabPage5.VerticalScrollbarBarColor = true;
             this.metroTabPage5.VerticalScrollbarHighlightOnWheel = false;
             this.metroTabPage5.VerticalScrollbarSize = 10;
-            this.metroTabPage5.Click += new System.EventHandler(this.metroTabPage5_Click);
             // 
             // label49
             // 
@@ -4265,7 +4264,6 @@
             this.label74.TabIndex = 133;
             this.label74.Text = "NOxActive";
             this.label74.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.label74.Click += new System.EventHandler(this.label74_Click);
             // 
             // label75
             // 
