@@ -88,6 +88,121 @@
             this.metroLabel3 = new MetroFramework.Controls.MetroLabel();
             this.T2 = new MetroFramework.Controls.MetroLabel();
             this.T1 = new MetroFramework.Controls.MetroLabel();
+            this.metroTabPage5 = new MetroFramework.Controls.MetroTabPage();
+            this.metroButton3 = new MetroFramework.Controls.MetroButton();
+            this.label62 = new System.Windows.Forms.Label();
+            this.label63 = new System.Windows.Forms.Label();
+            this.label64 = new System.Windows.Forms.Label();
+            this.label65 = new System.Windows.Forms.Label();
+            this.label66 = new System.Windows.Forms.Label();
+            this.label67 = new System.Windows.Forms.Label();
+            this.label68 = new System.Windows.Forms.Label();
+            this.label69 = new System.Windows.Forms.Label();
+            this.label70 = new System.Windows.Forms.Label();
+            this.label71 = new System.Windows.Forms.Label();
+            this.label72 = new System.Windows.Forms.Label();
+            this.label73 = new System.Windows.Forms.Label();
+            this.label74 = new System.Windows.Forms.Label();
+            this.label75 = new System.Windows.Forms.Label();
+            this.label76 = new System.Windows.Forms.Label();
+            this.label77 = new System.Windows.Forms.Label();
+            this.label78 = new System.Windows.Forms.Label();
+            this.label79 = new System.Windows.Forms.Label();
+            this.label80 = new System.Windows.Forms.Label();
+            this.label81 = new System.Windows.Forms.Label();
+            this.label82 = new System.Windows.Forms.Label();
+            this.label83 = new System.Windows.Forms.Label();
+            this.label84 = new System.Windows.Forms.Label();
+            this.label85 = new System.Windows.Forms.Label();
+            this.label61 = new System.Windows.Forms.Label();
+            this.label60 = new System.Windows.Forms.Label();
+            this.label59 = new System.Windows.Forms.Label();
+            this.label58 = new System.Windows.Forms.Label();
+            this.label57 = new System.Windows.Forms.Label();
+            this.label56 = new System.Windows.Forms.Label();
+            this.label55 = new System.Windows.Forms.Label();
+            this.label54 = new System.Windows.Forms.Label();
+            this.label53 = new System.Windows.Forms.Label();
+            this.label52 = new System.Windows.Forms.Label();
+            this.label51 = new System.Windows.Forms.Label();
+            this.label50 = new System.Windows.Forms.Label();
+            this.label49 = new System.Windows.Forms.Label();
+            this.label40 = new System.Windows.Forms.Label();
+            this.label45 = new System.Windows.Forms.Label();
+            this.label46 = new System.Windows.Forms.Label();
+            this.label47 = new System.Windows.Forms.Label();
+            this.label48 = new System.Windows.Forms.Label();
+            this.label41 = new System.Windows.Forms.Label();
+            this.label42 = new System.Windows.Forms.Label();
+            this.label43 = new System.Windows.Forms.Label();
+            this.label44 = new System.Windows.Forms.Label();
+            this.label36 = new System.Windows.Forms.Label();
+            this.label37 = new System.Windows.Forms.Label();
+            this.label38 = new System.Windows.Forms.Label();
+            this.label39 = new System.Windows.Forms.Label();
+            this.label35 = new System.Windows.Forms.Label();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.textBox26 = new System.Windows.Forms.TextBox();
+            this.textBox27 = new System.Windows.Forms.TextBox();
+            this.textBox28 = new System.Windows.Forms.TextBox();
+            this.label32 = new System.Windows.Forms.Label();
+            this.label33 = new System.Windows.Forms.Label();
+            this.label34 = new System.Windows.Forms.Label();
+            this.textBox24 = new System.Windows.Forms.TextBox();
+            this.textBox25 = new System.Windows.Forms.TextBox();
+            this.label30 = new System.Windows.Forms.Label();
+            this.label31 = new System.Windows.Forms.Label();
+            this.textBox21 = new System.Windows.Forms.TextBox();
+            this.textBox22 = new System.Windows.Forms.TextBox();
+            this.textBox23 = new System.Windows.Forms.TextBox();
+            this.label27 = new System.Windows.Forms.Label();
+            this.label28 = new System.Windows.Forms.Label();
+            this.label29 = new System.Windows.Forms.Label();
+            this.textBox15 = new System.Windows.Forms.TextBox();
+            this.textBox16 = new System.Windows.Forms.TextBox();
+            this.textBox17 = new System.Windows.Forms.TextBox();
+            this.textBox18 = new System.Windows.Forms.TextBox();
+            this.textBox19 = new System.Windows.Forms.TextBox();
+            this.textBox20 = new System.Windows.Forms.TextBox();
+            this.label21 = new System.Windows.Forms.Label();
+            this.label22 = new System.Windows.Forms.Label();
+            this.label23 = new System.Windows.Forms.Label();
+            this.label24 = new System.Windows.Forms.Label();
+            this.label25 = new System.Windows.Forms.Label();
+            this.label26 = new System.Windows.Forms.Label();
+            this.label20 = new System.Windows.Forms.Label();
+            this.label19 = new System.Windows.Forms.Label();
+            this.label18 = new System.Windows.Forms.Label();
+            this.textBox14 = new System.Windows.Forms.TextBox();
+            this.textBox13 = new System.Windows.Forms.TextBox();
+            this.textBox12 = new System.Windows.Forms.TextBox();
+            this.textBox11 = new System.Windows.Forms.TextBox();
+            this.textBox10 = new System.Windows.Forms.TextBox();
+            this.textBox9 = new System.Windows.Forms.TextBox();
+            this.textBox8 = new System.Windows.Forms.TextBox();
+            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.label17 = new System.Windows.Forms.Label();
+            this.label16 = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             this.metroTabPage2 = new MetroFramework.Controls.MetroTabPage();
             this.textBox_H2k = new MetroFramework.Controls.MetroTextBox();
             this.textBox_H1k = new MetroFramework.Controls.MetroTextBox();
@@ -150,43 +265,44 @@
             this.metroLabel30 = new MetroFramework.Controls.MetroLabel();
             this.metroLabel31 = new MetroFramework.Controls.MetroLabel();
             this.metroTabPage3 = new MetroFramework.Controls.MetroTabPage();
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
-            this.metroTabPage4 = new MetroFramework.Controls.MetroTabPage();
-            this.chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
-            this.metroPanel1 = new MetroFramework.Controls.MetroPanel();
-            this.comboBox_port1 = new MetroFramework.Controls.MetroComboBox();
-            this.label_port = new System.Windows.Forms.Label();
-            this.button_connect = new System.Windows.Forms.Button();
-            this.button_disconnect = new System.Windows.Forms.Button();
             this.label15 = new System.Windows.Forms.Label();
             this.textBox_Size = new System.Windows.Forms.TextBox();
             this.label_status = new System.Windows.Forms.Label();
             this.button_send = new System.Windows.Forms.Button();
             this.label_send = new System.Windows.Forms.Label();
             this.textBox_send = new System.Windows.Forms.TextBox();
-            this.metroTabPage5 = new MetroFramework.Controls.MetroTabPage();
+            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
+            this.metroTabPage4 = new MetroFramework.Controls.MetroTabPage();
+            this.chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.metroButton2 = new MetroFramework.Controls.MetroButton();
+            this.metroButton1 = new MetroFramework.Controls.MetroButton();
+            this.comboBox_port1 = new MetroFramework.Controls.MetroComboBox();
+            this.label_port = new System.Windows.Forms.Label();
+            this.panel13 = new System.Windows.Forms.Panel();
+            this.htmlToolTip1 = new MetroFramework.Drawing.Html.HtmlToolTip();
+            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.metroTabControl1.SuspendLayout();
             this.metroTabPage1.SuspendLayout();
+            this.metroTabPage5.SuspendLayout();
             this.metroTabPage2.SuspendLayout();
             this.metroTabPage3.SuspendLayout();
             this.metroTabPage4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.chart1)).BeginInit();
-            this.metroPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // metroTabControl1
             // 
-            this.metroTabControl1.Controls.Add(this.metroTabPage5);
             this.metroTabControl1.Controls.Add(this.metroTabPage1);
+            this.metroTabControl1.Controls.Add(this.metroTabPage5);
             this.metroTabControl1.Controls.Add(this.metroTabPage2);
             this.metroTabControl1.Controls.Add(this.metroTabPage3);
             this.metroTabControl1.Controls.Add(this.metroTabPage4);
             this.metroTabControl1.FontSize = MetroFramework.MetroTabControlSize.Tall;
             this.metroTabControl1.FontWeight = MetroFramework.MetroTabControlWeight.Regular;
-            this.metroTabControl1.Location = new System.Drawing.Point(12, 86);
+            this.metroTabControl1.Location = new System.Drawing.Point(2, 75);
             this.metroTabControl1.Name = "metroTabControl1";
-            this.metroTabControl1.SelectedIndex = 0;
-            this.metroTabControl1.Size = new System.Drawing.Size(1130, 712);
+            this.metroTabControl1.SelectedIndex = 1;
+            this.metroTabControl1.Size = new System.Drawing.Size(1140, 723);
             this.metroTabControl1.TabIndex = 81;
             this.metroTabControl1.UseSelectable = true;
             // 
@@ -249,7 +365,7 @@
             this.metroTabPage1.HorizontalScrollbarSize = 10;
             this.metroTabPage1.Location = new System.Drawing.Point(4, 44);
             this.metroTabPage1.Name = "metroTabPage1";
-            this.metroTabPage1.Size = new System.Drawing.Size(1122, 664);
+            this.metroTabPage1.Size = new System.Drawing.Size(1132, 675);
             this.metroTabPage1.TabIndex = 0;
             this.metroTabPage1.Text = "DPF";
             this.metroTabPage1.VerticalScrollbarBarColor = true;
@@ -545,7 +661,7 @@
             this.metroLabel21.AutoSize = true;
             this.metroLabel21.FontSize = MetroFramework.MetroLabelSize.Tall;
             this.metroLabel21.FontWeight = MetroFramework.MetroLabelWeight.Regular;
-            this.metroLabel21.Location = new System.Drawing.Point(471, 216);
+            this.metroLabel21.Location = new System.Drawing.Point(474, 216);
             this.metroLabel21.Name = "metroLabel21";
             this.metroLabel21.Size = new System.Drawing.Size(130, 25);
             this.metroLabel21.Style = MetroFramework.MetroColorStyle.Black;
@@ -1374,6 +1490,1385 @@
             this.T1.TabIndex = 2;
             this.T1.Text = "T1";
             // 
+            // metroTabPage5
+            // 
+            this.metroTabPage5.Controls.Add(this.metroButton3);
+            this.metroTabPage5.Controls.Add(this.label62);
+            this.metroTabPage5.Controls.Add(this.label63);
+            this.metroTabPage5.Controls.Add(this.label64);
+            this.metroTabPage5.Controls.Add(this.label65);
+            this.metroTabPage5.Controls.Add(this.label66);
+            this.metroTabPage5.Controls.Add(this.label67);
+            this.metroTabPage5.Controls.Add(this.label68);
+            this.metroTabPage5.Controls.Add(this.label69);
+            this.metroTabPage5.Controls.Add(this.label70);
+            this.metroTabPage5.Controls.Add(this.label71);
+            this.metroTabPage5.Controls.Add(this.label72);
+            this.metroTabPage5.Controls.Add(this.label73);
+            this.metroTabPage5.Controls.Add(this.label74);
+            this.metroTabPage5.Controls.Add(this.label75);
+            this.metroTabPage5.Controls.Add(this.label76);
+            this.metroTabPage5.Controls.Add(this.label77);
+            this.metroTabPage5.Controls.Add(this.label78);
+            this.metroTabPage5.Controls.Add(this.label79);
+            this.metroTabPage5.Controls.Add(this.label80);
+            this.metroTabPage5.Controls.Add(this.label81);
+            this.metroTabPage5.Controls.Add(this.label82);
+            this.metroTabPage5.Controls.Add(this.label83);
+            this.metroTabPage5.Controls.Add(this.label84);
+            this.metroTabPage5.Controls.Add(this.label85);
+            this.metroTabPage5.Controls.Add(this.label61);
+            this.metroTabPage5.Controls.Add(this.label60);
+            this.metroTabPage5.Controls.Add(this.label59);
+            this.metroTabPage5.Controls.Add(this.label58);
+            this.metroTabPage5.Controls.Add(this.label57);
+            this.metroTabPage5.Controls.Add(this.label56);
+            this.metroTabPage5.Controls.Add(this.label55);
+            this.metroTabPage5.Controls.Add(this.label54);
+            this.metroTabPage5.Controls.Add(this.label53);
+            this.metroTabPage5.Controls.Add(this.label52);
+            this.metroTabPage5.Controls.Add(this.label51);
+            this.metroTabPage5.Controls.Add(this.label50);
+            this.metroTabPage5.Controls.Add(this.label49);
+            this.metroTabPage5.Controls.Add(this.label40);
+            this.metroTabPage5.Controls.Add(this.label45);
+            this.metroTabPage5.Controls.Add(this.label46);
+            this.metroTabPage5.Controls.Add(this.label47);
+            this.metroTabPage5.Controls.Add(this.label48);
+            this.metroTabPage5.Controls.Add(this.label41);
+            this.metroTabPage5.Controls.Add(this.label42);
+            this.metroTabPage5.Controls.Add(this.label43);
+            this.metroTabPage5.Controls.Add(this.label44);
+            this.metroTabPage5.Controls.Add(this.label36);
+            this.metroTabPage5.Controls.Add(this.label37);
+            this.metroTabPage5.Controls.Add(this.label38);
+            this.metroTabPage5.Controls.Add(this.label39);
+            this.metroTabPage5.Controls.Add(this.label35);
+            this.metroTabPage5.Controls.Add(this.panel1);
+            this.metroTabPage5.Controls.Add(this.textBox26);
+            this.metroTabPage5.Controls.Add(this.textBox27);
+            this.metroTabPage5.Controls.Add(this.textBox28);
+            this.metroTabPage5.Controls.Add(this.label32);
+            this.metroTabPage5.Controls.Add(this.label33);
+            this.metroTabPage5.Controls.Add(this.label34);
+            this.metroTabPage5.Controls.Add(this.textBox24);
+            this.metroTabPage5.Controls.Add(this.textBox25);
+            this.metroTabPage5.Controls.Add(this.label30);
+            this.metroTabPage5.Controls.Add(this.label31);
+            this.metroTabPage5.Controls.Add(this.textBox21);
+            this.metroTabPage5.Controls.Add(this.textBox22);
+            this.metroTabPage5.Controls.Add(this.textBox23);
+            this.metroTabPage5.Controls.Add(this.label27);
+            this.metroTabPage5.Controls.Add(this.label28);
+            this.metroTabPage5.Controls.Add(this.label29);
+            this.metroTabPage5.Controls.Add(this.textBox15);
+            this.metroTabPage5.Controls.Add(this.textBox16);
+            this.metroTabPage5.Controls.Add(this.textBox17);
+            this.metroTabPage5.Controls.Add(this.textBox18);
+            this.metroTabPage5.Controls.Add(this.textBox19);
+            this.metroTabPage5.Controls.Add(this.textBox20);
+            this.metroTabPage5.Controls.Add(this.label21);
+            this.metroTabPage5.Controls.Add(this.label22);
+            this.metroTabPage5.Controls.Add(this.label23);
+            this.metroTabPage5.Controls.Add(this.label24);
+            this.metroTabPage5.Controls.Add(this.label25);
+            this.metroTabPage5.Controls.Add(this.label26);
+            this.metroTabPage5.Controls.Add(this.label20);
+            this.metroTabPage5.Controls.Add(this.label19);
+            this.metroTabPage5.Controls.Add(this.label18);
+            this.metroTabPage5.Controls.Add(this.textBox14);
+            this.metroTabPage5.Controls.Add(this.textBox13);
+            this.metroTabPage5.Controls.Add(this.textBox12);
+            this.metroTabPage5.Controls.Add(this.textBox11);
+            this.metroTabPage5.Controls.Add(this.textBox10);
+            this.metroTabPage5.Controls.Add(this.textBox9);
+            this.metroTabPage5.Controls.Add(this.textBox8);
+            this.metroTabPage5.Controls.Add(this.textBox7);
+            this.metroTabPage5.Controls.Add(this.textBox6);
+            this.metroTabPage5.Controls.Add(this.textBox5);
+            this.metroTabPage5.Controls.Add(this.textBox4);
+            this.metroTabPage5.Controls.Add(this.textBox3);
+            this.metroTabPage5.Controls.Add(this.textBox1);
+            this.metroTabPage5.Controls.Add(this.textBox2);
+            this.metroTabPage5.Controls.Add(this.label17);
+            this.metroTabPage5.Controls.Add(this.label16);
+            this.metroTabPage5.Controls.Add(this.label14);
+            this.metroTabPage5.Controls.Add(this.label13);
+            this.metroTabPage5.Controls.Add(this.label12);
+            this.metroTabPage5.Controls.Add(this.label11);
+            this.metroTabPage5.Controls.Add(this.label10);
+            this.metroTabPage5.Controls.Add(this.label9);
+            this.metroTabPage5.Controls.Add(this.label8);
+            this.metroTabPage5.Controls.Add(this.label7);
+            this.metroTabPage5.Controls.Add(this.label6);
+            this.metroTabPage5.Controls.Add(this.label5);
+            this.metroTabPage5.Controls.Add(this.label4);
+            this.metroTabPage5.Controls.Add(this.label1);
+            this.metroTabPage5.Controls.Add(this.label3);
+            this.metroTabPage5.Controls.Add(this.label2);
+            this.metroTabPage5.HorizontalScrollbarBarColor = true;
+            this.metroTabPage5.HorizontalScrollbarHighlightOnWheel = false;
+            this.metroTabPage5.HorizontalScrollbarSize = 10;
+            this.metroTabPage5.Location = new System.Drawing.Point(4, 44);
+            this.metroTabPage5.Name = "metroTabPage5";
+            this.metroTabPage5.Size = new System.Drawing.Size(1132, 675);
+            this.metroTabPage5.TabIndex = 4;
+            this.metroTabPage5.Text = "Main ";
+            this.metroTabPage5.VerticalScrollbarBarColor = true;
+            this.metroTabPage5.VerticalScrollbarHighlightOnWheel = false;
+            this.metroTabPage5.VerticalScrollbarSize = 10;
+            // 
+            // metroButton3
+            // 
+            this.metroButton3.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.metroButton3.Location = new System.Drawing.Point(561, 35);
+            this.metroButton3.Name = "metroButton3";
+            this.metroButton3.Size = new System.Drawing.Size(94, 37);
+            this.metroButton3.TabIndex = 146;
+            this.metroButton3.Text = "Setting";
+            this.metroButton3.UseSelectable = true;
+            this.metroButton3.Click += new System.EventHandler(this.metroButton3_Click);
+            // 
+            // label62
+            // 
+            this.label62.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label62.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label62.Font = new System.Drawing.Font("맑은 고딕", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label62.Location = new System.Drawing.Point(1078, 552);
+            this.label62.Name = "label62";
+            this.label62.Size = new System.Drawing.Size(36, 38);
+            this.label62.TabIndex = 145;
+            this.label62.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label63
+            // 
+            this.label63.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label63.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label63.Font = new System.Drawing.Font("맑은 고딕", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label63.Location = new System.Drawing.Point(1078, 514);
+            this.label63.Name = "label63";
+            this.label63.Size = new System.Drawing.Size(36, 38);
+            this.label63.TabIndex = 144;
+            this.label63.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label64
+            // 
+            this.label64.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label64.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label64.Font = new System.Drawing.Font("맑은 고딕", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label64.Location = new System.Drawing.Point(1078, 476);
+            this.label64.Name = "label64";
+            this.label64.Size = new System.Drawing.Size(36, 38);
+            this.label64.TabIndex = 143;
+            this.label64.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label65
+            // 
+            this.label65.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label65.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label65.Font = new System.Drawing.Font("맑은 고딕", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label65.Location = new System.Drawing.Point(1078, 438);
+            this.label65.Name = "label65";
+            this.label65.Size = new System.Drawing.Size(36, 38);
+            this.label65.TabIndex = 142;
+            this.label65.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label66
+            // 
+            this.label66.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label66.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label66.Font = new System.Drawing.Font("맑은 고딕", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label66.Location = new System.Drawing.Point(1078, 400);
+            this.label66.Name = "label66";
+            this.label66.Size = new System.Drawing.Size(36, 38);
+            this.label66.TabIndex = 141;
+            this.label66.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label67
+            // 
+            this.label67.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label67.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label67.Font = new System.Drawing.Font("맑은 고딕", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label67.Location = new System.Drawing.Point(1078, 356);
+            this.label67.Name = "label67";
+            this.label67.Size = new System.Drawing.Size(36, 38);
+            this.label67.TabIndex = 140;
+            this.label67.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label68
+            // 
+            this.label68.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label68.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label68.Font = new System.Drawing.Font("맑은 고딕", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label68.Location = new System.Drawing.Point(1078, 318);
+            this.label68.Name = "label68";
+            this.label68.Size = new System.Drawing.Size(36, 38);
+            this.label68.TabIndex = 139;
+            this.label68.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label69
+            // 
+            this.label69.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label69.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label69.Font = new System.Drawing.Font("맑은 고딕", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label69.Location = new System.Drawing.Point(1078, 280);
+            this.label69.Name = "label69";
+            this.label69.Size = new System.Drawing.Size(36, 38);
+            this.label69.TabIndex = 138;
+            this.label69.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label70
+            // 
+            this.label70.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label70.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label70.Font = new System.Drawing.Font("맑은 고딕", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label70.Location = new System.Drawing.Point(1078, 236);
+            this.label70.Name = "label70";
+            this.label70.Size = new System.Drawing.Size(36, 38);
+            this.label70.TabIndex = 137;
+            this.label70.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label71
+            // 
+            this.label71.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label71.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label71.Font = new System.Drawing.Font("맑은 고딕", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label71.Location = new System.Drawing.Point(1078, 198);
+            this.label71.Name = "label71";
+            this.label71.Size = new System.Drawing.Size(36, 38);
+            this.label71.TabIndex = 136;
+            this.label71.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label72
+            // 
+            this.label72.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label72.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label72.Font = new System.Drawing.Font("맑은 고딕", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label72.Location = new System.Drawing.Point(1078, 160);
+            this.label72.Name = "label72";
+            this.label72.Size = new System.Drawing.Size(36, 38);
+            this.label72.TabIndex = 135;
+            this.label72.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label73
+            // 
+            this.label73.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label73.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label73.Font = new System.Drawing.Font("맑은 고딕", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label73.Location = new System.Drawing.Point(1078, 122);
+            this.label73.Name = "label73";
+            this.label73.Size = new System.Drawing.Size(36, 38);
+            this.label73.TabIndex = 134;
+            this.label73.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label74
+            // 
+            this.label74.BackColor = System.Drawing.SystemColors.Control;
+            this.label74.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label74.Font = new System.Drawing.Font("맑은 고딕", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label74.Location = new System.Drawing.Point(978, 552);
+            this.label74.Name = "label74";
+            this.label74.Size = new System.Drawing.Size(100, 38);
+            this.label74.TabIndex = 133;
+            this.label74.Text = "NOxActive";
+            this.label74.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label75
+            // 
+            this.label75.BackColor = System.Drawing.SystemColors.Control;
+            this.label75.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label75.Font = new System.Drawing.Font("맑은 고딕", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label75.Location = new System.Drawing.Point(978, 514);
+            this.label75.Name = "label75";
+            this.label75.Size = new System.Drawing.Size(100, 38);
+            this.label75.TabIndex = 132;
+            this.label75.Text = "Dosing";
+            this.label75.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label76
+            // 
+            this.label76.BackColor = System.Drawing.SystemColors.Control;
+            this.label76.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label76.Font = new System.Drawing.Font("맑은 고딕", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label76.Location = new System.Drawing.Point(978, 476);
+            this.label76.Name = "label76";
+            this.label76.Size = new System.Drawing.Size(100, 38);
+            this.label76.TabIndex = 131;
+            this.label76.Text = "Flushing";
+            this.label76.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label77
+            // 
+            this.label77.BackColor = System.Drawing.SystemColors.Control;
+            this.label77.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label77.Font = new System.Drawing.Font("맑은 고딕", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label77.Location = new System.Drawing.Point(978, 438);
+            this.label77.Name = "label77";
+            this.label77.Size = new System.Drawing.Size(100, 38);
+            this.label77.TabIndex = 130;
+            this.label77.Text = "SCR Stop";
+            this.label77.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label78
+            // 
+            this.label78.BackColor = System.Drawing.SystemColors.Control;
+            this.label78.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label78.Font = new System.Drawing.Font("맑은 고딕", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label78.Location = new System.Drawing.Point(978, 400);
+            this.label78.Name = "label78";
+            this.label78.Size = new System.Drawing.Size(100, 38);
+            this.label78.TabIndex = 129;
+            this.label78.Text = "NOx Down";
+            this.label78.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label79
+            // 
+            this.label79.BackColor = System.Drawing.SystemColors.Control;
+            this.label79.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label79.Font = new System.Drawing.Font("맑은 고딕", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label79.Location = new System.Drawing.Point(978, 356);
+            this.label79.Name = "label79";
+            this.label79.Size = new System.Drawing.Size(100, 38);
+            this.label79.TabIndex = 128;
+            this.label79.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label80
+            // 
+            this.label80.BackColor = System.Drawing.SystemColors.Control;
+            this.label80.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label80.Font = new System.Drawing.Font("맑은 고딕", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label80.Location = new System.Drawing.Point(978, 318);
+            this.label80.Name = "label80";
+            this.label80.Size = new System.Drawing.Size(100, 38);
+            this.label80.TabIndex = 127;
+            this.label80.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label81
+            // 
+            this.label81.BackColor = System.Drawing.SystemColors.Control;
+            this.label81.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label81.Font = new System.Drawing.Font("맑은 고딕", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label81.Location = new System.Drawing.Point(978, 280);
+            this.label81.Name = "label81";
+            this.label81.Size = new System.Drawing.Size(100, 38);
+            this.label81.TabIndex = 126;
+            this.label81.Text = "NOx Down Link";
+            this.label81.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label82
+            // 
+            this.label82.BackColor = System.Drawing.SystemColors.Control;
+            this.label82.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label82.Font = new System.Drawing.Font("맑은 고딕", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label82.Location = new System.Drawing.Point(978, 236);
+            this.label82.Name = "label82";
+            this.label82.Size = new System.Drawing.Size(100, 38);
+            this.label82.TabIndex = 125;
+            this.label82.Text = "Urea Quality";
+            this.label82.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label83
+            // 
+            this.label83.BackColor = System.Drawing.SystemColors.Control;
+            this.label83.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label83.Font = new System.Drawing.Font("맑은 고딕", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label83.Location = new System.Drawing.Point(978, 198);
+            this.label83.Name = "label83";
+            this.label83.Size = new System.Drawing.Size(100, 38);
+            this.label83.TabIndex = 124;
+            this.label83.Text = "MAF";
+            this.label83.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label84
+            // 
+            this.label84.BackColor = System.Drawing.SystemColors.Control;
+            this.label84.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label84.Font = new System.Drawing.Font("맑은 고딕", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label84.Location = new System.Drawing.Point(978, 160);
+            this.label84.Name = "label84";
+            this.label84.Size = new System.Drawing.Size(100, 38);
+            this.label84.TabIndex = 123;
+            this.label84.Text = "NOx Down";
+            this.label84.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label85
+            // 
+            this.label85.BackColor = System.Drawing.SystemColors.Control;
+            this.label85.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label85.Font = new System.Drawing.Font("맑은 고딕", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label85.Location = new System.Drawing.Point(978, 122);
+            this.label85.Name = "label85";
+            this.label85.Size = new System.Drawing.Size(100, 38);
+            this.label85.TabIndex = 122;
+            this.label85.Text = "Supply P";
+            this.label85.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label61
+            // 
+            this.label61.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label61.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label61.Font = new System.Drawing.Font("맑은 고딕", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label61.Location = new System.Drawing.Point(926, 552);
+            this.label61.Name = "label61";
+            this.label61.Size = new System.Drawing.Size(36, 38);
+            this.label61.TabIndex = 121;
+            this.label61.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label60
+            // 
+            this.label60.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label60.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label60.Font = new System.Drawing.Font("맑은 고딕", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label60.Location = new System.Drawing.Point(926, 514);
+            this.label60.Name = "label60";
+            this.label60.Size = new System.Drawing.Size(36, 38);
+            this.label60.TabIndex = 120;
+            this.label60.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label59
+            // 
+            this.label59.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label59.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label59.Font = new System.Drawing.Font("맑은 고딕", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label59.Location = new System.Drawing.Point(926, 476);
+            this.label59.Name = "label59";
+            this.label59.Size = new System.Drawing.Size(36, 38);
+            this.label59.TabIndex = 119;
+            this.label59.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label58
+            // 
+            this.label58.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label58.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label58.Font = new System.Drawing.Font("맑은 고딕", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label58.Location = new System.Drawing.Point(926, 438);
+            this.label58.Name = "label58";
+            this.label58.Size = new System.Drawing.Size(36, 38);
+            this.label58.TabIndex = 118;
+            this.label58.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label57
+            // 
+            this.label57.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label57.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label57.Font = new System.Drawing.Font("맑은 고딕", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label57.Location = new System.Drawing.Point(926, 400);
+            this.label57.Name = "label57";
+            this.label57.Size = new System.Drawing.Size(36, 38);
+            this.label57.TabIndex = 117;
+            this.label57.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label56
+            // 
+            this.label56.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label56.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label56.Font = new System.Drawing.Font("맑은 고딕", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label56.Location = new System.Drawing.Point(926, 356);
+            this.label56.Name = "label56";
+            this.label56.Size = new System.Drawing.Size(36, 38);
+            this.label56.TabIndex = 116;
+            this.label56.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label55
+            // 
+            this.label55.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label55.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label55.Font = new System.Drawing.Font("맑은 고딕", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label55.Location = new System.Drawing.Point(926, 318);
+            this.label55.Name = "label55";
+            this.label55.Size = new System.Drawing.Size(36, 38);
+            this.label55.TabIndex = 115;
+            this.label55.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label54
+            // 
+            this.label54.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label54.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label54.Font = new System.Drawing.Font("맑은 고딕", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label54.Location = new System.Drawing.Point(926, 280);
+            this.label54.Name = "label54";
+            this.label54.Size = new System.Drawing.Size(36, 38);
+            this.label54.TabIndex = 114;
+            this.label54.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label53
+            // 
+            this.label53.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label53.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label53.Font = new System.Drawing.Font("맑은 고딕", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label53.Location = new System.Drawing.Point(926, 236);
+            this.label53.Name = "label53";
+            this.label53.Size = new System.Drawing.Size(36, 38);
+            this.label53.TabIndex = 113;
+            this.label53.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label52
+            // 
+            this.label52.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label52.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label52.Font = new System.Drawing.Font("맑은 고딕", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label52.Location = new System.Drawing.Point(926, 198);
+            this.label52.Name = "label52";
+            this.label52.Size = new System.Drawing.Size(36, 38);
+            this.label52.TabIndex = 112;
+            this.label52.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label51
+            // 
+            this.label51.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label51.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label51.Font = new System.Drawing.Font("맑은 고딕", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label51.Location = new System.Drawing.Point(926, 160);
+            this.label51.Name = "label51";
+            this.label51.Size = new System.Drawing.Size(36, 38);
+            this.label51.TabIndex = 111;
+            this.label51.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label50
+            // 
+            this.label50.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label50.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label50.Font = new System.Drawing.Font("맑은 고딕", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label50.Location = new System.Drawing.Point(926, 122);
+            this.label50.Name = "label50";
+            this.label50.Size = new System.Drawing.Size(36, 38);
+            this.label50.TabIndex = 110;
+            this.label50.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label49
+            // 
+            this.label49.BackColor = System.Drawing.SystemColors.Control;
+            this.label49.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label49.Font = new System.Drawing.Font("맑은 고딕", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label49.Location = new System.Drawing.Point(826, 552);
+            this.label49.Name = "label49";
+            this.label49.Size = new System.Drawing.Size(100, 38);
+            this.label49.TabIndex = 109;
+            this.label49.Text = "Urea Temp";
+            this.label49.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label40
+            // 
+            this.label40.BackColor = System.Drawing.SystemColors.Control;
+            this.label40.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label40.Font = new System.Drawing.Font("맑은 고딕", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label40.Location = new System.Drawing.Point(826, 514);
+            this.label40.Name = "label40";
+            this.label40.Size = new System.Drawing.Size(100, 38);
+            this.label40.TabIndex = 108;
+            this.label40.Text = "MOtor";
+            this.label40.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label45
+            // 
+            this.label45.BackColor = System.Drawing.SystemColors.Control;
+            this.label45.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label45.Font = new System.Drawing.Font("맑은 고딕", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label45.Location = new System.Drawing.Point(826, 476);
+            this.label45.Name = "label45";
+            this.label45.Size = new System.Drawing.Size(100, 38);
+            this.label45.TabIndex = 107;
+            this.label45.Text = "Purge";
+            this.label45.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label46
+            // 
+            this.label46.BackColor = System.Drawing.SystemColors.Control;
+            this.label46.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label46.Font = new System.Drawing.Font("맑은 고딕", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label46.Location = new System.Drawing.Point(826, 438);
+            this.label46.Name = "label46";
+            this.label46.Size = new System.Drawing.Size(100, 38);
+            this.label46.TabIndex = 106;
+            this.label46.Text = "Key on";
+            this.label46.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label47
+            // 
+            this.label47.BackColor = System.Drawing.SystemColors.Control;
+            this.label47.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label47.Font = new System.Drawing.Font("맑은 고딕", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label47.Location = new System.Drawing.Point(826, 400);
+            this.label47.Name = "label47";
+            this.label47.Size = new System.Drawing.Size(100, 38);
+            this.label47.TabIndex = 105;
+            this.label47.Text = "NOx Up";
+            this.label47.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label48
+            // 
+            this.label48.BackColor = System.Drawing.SystemColors.Control;
+            this.label48.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label48.Font = new System.Drawing.Font("맑은 고딕", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label48.Location = new System.Drawing.Point(729, 400);
+            this.label48.Name = "label48";
+            this.label48.Size = new System.Drawing.Size(97, 190);
+            this.label48.TabIndex = 104;
+            this.label48.Text = "Error";
+            this.label48.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label41
+            // 
+            this.label41.BackColor = System.Drawing.SystemColors.Control;
+            this.label41.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label41.Font = new System.Drawing.Font("맑은 고딕", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label41.Location = new System.Drawing.Point(826, 356);
+            this.label41.Name = "label41";
+            this.label41.Size = new System.Drawing.Size(100, 38);
+            this.label41.TabIndex = 103;
+            this.label41.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label42
+            // 
+            this.label42.BackColor = System.Drawing.SystemColors.Control;
+            this.label42.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label42.Font = new System.Drawing.Font("맑은 고딕", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label42.Location = new System.Drawing.Point(826, 318);
+            this.label42.Name = "label42";
+            this.label42.Size = new System.Drawing.Size(100, 38);
+            this.label42.TabIndex = 102;
+            this.label42.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label43
+            // 
+            this.label43.BackColor = System.Drawing.SystemColors.Control;
+            this.label43.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label43.Font = new System.Drawing.Font("맑은 고딕", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label43.Location = new System.Drawing.Point(826, 280);
+            this.label43.Name = "label43";
+            this.label43.Size = new System.Drawing.Size(100, 38);
+            this.label43.TabIndex = 101;
+            this.label43.Text = "NOx Up Link";
+            this.label43.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label44
+            // 
+            this.label44.BackColor = System.Drawing.SystemColors.Control;
+            this.label44.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label44.Font = new System.Drawing.Font("맑은 고딕", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label44.Location = new System.Drawing.Point(729, 280);
+            this.label44.Name = "label44";
+            this.label44.Size = new System.Drawing.Size(97, 114);
+            this.label44.TabIndex = 100;
+            this.label44.Text = "Check";
+            this.label44.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label36
+            // 
+            this.label36.BackColor = System.Drawing.SystemColors.Control;
+            this.label36.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label36.Font = new System.Drawing.Font("맑은 고딕", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label36.Location = new System.Drawing.Point(826, 236);
+            this.label36.Name = "label36";
+            this.label36.Size = new System.Drawing.Size(100, 38);
+            this.label36.TabIndex = 99;
+            this.label36.Text = "Urea Temp";
+            this.label36.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label37
+            // 
+            this.label37.BackColor = System.Drawing.SystemColors.Control;
+            this.label37.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label37.Font = new System.Drawing.Font("맑은 고딕", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label37.Location = new System.Drawing.Point(826, 198);
+            this.label37.Name = "label37";
+            this.label37.Size = new System.Drawing.Size(100, 38);
+            this.label37.TabIndex = 98;
+            this.label37.Text = "Urea Level";
+            this.label37.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label38
+            // 
+            this.label38.BackColor = System.Drawing.SystemColors.Control;
+            this.label38.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label38.Font = new System.Drawing.Font("맑은 고딕", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label38.Location = new System.Drawing.Point(826, 160);
+            this.label38.Name = "label38";
+            this.label38.Size = new System.Drawing.Size(100, 38);
+            this.label38.TabIndex = 97;
+            this.label38.Text = "NOx Up";
+            this.label38.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label39
+            // 
+            this.label39.BackColor = System.Drawing.SystemColors.Control;
+            this.label39.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label39.Font = new System.Drawing.Font("맑은 고딕", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label39.Location = new System.Drawing.Point(826, 122);
+            this.label39.Name = "label39";
+            this.label39.Size = new System.Drawing.Size(100, 38);
+            this.label39.TabIndex = 96;
+            this.label39.Text = "T1";
+            this.label39.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label35
+            // 
+            this.label35.BackColor = System.Drawing.SystemColors.Control;
+            this.label35.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label35.Font = new System.Drawing.Font("맑은 고딕", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label35.Location = new System.Drawing.Point(729, 122);
+            this.label35.Name = "label35";
+            this.label35.Size = new System.Drawing.Size(97, 152);
+            this.label35.TabIndex = 95;
+            this.label35.Text = "Error";
+            this.label35.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.SystemColors.Control;
+            this.panel1.Location = new System.Drawing.Point(703, 123);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(3, 534);
+            this.panel1.TabIndex = 94;
+            // 
+            // textBox26
+            // 
+            this.textBox26.Font = new System.Drawing.Font("맑은 고딕", 17.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.textBox26.Location = new System.Drawing.Point(568, 620);
+            this.textBox26.Name = "textBox26";
+            this.textBox26.Size = new System.Drawing.Size(125, 38);
+            this.textBox26.TabIndex = 65;
+            this.textBox26.Text = "0";
+            // 
+            // textBox27
+            // 
+            this.textBox27.Font = new System.Drawing.Font("맑은 고딕", 17.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.textBox27.Location = new System.Drawing.Point(568, 582);
+            this.textBox27.Name = "textBox27";
+            this.textBox27.Size = new System.Drawing.Size(125, 38);
+            this.textBox27.TabIndex = 64;
+            this.textBox27.Text = "0";
+            // 
+            // textBox28
+            // 
+            this.textBox28.Font = new System.Drawing.Font("맑은 고딕", 17.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.textBox28.Location = new System.Drawing.Point(568, 544);
+            this.textBox28.Name = "textBox28";
+            this.textBox28.Size = new System.Drawing.Size(125, 38);
+            this.textBox28.TabIndex = 63;
+            this.textBox28.Text = "0";
+            // 
+            // label32
+            // 
+            this.label32.BackColor = System.Drawing.SystemColors.Control;
+            this.label32.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label32.Font = new System.Drawing.Font("맑은 고딕", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label32.Location = new System.Drawing.Point(456, 619);
+            this.label32.Name = "label32";
+            this.label32.Size = new System.Drawing.Size(110, 38);
+            this.label32.TabIndex = 62;
+            this.label32.Text = "Quality[%]";
+            this.label32.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label33
+            // 
+            this.label33.BackColor = System.Drawing.SystemColors.Control;
+            this.label33.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label33.Font = new System.Drawing.Font("맑은 고딕", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label33.Location = new System.Drawing.Point(456, 581);
+            this.label33.Name = "label33";
+            this.label33.Size = new System.Drawing.Size(110, 38);
+            this.label33.TabIndex = 61;
+            this.label33.Text = "Temp[°C]";
+            this.label33.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label34
+            // 
+            this.label34.BackColor = System.Drawing.SystemColors.Control;
+            this.label34.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label34.Font = new System.Drawing.Font("맑은 고딕", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label34.Location = new System.Drawing.Point(456, 543);
+            this.label34.Name = "label34";
+            this.label34.Size = new System.Drawing.Size(110, 38);
+            this.label34.TabIndex = 60;
+            this.label34.Text = "Level[%]";
+            this.label34.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // textBox24
+            // 
+            this.textBox24.Font = new System.Drawing.Font("맑은 고딕", 17.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.textBox24.Location = new System.Drawing.Point(568, 505);
+            this.textBox24.Name = "textBox24";
+            this.textBox24.Size = new System.Drawing.Size(125, 38);
+            this.textBox24.TabIndex = 59;
+            this.textBox24.Text = "0";
+            // 
+            // textBox25
+            // 
+            this.textBox25.Font = new System.Drawing.Font("맑은 고딕", 17.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.textBox25.Location = new System.Drawing.Point(568, 467);
+            this.textBox25.Name = "textBox25";
+            this.textBox25.Size = new System.Drawing.Size(125, 38);
+            this.textBox25.TabIndex = 58;
+            this.textBox25.Text = "0";
+            // 
+            // label30
+            // 
+            this.label30.BackColor = System.Drawing.SystemColors.Control;
+            this.label30.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label30.Font = new System.Drawing.Font("맑은 고딕", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label30.Location = new System.Drawing.Point(456, 504);
+            this.label30.Name = "label30";
+            this.label30.Size = new System.Drawing.Size(110, 38);
+            this.label30.TabIndex = 57;
+            this.label30.Text = "Real Time[%]";
+            this.label30.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label31
+            // 
+            this.label31.BackColor = System.Drawing.SystemColors.Control;
+            this.label31.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label31.Font = new System.Drawing.Font("맑은 고딕", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label31.Location = new System.Drawing.Point(456, 466);
+            this.label31.Name = "label31";
+            this.label31.Size = new System.Drawing.Size(110, 38);
+            this.label31.TabIndex = 56;
+            this.label31.Text = "Avg[%]";
+            this.label31.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // textBox21
+            // 
+            this.textBox21.Font = new System.Drawing.Font("맑은 고딕", 17.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.textBox21.Location = new System.Drawing.Point(568, 428);
+            this.textBox21.Name = "textBox21";
+            this.textBox21.Size = new System.Drawing.Size(125, 38);
+            this.textBox21.TabIndex = 55;
+            this.textBox21.Text = "0";
+            // 
+            // textBox22
+            // 
+            this.textBox22.Font = new System.Drawing.Font("맑은 고딕", 17.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.textBox22.Location = new System.Drawing.Point(568, 390);
+            this.textBox22.Name = "textBox22";
+            this.textBox22.Size = new System.Drawing.Size(125, 38);
+            this.textBox22.TabIndex = 54;
+            this.textBox22.Text = "0";
+            // 
+            // textBox23
+            // 
+            this.textBox23.Font = new System.Drawing.Font("맑은 고딕", 17.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.textBox23.Location = new System.Drawing.Point(568, 352);
+            this.textBox23.Name = "textBox23";
+            this.textBox23.Size = new System.Drawing.Size(125, 38);
+            this.textBox23.TabIndex = 53;
+            this.textBox23.Text = "0";
+            // 
+            // label27
+            // 
+            this.label27.BackColor = System.Drawing.SystemColors.Control;
+            this.label27.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label27.Font = new System.Drawing.Font("맑은 고딕", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label27.Location = new System.Drawing.Point(456, 427);
+            this.label27.Name = "label27";
+            this.label27.Size = new System.Drawing.Size(110, 38);
+            this.label27.TabIndex = 52;
+            this.label27.Text = "Total[g]";
+            this.label27.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label28
+            // 
+            this.label28.BackColor = System.Drawing.SystemColors.Control;
+            this.label28.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label28.Font = new System.Drawing.Font("맑은 고딕", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label28.Location = new System.Drawing.Point(456, 389);
+            this.label28.Name = "label28";
+            this.label28.Size = new System.Drawing.Size(110, 38);
+            this.label28.TabIndex = 51;
+            this.label28.Text = "duty [%]";
+            this.label28.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label29
+            // 
+            this.label29.BackColor = System.Drawing.SystemColors.Control;
+            this.label29.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label29.Font = new System.Drawing.Font("맑은 고딕", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label29.Location = new System.Drawing.Point(456, 351);
+            this.label29.Name = "label29";
+            this.label29.Size = new System.Drawing.Size(110, 38);
+            this.label29.TabIndex = 50;
+            this.label29.Text = "g/h";
+            this.label29.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // textBox15
+            // 
+            this.textBox15.Font = new System.Drawing.Font("맑은 고딕", 17.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.textBox15.Location = new System.Drawing.Point(568, 313);
+            this.textBox15.Name = "textBox15";
+            this.textBox15.Size = new System.Drawing.Size(125, 38);
+            this.textBox15.TabIndex = 49;
+            this.textBox15.Text = "0";
+            // 
+            // textBox16
+            // 
+            this.textBox16.Font = new System.Drawing.Font("맑은 고딕", 17.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.textBox16.Location = new System.Drawing.Point(568, 275);
+            this.textBox16.Name = "textBox16";
+            this.textBox16.Size = new System.Drawing.Size(125, 38);
+            this.textBox16.TabIndex = 48;
+            this.textBox16.Text = "0";
+            // 
+            // textBox17
+            // 
+            this.textBox17.Font = new System.Drawing.Font("맑은 고딕", 17.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.textBox17.Location = new System.Drawing.Point(568, 237);
+            this.textBox17.Name = "textBox17";
+            this.textBox17.Size = new System.Drawing.Size(125, 38);
+            this.textBox17.TabIndex = 47;
+            this.textBox17.Text = "0";
+            // 
+            // textBox18
+            // 
+            this.textBox18.Font = new System.Drawing.Font("맑은 고딕", 17.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.textBox18.Location = new System.Drawing.Point(568, 199);
+            this.textBox18.Name = "textBox18";
+            this.textBox18.Size = new System.Drawing.Size(125, 38);
+            this.textBox18.TabIndex = 46;
+            this.textBox18.Text = "0";
+            // 
+            // textBox19
+            // 
+            this.textBox19.Font = new System.Drawing.Font("맑은 고딕", 17.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.textBox19.Location = new System.Drawing.Point(568, 161);
+            this.textBox19.Name = "textBox19";
+            this.textBox19.Size = new System.Drawing.Size(125, 38);
+            this.textBox19.TabIndex = 45;
+            this.textBox19.Text = "0";
+            // 
+            // textBox20
+            // 
+            this.textBox20.Font = new System.Drawing.Font("맑은 고딕", 17.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.textBox20.Location = new System.Drawing.Point(568, 123);
+            this.textBox20.Name = "textBox20";
+            this.textBox20.Size = new System.Drawing.Size(125, 38);
+            this.textBox20.TabIndex = 44;
+            this.textBox20.Text = "0";
+            // 
+            // label21
+            // 
+            this.label21.BackColor = System.Drawing.SystemColors.Control;
+            this.label21.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label21.Font = new System.Drawing.Font("맑은 고딕", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label21.Location = new System.Drawing.Point(456, 312);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(110, 38);
+            this.label21.TabIndex = 43;
+            this.label21.Text = "Fomula 3";
+            this.label21.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label22
+            // 
+            this.label22.BackColor = System.Drawing.SystemColors.Control;
+            this.label22.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label22.Font = new System.Drawing.Font("맑은 고딕", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label22.Location = new System.Drawing.Point(456, 274);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(110, 38);
+            this.label22.TabIndex = 42;
+            this.label22.Text = "Fomula 2";
+            this.label22.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label23
+            // 
+            this.label23.BackColor = System.Drawing.SystemColors.Control;
+            this.label23.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label23.Font = new System.Drawing.Font("맑은 고딕", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label23.Location = new System.Drawing.Point(456, 236);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(110, 38);
+            this.label23.TabIndex = 41;
+            this.label23.Text = "Fomula 1";
+            this.label23.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label24
+            // 
+            this.label24.BackColor = System.Drawing.SystemColors.Control;
+            this.label24.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label24.Font = new System.Drawing.Font("맑은 고딕", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label24.Location = new System.Drawing.Point(456, 198);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(110, 38);
+            this.label24.TabIndex = 40;
+            this.label24.Text = "Kp";
+            this.label24.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label25
+            // 
+            this.label25.BackColor = System.Drawing.SystemColors.Control;
+            this.label25.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label25.Font = new System.Drawing.Font("맑은 고딕", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label25.Location = new System.Drawing.Point(456, 160);
+            this.label25.Name = "label25";
+            this.label25.Size = new System.Drawing.Size(110, 38);
+            this.label25.TabIndex = 39;
+            this.label25.Text = "Kl";
+            this.label25.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label26
+            // 
+            this.label26.BackColor = System.Drawing.SystemColors.Control;
+            this.label26.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label26.Font = new System.Drawing.Font("맑은 고딕", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label26.Location = new System.Drawing.Point(456, 122);
+            this.label26.Name = "label26";
+            this.label26.Size = new System.Drawing.Size(110, 38);
+            this.label26.TabIndex = 38;
+            this.label26.Text = "Alpha";
+            this.label26.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label20
+            // 
+            this.label20.BackColor = System.Drawing.SystemColors.Control;
+            this.label20.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label20.Font = new System.Drawing.Font("맑은 고딕", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label20.Location = new System.Drawing.Point(359, 542);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(97, 115);
+            this.label20.TabIndex = 37;
+            this.label20.Text = "Urea";
+            this.label20.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label19
+            // 
+            this.label19.BackColor = System.Drawing.SystemColors.Control;
+            this.label19.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label19.Font = new System.Drawing.Font("맑은 고딕", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label19.Location = new System.Drawing.Point(359, 466);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(97, 75);
+            this.label19.TabIndex = 36;
+            this.label19.Text = "Reduction";
+            this.label19.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label18
+            // 
+            this.label18.BackColor = System.Drawing.SystemColors.Control;
+            this.label18.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label18.Font = new System.Drawing.Font("맑은 고딕", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label18.Location = new System.Drawing.Point(359, 351);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(97, 114);
+            this.label18.TabIndex = 35;
+            this.label18.Text = "Dosing";
+            this.label18.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // textBox14
+            // 
+            this.textBox14.Font = new System.Drawing.Font("맑은 고딕", 17.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.textBox14.Location = new System.Drawing.Point(219, 617);
+            this.textBox14.Name = "textBox14";
+            this.textBox14.Size = new System.Drawing.Size(125, 38);
+            this.textBox14.TabIndex = 34;
+            this.textBox14.Text = "0";
+            // 
+            // textBox13
+            // 
+            this.textBox13.Font = new System.Drawing.Font("맑은 고딕", 17.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.textBox13.Location = new System.Drawing.Point(219, 579);
+            this.textBox13.Name = "textBox13";
+            this.textBox13.Size = new System.Drawing.Size(125, 38);
+            this.textBox13.TabIndex = 33;
+            this.textBox13.Text = "0";
+            // 
+            // textBox12
+            // 
+            this.textBox12.Font = new System.Drawing.Font("맑은 고딕", 17.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.textBox12.Location = new System.Drawing.Point(219, 541);
+            this.textBox12.Name = "textBox12";
+            this.textBox12.Size = new System.Drawing.Size(125, 38);
+            this.textBox12.TabIndex = 32;
+            this.textBox12.Text = "0";
+            // 
+            // textBox11
+            // 
+            this.textBox11.Font = new System.Drawing.Font("맑은 고딕", 17.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.textBox11.Location = new System.Drawing.Point(219, 503);
+            this.textBox11.Name = "textBox11";
+            this.textBox11.Size = new System.Drawing.Size(125, 38);
+            this.textBox11.TabIndex = 31;
+            this.textBox11.Text = "0";
+            // 
+            // textBox10
+            // 
+            this.textBox10.Font = new System.Drawing.Font("맑은 고딕", 17.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.textBox10.Location = new System.Drawing.Point(219, 465);
+            this.textBox10.Name = "textBox10";
+            this.textBox10.Size = new System.Drawing.Size(125, 38);
+            this.textBox10.TabIndex = 30;
+            this.textBox10.Text = "0";
+            // 
+            // textBox9
+            // 
+            this.textBox9.Font = new System.Drawing.Font("맑은 고딕", 17.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.textBox9.Location = new System.Drawing.Point(219, 427);
+            this.textBox9.Name = "textBox9";
+            this.textBox9.Size = new System.Drawing.Size(125, 38);
+            this.textBox9.TabIndex = 29;
+            this.textBox9.Text = "0";
+            // 
+            // textBox8
+            // 
+            this.textBox8.Font = new System.Drawing.Font("맑은 고딕", 17.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.textBox8.Location = new System.Drawing.Point(219, 389);
+            this.textBox8.Name = "textBox8";
+            this.textBox8.Size = new System.Drawing.Size(125, 38);
+            this.textBox8.TabIndex = 28;
+            this.textBox8.Text = "0";
+            // 
+            // textBox7
+            // 
+            this.textBox7.Font = new System.Drawing.Font("맑은 고딕", 17.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.textBox7.Location = new System.Drawing.Point(219, 351);
+            this.textBox7.Name = "textBox7";
+            this.textBox7.Size = new System.Drawing.Size(125, 38);
+            this.textBox7.TabIndex = 27;
+            this.textBox7.Text = "0";
+            // 
+            // textBox6
+            // 
+            this.textBox6.Font = new System.Drawing.Font("맑은 고딕", 17.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.textBox6.Location = new System.Drawing.Point(219, 313);
+            this.textBox6.Name = "textBox6";
+            this.textBox6.Size = new System.Drawing.Size(125, 38);
+            this.textBox6.TabIndex = 26;
+            this.textBox6.Text = "0";
+            // 
+            // textBox5
+            // 
+            this.textBox5.Font = new System.Drawing.Font("맑은 고딕", 17.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.textBox5.Location = new System.Drawing.Point(219, 275);
+            this.textBox5.Name = "textBox5";
+            this.textBox5.Size = new System.Drawing.Size(125, 38);
+            this.textBox5.TabIndex = 25;
+            this.textBox5.Text = "0";
+            // 
+            // textBox4
+            // 
+            this.textBox4.Font = new System.Drawing.Font("맑은 고딕", 17.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.textBox4.Location = new System.Drawing.Point(219, 237);
+            this.textBox4.Name = "textBox4";
+            this.textBox4.Size = new System.Drawing.Size(125, 38);
+            this.textBox4.TabIndex = 24;
+            this.textBox4.Text = "0";
+            // 
+            // textBox3
+            // 
+            this.textBox3.Font = new System.Drawing.Font("맑은 고딕", 17.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.textBox3.Location = new System.Drawing.Point(219, 199);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(125, 38);
+            this.textBox3.TabIndex = 23;
+            this.textBox3.Text = "0";
+            // 
+            // textBox1
+            // 
+            this.textBox1.Font = new System.Drawing.Font("맑은 고딕", 17.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.textBox1.Location = new System.Drawing.Point(219, 161);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(125, 38);
+            this.textBox1.TabIndex = 22;
+            this.textBox1.Text = "0";
+            // 
+            // textBox2
+            // 
+            this.textBox2.Font = new System.Drawing.Font("맑은 고딕", 17.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.textBox2.Location = new System.Drawing.Point(219, 123);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(125, 38);
+            this.textBox2.TabIndex = 21;
+            this.textBox2.Text = "0";
+            // 
+            // label17
+            // 
+            this.label17.BackColor = System.Drawing.SystemColors.Control;
+            this.label17.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label17.Font = new System.Drawing.Font("맑은 고딕", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label17.Location = new System.Drawing.Point(359, 122);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(97, 228);
+            this.label17.TabIndex = 19;
+            this.label17.Text = "SCR Factor";
+            this.label17.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label16
+            // 
+            this.label16.BackColor = System.Drawing.SystemColors.Control;
+            this.label16.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label16.Font = new System.Drawing.Font("맑은 고딕", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label16.Location = new System.Drawing.Point(107, 312);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(110, 38);
+            this.label16.TabIndex = 18;
+            this.label16.Text = "MAF[kg/h]";
+            this.label16.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label14
+            // 
+            this.label14.BackColor = System.Drawing.SystemColors.Control;
+            this.label14.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label14.Font = new System.Drawing.Font("맑은 고딕", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label14.Location = new System.Drawing.Point(107, 616);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(110, 38);
+            this.label14.TabIndex = 17;
+            this.label14.Text = "Battrey[V]";
+            this.label14.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label13
+            // 
+            this.label13.BackColor = System.Drawing.SystemColors.Control;
+            this.label13.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label13.Font = new System.Drawing.Font("맑은 고딕", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label13.Location = new System.Drawing.Point(107, 578);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(110, 38);
+            this.label13.TabIndex = 16;
+            this.label13.Text = "NH3 Down[ppm]";
+            this.label13.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label12
+            // 
+            this.label12.BackColor = System.Drawing.SystemColors.Control;
+            this.label12.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label12.Font = new System.Drawing.Font("맑은 고딕", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label12.Location = new System.Drawing.Point(107, 540);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(110, 38);
+            this.label12.TabIndex = 15;
+            this.label12.Text = "NH3 Up [ppm]";
+            this.label12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label11
+            // 
+            this.label11.BackColor = System.Drawing.SystemColors.Control;
+            this.label11.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label11.Font = new System.Drawing.Font("맑은 고딕", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label11.Location = new System.Drawing.Point(107, 502);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(110, 38);
+            this.label11.TabIndex = 14;
+            this.label11.Text = "NOx Down O2[%]";
+            this.label11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label10
+            // 
+            this.label10.BackColor = System.Drawing.SystemColors.Control;
+            this.label10.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label10.Font = new System.Drawing.Font("맑은 고딕", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label10.Location = new System.Drawing.Point(107, 464);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(110, 38);
+            this.label10.TabIndex = 13;
+            this.label10.Text = "NOx Up O2[%]";
+            this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label9
+            // 
+            this.label9.BackColor = System.Drawing.SystemColors.Control;
+            this.label9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label9.Font = new System.Drawing.Font("맑은 고딕", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label9.Location = new System.Drawing.Point(107, 426);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(110, 38);
+            this.label9.TabIndex = 12;
+            this.label9.Text = "NOx Down[ppm]";
+            this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label8
+            // 
+            this.label8.BackColor = System.Drawing.SystemColors.Control;
+            this.label8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label8.Font = new System.Drawing.Font("맑은 고딕", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label8.Location = new System.Drawing.Point(107, 388);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(110, 38);
+            this.label8.TabIndex = 11;
+            this.label8.Text = "NOx Up [ppm]";
+            this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label7
+            // 
+            this.label7.BackColor = System.Drawing.SystemColors.Control;
+            this.label7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label7.Font = new System.Drawing.Font("맑은 고딕", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label7.Location = new System.Drawing.Point(107, 350);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(110, 38);
+            this.label7.TabIndex = 10;
+            this.label7.Text = "MAF Temp[°C]";
+            this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label6
+            // 
+            this.label6.BackColor = System.Drawing.SystemColors.Control;
+            this.label6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label6.Font = new System.Drawing.Font("맑은 고딕", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label6.Location = new System.Drawing.Point(107, 274);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(110, 38);
+            this.label6.TabIndex = 9;
+            this.label6.Text = "Supply[mbar]";
+            this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label5
+            // 
+            this.label5.BackColor = System.Drawing.SystemColors.Control;
+            this.label5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label5.Font = new System.Drawing.Font("맑은 고딕", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label5.Location = new System.Drawing.Point(107, 236);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(110, 38);
+            this.label5.TabIndex = 8;
+            this.label5.Text = "Temp Spa[°C]";
+            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label4
+            // 
+            this.label4.BackColor = System.Drawing.SystemColors.Control;
+            this.label4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label4.Font = new System.Drawing.Font("맑은 고딕", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label4.Location = new System.Drawing.Point(107, 198);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(110, 38);
+            this.label4.TabIndex = 7;
+            this.label4.Text = "Temp Avg[°C]";
+            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label1
+            // 
+            this.label1.BackColor = System.Drawing.SystemColors.Control;
+            this.label1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label1.Font = new System.Drawing.Font("맑은 고딕", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label1.Location = new System.Drawing.Point(107, 160);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(110, 38);
+            this.label1.TabIndex = 6;
+            this.label1.Text = "Temp Out[°C]";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label3
+            // 
+            this.label3.BackColor = System.Drawing.SystemColors.Control;
+            this.label3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label3.Font = new System.Drawing.Font("맑은 고딕", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label3.Location = new System.Drawing.Point(10, 122);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(97, 532);
+            this.label3.TabIndex = 5;
+            this.label3.Text = "Sensor";
+            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label2
+            // 
+            this.label2.BackColor = System.Drawing.SystemColors.Control;
+            this.label2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label2.Font = new System.Drawing.Font("맑은 고딕", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label2.Location = new System.Drawing.Point(107, 122);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(110, 38);
+            this.label2.TabIndex = 3;
+            this.label2.Text = "Temp In[°C]";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // metroTabPage2
             // 
             this.metroTabPage2.Controls.Add(this.textBox_H2k);
@@ -1441,7 +2936,7 @@
             this.metroTabPage2.HorizontalScrollbarSize = 10;
             this.metroTabPage2.Location = new System.Drawing.Point(4, 44);
             this.metroTabPage2.Name = "metroTabPage2";
-            this.metroTabPage2.Size = new System.Drawing.Size(1122, 664);
+            this.metroTabPage2.Size = new System.Drawing.Size(1132, 675);
             this.metroTabPage2.TabIndex = 1;
             this.metroTabPage2.Text = "SCR";
             this.metroTabPage2.VerticalScrollbarBarColor = true;
@@ -1464,7 +2959,7 @@
             this.textBox_H2k.CustomButton.Visible = false;
             this.textBox_H2k.FontSize = MetroFramework.MetroTextBoxSize.Tall;
             this.textBox_H2k.Lines = new string[0];
-            this.textBox_H2k.Location = new System.Drawing.Point(583, 448);
+            this.textBox_H2k.Location = new System.Drawing.Point(587, 448);
             this.textBox_H2k.MaxLength = 32767;
             this.textBox_H2k.Name = "textBox_H2k";
             this.textBox_H2k.PasswordChar = '\0';
@@ -1495,7 +2990,7 @@
             this.textBox_H1k.CustomButton.Visible = false;
             this.textBox_H1k.FontSize = MetroFramework.MetroTextBoxSize.Tall;
             this.textBox_H1k.Lines = new string[0];
-            this.textBox_H1k.Location = new System.Drawing.Point(583, 405);
+            this.textBox_H1k.Location = new System.Drawing.Point(587, 405);
             this.textBox_H1k.MaxLength = 32767;
             this.textBox_H1k.Name = "textBox_H1k";
             this.textBox_H1k.PasswordChar = '\0';
@@ -1526,7 +3021,7 @@
             this.textBox_Xc.CustomButton.Visible = false;
             this.textBox_Xc.FontSize = MetroFramework.MetroTextBoxSize.Tall;
             this.textBox_Xc.Lines = new string[0];
-            this.textBox_Xc.Location = new System.Drawing.Point(583, 359);
+            this.textBox_Xc.Location = new System.Drawing.Point(587, 359);
             this.textBox_Xc.MaxLength = 32767;
             this.textBox_Xc.Name = "textBox_Xc";
             this.textBox_Xc.PasswordChar = '\0';
@@ -1557,7 +3052,7 @@
             this.textBox_curXk.CustomButton.Visible = false;
             this.textBox_curXk.FontSize = MetroFramework.MetroTextBoxSize.Tall;
             this.textBox_curXk.Lines = new string[0];
-            this.textBox_curXk.Location = new System.Drawing.Point(583, 310);
+            this.textBox_curXk.Location = new System.Drawing.Point(587, 310);
             this.textBox_curXk.MaxLength = 32767;
             this.textBox_curXk.Name = "textBox_curXk";
             this.textBox_curXk.PasswordChar = '\0';
@@ -1577,7 +3072,7 @@
             this.metroLabel45.AutoSize = true;
             this.metroLabel45.FontSize = MetroFramework.MetroLabelSize.Tall;
             this.metroLabel45.FontWeight = MetroFramework.MetroLabelWeight.Regular;
-            this.metroLabel45.Location = new System.Drawing.Point(493, 448);
+            this.metroLabel45.Location = new System.Drawing.Point(498, 448);
             this.metroLabel45.Name = "metroLabel45";
             this.metroLabel45.Size = new System.Drawing.Size(44, 25);
             this.metroLabel45.Style = MetroFramework.MetroColorStyle.Black;
@@ -1589,7 +3084,7 @@
             this.metroLabel46.AutoSize = true;
             this.metroLabel46.FontSize = MetroFramework.MetroLabelSize.Tall;
             this.metroLabel46.FontWeight = MetroFramework.MetroLabelWeight.Regular;
-            this.metroLabel46.Location = new System.Drawing.Point(493, 405);
+            this.metroLabel46.Location = new System.Drawing.Point(498, 405);
             this.metroLabel46.Name = "metroLabel46";
             this.metroLabel46.Size = new System.Drawing.Size(44, 25);
             this.metroLabel46.Style = MetroFramework.MetroColorStyle.Black;
@@ -1601,7 +3096,7 @@
             this.metroLabel47.AutoSize = true;
             this.metroLabel47.FontSize = MetroFramework.MetroLabelSize.Tall;
             this.metroLabel47.FontWeight = MetroFramework.MetroLabelWeight.Regular;
-            this.metroLabel47.Location = new System.Drawing.Point(489, 359);
+            this.metroLabel47.Location = new System.Drawing.Point(494, 359);
             this.metroLabel47.Name = "metroLabel47";
             this.metroLabel47.Size = new System.Drawing.Size(68, 25);
             this.metroLabel47.Style = MetroFramework.MetroColorStyle.Black;
@@ -1613,7 +3108,7 @@
             this.metroLabel48.AutoSize = true;
             this.metroLabel48.FontSize = MetroFramework.MetroLabelSize.Tall;
             this.metroLabel48.FontWeight = MetroFramework.MetroLabelWeight.Regular;
-            this.metroLabel48.Location = new System.Drawing.Point(489, 310);
+            this.metroLabel48.Location = new System.Drawing.Point(494, 310);
             this.metroLabel48.Name = "metroLabel48";
             this.metroLabel48.Size = new System.Drawing.Size(59, 25);
             this.metroLabel48.Style = MetroFramework.MetroColorStyle.Black;
@@ -1636,7 +3131,7 @@
             this.textBox_TotalDosingRate.CustomButton.Visible = false;
             this.textBox_TotalDosingRate.FontSize = MetroFramework.MetroTextBoxSize.Tall;
             this.textBox_TotalDosingRate.Lines = new string[0];
-            this.textBox_TotalDosingRate.Location = new System.Drawing.Point(583, 260);
+            this.textBox_TotalDosingRate.Location = new System.Drawing.Point(587, 260);
             this.textBox_TotalDosingRate.MaxLength = 32767;
             this.textBox_TotalDosingRate.Name = "textBox_TotalDosingRate";
             this.textBox_TotalDosingRate.PasswordChar = '\0';
@@ -1667,7 +3162,7 @@
             this.textBox_DosingRatehouer.CustomButton.Visible = false;
             this.textBox_DosingRatehouer.FontSize = MetroFramework.MetroTextBoxSize.Tall;
             this.textBox_DosingRatehouer.Lines = new string[0];
-            this.textBox_DosingRatehouer.Location = new System.Drawing.Point(583, 217);
+            this.textBox_DosingRatehouer.Location = new System.Drawing.Point(587, 217);
             this.textBox_DosingRatehouer.MaxLength = 32767;
             this.textBox_DosingRatehouer.Name = "textBox_DosingRatehouer";
             this.textBox_DosingRatehouer.PasswordChar = '\0';
@@ -1698,7 +3193,7 @@
             this.textBox_ScrFlag.CustomButton.Visible = false;
             this.textBox_ScrFlag.FontSize = MetroFramework.MetroTextBoxSize.Tall;
             this.textBox_ScrFlag.Lines = new string[0];
-            this.textBox_ScrFlag.Location = new System.Drawing.Point(583, 171);
+            this.textBox_ScrFlag.Location = new System.Drawing.Point(587, 171);
             this.textBox_ScrFlag.MaxLength = 32767;
             this.textBox_ScrFlag.Name = "textBox_ScrFlag";
             this.textBox_ScrFlag.PasswordChar = '\0';
@@ -1729,7 +3224,7 @@
             this.textBox_SystemSignal.CustomButton.Visible = false;
             this.textBox_SystemSignal.FontSize = MetroFramework.MetroTextBoxSize.Tall;
             this.textBox_SystemSignal.Lines = new string[0];
-            this.textBox_SystemSignal.Location = new System.Drawing.Point(583, 122);
+            this.textBox_SystemSignal.Location = new System.Drawing.Point(587, 122);
             this.textBox_SystemSignal.MaxLength = 32767;
             this.textBox_SystemSignal.Name = "textBox_SystemSignal";
             this.textBox_SystemSignal.PasswordChar = '\0';
@@ -1760,7 +3255,7 @@
             this.textBox_SystemCheck.CustomButton.Visible = false;
             this.textBox_SystemCheck.FontSize = MetroFramework.MetroTextBoxSize.Tall;
             this.textBox_SystemCheck.Lines = new string[0];
-            this.textBox_SystemCheck.Location = new System.Drawing.Point(583, 71);
+            this.textBox_SystemCheck.Location = new System.Drawing.Point(587, 71);
             this.textBox_SystemCheck.MaxLength = 32767;
             this.textBox_SystemCheck.Name = "textBox_SystemCheck";
             this.textBox_SystemCheck.PasswordChar = '\0';
@@ -1791,7 +3286,7 @@
             this.textBox_SystemError.CustomButton.Visible = false;
             this.textBox_SystemError.FontSize = MetroFramework.MetroTextBoxSize.Tall;
             this.textBox_SystemError.Lines = new string[0];
-            this.textBox_SystemError.Location = new System.Drawing.Point(583, 25);
+            this.textBox_SystemError.Location = new System.Drawing.Point(587, 25);
             this.textBox_SystemError.MaxLength = 32767;
             this.textBox_SystemError.Name = "textBox_SystemError";
             this.textBox_SystemError.PasswordChar = '\0';
@@ -1811,7 +3306,7 @@
             this.metroLabel49.AutoSize = true;
             this.metroLabel49.FontSize = MetroFramework.MetroLabelSize.Tall;
             this.metroLabel49.FontWeight = MetroFramework.MetroLabelWeight.Regular;
-            this.metroLabel49.Location = new System.Drawing.Point(475, 260);
+            this.metroLabel49.Location = new System.Drawing.Point(480, 260);
             this.metroLabel49.Name = "metroLabel49";
             this.metroLabel49.Size = new System.Drawing.Size(106, 25);
             this.metroLabel49.Style = MetroFramework.MetroColorStyle.Black;
@@ -1823,7 +3318,7 @@
             this.metroLabel50.AutoSize = true;
             this.metroLabel50.FontSize = MetroFramework.MetroLabelSize.Tall;
             this.metroLabel50.FontWeight = MetroFramework.MetroLabelWeight.Regular;
-            this.metroLabel50.Location = new System.Drawing.Point(468, 217);
+            this.metroLabel50.Location = new System.Drawing.Point(473, 217);
             this.metroLabel50.Name = "metroLabel50";
             this.metroLabel50.Size = new System.Drawing.Size(117, 25);
             this.metroLabel50.Style = MetroFramework.MetroColorStyle.Black;
@@ -1835,7 +3330,7 @@
             this.metroLabel51.AutoSize = true;
             this.metroLabel51.FontSize = MetroFramework.MetroLabelSize.Tall;
             this.metroLabel51.FontWeight = MetroFramework.MetroLabelWeight.Regular;
-            this.metroLabel51.Location = new System.Drawing.Point(489, 171);
+            this.metroLabel51.Location = new System.Drawing.Point(494, 171);
             this.metroLabel51.Name = "metroLabel51";
             this.metroLabel51.Size = new System.Drawing.Size(82, 25);
             this.metroLabel51.Style = MetroFramework.MetroColorStyle.Black;
@@ -1847,7 +3342,7 @@
             this.metroLabel52.AutoSize = true;
             this.metroLabel52.FontSize = MetroFramework.MetroLabelSize.Tall;
             this.metroLabel52.FontWeight = MetroFramework.MetroLabelWeight.Regular;
-            this.metroLabel52.Location = new System.Drawing.Point(489, 122);
+            this.metroLabel52.Location = new System.Drawing.Point(494, 122);
             this.metroLabel52.Name = "metroLabel52";
             this.metroLabel52.Size = new System.Drawing.Size(91, 25);
             this.metroLabel52.Style = MetroFramework.MetroColorStyle.Black;
@@ -1859,7 +3354,7 @@
             this.metroLabel53.AutoSize = true;
             this.metroLabel53.FontSize = MetroFramework.MetroLabelSize.Tall;
             this.metroLabel53.FontWeight = MetroFramework.MetroLabelWeight.Regular;
-            this.metroLabel53.Location = new System.Drawing.Point(489, 77);
+            this.metroLabel53.Location = new System.Drawing.Point(494, 77);
             this.metroLabel53.Name = "metroLabel53";
             this.metroLabel53.Size = new System.Drawing.Size(90, 25);
             this.metroLabel53.Style = MetroFramework.MetroColorStyle.Black;
@@ -1871,7 +3366,7 @@
             this.metroLabel54.AutoSize = true;
             this.metroLabel54.FontSize = MetroFramework.MetroLabelSize.Tall;
             this.metroLabel54.FontWeight = MetroFramework.MetroLabelWeight.Regular;
-            this.metroLabel54.Location = new System.Drawing.Point(489, 34);
+            this.metroLabel54.Location = new System.Drawing.Point(494, 34);
             this.metroLabel54.Name = "metroLabel54";
             this.metroLabel54.Size = new System.Drawing.Size(81, 25);
             this.metroLabel54.Style = MetroFramework.MetroColorStyle.Black;
@@ -2752,114 +4247,12 @@
             this.metroTabPage3.HorizontalScrollbarSize = 10;
             this.metroTabPage3.Location = new System.Drawing.Point(4, 44);
             this.metroTabPage3.Name = "metroTabPage3";
-            this.metroTabPage3.Size = new System.Drawing.Size(1122, 664);
+            this.metroTabPage3.Size = new System.Drawing.Size(1132, 675);
             this.metroTabPage3.TabIndex = 2;
             this.metroTabPage3.Text = "Low Data";
             this.metroTabPage3.VerticalScrollbarBarColor = true;
             this.metroTabPage3.VerticalScrollbarHighlightOnWheel = false;
             this.metroTabPage3.VerticalScrollbarSize = 10;
-            // 
-            // richTextBox1
-            // 
-            this.richTextBox1.Location = new System.Drawing.Point(33, 46);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(775, 401);
-            this.richTextBox1.TabIndex = 81;
-            this.richTextBox1.Text = "";
-            // 
-            // metroTabPage4
-            // 
-            this.metroTabPage4.Controls.Add(this.chart1);
-            this.metroTabPage4.HorizontalScrollbarBarColor = true;
-            this.metroTabPage4.HorizontalScrollbarHighlightOnWheel = false;
-            this.metroTabPage4.HorizontalScrollbarSize = 10;
-            this.metroTabPage4.Location = new System.Drawing.Point(4, 44);
-            this.metroTabPage4.Name = "metroTabPage4";
-            this.metroTabPage4.Size = new System.Drawing.Size(1122, 664);
-            this.metroTabPage4.TabIndex = 3;
-            this.metroTabPage4.Text = "Chart";
-            this.metroTabPage4.VerticalScrollbarBarColor = true;
-            this.metroTabPage4.VerticalScrollbarHighlightOnWheel = false;
-            this.metroTabPage4.VerticalScrollbarSize = 10;
-            // 
-            // chart1
-            // 
-            chartArea1.Name = "ChartArea1";
-            this.chart1.ChartAreas.Add(chartArea1);
-            legend1.Name = "Legend1";
-            legend1.Title = "T1";
-            this.chart1.Legends.Add(legend1);
-            this.chart1.Location = new System.Drawing.Point(52, 55);
-            this.chart1.Name = "chart1";
-            series1.ChartArea = "ChartArea1";
-            series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series1.Legend = "Legend1";
-            series1.Name = "Series1";
-            this.chart1.Series.Add(series1);
-            this.chart1.Size = new System.Drawing.Size(566, 334);
-            this.chart1.TabIndex = 2;
-            this.chart1.Text = "chart1";
-            // 
-            // metroPanel1
-            // 
-            this.metroPanel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.metroPanel1.Controls.Add(this.comboBox_port1);
-            this.metroPanel1.Controls.Add(this.label_port);
-            this.metroPanel1.Controls.Add(this.button_connect);
-            this.metroPanel1.Controls.Add(this.button_disconnect);
-            this.metroPanel1.HorizontalScrollbarBarColor = true;
-            this.metroPanel1.HorizontalScrollbarHighlightOnWheel = false;
-            this.metroPanel1.HorizontalScrollbarSize = 10;
-            this.metroPanel1.Location = new System.Drawing.Point(759, 12);
-            this.metroPanel1.Name = "metroPanel1";
-            this.metroPanel1.Size = new System.Drawing.Size(357, 64);
-            this.metroPanel1.TabIndex = 85;
-            this.metroPanel1.VerticalScrollbarBarColor = true;
-            this.metroPanel1.VerticalScrollbarHighlightOnWheel = false;
-            this.metroPanel1.VerticalScrollbarSize = 10;
-            // 
-            // comboBox_port1
-            // 
-            this.comboBox_port1.FormattingEnabled = true;
-            this.comboBox_port1.ItemHeight = 23;
-            this.comboBox_port1.Location = new System.Drawing.Point(15, 25);
-            this.comboBox_port1.Name = "comboBox_port1";
-            this.comboBox_port1.Size = new System.Drawing.Size(110, 29);
-            this.comboBox_port1.TabIndex = 89;
-            this.comboBox_port1.UseSelectable = true;
-            // 
-            // label_port
-            // 
-            this.label_port.AutoSize = true;
-            this.label_port.Font = new System.Drawing.Font("맑은 고딕", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label_port.Location = new System.Drawing.Point(51, 7);
-            this.label_port.Name = "label_port";
-            this.label_port.Size = new System.Drawing.Size(29, 15);
-            this.label_port.TabIndex = 88;
-            this.label_port.Text = "Port";
-            // 
-            // button_connect
-            // 
-            this.button_connect.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.button_connect.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button_connect.Location = new System.Drawing.Point(146, 24);
-            this.button_connect.Name = "button_connect";
-            this.button_connect.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.button_connect.Size = new System.Drawing.Size(90, 30);
-            this.button_connect.TabIndex = 86;
-            this.button_connect.Text = "Com Open";
-            this.button_connect.UseVisualStyleBackColor = false;
-            // 
-            // button_disconnect
-            // 
-            this.button_disconnect.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.button_disconnect.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button_disconnect.Location = new System.Drawing.Point(244, 24);
-            this.button_disconnect.Name = "button_disconnect";
-            this.button_disconnect.Size = new System.Drawing.Size(97, 30);
-            this.button_disconnect.TabIndex = 87;
-            this.button_disconnect.Text = "Com Close";
-            this.button_disconnect.UseVisualStyleBackColor = false;
             // 
             // label15
             // 
@@ -2912,27 +4305,117 @@
             this.textBox_send.Size = new System.Drawing.Size(243, 21);
             this.textBox_send.TabIndex = 82;
             // 
-            // metroTabPage5
+            // richTextBox1
             // 
-            this.metroTabPage5.HorizontalScrollbarBarColor = true;
-            this.metroTabPage5.HorizontalScrollbarHighlightOnWheel = false;
-            this.metroTabPage5.HorizontalScrollbarSize = 10;
-            this.metroTabPage5.Location = new System.Drawing.Point(4, 44);
-            this.metroTabPage5.Name = "metroTabPage5";
-            this.metroTabPage5.Size = new System.Drawing.Size(1122, 664);
-            this.metroTabPage5.TabIndex = 4;
-            this.metroTabPage5.Text = "Main ";
-            this.metroTabPage5.VerticalScrollbarBarColor = true;
-            this.metroTabPage5.VerticalScrollbarHighlightOnWheel = false;
-            this.metroTabPage5.VerticalScrollbarSize = 10;
+            this.richTextBox1.Location = new System.Drawing.Point(33, 46);
+            this.richTextBox1.Name = "richTextBox1";
+            this.richTextBox1.Size = new System.Drawing.Size(775, 401);
+            this.richTextBox1.TabIndex = 81;
+            this.richTextBox1.Text = "";
+            // 
+            // metroTabPage4
+            // 
+            this.metroTabPage4.Controls.Add(this.chart1);
+            this.metroTabPage4.HorizontalScrollbarBarColor = true;
+            this.metroTabPage4.HorizontalScrollbarHighlightOnWheel = false;
+            this.metroTabPage4.HorizontalScrollbarSize = 10;
+            this.metroTabPage4.Location = new System.Drawing.Point(4, 44);
+            this.metroTabPage4.Name = "metroTabPage4";
+            this.metroTabPage4.Size = new System.Drawing.Size(1132, 675);
+            this.metroTabPage4.TabIndex = 3;
+            this.metroTabPage4.Text = "Chart";
+            this.metroTabPage4.VerticalScrollbarBarColor = true;
+            this.metroTabPage4.VerticalScrollbarHighlightOnWheel = false;
+            this.metroTabPage4.VerticalScrollbarSize = 10;
+            // 
+            // chart1
+            // 
+            chartArea1.Name = "ChartArea1";
+            this.chart1.ChartAreas.Add(chartArea1);
+            legend1.Name = "Legend1";
+            legend1.Title = "T1";
+            this.chart1.Legends.Add(legend1);
+            this.chart1.Location = new System.Drawing.Point(52, 55);
+            this.chart1.Name = "chart1";
+            series1.ChartArea = "ChartArea1";
+            series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series1.Legend = "Legend1";
+            series1.Name = "Series1";
+            this.chart1.Series.Add(series1);
+            this.chart1.Size = new System.Drawing.Size(566, 334);
+            this.chart1.TabIndex = 2;
+            this.chart1.Text = "chart1";
+            // 
+            // metroButton2
+            // 
+            this.metroButton2.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.metroButton2.Location = new System.Drawing.Point(967, 32);
+            this.metroButton2.Name = "metroButton2";
+            this.metroButton2.Size = new System.Drawing.Size(94, 37);
+            this.metroButton2.TabIndex = 56;
+            this.metroButton2.Text = "Com Close";
+            this.metroButton2.UseSelectable = true;
+            this.metroButton2.Click += new System.EventHandler(this.button_disconnect_click);
+            // 
+            // metroButton1
+            // 
+            this.metroButton1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.metroButton1.Location = new System.Drawing.Point(867, 32);
+            this.metroButton1.Name = "metroButton1";
+            this.metroButton1.Size = new System.Drawing.Size(94, 37);
+            this.metroButton1.TabIndex = 55;
+            this.metroButton1.Text = "Com Open";
+            this.metroButton1.UseSelectable = true;
+            this.metroButton1.Click += new System.EventHandler(this.Button_connect_Click);
+            // 
+            // comboBox_port1
+            // 
+            this.comboBox_port1.FormattingEnabled = true;
+            this.comboBox_port1.ItemHeight = 23;
+            this.comboBox_port1.Location = new System.Drawing.Point(740, 35);
+            this.comboBox_port1.Name = "comboBox_port1";
+            this.comboBox_port1.Size = new System.Drawing.Size(110, 29);
+            this.comboBox_port1.TabIndex = 89;
+            this.comboBox_port1.UseSelectable = true;
+            // 
+            // label_port
+            // 
+            this.label_port.AutoSize = true;
+            this.label_port.Font = new System.Drawing.Font("맑은 고딕", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label_port.Location = new System.Drawing.Point(776, 17);
+            this.label_port.Name = "label_port";
+            this.label_port.Size = new System.Drawing.Size(29, 15);
+            this.label_port.TabIndex = 88;
+            this.label_port.Text = "Port";
+            // 
+            // panel13
+            // 
+            this.panel13.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.panel13.Location = new System.Drawing.Point(22, 61);
+            this.panel13.Name = "panel13";
+            this.panel13.Size = new System.Drawing.Size(160, 3);
+            this.panel13.TabIndex = 93;
+            // 
+            // htmlToolTip1
+            // 
+            this.htmlToolTip1.OwnerDraw = true;
+            // 
+            // contextMenuStrip1
+            // 
+            this.contextMenuStrip1.Name = "contextMenuStrip1";
+            this.contextMenuStrip1.Size = new System.Drawing.Size(61, 4);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1149, 808);
-            this.Controls.Add(this.metroPanel1);
+            this.Controls.Add(this.panel13);
+            this.Controls.Add(this.metroButton2);
             this.Controls.Add(this.metroTabControl1);
+            this.Controls.Add(this.comboBox_port1);
+            this.Controls.Add(this.label_port);
+            this.Controls.Add(this.metroButton1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
             this.Text = "SCR CONTROL";
@@ -2940,15 +4423,16 @@
             this.metroTabControl1.ResumeLayout(false);
             this.metroTabPage1.ResumeLayout(false);
             this.metroTabPage1.PerformLayout();
+            this.metroTabPage5.ResumeLayout(false);
+            this.metroTabPage5.PerformLayout();
             this.metroTabPage2.ResumeLayout(false);
             this.metroTabPage2.PerformLayout();
             this.metroTabPage3.ResumeLayout(false);
             this.metroTabPage3.PerformLayout();
             this.metroTabPage4.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.chart1)).EndInit();
-            this.metroPanel1.ResumeLayout(false);
-            this.metroPanel1.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -3073,11 +4557,8 @@
         private MetroFramework.Controls.MetroLabel metroLabel34;
         private MetroFramework.Controls.MetroTabPage metroTabPage4;
         private System.Windows.Forms.DataVisualization.Charting.Chart chart1;
-        private MetroFramework.Controls.MetroPanel metroPanel1;
         private MetroFramework.Controls.MetroComboBox comboBox_port1;
         private System.Windows.Forms.Label label_port;
-        private System.Windows.Forms.Button button_connect;
-        private System.Windows.Forms.Button button_disconnect;
         private MetroFramework.Controls.MetroTabPage metroTabPage5;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.TextBox textBox_Size;
@@ -3085,6 +4566,125 @@
         private System.Windows.Forms.Button button_send;
         private System.Windows.Forms.Label label_send;
         private System.Windows.Forms.TextBox textBox_send;
+        private MetroFramework.Controls.MetroButton metroButton2;
+        private MetroFramework.Controls.MetroButton metroButton1;
+        private System.Windows.Forms.Panel panel13;
+        private System.Windows.Forms.Label label2;
+        private MetroFramework.Drawing.Html.HtmlToolTip htmlToolTip1;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label18;
+        private System.Windows.Forms.TextBox textBox14;
+        private System.Windows.Forms.TextBox textBox13;
+        private System.Windows.Forms.TextBox textBox12;
+        private System.Windows.Forms.TextBox textBox11;
+        private System.Windows.Forms.TextBox textBox10;
+        private System.Windows.Forms.TextBox textBox9;
+        private System.Windows.Forms.TextBox textBox8;
+        private System.Windows.Forms.TextBox textBox7;
+        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
+        private System.Windows.Forms.TextBox textBox24;
+        private System.Windows.Forms.TextBox textBox25;
+        private System.Windows.Forms.Label label30;
+        private System.Windows.Forms.Label label31;
+        private System.Windows.Forms.TextBox textBox21;
+        private System.Windows.Forms.TextBox textBox22;
+        private System.Windows.Forms.TextBox textBox23;
+        private System.Windows.Forms.Label label27;
+        private System.Windows.Forms.Label label28;
+        private System.Windows.Forms.Label label29;
+        private System.Windows.Forms.TextBox textBox15;
+        private System.Windows.Forms.TextBox textBox16;
+        private System.Windows.Forms.TextBox textBox17;
+        private System.Windows.Forms.TextBox textBox18;
+        private System.Windows.Forms.TextBox textBox19;
+        private System.Windows.Forms.TextBox textBox20;
+        private System.Windows.Forms.Label label21;
+        private System.Windows.Forms.Label label22;
+        private System.Windows.Forms.Label label23;
+        private System.Windows.Forms.Label label24;
+        private System.Windows.Forms.Label label25;
+        private System.Windows.Forms.Label label26;
+        private System.Windows.Forms.Label label20;
+        private System.Windows.Forms.Label label19;
+        private System.Windows.Forms.TextBox textBox26;
+        private System.Windows.Forms.TextBox textBox27;
+        private System.Windows.Forms.TextBox textBox28;
+        private System.Windows.Forms.Label label32;
+        private System.Windows.Forms.Label label33;
+        private System.Windows.Forms.Label label34;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Label label36;
+        private System.Windows.Forms.Label label37;
+        private System.Windows.Forms.Label label38;
+        private System.Windows.Forms.Label label39;
+        private System.Windows.Forms.Label label35;
+        private System.Windows.Forms.Label label40;
+        private System.Windows.Forms.Label label45;
+        private System.Windows.Forms.Label label46;
+        private System.Windows.Forms.Label label47;
+        private System.Windows.Forms.Label label48;
+        private System.Windows.Forms.Label label41;
+        private System.Windows.Forms.Label label42;
+        private System.Windows.Forms.Label label43;
+        private System.Windows.Forms.Label label44;
+        private System.Windows.Forms.Label label49;
+        private System.Windows.Forms.Label label62;
+        private System.Windows.Forms.Label label63;
+        private System.Windows.Forms.Label label64;
+        private System.Windows.Forms.Label label65;
+        private System.Windows.Forms.Label label66;
+        private System.Windows.Forms.Label label67;
+        private System.Windows.Forms.Label label68;
+        private System.Windows.Forms.Label label69;
+        private System.Windows.Forms.Label label70;
+        private System.Windows.Forms.Label label71;
+        private System.Windows.Forms.Label label72;
+        private System.Windows.Forms.Label label73;
+        private System.Windows.Forms.Label label74;
+        private System.Windows.Forms.Label label75;
+        private System.Windows.Forms.Label label76;
+        private System.Windows.Forms.Label label77;
+        private System.Windows.Forms.Label label78;
+        private System.Windows.Forms.Label label79;
+        private System.Windows.Forms.Label label80;
+        private System.Windows.Forms.Label label81;
+        private System.Windows.Forms.Label label82;
+        private System.Windows.Forms.Label label83;
+        private System.Windows.Forms.Label label84;
+        private System.Windows.Forms.Label label85;
+        private System.Windows.Forms.Label label61;
+        private System.Windows.Forms.Label label60;
+        private System.Windows.Forms.Label label59;
+        private System.Windows.Forms.Label label58;
+        private System.Windows.Forms.Label label57;
+        private System.Windows.Forms.Label label56;
+        private System.Windows.Forms.Label label55;
+        private System.Windows.Forms.Label label54;
+        private System.Windows.Forms.Label label53;
+        private System.Windows.Forms.Label label52;
+        private System.Windows.Forms.Label label51;
+        private System.Windows.Forms.Label label50;
+        private MetroFramework.Controls.MetroButton metroButton3;
     }
 }
 

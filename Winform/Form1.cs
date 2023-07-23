@@ -121,11 +121,26 @@ public struct stSysValue
             InitializeComponent();
         }
 
-
-
         private void Form1_Load(object sender, EventArgs e)  //폼이 로드되면
         {
             comboBox_port1.DataSource = SerialPort.GetPortNames(); //연결 가능한 시리얼포트 이름을 콤보박스에 가져오기 
+        }
+
+        private void metroButton3_Click(object sender, EventArgs e)
+        {
+            //Setting form = new Setting();
+            //form.Show();
+            foreach (Form frm in Application.OpenForms)
+            {
+                if (frm.Name == "Setting")
+                {
+                    frm.Activate();
+                    return;
+                }
+            }
+
+            Setting sfrm = new Setting();
+            sfrm.Show();
         }
 
         private void Button_connect_Click(object sender, EventArgs e)  //통신 연결하기 버튼
@@ -148,7 +163,20 @@ public struct stSysValue
                 label_status.Text = "포트가 이미 열려 있습니다.";
             }
         }
+        private void button_disconnect_click(object sender, EventArgs e)  //통신 연결끊기 버튼
+     {
+    if (serialPort1.IsOpen)  //시리얼포트가 열려 있으면
+    {
+        serialPort1.Close();  //시리얼포트 닫기
 
+        label_status.Text = "포트가 닫혔습니다.";
+        comboBox_port1.Enabled = true;  //com포트설정 콤보박스 활성화
+    }
+    else  //시리얼포트가 닫혀 있으면
+    {
+        label_status.Text = "포트가 이미 닫혀 있습니다.";
+    }
+    }
         private void serialPort1_DataReceived(object sender, SerialDataReceivedEventArgs e)  //수신 이벤트가 발생하면 이 부분이 실행된다.
         {
             this.Invoke(new EventHandler(MySerialReceived));  //메인 쓰레드와 수신 쓰레드의 충돌 방지를 위해 Invoke 사용. MySerialReceived로 이동하여 추가 작업 실행.
@@ -429,11 +457,6 @@ public struct stSysValue
                     textBox_UreaQuality.Text = ScrValue.UreaQuality.ToString();
                     textBox_NoxReduction.Text = ScrValue.NoxReduction.ToString();
                     textBox_SystemError.Text = ScrValue.SystemError.ToString();
-
-
-
-
-
                     break;
             }
         }   
@@ -450,26 +473,9 @@ public struct stSysValue
 //    SERIALPORT1.WRITE(TEXTBOX_SEND.TEXT);  //텍스트박스의 텍스트를 시리얼통신으로 송신
 //}
 
-/*private void button_disconnect_click(object sender, eventargs e)  //통신 연결끊기 버튼
-{
-    if (serialport1.isopen)  //시리얼포트가 열려 있으면
-    {
-        serialport1.close();  //시리얼포트 닫기
 
-        label_status.text = "포트가 닫혔습니다.";
-        combobox_port.enabled = true;  //com포트설정 콤보박스 활성화
-    }
-    else  //시리얼포트가 닫혀 있으면
-    {
-        label_status.text = "포트가 이미 닫혀 있습니다.";
-    }
-}*/
 
-//private void webBrowser1_DocumentCompleted(object sender, WebBrowserDocumentCompletedEventArgs e)
-//{
 
-//}
-// }
 
 
 
