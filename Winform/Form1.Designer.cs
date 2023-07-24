@@ -140,9 +140,9 @@
             this.label39 = new System.Windows.Forms.Label();
             this.label35 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.textBox26 = new System.Windows.Forms.TextBox();
-            this.textBox27 = new System.Windows.Forms.TextBox();
-            this.textBox28 = new System.Windows.Forms.TextBox();
+            this.textBox_UreaQuality = new System.Windows.Forms.TextBox();
+            this.textBox_TankTemp = new System.Windows.Forms.TextBox();
+            this.textBox_TankLevelP = new System.Windows.Forms.TextBox();
             this.label32 = new System.Windows.Forms.Label();
             this.label33 = new System.Windows.Forms.Label();
             this.label34 = new System.Windows.Forms.Label();
@@ -220,7 +220,6 @@
             this.metroLabel52 = new MetroFramework.Controls.MetroLabel();
             this.metroLabel53 = new MetroFramework.Controls.MetroLabel();
             this.metroLabel54 = new MetroFramework.Controls.MetroLabel();
-            this.textBox_UreaQuality = new MetroFramework.Controls.MetroTextBox();
             this.textBox_SCRMode = new MetroFramework.Controls.MetroTextBox();
             this.metroLabel35 = new MetroFramework.Controls.MetroLabel();
             this.metroLabel36 = new MetroFramework.Controls.MetroLabel();
@@ -228,8 +227,6 @@
             this.metroLabel38 = new MetroFramework.Controls.MetroLabel();
             this.textBox_Map_Y = new MetroFramework.Controls.MetroTextBox();
             this.textBox_Map_X = new MetroFramework.Controls.MetroTextBox();
-            this.textBox_TankLevelP = new MetroFramework.Controls.MetroTextBox();
-            this.textBox_TankTemp = new MetroFramework.Controls.MetroTextBox();
             this.metroLabel39 = new MetroFramework.Controls.MetroLabel();
             this.metroLabel40 = new MetroFramework.Controls.MetroLabel();
             this.metroLabel41 = new MetroFramework.Controls.MetroLabel();
@@ -1498,9 +1495,9 @@
             this.metroTabPage5.Controls.Add(this.label39);
             this.metroTabPage5.Controls.Add(this.label35);
             this.metroTabPage5.Controls.Add(this.panel1);
-            this.metroTabPage5.Controls.Add(this.textBox26);
-            this.metroTabPage5.Controls.Add(this.textBox27);
-            this.metroTabPage5.Controls.Add(this.textBox28);
+            this.metroTabPage5.Controls.Add(this.textBox_UreaQuality);
+            this.metroTabPage5.Controls.Add(this.textBox_TankTemp);
+            this.metroTabPage5.Controls.Add(this.textBox_TankLevelP);
             this.metroTabPage5.Controls.Add(this.label32);
             this.metroTabPage5.Controls.Add(this.label33);
             this.metroTabPage5.Controls.Add(this.label34);
@@ -2163,32 +2160,32 @@
             this.panel1.Size = new System.Drawing.Size(3, 534);
             this.panel1.TabIndex = 94;
             // 
-            // textBox26
+            // textBox_UreaQuality
             // 
-            this.textBox26.Font = new System.Drawing.Font("맑은 고딕", 17.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.textBox26.Location = new System.Drawing.Point(568, 620);
-            this.textBox26.Name = "textBox26";
-            this.textBox26.Size = new System.Drawing.Size(125, 38);
-            this.textBox26.TabIndex = 65;
-            this.textBox26.Text = "0";
+            this.textBox_UreaQuality.Font = new System.Drawing.Font("맑은 고딕", 17.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.textBox_UreaQuality.Location = new System.Drawing.Point(568, 620);
+            this.textBox_UreaQuality.Name = "textBox_UreaQuality";
+            this.textBox_UreaQuality.Size = new System.Drawing.Size(125, 38);
+            this.textBox_UreaQuality.TabIndex = 65;
+            this.textBox_UreaQuality.Text = "0";
             // 
-            // textBox27
+            // textBox_TankTemp
             // 
-            this.textBox27.Font = new System.Drawing.Font("맑은 고딕", 17.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.textBox27.Location = new System.Drawing.Point(568, 582);
-            this.textBox27.Name = "textBox27";
-            this.textBox27.Size = new System.Drawing.Size(125, 38);
-            this.textBox27.TabIndex = 64;
-            this.textBox27.Text = "0";
+            this.textBox_TankTemp.Font = new System.Drawing.Font("맑은 고딕", 17.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.textBox_TankTemp.Location = new System.Drawing.Point(568, 582);
+            this.textBox_TankTemp.Name = "textBox_TankTemp";
+            this.textBox_TankTemp.Size = new System.Drawing.Size(125, 38);
+            this.textBox_TankTemp.TabIndex = 64;
+            this.textBox_TankTemp.Text = "0";
             // 
-            // textBox28
+            // textBox_TankLevelP
             // 
-            this.textBox28.Font = new System.Drawing.Font("맑은 고딕", 17.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.textBox28.Location = new System.Drawing.Point(568, 544);
-            this.textBox28.Name = "textBox28";
-            this.textBox28.Size = new System.Drawing.Size(125, 38);
-            this.textBox28.TabIndex = 63;
-            this.textBox28.Text = "0";
+            this.textBox_TankLevelP.Font = new System.Drawing.Font("맑은 고딕", 17.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.textBox_TankLevelP.Location = new System.Drawing.Point(568, 544);
+            this.textBox_TankLevelP.Name = "textBox_TankLevelP";
+            this.textBox_TankLevelP.Size = new System.Drawing.Size(125, 38);
+            this.textBox_TankLevelP.TabIndex = 63;
+            this.textBox_TankLevelP.Text = "0";
             // 
             // label32
             // 
@@ -2831,7 +2828,6 @@
             this.metroTabPage2.Controls.Add(this.metroLabel52);
             this.metroTabPage2.Controls.Add(this.metroLabel53);
             this.metroTabPage2.Controls.Add(this.metroLabel54);
-            this.metroTabPage2.Controls.Add(this.textBox_UreaQuality);
             this.metroTabPage2.Controls.Add(this.textBox_SCRMode);
             this.metroTabPage2.Controls.Add(this.metroLabel35);
             this.metroTabPage2.Controls.Add(this.metroLabel36);
@@ -2839,8 +2835,6 @@
             this.metroTabPage2.Controls.Add(this.metroLabel38);
             this.metroTabPage2.Controls.Add(this.textBox_Map_Y);
             this.metroTabPage2.Controls.Add(this.textBox_Map_X);
-            this.metroTabPage2.Controls.Add(this.textBox_TankLevelP);
-            this.metroTabPage2.Controls.Add(this.textBox_TankTemp);
             this.metroTabPage2.Controls.Add(this.metroLabel39);
             this.metroTabPage2.Controls.Add(this.metroLabel40);
             this.metroTabPage2.Controls.Add(this.metroLabel41);
@@ -3240,37 +3234,6 @@
             this.metroLabel54.TabIndex = 66;
             this.metroLabel54.Text = "Sys Error";
             // 
-            // textBox_UreaQuality
-            // 
-            // 
-            // 
-            // 
-            this.textBox_UreaQuality.CustomButton.Image = null;
-            this.textBox_UreaQuality.CustomButton.Location = new System.Drawing.Point(92, 2);
-            this.textBox_UreaQuality.CustomButton.Name = "";
-            this.textBox_UreaQuality.CustomButton.Size = new System.Drawing.Size(35, 35);
-            this.textBox_UreaQuality.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
-            this.textBox_UreaQuality.CustomButton.TabIndex = 1;
-            this.textBox_UreaQuality.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.textBox_UreaQuality.CustomButton.UseSelectable = true;
-            this.textBox_UreaQuality.CustomButton.Visible = false;
-            this.textBox_UreaQuality.FontSize = MetroFramework.MetroTextBoxSize.Tall;
-            this.textBox_UreaQuality.Lines = new string[0];
-            this.textBox_UreaQuality.Location = new System.Drawing.Point(344, 405);
-            this.textBox_UreaQuality.MaxLength = 32767;
-            this.textBox_UreaQuality.Name = "textBox_UreaQuality";
-            this.textBox_UreaQuality.PasswordChar = '\0';
-            this.textBox_UreaQuality.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.textBox_UreaQuality.SelectedText = "";
-            this.textBox_UreaQuality.SelectionLength = 0;
-            this.textBox_UreaQuality.SelectionStart = 0;
-            this.textBox_UreaQuality.ShortcutsEnabled = true;
-            this.textBox_UreaQuality.Size = new System.Drawing.Size(130, 40);
-            this.textBox_UreaQuality.TabIndex = 64;
-            this.textBox_UreaQuality.UseSelectable = true;
-            this.textBox_UreaQuality.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            this.textBox_UreaQuality.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
-            // 
             // textBox_SCRMode
             // 
             // 
@@ -3411,68 +3374,6 @@
             this.textBox_Map_X.UseSelectable = true;
             this.textBox_Map_X.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
             this.textBox_Map_X.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
-            // 
-            // textBox_TankLevelP
-            // 
-            // 
-            // 
-            // 
-            this.textBox_TankLevelP.CustomButton.Image = null;
-            this.textBox_TankLevelP.CustomButton.Location = new System.Drawing.Point(92, 2);
-            this.textBox_TankLevelP.CustomButton.Name = "";
-            this.textBox_TankLevelP.CustomButton.Size = new System.Drawing.Size(35, 35);
-            this.textBox_TankLevelP.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
-            this.textBox_TankLevelP.CustomButton.TabIndex = 1;
-            this.textBox_TankLevelP.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.textBox_TankLevelP.CustomButton.UseSelectable = true;
-            this.textBox_TankLevelP.CustomButton.Visible = false;
-            this.textBox_TankLevelP.FontSize = MetroFramework.MetroTextBoxSize.Tall;
-            this.textBox_TankLevelP.Lines = new string[0];
-            this.textBox_TankLevelP.Location = new System.Drawing.Point(344, 122);
-            this.textBox_TankLevelP.MaxLength = 32767;
-            this.textBox_TankLevelP.Name = "textBox_TankLevelP";
-            this.textBox_TankLevelP.PasswordChar = '\0';
-            this.textBox_TankLevelP.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.textBox_TankLevelP.SelectedText = "";
-            this.textBox_TankLevelP.SelectionLength = 0;
-            this.textBox_TankLevelP.SelectionStart = 0;
-            this.textBox_TankLevelP.ShortcutsEnabled = true;
-            this.textBox_TankLevelP.Size = new System.Drawing.Size(130, 40);
-            this.textBox_TankLevelP.TabIndex = 54;
-            this.textBox_TankLevelP.UseSelectable = true;
-            this.textBox_TankLevelP.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            this.textBox_TankLevelP.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
-            // 
-            // textBox_TankTemp
-            // 
-            // 
-            // 
-            // 
-            this.textBox_TankTemp.CustomButton.Image = null;
-            this.textBox_TankTemp.CustomButton.Location = new System.Drawing.Point(92, 2);
-            this.textBox_TankTemp.CustomButton.Name = "";
-            this.textBox_TankTemp.CustomButton.Size = new System.Drawing.Size(35, 35);
-            this.textBox_TankTemp.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
-            this.textBox_TankTemp.CustomButton.TabIndex = 1;
-            this.textBox_TankTemp.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.textBox_TankTemp.CustomButton.UseSelectable = true;
-            this.textBox_TankTemp.CustomButton.Visible = false;
-            this.textBox_TankTemp.FontSize = MetroFramework.MetroTextBoxSize.Tall;
-            this.textBox_TankTemp.Lines = new string[0];
-            this.textBox_TankTemp.Location = new System.Drawing.Point(344, 71);
-            this.textBox_TankTemp.MaxLength = 32767;
-            this.textBox_TankTemp.Name = "textBox_TankTemp";
-            this.textBox_TankTemp.PasswordChar = '\0';
-            this.textBox_TankTemp.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.textBox_TankTemp.SelectedText = "";
-            this.textBox_TankTemp.SelectionLength = 0;
-            this.textBox_TankTemp.SelectionStart = 0;
-            this.textBox_TankTemp.ShortcutsEnabled = true;
-            this.textBox_TankTemp.Size = new System.Drawing.Size(130, 40);
-            this.textBox_TankTemp.TabIndex = 53;
-            this.textBox_TankTemp.UseSelectable = true;
-            this.textBox_TankTemp.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            this.textBox_TankTemp.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
             // 
             // metroLabel39
             // 
@@ -3940,6 +3841,7 @@
             this.metroButton3.TabIndex = 147;
             this.metroButton3.Text = "Setting";
             this.metroButton3.UseSelectable = true;
+            this.metroButton3.Click += new System.EventHandler(this.metroButton3_Click);
             // 
             // Form1
             // 
@@ -4058,7 +3960,6 @@
         private MetroFramework.Controls.MetroLabel metroLabel52;
         private MetroFramework.Controls.MetroLabel metroLabel53;
         private MetroFramework.Controls.MetroLabel metroLabel54;
-        private MetroFramework.Controls.MetroTextBox textBox_UreaQuality;
         private MetroFramework.Controls.MetroTextBox textBox_SCRMode;
         private MetroFramework.Controls.MetroLabel metroLabel35;
         private MetroFramework.Controls.MetroLabel metroLabel36;
@@ -4066,8 +3967,6 @@
         private MetroFramework.Controls.MetroLabel metroLabel38;
         private MetroFramework.Controls.MetroTextBox textBox_Map_Y;
         private MetroFramework.Controls.MetroTextBox textBox_Map_X;
-        private MetroFramework.Controls.MetroTextBox textBox_TankLevelP;
-        private MetroFramework.Controls.MetroTextBox textBox_TankTemp;
         private MetroFramework.Controls.MetroLabel metroLabel39;
         private MetroFramework.Controls.MetroLabel metroLabel40;
         private MetroFramework.Controls.MetroLabel metroLabel41;
@@ -4149,9 +4048,9 @@
         private System.Windows.Forms.Label label26;
         private System.Windows.Forms.Label label20;
         private System.Windows.Forms.Label label19;
-        private System.Windows.Forms.TextBox textBox26;
-        private System.Windows.Forms.TextBox textBox27;
-        private System.Windows.Forms.TextBox textBox28;
+        private System.Windows.Forms.TextBox textBox_UreaQuality;
+        private System.Windows.Forms.TextBox textBox_TankTemp;
+        private System.Windows.Forms.TextBox textBox_TankLevelP;
         private System.Windows.Forms.Label label32;
         private System.Windows.Forms.Label label33;
         private System.Windows.Forms.Label label34;

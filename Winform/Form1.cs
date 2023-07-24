@@ -164,6 +164,7 @@ namespace Serial_Communication
                 label_status.Text = "포트가 이미 열려 있습니다.";
             }
         }
+
         private void button_disconnect_click(object sender, EventArgs e)  //통신 연결끊기 버튼
         {
             if (serialPort1.IsOpen)  //시리얼포트가 열려 있으면
@@ -435,7 +436,7 @@ namespace Serial_Communication
             textBox_T1_temp.Text = ScrValue.T1_temp.ToString();
             textBox_T2_temp.Text = ScrValue.T2_temp.ToString();
             textBox_Tavg_temp.Text = ScrValue.Tavg_temp.ToString();
-            textBox_11111.Text = ScrValue.T3_temp.ToString();
+            textBox_T3_temp.Text = ScrValue.T3_temp.ToString();
             textBox_P1_bar.Text = ScrValue.P1_bar.ToString();
             textBox_Noxppm1.Text = ScrValue.Noxppm1.ToString();
             textBox_Noxppm2.Text = ScrValue.Noxppm2.ToString();
@@ -459,9 +460,25 @@ namespace Serial_Communication
             textBox_Map_Y.Text = ScrValue.Map_Y.ToString();
             textBox_StatusAlpha.Text = ScrValue.StatusAlpha.ToString();
             textBox_SCRMode.Text = ScrValue.SCRMode.ToString();
-            textBox_UreaQuality.Text = ScrValue.UreaQuality.ToString();
+            textBox_UreaQuality.Text = (ScrValue.UreaQuality/10.0).ToString();
             textBox_NoxReduction.Text = ScrValue.NoxReduction.ToString();
             textBox_SystemError.Text = ScrValue.SystemError.ToString();
+
+            for (int i = 0; i < 8; i++)
+            {
+                ltmp = pScrValue->SystemError.B;
+                if ((ltmp >> i) & 0x01) RLED[0][i]->Color = clRed;
+                else RLED[0][i]->Color = clBtnFace;
+                ltmp = pScrValue->SystemCheck.W & 0xff;
+                if ((ltmp >> i) & 0x01) RLED[2][i]->Color = clFuchsia;
+                else RLED[2][i]->Color = clBtnFace;
+                ltmp = pScrValue->SystemSignal.W & 0xff;
+                if ((ltmp >> i) & 0x01) RLED[4][i]->Color = clBlue;
+                else RLED[4][i]->Color = clBtnFace;
+                htmp = (pScrValue->SystemSignal.W >> 8) & 0xff;
+                if ((htmp >> i) & 0x01) RLED[5][i]->Color = clBlue;
+                else RLED[5][i]->Color = clBtnFace;
+            }
         }
 
     }
