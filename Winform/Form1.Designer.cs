@@ -88,18 +88,18 @@
             this.T2 = new MetroFramework.Controls.MetroLabel();
             this.T1 = new MetroFramework.Controls.MetroLabel();
             this.metroTabPage5 = new MetroFramework.Controls.MetroTabPage();
-            this.label62 = new System.Windows.Forms.Label();
-            this.label63 = new System.Windows.Forms.Label();
-            this.label64 = new System.Windows.Forms.Label();
-            this.label65 = new System.Windows.Forms.Label();
-            this.label66 = new System.Windows.Forms.Label();
+            this.label_Signal_Noxact = new System.Windows.Forms.Label();
+            this.label_Signal_Dosing = new System.Windows.Forms.Label();
+            this.label_Signal_Flushing = new System.Windows.Forms.Label();
+            this.label_Signal_Operation = new System.Windows.Forms.Label();
+            this.label_Signal_Noxout = new System.Windows.Forms.Label();
             this.label67 = new System.Windows.Forms.Label();
             this.label68 = new System.Windows.Forms.Label();
-            this.label69 = new System.Windows.Forms.Label();
-            this.label70 = new System.Windows.Forms.Label();
-            this.label71 = new System.Windows.Forms.Label();
-            this.label72 = new System.Windows.Forms.Label();
-            this.label73 = new System.Windows.Forms.Label();
+            this.label_Check_Noxout = new System.Windows.Forms.Label();
+            this.label_UQuality = new System.Windows.Forms.Label();
+            this.label_MAF = new System.Windows.Forms.Label();
+            this.label_Noxout = new System.Windows.Forms.Label();
+            this.label_Supply = new System.Windows.Forms.Label();
             this.label74 = new System.Windows.Forms.Label();
             this.label75 = new System.Windows.Forms.Label();
             this.label76 = new System.Windows.Forms.Label();
@@ -112,18 +112,18 @@
             this.label83 = new System.Windows.Forms.Label();
             this.label84 = new System.Windows.Forms.Label();
             this.label85 = new System.Windows.Forms.Label();
-            this.label61 = new System.Windows.Forms.Label();
-            this.label60 = new System.Windows.Forms.Label();
-            this.label59 = new System.Windows.Forms.Label();
-            this.label58 = new System.Windows.Forms.Label();
-            this.label57 = new System.Windows.Forms.Label();
+            this.label_Signal_Supply = new System.Windows.Forms.Label();
+            this.label_Signal_Motor = new System.Windows.Forms.Label();
+            this.label_Signal_Purge = new System.Windows.Forms.Label();
+            this.label_Signal_KeyOn = new System.Windows.Forms.Label();
+            this.label_Signal_Noxin = new System.Windows.Forms.Label();
             this.label56 = new System.Windows.Forms.Label();
             this.label55 = new System.Windows.Forms.Label();
-            this.label54 = new System.Windows.Forms.Label();
-            this.label53 = new System.Windows.Forms.Label();
-            this.label52 = new System.Windows.Forms.Label();
-            this.label51 = new System.Windows.Forms.Label();
-            this.label50 = new System.Windows.Forms.Label();
+            this.label_Check_Noxin = new System.Windows.Forms.Label();
+            this.label_UTemp = new System.Windows.Forms.Label();
+            this.label_ULevel = new System.Windows.Forms.Label();
+            this.label_Noxin = new System.Windows.Forms.Label();
+            this.label_T1 = new System.Windows.Forms.Label();
             this.label49 = new System.Windows.Forms.Label();
             this.label40 = new System.Windows.Forms.Label();
             this.label45 = new System.Windows.Forms.Label();
@@ -1443,18 +1443,18 @@
             // 
             // metroTabPage5
             // 
-            this.metroTabPage5.Controls.Add(this.label62);
-            this.metroTabPage5.Controls.Add(this.label63);
-            this.metroTabPage5.Controls.Add(this.label64);
-            this.metroTabPage5.Controls.Add(this.label65);
-            this.metroTabPage5.Controls.Add(this.label66);
+            this.metroTabPage5.Controls.Add(this.label_Signal_Noxact);
+            this.metroTabPage5.Controls.Add(this.label_Signal_Dosing);
+            this.metroTabPage5.Controls.Add(this.label_Signal_Flushing);
+            this.metroTabPage5.Controls.Add(this.label_Signal_Operation);
+            this.metroTabPage5.Controls.Add(this.label_Signal_Noxout);
             this.metroTabPage5.Controls.Add(this.label67);
             this.metroTabPage5.Controls.Add(this.label68);
-            this.metroTabPage5.Controls.Add(this.label69);
-            this.metroTabPage5.Controls.Add(this.label70);
-            this.metroTabPage5.Controls.Add(this.label71);
-            this.metroTabPage5.Controls.Add(this.label72);
-            this.metroTabPage5.Controls.Add(this.label73);
+            this.metroTabPage5.Controls.Add(this.label_Check_Noxout);
+            this.metroTabPage5.Controls.Add(this.label_UQuality);
+            this.metroTabPage5.Controls.Add(this.label_MAF);
+            this.metroTabPage5.Controls.Add(this.label_Noxout);
+            this.metroTabPage5.Controls.Add(this.label_Supply);
             this.metroTabPage5.Controls.Add(this.label74);
             this.metroTabPage5.Controls.Add(this.label75);
             this.metroTabPage5.Controls.Add(this.label76);
@@ -1467,18 +1467,18 @@
             this.metroTabPage5.Controls.Add(this.label83);
             this.metroTabPage5.Controls.Add(this.label84);
             this.metroTabPage5.Controls.Add(this.label85);
-            this.metroTabPage5.Controls.Add(this.label61);
-            this.metroTabPage5.Controls.Add(this.label60);
-            this.metroTabPage5.Controls.Add(this.label59);
-            this.metroTabPage5.Controls.Add(this.label58);
-            this.metroTabPage5.Controls.Add(this.label57);
+            this.metroTabPage5.Controls.Add(this.label_Signal_Supply);
+            this.metroTabPage5.Controls.Add(this.label_Signal_Motor);
+            this.metroTabPage5.Controls.Add(this.label_Signal_Purge);
+            this.metroTabPage5.Controls.Add(this.label_Signal_KeyOn);
+            this.metroTabPage5.Controls.Add(this.label_Signal_Noxin);
             this.metroTabPage5.Controls.Add(this.label56);
             this.metroTabPage5.Controls.Add(this.label55);
-            this.metroTabPage5.Controls.Add(this.label54);
-            this.metroTabPage5.Controls.Add(this.label53);
-            this.metroTabPage5.Controls.Add(this.label52);
-            this.metroTabPage5.Controls.Add(this.label51);
-            this.metroTabPage5.Controls.Add(this.label50);
+            this.metroTabPage5.Controls.Add(this.label_Check_Noxin);
+            this.metroTabPage5.Controls.Add(this.label_UTemp);
+            this.metroTabPage5.Controls.Add(this.label_ULevel);
+            this.metroTabPage5.Controls.Add(this.label_Noxin);
+            this.metroTabPage5.Controls.Add(this.label_T1);
             this.metroTabPage5.Controls.Add(this.label49);
             this.metroTabPage5.Controls.Add(this.label40);
             this.metroTabPage5.Controls.Add(this.label45);
@@ -1568,60 +1568,60 @@
             this.metroTabPage5.VerticalScrollbarHighlightOnWheel = false;
             this.metroTabPage5.VerticalScrollbarSize = 10;
             // 
-            // label62
+            // label_Signal_Noxact
             // 
-            this.label62.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label62.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label62.Font = new System.Drawing.Font("맑은 고딕", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label62.Location = new System.Drawing.Point(1078, 552);
-            this.label62.Name = "label62";
-            this.label62.Size = new System.Drawing.Size(36, 38);
-            this.label62.TabIndex = 145;
-            this.label62.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label_Signal_Noxact.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label_Signal_Noxact.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label_Signal_Noxact.Font = new System.Drawing.Font("맑은 고딕", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label_Signal_Noxact.Location = new System.Drawing.Point(1078, 552);
+            this.label_Signal_Noxact.Name = "label_Signal_Noxact";
+            this.label_Signal_Noxact.Size = new System.Drawing.Size(36, 38);
+            this.label_Signal_Noxact.TabIndex = 145;
+            this.label_Signal_Noxact.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label63
+            // label_Signal_Dosing
             // 
-            this.label63.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label63.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label63.Font = new System.Drawing.Font("맑은 고딕", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label63.Location = new System.Drawing.Point(1078, 514);
-            this.label63.Name = "label63";
-            this.label63.Size = new System.Drawing.Size(36, 38);
-            this.label63.TabIndex = 144;
-            this.label63.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label_Signal_Dosing.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label_Signal_Dosing.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label_Signal_Dosing.Font = new System.Drawing.Font("맑은 고딕", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label_Signal_Dosing.Location = new System.Drawing.Point(1078, 514);
+            this.label_Signal_Dosing.Name = "label_Signal_Dosing";
+            this.label_Signal_Dosing.Size = new System.Drawing.Size(36, 38);
+            this.label_Signal_Dosing.TabIndex = 144;
+            this.label_Signal_Dosing.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label64
+            // label_Signal_Flushing
             // 
-            this.label64.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label64.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label64.Font = new System.Drawing.Font("맑은 고딕", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label64.Location = new System.Drawing.Point(1078, 476);
-            this.label64.Name = "label64";
-            this.label64.Size = new System.Drawing.Size(36, 38);
-            this.label64.TabIndex = 143;
-            this.label64.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label_Signal_Flushing.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label_Signal_Flushing.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label_Signal_Flushing.Font = new System.Drawing.Font("맑은 고딕", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label_Signal_Flushing.Location = new System.Drawing.Point(1078, 476);
+            this.label_Signal_Flushing.Name = "label_Signal_Flushing";
+            this.label_Signal_Flushing.Size = new System.Drawing.Size(36, 38);
+            this.label_Signal_Flushing.TabIndex = 143;
+            this.label_Signal_Flushing.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label65
+            // label_Signal_Operation
             // 
-            this.label65.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label65.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label65.Font = new System.Drawing.Font("맑은 고딕", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label65.Location = new System.Drawing.Point(1078, 438);
-            this.label65.Name = "label65";
-            this.label65.Size = new System.Drawing.Size(36, 38);
-            this.label65.TabIndex = 142;
-            this.label65.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label_Signal_Operation.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label_Signal_Operation.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label_Signal_Operation.Font = new System.Drawing.Font("맑은 고딕", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label_Signal_Operation.Location = new System.Drawing.Point(1078, 438);
+            this.label_Signal_Operation.Name = "label_Signal_Operation";
+            this.label_Signal_Operation.Size = new System.Drawing.Size(36, 38);
+            this.label_Signal_Operation.TabIndex = 142;
+            this.label_Signal_Operation.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label66
+            // label_Signal_Noxout
             // 
-            this.label66.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label66.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label66.Font = new System.Drawing.Font("맑은 고딕", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label66.Location = new System.Drawing.Point(1078, 400);
-            this.label66.Name = "label66";
-            this.label66.Size = new System.Drawing.Size(36, 38);
-            this.label66.TabIndex = 141;
-            this.label66.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label_Signal_Noxout.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label_Signal_Noxout.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label_Signal_Noxout.Font = new System.Drawing.Font("맑은 고딕", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label_Signal_Noxout.Location = new System.Drawing.Point(1078, 400);
+            this.label_Signal_Noxout.Name = "label_Signal_Noxout";
+            this.label_Signal_Noxout.Size = new System.Drawing.Size(36, 38);
+            this.label_Signal_Noxout.TabIndex = 141;
+            this.label_Signal_Noxout.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label67
             // 
@@ -1645,60 +1645,60 @@
             this.label68.TabIndex = 139;
             this.label68.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label69
+            // label_Check_Noxout
             // 
-            this.label69.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label69.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label69.Font = new System.Drawing.Font("맑은 고딕", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label69.Location = new System.Drawing.Point(1078, 280);
-            this.label69.Name = "label69";
-            this.label69.Size = new System.Drawing.Size(36, 38);
-            this.label69.TabIndex = 138;
-            this.label69.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label_Check_Noxout.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label_Check_Noxout.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label_Check_Noxout.Font = new System.Drawing.Font("맑은 고딕", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label_Check_Noxout.Location = new System.Drawing.Point(1078, 280);
+            this.label_Check_Noxout.Name = "label_Check_Noxout";
+            this.label_Check_Noxout.Size = new System.Drawing.Size(36, 38);
+            this.label_Check_Noxout.TabIndex = 138;
+            this.label_Check_Noxout.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label70
+            // label_UQuality
             // 
-            this.label70.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label70.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label70.Font = new System.Drawing.Font("맑은 고딕", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label70.Location = new System.Drawing.Point(1078, 236);
-            this.label70.Name = "label70";
-            this.label70.Size = new System.Drawing.Size(36, 38);
-            this.label70.TabIndex = 137;
-            this.label70.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label_UQuality.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label_UQuality.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label_UQuality.Font = new System.Drawing.Font("맑은 고딕", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label_UQuality.Location = new System.Drawing.Point(1078, 236);
+            this.label_UQuality.Name = "label_UQuality";
+            this.label_UQuality.Size = new System.Drawing.Size(36, 38);
+            this.label_UQuality.TabIndex = 137;
+            this.label_UQuality.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label71
+            // label_MAF
             // 
-            this.label71.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label71.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label71.Font = new System.Drawing.Font("맑은 고딕", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label71.Location = new System.Drawing.Point(1078, 198);
-            this.label71.Name = "label71";
-            this.label71.Size = new System.Drawing.Size(36, 38);
-            this.label71.TabIndex = 136;
-            this.label71.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label_MAF.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label_MAF.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label_MAF.Font = new System.Drawing.Font("맑은 고딕", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label_MAF.Location = new System.Drawing.Point(1078, 198);
+            this.label_MAF.Name = "label_MAF";
+            this.label_MAF.Size = new System.Drawing.Size(36, 38);
+            this.label_MAF.TabIndex = 136;
+            this.label_MAF.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label72
+            // label_Noxout
             // 
-            this.label72.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label72.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label72.Font = new System.Drawing.Font("맑은 고딕", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label72.Location = new System.Drawing.Point(1078, 160);
-            this.label72.Name = "label72";
-            this.label72.Size = new System.Drawing.Size(36, 38);
-            this.label72.TabIndex = 135;
-            this.label72.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label_Noxout.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label_Noxout.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label_Noxout.Font = new System.Drawing.Font("맑은 고딕", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label_Noxout.Location = new System.Drawing.Point(1078, 160);
+            this.label_Noxout.Name = "label_Noxout";
+            this.label_Noxout.Size = new System.Drawing.Size(36, 38);
+            this.label_Noxout.TabIndex = 135;
+            this.label_Noxout.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label73
+            // label_Supply
             // 
-            this.label73.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label73.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label73.Font = new System.Drawing.Font("맑은 고딕", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label73.Location = new System.Drawing.Point(1078, 122);
-            this.label73.Name = "label73";
-            this.label73.Size = new System.Drawing.Size(36, 38);
-            this.label73.TabIndex = 134;
-            this.label73.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label_Supply.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label_Supply.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label_Supply.Font = new System.Drawing.Font("맑은 고딕", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label_Supply.Location = new System.Drawing.Point(1078, 122);
+            this.label_Supply.Name = "label_Supply";
+            this.label_Supply.Size = new System.Drawing.Size(36, 38);
+            this.label_Supply.TabIndex = 134;
+            this.label_Supply.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label74
             // 
@@ -1842,60 +1842,60 @@
             this.label85.Text = "Supply P";
             this.label85.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label61
+            // label_Signal_Supply
             // 
-            this.label61.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label61.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label61.Font = new System.Drawing.Font("맑은 고딕", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label61.Location = new System.Drawing.Point(926, 552);
-            this.label61.Name = "label61";
-            this.label61.Size = new System.Drawing.Size(36, 38);
-            this.label61.TabIndex = 121;
-            this.label61.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label_Signal_Supply.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label_Signal_Supply.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label_Signal_Supply.Font = new System.Drawing.Font("맑은 고딕", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label_Signal_Supply.Location = new System.Drawing.Point(926, 552);
+            this.label_Signal_Supply.Name = "label_Signal_Supply";
+            this.label_Signal_Supply.Size = new System.Drawing.Size(36, 38);
+            this.label_Signal_Supply.TabIndex = 121;
+            this.label_Signal_Supply.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label60
+            // label_Signal_Motor
             // 
-            this.label60.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label60.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label60.Font = new System.Drawing.Font("맑은 고딕", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label60.Location = new System.Drawing.Point(926, 514);
-            this.label60.Name = "label60";
-            this.label60.Size = new System.Drawing.Size(36, 38);
-            this.label60.TabIndex = 120;
-            this.label60.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label_Signal_Motor.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label_Signal_Motor.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label_Signal_Motor.Font = new System.Drawing.Font("맑은 고딕", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label_Signal_Motor.Location = new System.Drawing.Point(926, 514);
+            this.label_Signal_Motor.Name = "label_Signal_Motor";
+            this.label_Signal_Motor.Size = new System.Drawing.Size(36, 38);
+            this.label_Signal_Motor.TabIndex = 120;
+            this.label_Signal_Motor.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label59
+            // label_Signal_Purge
             // 
-            this.label59.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label59.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label59.Font = new System.Drawing.Font("맑은 고딕", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label59.Location = new System.Drawing.Point(926, 476);
-            this.label59.Name = "label59";
-            this.label59.Size = new System.Drawing.Size(36, 38);
-            this.label59.TabIndex = 119;
-            this.label59.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label_Signal_Purge.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label_Signal_Purge.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label_Signal_Purge.Font = new System.Drawing.Font("맑은 고딕", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label_Signal_Purge.Location = new System.Drawing.Point(926, 476);
+            this.label_Signal_Purge.Name = "label_Signal_Purge";
+            this.label_Signal_Purge.Size = new System.Drawing.Size(36, 38);
+            this.label_Signal_Purge.TabIndex = 119;
+            this.label_Signal_Purge.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label58
+            // label_Signal_KeyOn
             // 
-            this.label58.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label58.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label58.Font = new System.Drawing.Font("맑은 고딕", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label58.Location = new System.Drawing.Point(926, 438);
-            this.label58.Name = "label58";
-            this.label58.Size = new System.Drawing.Size(36, 38);
-            this.label58.TabIndex = 118;
-            this.label58.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label_Signal_KeyOn.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label_Signal_KeyOn.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label_Signal_KeyOn.Font = new System.Drawing.Font("맑은 고딕", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label_Signal_KeyOn.Location = new System.Drawing.Point(926, 438);
+            this.label_Signal_KeyOn.Name = "label_Signal_KeyOn";
+            this.label_Signal_KeyOn.Size = new System.Drawing.Size(36, 38);
+            this.label_Signal_KeyOn.TabIndex = 118;
+            this.label_Signal_KeyOn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label57
+            // label_Signal_Noxin
             // 
-            this.label57.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label57.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label57.Font = new System.Drawing.Font("맑은 고딕", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label57.Location = new System.Drawing.Point(926, 400);
-            this.label57.Name = "label57";
-            this.label57.Size = new System.Drawing.Size(36, 38);
-            this.label57.TabIndex = 117;
-            this.label57.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label_Signal_Noxin.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label_Signal_Noxin.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label_Signal_Noxin.Font = new System.Drawing.Font("맑은 고딕", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label_Signal_Noxin.Location = new System.Drawing.Point(926, 400);
+            this.label_Signal_Noxin.Name = "label_Signal_Noxin";
+            this.label_Signal_Noxin.Size = new System.Drawing.Size(36, 38);
+            this.label_Signal_Noxin.TabIndex = 117;
+            this.label_Signal_Noxin.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label56
             // 
@@ -1919,60 +1919,60 @@
             this.label55.TabIndex = 115;
             this.label55.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label54
+            // label_Check_Noxin
             // 
-            this.label54.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label54.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label54.Font = new System.Drawing.Font("맑은 고딕", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label54.Location = new System.Drawing.Point(926, 280);
-            this.label54.Name = "label54";
-            this.label54.Size = new System.Drawing.Size(36, 38);
-            this.label54.TabIndex = 114;
-            this.label54.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label_Check_Noxin.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label_Check_Noxin.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label_Check_Noxin.Font = new System.Drawing.Font("맑은 고딕", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label_Check_Noxin.Location = new System.Drawing.Point(926, 280);
+            this.label_Check_Noxin.Name = "label_Check_Noxin";
+            this.label_Check_Noxin.Size = new System.Drawing.Size(36, 38);
+            this.label_Check_Noxin.TabIndex = 114;
+            this.label_Check_Noxin.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label53
+            // label_UTemp
             // 
-            this.label53.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label53.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label53.Font = new System.Drawing.Font("맑은 고딕", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label53.Location = new System.Drawing.Point(926, 236);
-            this.label53.Name = "label53";
-            this.label53.Size = new System.Drawing.Size(36, 38);
-            this.label53.TabIndex = 113;
-            this.label53.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label_UTemp.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label_UTemp.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label_UTemp.Font = new System.Drawing.Font("맑은 고딕", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label_UTemp.Location = new System.Drawing.Point(926, 236);
+            this.label_UTemp.Name = "label_UTemp";
+            this.label_UTemp.Size = new System.Drawing.Size(36, 38);
+            this.label_UTemp.TabIndex = 113;
+            this.label_UTemp.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label52
+            // label_ULevel
             // 
-            this.label52.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label52.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label52.Font = new System.Drawing.Font("맑은 고딕", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label52.Location = new System.Drawing.Point(926, 198);
-            this.label52.Name = "label52";
-            this.label52.Size = new System.Drawing.Size(36, 38);
-            this.label52.TabIndex = 112;
-            this.label52.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label_ULevel.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label_ULevel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label_ULevel.Font = new System.Drawing.Font("맑은 고딕", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label_ULevel.Location = new System.Drawing.Point(926, 198);
+            this.label_ULevel.Name = "label_ULevel";
+            this.label_ULevel.Size = new System.Drawing.Size(36, 38);
+            this.label_ULevel.TabIndex = 112;
+            this.label_ULevel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label51
+            // label_Noxin
             // 
-            this.label51.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label51.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label51.Font = new System.Drawing.Font("맑은 고딕", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label51.Location = new System.Drawing.Point(926, 160);
-            this.label51.Name = "label51";
-            this.label51.Size = new System.Drawing.Size(36, 38);
-            this.label51.TabIndex = 111;
-            this.label51.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label_Noxin.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label_Noxin.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label_Noxin.Font = new System.Drawing.Font("맑은 고딕", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label_Noxin.Location = new System.Drawing.Point(926, 160);
+            this.label_Noxin.Name = "label_Noxin";
+            this.label_Noxin.Size = new System.Drawing.Size(36, 38);
+            this.label_Noxin.TabIndex = 111;
+            this.label_Noxin.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label50
+            // label_T1
             // 
-            this.label50.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label50.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label50.Font = new System.Drawing.Font("맑은 고딕", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label50.Location = new System.Drawing.Point(926, 122);
-            this.label50.Name = "label50";
-            this.label50.Size = new System.Drawing.Size(36, 38);
-            this.label50.TabIndex = 110;
-            this.label50.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label_T1.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label_T1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label_T1.Font = new System.Drawing.Font("맑은 고딕", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label_T1.Location = new System.Drawing.Point(926, 122);
+            this.label_T1.Name = "label_T1";
+            this.label_T1.Size = new System.Drawing.Size(36, 38);
+            this.label_T1.TabIndex = 110;
+            this.label_T1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label49
             // 
@@ -1983,7 +1983,7 @@
             this.label49.Name = "label49";
             this.label49.Size = new System.Drawing.Size(100, 38);
             this.label49.TabIndex = 109;
-            this.label49.Text = "Urea Temp";
+            this.label49.Text = "Supply";
             this.label49.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label40
@@ -1995,7 +1995,7 @@
             this.label40.Name = "label40";
             this.label40.Size = new System.Drawing.Size(100, 38);
             this.label40.TabIndex = 108;
-            this.label40.Text = "MOtor";
+            this.label40.Text = "Motor";
             this.label40.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label45
@@ -2043,7 +2043,7 @@
             this.label48.Name = "label48";
             this.label48.Size = new System.Drawing.Size(97, 190);
             this.label48.TabIndex = 104;
-            this.label48.Text = "Error";
+            this.label48.Text = "Signal";
             this.label48.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label41
@@ -4070,18 +4070,18 @@
         private System.Windows.Forms.Label label43;
         private System.Windows.Forms.Label label44;
         private System.Windows.Forms.Label label49;
-        private System.Windows.Forms.Label label62;
-        private System.Windows.Forms.Label label63;
-        private System.Windows.Forms.Label label64;
-        private System.Windows.Forms.Label label65;
-        private System.Windows.Forms.Label label66;
+        private System.Windows.Forms.Label label_Signal_Noxact;
+        private System.Windows.Forms.Label label_Signal_Dosing;
+        private System.Windows.Forms.Label label_Signal_Flushing;
+        private System.Windows.Forms.Label label_Signal_Operation;
+        private System.Windows.Forms.Label label_Signal_Noxout;
         private System.Windows.Forms.Label label67;
         private System.Windows.Forms.Label label68;
-        private System.Windows.Forms.Label label69;
-        private System.Windows.Forms.Label label70;
-        private System.Windows.Forms.Label label71;
-        private System.Windows.Forms.Label label72;
-        private System.Windows.Forms.Label label73;
+        private System.Windows.Forms.Label label_Check_Noxout;
+        private System.Windows.Forms.Label label_UQuality;
+        private System.Windows.Forms.Label label_MAF;
+        private System.Windows.Forms.Label label_Noxout;
+        private System.Windows.Forms.Label label_Supply;
         private System.Windows.Forms.Label label74;
         private System.Windows.Forms.Label label75;
         private System.Windows.Forms.Label label76;
@@ -4094,18 +4094,18 @@
         private System.Windows.Forms.Label label83;
         private System.Windows.Forms.Label label84;
         private System.Windows.Forms.Label label85;
-        private System.Windows.Forms.Label label61;
-        private System.Windows.Forms.Label label60;
-        private System.Windows.Forms.Label label59;
-        private System.Windows.Forms.Label label58;
-        private System.Windows.Forms.Label label57;
+        private System.Windows.Forms.Label label_Signal_Supply;
+        private System.Windows.Forms.Label label_Signal_Motor;
+        private System.Windows.Forms.Label label_Signal_Purge;
+        private System.Windows.Forms.Label label_Signal_KeyOn;
+        private System.Windows.Forms.Label label_Signal_Noxin;
         private System.Windows.Forms.Label label56;
         private System.Windows.Forms.Label label55;
-        private System.Windows.Forms.Label label54;
-        private System.Windows.Forms.Label label53;
-        private System.Windows.Forms.Label label52;
-        private System.Windows.Forms.Label label51;
-        private System.Windows.Forms.Label label50;
+        private System.Windows.Forms.Label label_Check_Noxin;
+        private System.Windows.Forms.Label label_UTemp;
+        private System.Windows.Forms.Label label_ULevel;
+        private System.Windows.Forms.Label label_Noxin;
+        private System.Windows.Forms.Label label_T1;
         private MetroFramework.Controls.MetroButton metroButton3;
     }
 }

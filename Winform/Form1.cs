@@ -28,7 +28,6 @@ namespace Serial_Communication
         short[] PVal = new short[2];
         int m_ucRxLength;
         double NOxRealReduce;
-
         private READ_VALUE ReadValue = new READ_VALUE();
         [StructLayout(LayoutKind.Sequential, Pack = 1)]
         public struct READ_VALUE
@@ -319,7 +318,7 @@ namespace Serial_Communication
             switch (m_ucRxCommand)
             {
                 case 0x48:
-                   // READ_VALUE ReadValue = new READ_VALUE();
+                    // READ_VALUE ReadValue = new READ_VALUE();
                     // 바이트 배열에 데이터 직접 복사
                     ReadValue.T1 = BitConverter.ToUInt16(m_ucRxData, 0);
                     ReadValue.T2 = BitConverter.ToUInt16(m_ucRxData, 2);
@@ -440,6 +439,7 @@ namespace Serial_Communication
             textBox_P1_bar.Text = ScrValue.P1_bar.ToString();
             textBox_Noxppm1.Text = ScrValue.Noxppm1.ToString();
             textBox_Noxppm2.Text = ScrValue.Noxppm2.ToString();
+            textBox_SystemSignal.Text = ScrValue.SystemSignal.ToString();
             if (ScrValue.Noxppm1 > 0)
             {
                 double NOxRealReduce = ((double)(ScrValue.Noxppm1 - ScrValue.Noxppm2) / (double)ScrValue.Noxppm1) * 100.0;
@@ -455,32 +455,97 @@ namespace Serial_Communication
             textBox_Maf_temp.Text = ScrValue.Maf_temp.ToString();
             textBox_TankTemp.Text = ScrValue.TankTemp.ToString();
             textBox_TankLevelP.Text = ScrValue.TankLevelP.ToString();
-            textBox_BattVoltage.Text = (ScrValue.BattVoltage/100.0).ToString();
+            textBox_BattVoltage.Text = (ScrValue.BattVoltage / 100.0).ToString();
             textBox_Map_X.Text = ScrValue.Map_X.ToString();
             textBox_Map_Y.Text = ScrValue.Map_Y.ToString();
             textBox_StatusAlpha.Text = ScrValue.StatusAlpha.ToString();
             textBox_SCRMode.Text = ScrValue.SCRMode.ToString();
-            textBox_UreaQuality.Text = (ScrValue.UreaQuality/10.0).ToString();
+            textBox_UreaQuality.Text = (ScrValue.UreaQuality / 10.0).ToString();
             textBox_NoxReduction.Text = ScrValue.NoxReduction.ToString();
             textBox_SystemError.Text = ScrValue.SystemError.ToString();
+         /* System Error */
+            if ((ScrValue.SystemError & 0x01) != 0x01)
+                label_T1.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            else label_T1.BackColor = System.Drawing.Color.Red;
 
-            for (int i = 0; i < 8; i++)
-            {
-                ltmp = pScrValue->SystemError.B;
-                if ((ltmp >> i) & 0x01) RLED[0][i]->Color = clRed;
-                else RLED[0][i]->Color = clBtnFace;
-                ltmp = pScrValue->SystemCheck.W & 0xff;
-                if ((ltmp >> i) & 0x01) RLED[2][i]->Color = clFuchsia;
-                else RLED[2][i]->Color = clBtnFace;
-                ltmp = pScrValue->SystemSignal.W & 0xff;
-                if ((ltmp >> i) & 0x01) RLED[4][i]->Color = clBlue;
-                else RLED[4][i]->Color = clBtnFace;
-                htmp = (pScrValue->SystemSignal.W >> 8) & 0xff;
-                if ((htmp >> i) & 0x01) RLED[5][i]->Color = clBlue;
-                else RLED[5][i]->Color = clBtnFace;
-            }
+            if ((ScrValue.SystemError & 0x02) != 0x02)
+                label_Supply.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            else label_Supply.BackColor = System.Drawing.Color.Red;
+
+            if ((ScrValue.SystemError & 0x04) != 0x04)
+                label_Noxin.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            else label_Noxin.BackColor = System.Drawing.Color.Red;
+
+            if ((ScrValue.SystemError & 0x08) != 0x08) 
+                label_Noxout.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            else label_Noxout.BackColor = System.Drawing.Color.Red;
+
+            if ((ScrValue.SystemError & 0x10) != 0x10)
+                label_ULevel.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            else label_ULevel.BackColor = System.Drawing.Color.Red;
+
+            if ((ScrValue.SystemError & 0x20) != 0x20) 
+                label_MAF.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            else label_MAF.BackColor = System.Drawing.Color.Red;
+
+            if ((ScrValue.SystemError & 0x40) != 0x40)
+                label_UTemp.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            else label_UTemp.BackColor = System.Drawing.Color.Red;
+
+            if ((ScrValue.SystemError & 0x80) != 0x80) 
+                label_UQuality.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            else label_UQuality.BackColor = System.Drawing.Color.Red;
+
+            /* System Check */
+            if ((ScrValue.SystemCheck & 0x01) != 0x01)
+                label_Check_Noxin.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            else label_Check_Noxin.BackColor = System.Drawing.Color.Yellow;
+
+            if ((ScrValue.SystemCheck & 0x02) != 0x02)
+                label_Check_Noxout.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            else label_Check_Noxout.BackColor = System.Drawing.Color.Yellow;
+
+            /* System Signal */
+            if ((ScrValue.SystemSignal & 0x01) != 0x01)
+                label_Signal_Noxin.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            else label_Signal_Noxin.BackColor = System.Drawing.Color.Blue;
+
+            if ((ScrValue.SystemSignal & 0x02) != 0x02)
+                label_Signal_Noxout.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            else label_Signal_Noxout.BackColor = System.Drawing.Color.Blue;
+
+            if ((ScrValue.SystemSignal & 0x04) != 0x04)
+                label_Signal_KeyOn.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            else label_Signal_KeyOn.BackColor = System.Drawing.Color.Blue;
+
+            if ((ScrValue.SystemSignal & 0x08) != 0x08)
+                label_Signal_Operation.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            else label_Signal_Operation.BackColor = System.Drawing.Color.Blue;
+
+            if ((ScrValue.SystemSignal & 0x10) != 0x10)
+                label_Signal_Purge.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            else label_Signal_Purge.BackColor = System.Drawing.Color.Blue;
+
+            if ((ScrValue.SystemSignal & 0x20) != 0x20)
+                label_Signal_Flushing.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            else label_Signal_Flushing.BackColor = System.Drawing.Color.Blue;
+
+            if ((ScrValue.SystemSignal & 0x40) != 0x40)
+                label_Signal_Motor.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            else label_Signal_Motor.BackColor = System.Drawing.Color.Blue;
+
+            if ((ScrValue.SystemSignal & 0x80) != 0x80)
+                label_Signal_Dosing.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            else label_Signal_Dosing.BackColor = System.Drawing.Color.Blue;
+
+            if ((ScrValue.SystemSignal & 0x100) != 0x100)
+                label_Signal_Supply.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            else label_Signal_Supply.BackColor = System.Drawing.Color.Blue;
+
+            if ((ScrValue.SystemSignal & 0x200) != 0x200)
+                label_Signal_Noxact.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            else label_Signal_Noxact.BackColor = System.Drawing.Color.Blue;
         }
-
     }
 }
 
