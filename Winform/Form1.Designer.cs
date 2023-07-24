@@ -68,7 +68,6 @@
             this.textBox_IHC = new MetroFramework.Controls.MetroTextBox();
             this.textBox_Rate = new MetroFramework.Controls.MetroTextBox();
             this.textBox_P = new MetroFramework.Controls.MetroTextBox();
-            this.textBox_T4 = new MetroFramework.Controls.MetroTextBox();
             this.textBox_T3 = new MetroFramework.Controls.MetroTextBox();
             this.textBox_T2 = new MetroFramework.Controls.MetroTextBox();
             this.textBox_T1 = new MetroFramework.Controls.MetroTextBox();
@@ -89,7 +88,6 @@
             this.T2 = new MetroFramework.Controls.MetroLabel();
             this.T1 = new MetroFramework.Controls.MetroLabel();
             this.metroTabPage5 = new MetroFramework.Controls.MetroTabPage();
-            this.metroButton3 = new MetroFramework.Controls.MetroButton();
             this.label62 = new System.Windows.Forms.Label();
             this.label63 = new System.Windows.Forms.Label();
             this.label64 = new System.Windows.Forms.Label();
@@ -148,22 +146,22 @@
             this.label32 = new System.Windows.Forms.Label();
             this.label33 = new System.Windows.Forms.Label();
             this.label34 = new System.Windows.Forms.Label();
-            this.textBox24 = new System.Windows.Forms.TextBox();
-            this.textBox25 = new System.Windows.Forms.TextBox();
+            this.textBox_NOxRealReduce = new System.Windows.Forms.TextBox();
+            this.textBox_NoxReduction = new System.Windows.Forms.TextBox();
             this.label30 = new System.Windows.Forms.Label();
             this.label31 = new System.Windows.Forms.Label();
-            this.textBox21 = new System.Windows.Forms.TextBox();
-            this.textBox22 = new System.Windows.Forms.TextBox();
-            this.textBox23 = new System.Windows.Forms.TextBox();
+            this.textBox_TotalDosingRate = new System.Windows.Forms.TextBox();
+            this.textBox_DosingDuty = new System.Windows.Forms.TextBox();
+            this.textBox_DosingRatehouer = new System.Windows.Forms.TextBox();
             this.label27 = new System.Windows.Forms.Label();
             this.label28 = new System.Windows.Forms.Label();
             this.label29 = new System.Windows.Forms.Label();
-            this.textBox15 = new System.Windows.Forms.TextBox();
-            this.textBox16 = new System.Windows.Forms.TextBox();
-            this.textBox17 = new System.Windows.Forms.TextBox();
-            this.textBox18 = new System.Windows.Forms.TextBox();
-            this.textBox19 = new System.Windows.Forms.TextBox();
-            this.textBox20 = new System.Windows.Forms.TextBox();
+            this.textBox_Formula3 = new System.Windows.Forms.TextBox();
+            this.textBox_Formula2 = new System.Windows.Forms.TextBox();
+            this.textBox_Formula1 = new System.Windows.Forms.TextBox();
+            this.textBox_Kp = new System.Windows.Forms.TextBox();
+            this.textBox_Kl = new System.Windows.Forms.TextBox();
+            this.textBox_StatusAlpha = new System.Windows.Forms.TextBox();
             this.label21 = new System.Windows.Forms.Label();
             this.label22 = new System.Windows.Forms.Label();
             this.label23 = new System.Windows.Forms.Label();
@@ -173,20 +171,20 @@
             this.label20 = new System.Windows.Forms.Label();
             this.label19 = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
-            this.textBox14 = new System.Windows.Forms.TextBox();
-            this.textBox13 = new System.Windows.Forms.TextBox();
-            this.textBox12 = new System.Windows.Forms.TextBox();
-            this.textBox11 = new System.Windows.Forms.TextBox();
-            this.textBox10 = new System.Windows.Forms.TextBox();
-            this.textBox9 = new System.Windows.Forms.TextBox();
-            this.textBox8 = new System.Windows.Forms.TextBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.textBox_BattVoltage = new System.Windows.Forms.TextBox();
+            this.textBox_NH3Dn = new System.Windows.Forms.TextBox();
+            this.textBox_NH3Up = new System.Windows.Forms.TextBox();
+            this.textBox_O2dn = new System.Windows.Forms.TextBox();
+            this.textBox_O2up = new System.Windows.Forms.TextBox();
+            this.textBox_Noxppm2 = new System.Windows.Forms.TextBox();
+            this.textBox_Noxppm1 = new System.Windows.Forms.TextBox();
+            this.textBox_Maf_temp = new System.Windows.Forms.TextBox();
+            this.textBox_MafKg_H = new System.Windows.Forms.TextBox();
+            this.textBox_P1_bar = new System.Windows.Forms.TextBox();
+            this.textBox_T3_temp = new System.Windows.Forms.TextBox();
+            this.textBox_Tavg_temp = new System.Windows.Forms.TextBox();
+            this.textBox_T4 = new System.Windows.Forms.TextBox();
+            this.textBox_T1_temp = new System.Windows.Forms.TextBox();
             this.label17 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
@@ -212,8 +210,6 @@
             this.metroLabel46 = new MetroFramework.Controls.MetroLabel();
             this.metroLabel47 = new MetroFramework.Controls.MetroLabel();
             this.metroLabel48 = new MetroFramework.Controls.MetroLabel();
-            this.textBox_TotalDosingRate = new MetroFramework.Controls.MetroTextBox();
-            this.textBox_DosingRatehouer = new MetroFramework.Controls.MetroTextBox();
             this.textBox_ScrFlag = new MetroFramework.Controls.MetroTextBox();
             this.textBox_SystemSignal = new MetroFramework.Controls.MetroTextBox();
             this.textBox_SystemCheck = new MetroFramework.Controls.MetroTextBox();
@@ -224,39 +220,28 @@
             this.metroLabel52 = new MetroFramework.Controls.MetroLabel();
             this.metroLabel53 = new MetroFramework.Controls.MetroLabel();
             this.metroLabel54 = new MetroFramework.Controls.MetroLabel();
-            this.textBox_NoxReduction = new MetroFramework.Controls.MetroTextBox();
             this.textBox_UreaQuality = new MetroFramework.Controls.MetroTextBox();
             this.textBox_SCRMode = new MetroFramework.Controls.MetroTextBox();
-            this.textBox_StatusAlpha = new MetroFramework.Controls.MetroTextBox();
             this.metroLabel35 = new MetroFramework.Controls.MetroLabel();
             this.metroLabel36 = new MetroFramework.Controls.MetroLabel();
             this.metroLabel37 = new MetroFramework.Controls.MetroLabel();
             this.metroLabel38 = new MetroFramework.Controls.MetroLabel();
             this.textBox_Map_Y = new MetroFramework.Controls.MetroTextBox();
             this.textBox_Map_X = new MetroFramework.Controls.MetroTextBox();
-            this.textBox_BattVoltage = new MetroFramework.Controls.MetroTextBox();
             this.textBox_TankLevelP = new MetroFramework.Controls.MetroTextBox();
             this.textBox_TankTemp = new MetroFramework.Controls.MetroTextBox();
-            this.textBox_Maf_temp = new MetroFramework.Controls.MetroTextBox();
             this.metroLabel39 = new MetroFramework.Controls.MetroLabel();
             this.metroLabel40 = new MetroFramework.Controls.MetroLabel();
             this.metroLabel41 = new MetroFramework.Controls.MetroLabel();
             this.metroLabel42 = new MetroFramework.Controls.MetroLabel();
             this.metroLabel43 = new MetroFramework.Controls.MetroLabel();
             this.metroLabel44 = new MetroFramework.Controls.MetroLabel();
-            this.textBox_MafKg_H = new MetroFramework.Controls.MetroTextBox();
-            this.textBox_DosingDuty = new MetroFramework.Controls.MetroTextBox();
-            this.textBox_Noxppm2 = new MetroFramework.Controls.MetroTextBox();
-            this.textBox_Noxppm1 = new MetroFramework.Controls.MetroTextBox();
             this.metroLabel17 = new MetroFramework.Controls.MetroLabel();
             this.metroLabel32 = new MetroFramework.Controls.MetroLabel();
             this.metroLabel33 = new MetroFramework.Controls.MetroLabel();
             this.metroLabel34 = new MetroFramework.Controls.MetroLabel();
-            this.textBox_P1_bar = new MetroFramework.Controls.MetroTextBox();
-            this.textBox_T3_temp = new MetroFramework.Controls.MetroTextBox();
-            this.textBox_Tavg_temp = new MetroFramework.Controls.MetroTextBox();
+            this.textBox_11111 = new MetroFramework.Controls.MetroTextBox();
             this.textBox_T2_temp = new MetroFramework.Controls.MetroTextBox();
-            this.textBox_T1_temp = new MetroFramework.Controls.MetroTextBox();
             this.textBox_Version = new MetroFramework.Controls.MetroTextBox();
             this.metroLabel26 = new MetroFramework.Controls.MetroLabel();
             this.metroLabel27 = new MetroFramework.Controls.MetroLabel();
@@ -281,6 +266,7 @@
             this.panel13 = new System.Windows.Forms.Panel();
             this.htmlToolTip1 = new MetroFramework.Drawing.Html.HtmlToolTip();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.metroButton3 = new MetroFramework.Controls.MetroButton();
             this.metroTabControl1.SuspendLayout();
             this.metroTabPage1.SuspendLayout();
             this.metroTabPage5.SuspendLayout();
@@ -340,7 +326,6 @@
             this.metroTabPage1.Controls.Add(this.textBox_IHC);
             this.metroTabPage1.Controls.Add(this.textBox_Rate);
             this.metroTabPage1.Controls.Add(this.textBox_P);
-            this.metroTabPage1.Controls.Add(this.textBox_T4);
             this.metroTabPage1.Controls.Add(this.textBox_T3);
             this.metroTabPage1.Controls.Add(this.textBox_T2);
             this.metroTabPage1.Controls.Add(this.textBox_T1);
@@ -1174,37 +1159,6 @@
             this.textBox_P.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
             this.textBox_P.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
             // 
-            // textBox_T4
-            // 
-            // 
-            // 
-            // 
-            this.textBox_T4.CustomButton.Image = null;
-            this.textBox_T4.CustomButton.Location = new System.Drawing.Point(92, 2);
-            this.textBox_T4.CustomButton.Name = "";
-            this.textBox_T4.CustomButton.Size = new System.Drawing.Size(35, 35);
-            this.textBox_T4.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
-            this.textBox_T4.CustomButton.TabIndex = 1;
-            this.textBox_T4.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.textBox_T4.CustomButton.UseSelectable = true;
-            this.textBox_T4.CustomButton.Visible = false;
-            this.textBox_T4.FontSize = MetroFramework.MetroTextBoxSize.Tall;
-            this.textBox_T4.Lines = new string[0];
-            this.textBox_T4.Location = new System.Drawing.Point(90, 170);
-            this.textBox_T4.MaxLength = 32767;
-            this.textBox_T4.Name = "textBox_T4";
-            this.textBox_T4.PasswordChar = '\0';
-            this.textBox_T4.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.textBox_T4.SelectedText = "";
-            this.textBox_T4.SelectionLength = 0;
-            this.textBox_T4.SelectionStart = 0;
-            this.textBox_T4.ShortcutsEnabled = true;
-            this.textBox_T4.Size = new System.Drawing.Size(130, 40);
-            this.textBox_T4.TabIndex = 21;
-            this.textBox_T4.UseSelectable = true;
-            this.textBox_T4.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            this.textBox_T4.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
-            // 
             // textBox_T3
             // 
             // 
@@ -1492,7 +1446,6 @@
             // 
             // metroTabPage5
             // 
-            this.metroTabPage5.Controls.Add(this.metroButton3);
             this.metroTabPage5.Controls.Add(this.label62);
             this.metroTabPage5.Controls.Add(this.label63);
             this.metroTabPage5.Controls.Add(this.label64);
@@ -1551,22 +1504,22 @@
             this.metroTabPage5.Controls.Add(this.label32);
             this.metroTabPage5.Controls.Add(this.label33);
             this.metroTabPage5.Controls.Add(this.label34);
-            this.metroTabPage5.Controls.Add(this.textBox24);
-            this.metroTabPage5.Controls.Add(this.textBox25);
+            this.metroTabPage5.Controls.Add(this.textBox_NOxRealReduce);
+            this.metroTabPage5.Controls.Add(this.textBox_NoxReduction);
             this.metroTabPage5.Controls.Add(this.label30);
             this.metroTabPage5.Controls.Add(this.label31);
-            this.metroTabPage5.Controls.Add(this.textBox21);
-            this.metroTabPage5.Controls.Add(this.textBox22);
-            this.metroTabPage5.Controls.Add(this.textBox23);
+            this.metroTabPage5.Controls.Add(this.textBox_TotalDosingRate);
+            this.metroTabPage5.Controls.Add(this.textBox_DosingDuty);
+            this.metroTabPage5.Controls.Add(this.textBox_DosingRatehouer);
             this.metroTabPage5.Controls.Add(this.label27);
             this.metroTabPage5.Controls.Add(this.label28);
             this.metroTabPage5.Controls.Add(this.label29);
-            this.metroTabPage5.Controls.Add(this.textBox15);
-            this.metroTabPage5.Controls.Add(this.textBox16);
-            this.metroTabPage5.Controls.Add(this.textBox17);
-            this.metroTabPage5.Controls.Add(this.textBox18);
-            this.metroTabPage5.Controls.Add(this.textBox19);
-            this.metroTabPage5.Controls.Add(this.textBox20);
+            this.metroTabPage5.Controls.Add(this.textBox_Formula3);
+            this.metroTabPage5.Controls.Add(this.textBox_Formula2);
+            this.metroTabPage5.Controls.Add(this.textBox_Formula1);
+            this.metroTabPage5.Controls.Add(this.textBox_Kp);
+            this.metroTabPage5.Controls.Add(this.textBox_Kl);
+            this.metroTabPage5.Controls.Add(this.textBox_StatusAlpha);
             this.metroTabPage5.Controls.Add(this.label21);
             this.metroTabPage5.Controls.Add(this.label22);
             this.metroTabPage5.Controls.Add(this.label23);
@@ -1576,20 +1529,20 @@
             this.metroTabPage5.Controls.Add(this.label20);
             this.metroTabPage5.Controls.Add(this.label19);
             this.metroTabPage5.Controls.Add(this.label18);
-            this.metroTabPage5.Controls.Add(this.textBox14);
-            this.metroTabPage5.Controls.Add(this.textBox13);
-            this.metroTabPage5.Controls.Add(this.textBox12);
-            this.metroTabPage5.Controls.Add(this.textBox11);
-            this.metroTabPage5.Controls.Add(this.textBox10);
-            this.metroTabPage5.Controls.Add(this.textBox9);
-            this.metroTabPage5.Controls.Add(this.textBox8);
-            this.metroTabPage5.Controls.Add(this.textBox7);
-            this.metroTabPage5.Controls.Add(this.textBox6);
-            this.metroTabPage5.Controls.Add(this.textBox5);
-            this.metroTabPage5.Controls.Add(this.textBox4);
-            this.metroTabPage5.Controls.Add(this.textBox3);
-            this.metroTabPage5.Controls.Add(this.textBox1);
-            this.metroTabPage5.Controls.Add(this.textBox2);
+            this.metroTabPage5.Controls.Add(this.textBox_BattVoltage);
+            this.metroTabPage5.Controls.Add(this.textBox_NH3Dn);
+            this.metroTabPage5.Controls.Add(this.textBox_NH3Up);
+            this.metroTabPage5.Controls.Add(this.textBox_O2dn);
+            this.metroTabPage5.Controls.Add(this.textBox_O2up);
+            this.metroTabPage5.Controls.Add(this.textBox_Noxppm2);
+            this.metroTabPage5.Controls.Add(this.textBox_Noxppm1);
+            this.metroTabPage5.Controls.Add(this.textBox_Maf_temp);
+            this.metroTabPage5.Controls.Add(this.textBox_MafKg_H);
+            this.metroTabPage5.Controls.Add(this.textBox_P1_bar);
+            this.metroTabPage5.Controls.Add(this.textBox_T3_temp);
+            this.metroTabPage5.Controls.Add(this.textBox_Tavg_temp);
+            this.metroTabPage5.Controls.Add(this.textBox_T4);
+            this.metroTabPage5.Controls.Add(this.textBox_T1_temp);
             this.metroTabPage5.Controls.Add(this.label17);
             this.metroTabPage5.Controls.Add(this.label16);
             this.metroTabPage5.Controls.Add(this.label14);
@@ -1617,17 +1570,6 @@
             this.metroTabPage5.VerticalScrollbarBarColor = true;
             this.metroTabPage5.VerticalScrollbarHighlightOnWheel = false;
             this.metroTabPage5.VerticalScrollbarSize = 10;
-            // 
-            // metroButton3
-            // 
-            this.metroButton3.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.metroButton3.Location = new System.Drawing.Point(561, 35);
-            this.metroButton3.Name = "metroButton3";
-            this.metroButton3.Size = new System.Drawing.Size(94, 37);
-            this.metroButton3.TabIndex = 146;
-            this.metroButton3.Text = "Setting";
-            this.metroButton3.UseSelectable = true;
-            this.metroButton3.Click += new System.EventHandler(this.metroButton3_Click);
             // 
             // label62
             // 
@@ -2284,23 +2226,23 @@
             this.label34.Text = "Level[%]";
             this.label34.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // textBox24
+            // textBox_NOxRealReduce
             // 
-            this.textBox24.Font = new System.Drawing.Font("맑은 고딕", 17.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.textBox24.Location = new System.Drawing.Point(568, 505);
-            this.textBox24.Name = "textBox24";
-            this.textBox24.Size = new System.Drawing.Size(125, 38);
-            this.textBox24.TabIndex = 59;
-            this.textBox24.Text = "0";
+            this.textBox_NOxRealReduce.Font = new System.Drawing.Font("맑은 고딕", 17.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.textBox_NOxRealReduce.Location = new System.Drawing.Point(568, 505);
+            this.textBox_NOxRealReduce.Name = "textBox_NOxRealReduce";
+            this.textBox_NOxRealReduce.Size = new System.Drawing.Size(125, 38);
+            this.textBox_NOxRealReduce.TabIndex = 59;
+            this.textBox_NOxRealReduce.Text = "0";
             // 
-            // textBox25
+            // textBox_NoxReduction
             // 
-            this.textBox25.Font = new System.Drawing.Font("맑은 고딕", 17.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.textBox25.Location = new System.Drawing.Point(568, 467);
-            this.textBox25.Name = "textBox25";
-            this.textBox25.Size = new System.Drawing.Size(125, 38);
-            this.textBox25.TabIndex = 58;
-            this.textBox25.Text = "0";
+            this.textBox_NoxReduction.Font = new System.Drawing.Font("맑은 고딕", 17.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.textBox_NoxReduction.Location = new System.Drawing.Point(568, 467);
+            this.textBox_NoxReduction.Name = "textBox_NoxReduction";
+            this.textBox_NoxReduction.Size = new System.Drawing.Size(125, 38);
+            this.textBox_NoxReduction.TabIndex = 58;
+            this.textBox_NoxReduction.Text = "0";
             // 
             // label30
             // 
@@ -2326,32 +2268,32 @@
             this.label31.Text = "Avg[%]";
             this.label31.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // textBox21
+            // textBox_TotalDosingRate
             // 
-            this.textBox21.Font = new System.Drawing.Font("맑은 고딕", 17.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.textBox21.Location = new System.Drawing.Point(568, 428);
-            this.textBox21.Name = "textBox21";
-            this.textBox21.Size = new System.Drawing.Size(125, 38);
-            this.textBox21.TabIndex = 55;
-            this.textBox21.Text = "0";
+            this.textBox_TotalDosingRate.Font = new System.Drawing.Font("맑은 고딕", 17.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.textBox_TotalDosingRate.Location = new System.Drawing.Point(568, 428);
+            this.textBox_TotalDosingRate.Name = "textBox_TotalDosingRate";
+            this.textBox_TotalDosingRate.Size = new System.Drawing.Size(125, 38);
+            this.textBox_TotalDosingRate.TabIndex = 55;
+            this.textBox_TotalDosingRate.Text = "0";
             // 
-            // textBox22
+            // textBox_DosingDuty
             // 
-            this.textBox22.Font = new System.Drawing.Font("맑은 고딕", 17.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.textBox22.Location = new System.Drawing.Point(568, 390);
-            this.textBox22.Name = "textBox22";
-            this.textBox22.Size = new System.Drawing.Size(125, 38);
-            this.textBox22.TabIndex = 54;
-            this.textBox22.Text = "0";
+            this.textBox_DosingDuty.Font = new System.Drawing.Font("맑은 고딕", 17.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.textBox_DosingDuty.Location = new System.Drawing.Point(568, 390);
+            this.textBox_DosingDuty.Name = "textBox_DosingDuty";
+            this.textBox_DosingDuty.Size = new System.Drawing.Size(125, 38);
+            this.textBox_DosingDuty.TabIndex = 54;
+            this.textBox_DosingDuty.Text = "0";
             // 
-            // textBox23
+            // textBox_DosingRatehouer
             // 
-            this.textBox23.Font = new System.Drawing.Font("맑은 고딕", 17.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.textBox23.Location = new System.Drawing.Point(568, 352);
-            this.textBox23.Name = "textBox23";
-            this.textBox23.Size = new System.Drawing.Size(125, 38);
-            this.textBox23.TabIndex = 53;
-            this.textBox23.Text = "0";
+            this.textBox_DosingRatehouer.Font = new System.Drawing.Font("맑은 고딕", 17.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.textBox_DosingRatehouer.Location = new System.Drawing.Point(568, 352);
+            this.textBox_DosingRatehouer.Name = "textBox_DosingRatehouer";
+            this.textBox_DosingRatehouer.Size = new System.Drawing.Size(125, 38);
+            this.textBox_DosingRatehouer.TabIndex = 53;
+            this.textBox_DosingRatehouer.Text = "0";
             // 
             // label27
             // 
@@ -2389,59 +2331,59 @@
             this.label29.Text = "g/h";
             this.label29.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // textBox15
+            // textBox_Formula3
             // 
-            this.textBox15.Font = new System.Drawing.Font("맑은 고딕", 17.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.textBox15.Location = new System.Drawing.Point(568, 313);
-            this.textBox15.Name = "textBox15";
-            this.textBox15.Size = new System.Drawing.Size(125, 38);
-            this.textBox15.TabIndex = 49;
-            this.textBox15.Text = "0";
+            this.textBox_Formula3.Font = new System.Drawing.Font("맑은 고딕", 17.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.textBox_Formula3.Location = new System.Drawing.Point(568, 313);
+            this.textBox_Formula3.Name = "textBox_Formula3";
+            this.textBox_Formula3.Size = new System.Drawing.Size(125, 38);
+            this.textBox_Formula3.TabIndex = 49;
+            this.textBox_Formula3.Text = "0";
             // 
-            // textBox16
+            // textBox_Formula2
             // 
-            this.textBox16.Font = new System.Drawing.Font("맑은 고딕", 17.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.textBox16.Location = new System.Drawing.Point(568, 275);
-            this.textBox16.Name = "textBox16";
-            this.textBox16.Size = new System.Drawing.Size(125, 38);
-            this.textBox16.TabIndex = 48;
-            this.textBox16.Text = "0";
+            this.textBox_Formula2.Font = new System.Drawing.Font("맑은 고딕", 17.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.textBox_Formula2.Location = new System.Drawing.Point(568, 275);
+            this.textBox_Formula2.Name = "textBox_Formula2";
+            this.textBox_Formula2.Size = new System.Drawing.Size(125, 38);
+            this.textBox_Formula2.TabIndex = 48;
+            this.textBox_Formula2.Text = "0";
             // 
-            // textBox17
+            // textBox_Formula1
             // 
-            this.textBox17.Font = new System.Drawing.Font("맑은 고딕", 17.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.textBox17.Location = new System.Drawing.Point(568, 237);
-            this.textBox17.Name = "textBox17";
-            this.textBox17.Size = new System.Drawing.Size(125, 38);
-            this.textBox17.TabIndex = 47;
-            this.textBox17.Text = "0";
+            this.textBox_Formula1.Font = new System.Drawing.Font("맑은 고딕", 17.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.textBox_Formula1.Location = new System.Drawing.Point(568, 237);
+            this.textBox_Formula1.Name = "textBox_Formula1";
+            this.textBox_Formula1.Size = new System.Drawing.Size(125, 38);
+            this.textBox_Formula1.TabIndex = 47;
+            this.textBox_Formula1.Text = "0";
             // 
-            // textBox18
+            // textBox_Kp
             // 
-            this.textBox18.Font = new System.Drawing.Font("맑은 고딕", 17.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.textBox18.Location = new System.Drawing.Point(568, 199);
-            this.textBox18.Name = "textBox18";
-            this.textBox18.Size = new System.Drawing.Size(125, 38);
-            this.textBox18.TabIndex = 46;
-            this.textBox18.Text = "0";
+            this.textBox_Kp.Font = new System.Drawing.Font("맑은 고딕", 17.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.textBox_Kp.Location = new System.Drawing.Point(568, 199);
+            this.textBox_Kp.Name = "textBox_Kp";
+            this.textBox_Kp.Size = new System.Drawing.Size(125, 38);
+            this.textBox_Kp.TabIndex = 46;
+            this.textBox_Kp.Text = "0";
             // 
-            // textBox19
+            // textBox_Kl
             // 
-            this.textBox19.Font = new System.Drawing.Font("맑은 고딕", 17.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.textBox19.Location = new System.Drawing.Point(568, 161);
-            this.textBox19.Name = "textBox19";
-            this.textBox19.Size = new System.Drawing.Size(125, 38);
-            this.textBox19.TabIndex = 45;
-            this.textBox19.Text = "0";
+            this.textBox_Kl.Font = new System.Drawing.Font("맑은 고딕", 17.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.textBox_Kl.Location = new System.Drawing.Point(568, 161);
+            this.textBox_Kl.Name = "textBox_Kl";
+            this.textBox_Kl.Size = new System.Drawing.Size(125, 38);
+            this.textBox_Kl.TabIndex = 45;
+            this.textBox_Kl.Text = "0";
             // 
-            // textBox20
+            // textBox_StatusAlpha
             // 
-            this.textBox20.Font = new System.Drawing.Font("맑은 고딕", 17.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.textBox20.Location = new System.Drawing.Point(568, 123);
-            this.textBox20.Name = "textBox20";
-            this.textBox20.Size = new System.Drawing.Size(125, 38);
-            this.textBox20.TabIndex = 44;
-            this.textBox20.Text = "0";
+            this.textBox_StatusAlpha.Font = new System.Drawing.Font("맑은 고딕", 17.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.textBox_StatusAlpha.Location = new System.Drawing.Point(568, 123);
+            this.textBox_StatusAlpha.Name = "textBox_StatusAlpha";
+            this.textBox_StatusAlpha.Size = new System.Drawing.Size(125, 38);
+            this.textBox_StatusAlpha.TabIndex = 44;
+            this.textBox_StatusAlpha.Text = "0";
             // 
             // label21
             // 
@@ -2551,131 +2493,131 @@
             this.label18.Text = "Dosing";
             this.label18.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // textBox14
+            // textBox_BattVoltage
             // 
-            this.textBox14.Font = new System.Drawing.Font("맑은 고딕", 17.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.textBox14.Location = new System.Drawing.Point(219, 617);
-            this.textBox14.Name = "textBox14";
-            this.textBox14.Size = new System.Drawing.Size(125, 38);
-            this.textBox14.TabIndex = 34;
-            this.textBox14.Text = "0";
+            this.textBox_BattVoltage.Font = new System.Drawing.Font("맑은 고딕", 17.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.textBox_BattVoltage.Location = new System.Drawing.Point(219, 617);
+            this.textBox_BattVoltage.Name = "textBox_BattVoltage";
+            this.textBox_BattVoltage.Size = new System.Drawing.Size(125, 38);
+            this.textBox_BattVoltage.TabIndex = 34;
+            this.textBox_BattVoltage.Text = "0";
             // 
-            // textBox13
+            // textBox_NH3Dn
             // 
-            this.textBox13.Font = new System.Drawing.Font("맑은 고딕", 17.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.textBox13.Location = new System.Drawing.Point(219, 579);
-            this.textBox13.Name = "textBox13";
-            this.textBox13.Size = new System.Drawing.Size(125, 38);
-            this.textBox13.TabIndex = 33;
-            this.textBox13.Text = "0";
+            this.textBox_NH3Dn.Font = new System.Drawing.Font("맑은 고딕", 17.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.textBox_NH3Dn.Location = new System.Drawing.Point(219, 579);
+            this.textBox_NH3Dn.Name = "textBox_NH3Dn";
+            this.textBox_NH3Dn.Size = new System.Drawing.Size(125, 38);
+            this.textBox_NH3Dn.TabIndex = 33;
+            this.textBox_NH3Dn.Text = "0";
             // 
-            // textBox12
+            // textBox_NH3Up
             // 
-            this.textBox12.Font = new System.Drawing.Font("맑은 고딕", 17.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.textBox12.Location = new System.Drawing.Point(219, 541);
-            this.textBox12.Name = "textBox12";
-            this.textBox12.Size = new System.Drawing.Size(125, 38);
-            this.textBox12.TabIndex = 32;
-            this.textBox12.Text = "0";
+            this.textBox_NH3Up.Font = new System.Drawing.Font("맑은 고딕", 17.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.textBox_NH3Up.Location = new System.Drawing.Point(219, 541);
+            this.textBox_NH3Up.Name = "textBox_NH3Up";
+            this.textBox_NH3Up.Size = new System.Drawing.Size(125, 38);
+            this.textBox_NH3Up.TabIndex = 32;
+            this.textBox_NH3Up.Text = "0";
             // 
-            // textBox11
+            // textBox_O2dn
             // 
-            this.textBox11.Font = new System.Drawing.Font("맑은 고딕", 17.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.textBox11.Location = new System.Drawing.Point(219, 503);
-            this.textBox11.Name = "textBox11";
-            this.textBox11.Size = new System.Drawing.Size(125, 38);
-            this.textBox11.TabIndex = 31;
-            this.textBox11.Text = "0";
+            this.textBox_O2dn.Font = new System.Drawing.Font("맑은 고딕", 17.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.textBox_O2dn.Location = new System.Drawing.Point(219, 503);
+            this.textBox_O2dn.Name = "textBox_O2dn";
+            this.textBox_O2dn.Size = new System.Drawing.Size(125, 38);
+            this.textBox_O2dn.TabIndex = 31;
+            this.textBox_O2dn.Text = "0";
             // 
-            // textBox10
+            // textBox_O2up
             // 
-            this.textBox10.Font = new System.Drawing.Font("맑은 고딕", 17.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.textBox10.Location = new System.Drawing.Point(219, 465);
-            this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(125, 38);
-            this.textBox10.TabIndex = 30;
-            this.textBox10.Text = "0";
+            this.textBox_O2up.Font = new System.Drawing.Font("맑은 고딕", 17.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.textBox_O2up.Location = new System.Drawing.Point(219, 465);
+            this.textBox_O2up.Name = "textBox_O2up";
+            this.textBox_O2up.Size = new System.Drawing.Size(125, 38);
+            this.textBox_O2up.TabIndex = 30;
+            this.textBox_O2up.Text = "0";
             // 
-            // textBox9
+            // textBox_Noxppm2
             // 
-            this.textBox9.Font = new System.Drawing.Font("맑은 고딕", 17.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.textBox9.Location = new System.Drawing.Point(219, 427);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(125, 38);
-            this.textBox9.TabIndex = 29;
-            this.textBox9.Text = "0";
+            this.textBox_Noxppm2.Font = new System.Drawing.Font("맑은 고딕", 17.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.textBox_Noxppm2.Location = new System.Drawing.Point(219, 427);
+            this.textBox_Noxppm2.Name = "textBox_Noxppm2";
+            this.textBox_Noxppm2.Size = new System.Drawing.Size(125, 38);
+            this.textBox_Noxppm2.TabIndex = 29;
+            this.textBox_Noxppm2.Text = "0";
             // 
-            // textBox8
+            // textBox_Noxppm1
             // 
-            this.textBox8.Font = new System.Drawing.Font("맑은 고딕", 17.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.textBox8.Location = new System.Drawing.Point(219, 389);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(125, 38);
-            this.textBox8.TabIndex = 28;
-            this.textBox8.Text = "0";
+            this.textBox_Noxppm1.Font = new System.Drawing.Font("맑은 고딕", 17.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.textBox_Noxppm1.Location = new System.Drawing.Point(219, 389);
+            this.textBox_Noxppm1.Name = "textBox_Noxppm1";
+            this.textBox_Noxppm1.Size = new System.Drawing.Size(125, 38);
+            this.textBox_Noxppm1.TabIndex = 28;
+            this.textBox_Noxppm1.Text = "0";
             // 
-            // textBox7
+            // textBox_Maf_temp
             // 
-            this.textBox7.Font = new System.Drawing.Font("맑은 고딕", 17.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.textBox7.Location = new System.Drawing.Point(219, 351);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(125, 38);
-            this.textBox7.TabIndex = 27;
-            this.textBox7.Text = "0";
+            this.textBox_Maf_temp.Font = new System.Drawing.Font("맑은 고딕", 17.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.textBox_Maf_temp.Location = new System.Drawing.Point(219, 351);
+            this.textBox_Maf_temp.Name = "textBox_Maf_temp";
+            this.textBox_Maf_temp.Size = new System.Drawing.Size(125, 38);
+            this.textBox_Maf_temp.TabIndex = 27;
+            this.textBox_Maf_temp.Text = "0";
             // 
-            // textBox6
+            // textBox_MafKg_H
             // 
-            this.textBox6.Font = new System.Drawing.Font("맑은 고딕", 17.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.textBox6.Location = new System.Drawing.Point(219, 313);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(125, 38);
-            this.textBox6.TabIndex = 26;
-            this.textBox6.Text = "0";
+            this.textBox_MafKg_H.Font = new System.Drawing.Font("맑은 고딕", 17.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.textBox_MafKg_H.Location = new System.Drawing.Point(219, 313);
+            this.textBox_MafKg_H.Name = "textBox_MafKg_H";
+            this.textBox_MafKg_H.Size = new System.Drawing.Size(125, 38);
+            this.textBox_MafKg_H.TabIndex = 26;
+            this.textBox_MafKg_H.Text = "0";
             // 
-            // textBox5
+            // textBox_P1_bar
             // 
-            this.textBox5.Font = new System.Drawing.Font("맑은 고딕", 17.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.textBox5.Location = new System.Drawing.Point(219, 275);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(125, 38);
-            this.textBox5.TabIndex = 25;
-            this.textBox5.Text = "0";
+            this.textBox_P1_bar.Font = new System.Drawing.Font("맑은 고딕", 17.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.textBox_P1_bar.Location = new System.Drawing.Point(219, 275);
+            this.textBox_P1_bar.Name = "textBox_P1_bar";
+            this.textBox_P1_bar.Size = new System.Drawing.Size(125, 38);
+            this.textBox_P1_bar.TabIndex = 25;
+            this.textBox_P1_bar.Text = "0";
             // 
-            // textBox4
+            // textBox_T3_temp
             // 
-            this.textBox4.Font = new System.Drawing.Font("맑은 고딕", 17.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.textBox4.Location = new System.Drawing.Point(219, 237);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(125, 38);
-            this.textBox4.TabIndex = 24;
-            this.textBox4.Text = "0";
+            this.textBox_T3_temp.Font = new System.Drawing.Font("맑은 고딕", 17.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.textBox_T3_temp.Location = new System.Drawing.Point(219, 237);
+            this.textBox_T3_temp.Name = "textBox_T3_temp";
+            this.textBox_T3_temp.Size = new System.Drawing.Size(125, 38);
+            this.textBox_T3_temp.TabIndex = 24;
+            this.textBox_T3_temp.Text = "0";
             // 
-            // textBox3
+            // textBox_Tavg_temp
             // 
-            this.textBox3.Font = new System.Drawing.Font("맑은 고딕", 17.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.textBox3.Location = new System.Drawing.Point(219, 199);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(125, 38);
-            this.textBox3.TabIndex = 23;
-            this.textBox3.Text = "0";
+            this.textBox_Tavg_temp.Font = new System.Drawing.Font("맑은 고딕", 17.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.textBox_Tavg_temp.Location = new System.Drawing.Point(219, 199);
+            this.textBox_Tavg_temp.Name = "textBox_Tavg_temp";
+            this.textBox_Tavg_temp.Size = new System.Drawing.Size(125, 38);
+            this.textBox_Tavg_temp.TabIndex = 23;
+            this.textBox_Tavg_temp.Text = "0";
             // 
-            // textBox1
+            // textBox_T4
             // 
-            this.textBox1.Font = new System.Drawing.Font("맑은 고딕", 17.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.textBox1.Location = new System.Drawing.Point(219, 161);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(125, 38);
-            this.textBox1.TabIndex = 22;
-            this.textBox1.Text = "0";
+            this.textBox_T4.Font = new System.Drawing.Font("맑은 고딕", 17.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.textBox_T4.Location = new System.Drawing.Point(219, 161);
+            this.textBox_T4.Name = "textBox_T4";
+            this.textBox_T4.Size = new System.Drawing.Size(125, 38);
+            this.textBox_T4.TabIndex = 22;
+            this.textBox_T4.Text = "0";
             // 
-            // textBox2
+            // textBox_T1_temp
             // 
-            this.textBox2.Font = new System.Drawing.Font("맑은 고딕", 17.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.textBox2.Location = new System.Drawing.Point(219, 123);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(125, 38);
-            this.textBox2.TabIndex = 21;
-            this.textBox2.Text = "0";
+            this.textBox_T1_temp.Font = new System.Drawing.Font("맑은 고딕", 17.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.textBox_T1_temp.Location = new System.Drawing.Point(219, 123);
+            this.textBox_T1_temp.Name = "textBox_T1_temp";
+            this.textBox_T1_temp.Size = new System.Drawing.Size(125, 38);
+            this.textBox_T1_temp.TabIndex = 21;
+            this.textBox_T1_temp.Text = "0";
             // 
             // label17
             // 
@@ -2879,8 +2821,6 @@
             this.metroTabPage2.Controls.Add(this.metroLabel46);
             this.metroTabPage2.Controls.Add(this.metroLabel47);
             this.metroTabPage2.Controls.Add(this.metroLabel48);
-            this.metroTabPage2.Controls.Add(this.textBox_TotalDosingRate);
-            this.metroTabPage2.Controls.Add(this.textBox_DosingRatehouer);
             this.metroTabPage2.Controls.Add(this.textBox_ScrFlag);
             this.metroTabPage2.Controls.Add(this.textBox_SystemSignal);
             this.metroTabPage2.Controls.Add(this.textBox_SystemCheck);
@@ -2891,39 +2831,28 @@
             this.metroTabPage2.Controls.Add(this.metroLabel52);
             this.metroTabPage2.Controls.Add(this.metroLabel53);
             this.metroTabPage2.Controls.Add(this.metroLabel54);
-            this.metroTabPage2.Controls.Add(this.textBox_NoxReduction);
             this.metroTabPage2.Controls.Add(this.textBox_UreaQuality);
             this.metroTabPage2.Controls.Add(this.textBox_SCRMode);
-            this.metroTabPage2.Controls.Add(this.textBox_StatusAlpha);
             this.metroTabPage2.Controls.Add(this.metroLabel35);
             this.metroTabPage2.Controls.Add(this.metroLabel36);
             this.metroTabPage2.Controls.Add(this.metroLabel37);
             this.metroTabPage2.Controls.Add(this.metroLabel38);
             this.metroTabPage2.Controls.Add(this.textBox_Map_Y);
             this.metroTabPage2.Controls.Add(this.textBox_Map_X);
-            this.metroTabPage2.Controls.Add(this.textBox_BattVoltage);
             this.metroTabPage2.Controls.Add(this.textBox_TankLevelP);
             this.metroTabPage2.Controls.Add(this.textBox_TankTemp);
-            this.metroTabPage2.Controls.Add(this.textBox_Maf_temp);
             this.metroTabPage2.Controls.Add(this.metroLabel39);
             this.metroTabPage2.Controls.Add(this.metroLabel40);
             this.metroTabPage2.Controls.Add(this.metroLabel41);
             this.metroTabPage2.Controls.Add(this.metroLabel42);
             this.metroTabPage2.Controls.Add(this.metroLabel43);
             this.metroTabPage2.Controls.Add(this.metroLabel44);
-            this.metroTabPage2.Controls.Add(this.textBox_MafKg_H);
-            this.metroTabPage2.Controls.Add(this.textBox_DosingDuty);
-            this.metroTabPage2.Controls.Add(this.textBox_Noxppm2);
-            this.metroTabPage2.Controls.Add(this.textBox_Noxppm1);
             this.metroTabPage2.Controls.Add(this.metroLabel17);
             this.metroTabPage2.Controls.Add(this.metroLabel32);
             this.metroTabPage2.Controls.Add(this.metroLabel33);
             this.metroTabPage2.Controls.Add(this.metroLabel34);
-            this.metroTabPage2.Controls.Add(this.textBox_P1_bar);
-            this.metroTabPage2.Controls.Add(this.textBox_T3_temp);
-            this.metroTabPage2.Controls.Add(this.textBox_Tavg_temp);
+            this.metroTabPage2.Controls.Add(this.textBox_11111);
             this.metroTabPage2.Controls.Add(this.textBox_T2_temp);
-            this.metroTabPage2.Controls.Add(this.textBox_T1_temp);
             this.metroTabPage2.Controls.Add(this.textBox_Version);
             this.metroTabPage2.Controls.Add(this.metroLabel26);
             this.metroTabPage2.Controls.Add(this.metroLabel27);
@@ -3114,68 +3043,6 @@
             this.metroLabel48.Style = MetroFramework.MetroColorStyle.Black;
             this.metroLabel48.TabIndex = 78;
             this.metroLabel48.Text = "CurXk";
-            // 
-            // textBox_TotalDosingRate
-            // 
-            // 
-            // 
-            // 
-            this.textBox_TotalDosingRate.CustomButton.Image = null;
-            this.textBox_TotalDosingRate.CustomButton.Location = new System.Drawing.Point(92, 2);
-            this.textBox_TotalDosingRate.CustomButton.Name = "";
-            this.textBox_TotalDosingRate.CustomButton.Size = new System.Drawing.Size(35, 35);
-            this.textBox_TotalDosingRate.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
-            this.textBox_TotalDosingRate.CustomButton.TabIndex = 1;
-            this.textBox_TotalDosingRate.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.textBox_TotalDosingRate.CustomButton.UseSelectable = true;
-            this.textBox_TotalDosingRate.CustomButton.Visible = false;
-            this.textBox_TotalDosingRate.FontSize = MetroFramework.MetroTextBoxSize.Tall;
-            this.textBox_TotalDosingRate.Lines = new string[0];
-            this.textBox_TotalDosingRate.Location = new System.Drawing.Point(587, 260);
-            this.textBox_TotalDosingRate.MaxLength = 32767;
-            this.textBox_TotalDosingRate.Name = "textBox_TotalDosingRate";
-            this.textBox_TotalDosingRate.PasswordChar = '\0';
-            this.textBox_TotalDosingRate.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.textBox_TotalDosingRate.SelectedText = "";
-            this.textBox_TotalDosingRate.SelectionLength = 0;
-            this.textBox_TotalDosingRate.SelectionStart = 0;
-            this.textBox_TotalDosingRate.ShortcutsEnabled = true;
-            this.textBox_TotalDosingRate.Size = new System.Drawing.Size(130, 40);
-            this.textBox_TotalDosingRate.TabIndex = 77;
-            this.textBox_TotalDosingRate.UseSelectable = true;
-            this.textBox_TotalDosingRate.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            this.textBox_TotalDosingRate.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
-            // 
-            // textBox_DosingRatehouer
-            // 
-            // 
-            // 
-            // 
-            this.textBox_DosingRatehouer.CustomButton.Image = null;
-            this.textBox_DosingRatehouer.CustomButton.Location = new System.Drawing.Point(92, 2);
-            this.textBox_DosingRatehouer.CustomButton.Name = "";
-            this.textBox_DosingRatehouer.CustomButton.Size = new System.Drawing.Size(35, 35);
-            this.textBox_DosingRatehouer.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
-            this.textBox_DosingRatehouer.CustomButton.TabIndex = 1;
-            this.textBox_DosingRatehouer.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.textBox_DosingRatehouer.CustomButton.UseSelectable = true;
-            this.textBox_DosingRatehouer.CustomButton.Visible = false;
-            this.textBox_DosingRatehouer.FontSize = MetroFramework.MetroTextBoxSize.Tall;
-            this.textBox_DosingRatehouer.Lines = new string[0];
-            this.textBox_DosingRatehouer.Location = new System.Drawing.Point(587, 217);
-            this.textBox_DosingRatehouer.MaxLength = 32767;
-            this.textBox_DosingRatehouer.Name = "textBox_DosingRatehouer";
-            this.textBox_DosingRatehouer.PasswordChar = '\0';
-            this.textBox_DosingRatehouer.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.textBox_DosingRatehouer.SelectedText = "";
-            this.textBox_DosingRatehouer.SelectionLength = 0;
-            this.textBox_DosingRatehouer.SelectionStart = 0;
-            this.textBox_DosingRatehouer.ShortcutsEnabled = true;
-            this.textBox_DosingRatehouer.Size = new System.Drawing.Size(130, 40);
-            this.textBox_DosingRatehouer.TabIndex = 76;
-            this.textBox_DosingRatehouer.UseSelectable = true;
-            this.textBox_DosingRatehouer.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            this.textBox_DosingRatehouer.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
             // 
             // textBox_ScrFlag
             // 
@@ -3373,37 +3240,6 @@
             this.metroLabel54.TabIndex = 66;
             this.metroLabel54.Text = "Sys Error";
             // 
-            // textBox_NoxReduction
-            // 
-            // 
-            // 
-            // 
-            this.textBox_NoxReduction.CustomButton.Image = null;
-            this.textBox_NoxReduction.CustomButton.Location = new System.Drawing.Point(92, 2);
-            this.textBox_NoxReduction.CustomButton.Name = "";
-            this.textBox_NoxReduction.CustomButton.Size = new System.Drawing.Size(35, 35);
-            this.textBox_NoxReduction.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
-            this.textBox_NoxReduction.CustomButton.TabIndex = 1;
-            this.textBox_NoxReduction.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.textBox_NoxReduction.CustomButton.UseSelectable = true;
-            this.textBox_NoxReduction.CustomButton.Visible = false;
-            this.textBox_NoxReduction.FontSize = MetroFramework.MetroTextBoxSize.Tall;
-            this.textBox_NoxReduction.Lines = new string[0];
-            this.textBox_NoxReduction.Location = new System.Drawing.Point(344, 448);
-            this.textBox_NoxReduction.MaxLength = 32767;
-            this.textBox_NoxReduction.Name = "textBox_NoxReduction";
-            this.textBox_NoxReduction.PasswordChar = '\0';
-            this.textBox_NoxReduction.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.textBox_NoxReduction.SelectedText = "";
-            this.textBox_NoxReduction.SelectionLength = 0;
-            this.textBox_NoxReduction.SelectionStart = 0;
-            this.textBox_NoxReduction.ShortcutsEnabled = true;
-            this.textBox_NoxReduction.Size = new System.Drawing.Size(130, 40);
-            this.textBox_NoxReduction.TabIndex = 65;
-            this.textBox_NoxReduction.UseSelectable = true;
-            this.textBox_NoxReduction.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            this.textBox_NoxReduction.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
-            // 
             // textBox_UreaQuality
             // 
             // 
@@ -3465,37 +3301,6 @@
             this.textBox_SCRMode.UseSelectable = true;
             this.textBox_SCRMode.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
             this.textBox_SCRMode.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
-            // 
-            // textBox_StatusAlpha
-            // 
-            // 
-            // 
-            // 
-            this.textBox_StatusAlpha.CustomButton.Image = null;
-            this.textBox_StatusAlpha.CustomButton.Location = new System.Drawing.Point(92, 2);
-            this.textBox_StatusAlpha.CustomButton.Name = "";
-            this.textBox_StatusAlpha.CustomButton.Size = new System.Drawing.Size(35, 35);
-            this.textBox_StatusAlpha.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
-            this.textBox_StatusAlpha.CustomButton.TabIndex = 1;
-            this.textBox_StatusAlpha.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.textBox_StatusAlpha.CustomButton.UseSelectable = true;
-            this.textBox_StatusAlpha.CustomButton.Visible = false;
-            this.textBox_StatusAlpha.FontSize = MetroFramework.MetroTextBoxSize.Tall;
-            this.textBox_StatusAlpha.Lines = new string[0];
-            this.textBox_StatusAlpha.Location = new System.Drawing.Point(344, 310);
-            this.textBox_StatusAlpha.MaxLength = 32767;
-            this.textBox_StatusAlpha.Name = "textBox_StatusAlpha";
-            this.textBox_StatusAlpha.PasswordChar = '\0';
-            this.textBox_StatusAlpha.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.textBox_StatusAlpha.SelectedText = "";
-            this.textBox_StatusAlpha.SelectionLength = 0;
-            this.textBox_StatusAlpha.SelectionStart = 0;
-            this.textBox_StatusAlpha.ShortcutsEnabled = true;
-            this.textBox_StatusAlpha.Size = new System.Drawing.Size(130, 40);
-            this.textBox_StatusAlpha.TabIndex = 62;
-            this.textBox_StatusAlpha.UseSelectable = true;
-            this.textBox_StatusAlpha.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            this.textBox_StatusAlpha.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
             // 
             // metroLabel35
             // 
@@ -3607,37 +3412,6 @@
             this.textBox_Map_X.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
             this.textBox_Map_X.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
             // 
-            // textBox_BattVoltage
-            // 
-            // 
-            // 
-            // 
-            this.textBox_BattVoltage.CustomButton.Image = null;
-            this.textBox_BattVoltage.CustomButton.Location = new System.Drawing.Point(92, 2);
-            this.textBox_BattVoltage.CustomButton.Name = "";
-            this.textBox_BattVoltage.CustomButton.Size = new System.Drawing.Size(35, 35);
-            this.textBox_BattVoltage.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
-            this.textBox_BattVoltage.CustomButton.TabIndex = 1;
-            this.textBox_BattVoltage.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.textBox_BattVoltage.CustomButton.UseSelectable = true;
-            this.textBox_BattVoltage.CustomButton.Visible = false;
-            this.textBox_BattVoltage.FontSize = MetroFramework.MetroTextBoxSize.Tall;
-            this.textBox_BattVoltage.Lines = new string[0];
-            this.textBox_BattVoltage.Location = new System.Drawing.Point(344, 171);
-            this.textBox_BattVoltage.MaxLength = 32767;
-            this.textBox_BattVoltage.Name = "textBox_BattVoltage";
-            this.textBox_BattVoltage.PasswordChar = '\0';
-            this.textBox_BattVoltage.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.textBox_BattVoltage.SelectedText = "";
-            this.textBox_BattVoltage.SelectionLength = 0;
-            this.textBox_BattVoltage.SelectionStart = 0;
-            this.textBox_BattVoltage.ShortcutsEnabled = true;
-            this.textBox_BattVoltage.Size = new System.Drawing.Size(130, 40);
-            this.textBox_BattVoltage.TabIndex = 55;
-            this.textBox_BattVoltage.UseSelectable = true;
-            this.textBox_BattVoltage.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            this.textBox_BattVoltage.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
-            // 
             // textBox_TankLevelP
             // 
             // 
@@ -3699,37 +3473,6 @@
             this.textBox_TankTemp.UseSelectable = true;
             this.textBox_TankTemp.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
             this.textBox_TankTemp.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
-            // 
-            // textBox_Maf_temp
-            // 
-            // 
-            // 
-            // 
-            this.textBox_Maf_temp.CustomButton.Image = null;
-            this.textBox_Maf_temp.CustomButton.Location = new System.Drawing.Point(92, 2);
-            this.textBox_Maf_temp.CustomButton.Name = "";
-            this.textBox_Maf_temp.CustomButton.Size = new System.Drawing.Size(35, 35);
-            this.textBox_Maf_temp.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
-            this.textBox_Maf_temp.CustomButton.TabIndex = 1;
-            this.textBox_Maf_temp.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.textBox_Maf_temp.CustomButton.UseSelectable = true;
-            this.textBox_Maf_temp.CustomButton.Visible = false;
-            this.textBox_Maf_temp.FontSize = MetroFramework.MetroTextBoxSize.Tall;
-            this.textBox_Maf_temp.Lines = new string[0];
-            this.textBox_Maf_temp.Location = new System.Drawing.Point(344, 25);
-            this.textBox_Maf_temp.MaxLength = 32767;
-            this.textBox_Maf_temp.Name = "textBox_Maf_temp";
-            this.textBox_Maf_temp.PasswordChar = '\0';
-            this.textBox_Maf_temp.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.textBox_Maf_temp.SelectedText = "";
-            this.textBox_Maf_temp.SelectionLength = 0;
-            this.textBox_Maf_temp.SelectionStart = 0;
-            this.textBox_Maf_temp.ShortcutsEnabled = true;
-            this.textBox_Maf_temp.Size = new System.Drawing.Size(130, 40);
-            this.textBox_Maf_temp.TabIndex = 52;
-            this.textBox_Maf_temp.UseSelectable = true;
-            this.textBox_Maf_temp.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            this.textBox_Maf_temp.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
             // 
             // metroLabel39
             // 
@@ -3803,130 +3546,6 @@
             this.metroLabel44.TabIndex = 46;
             this.metroLabel44.Text = "MAf_Temp";
             // 
-            // textBox_MafKg_H
-            // 
-            // 
-            // 
-            // 
-            this.textBox_MafKg_H.CustomButton.Image = null;
-            this.textBox_MafKg_H.CustomButton.Location = new System.Drawing.Point(92, 2);
-            this.textBox_MafKg_H.CustomButton.Name = "";
-            this.textBox_MafKg_H.CustomButton.Size = new System.Drawing.Size(35, 35);
-            this.textBox_MafKg_H.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
-            this.textBox_MafKg_H.CustomButton.TabIndex = 1;
-            this.textBox_MafKg_H.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.textBox_MafKg_H.CustomButton.UseSelectable = true;
-            this.textBox_MafKg_H.CustomButton.Visible = false;
-            this.textBox_MafKg_H.FontSize = MetroFramework.MetroTextBoxSize.Tall;
-            this.textBox_MafKg_H.Lines = new string[0];
-            this.textBox_MafKg_H.Location = new System.Drawing.Point(104, 448);
-            this.textBox_MafKg_H.MaxLength = 32767;
-            this.textBox_MafKg_H.Name = "textBox_MafKg_H";
-            this.textBox_MafKg_H.PasswordChar = '\0';
-            this.textBox_MafKg_H.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.textBox_MafKg_H.SelectedText = "";
-            this.textBox_MafKg_H.SelectionLength = 0;
-            this.textBox_MafKg_H.SelectionStart = 0;
-            this.textBox_MafKg_H.ShortcutsEnabled = true;
-            this.textBox_MafKg_H.Size = new System.Drawing.Size(130, 40);
-            this.textBox_MafKg_H.TabIndex = 45;
-            this.textBox_MafKg_H.UseSelectable = true;
-            this.textBox_MafKg_H.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            this.textBox_MafKg_H.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
-            // 
-            // textBox_DosingDuty
-            // 
-            // 
-            // 
-            // 
-            this.textBox_DosingDuty.CustomButton.Image = null;
-            this.textBox_DosingDuty.CustomButton.Location = new System.Drawing.Point(92, 2);
-            this.textBox_DosingDuty.CustomButton.Name = "";
-            this.textBox_DosingDuty.CustomButton.Size = new System.Drawing.Size(35, 35);
-            this.textBox_DosingDuty.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
-            this.textBox_DosingDuty.CustomButton.TabIndex = 1;
-            this.textBox_DosingDuty.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.textBox_DosingDuty.CustomButton.UseSelectable = true;
-            this.textBox_DosingDuty.CustomButton.Visible = false;
-            this.textBox_DosingDuty.FontSize = MetroFramework.MetroTextBoxSize.Tall;
-            this.textBox_DosingDuty.Lines = new string[0];
-            this.textBox_DosingDuty.Location = new System.Drawing.Point(104, 405);
-            this.textBox_DosingDuty.MaxLength = 32767;
-            this.textBox_DosingDuty.Name = "textBox_DosingDuty";
-            this.textBox_DosingDuty.PasswordChar = '\0';
-            this.textBox_DosingDuty.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.textBox_DosingDuty.SelectedText = "";
-            this.textBox_DosingDuty.SelectionLength = 0;
-            this.textBox_DosingDuty.SelectionStart = 0;
-            this.textBox_DosingDuty.ShortcutsEnabled = true;
-            this.textBox_DosingDuty.Size = new System.Drawing.Size(130, 40);
-            this.textBox_DosingDuty.TabIndex = 44;
-            this.textBox_DosingDuty.UseSelectable = true;
-            this.textBox_DosingDuty.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            this.textBox_DosingDuty.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
-            // 
-            // textBox_Noxppm2
-            // 
-            // 
-            // 
-            // 
-            this.textBox_Noxppm2.CustomButton.Image = null;
-            this.textBox_Noxppm2.CustomButton.Location = new System.Drawing.Point(92, 2);
-            this.textBox_Noxppm2.CustomButton.Name = "";
-            this.textBox_Noxppm2.CustomButton.Size = new System.Drawing.Size(35, 35);
-            this.textBox_Noxppm2.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
-            this.textBox_Noxppm2.CustomButton.TabIndex = 1;
-            this.textBox_Noxppm2.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.textBox_Noxppm2.CustomButton.UseSelectable = true;
-            this.textBox_Noxppm2.CustomButton.Visible = false;
-            this.textBox_Noxppm2.FontSize = MetroFramework.MetroTextBoxSize.Tall;
-            this.textBox_Noxppm2.Lines = new string[0];
-            this.textBox_Noxppm2.Location = new System.Drawing.Point(104, 359);
-            this.textBox_Noxppm2.MaxLength = 32767;
-            this.textBox_Noxppm2.Name = "textBox_Noxppm2";
-            this.textBox_Noxppm2.PasswordChar = '\0';
-            this.textBox_Noxppm2.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.textBox_Noxppm2.SelectedText = "";
-            this.textBox_Noxppm2.SelectionLength = 0;
-            this.textBox_Noxppm2.SelectionStart = 0;
-            this.textBox_Noxppm2.ShortcutsEnabled = true;
-            this.textBox_Noxppm2.Size = new System.Drawing.Size(130, 40);
-            this.textBox_Noxppm2.TabIndex = 43;
-            this.textBox_Noxppm2.UseSelectable = true;
-            this.textBox_Noxppm2.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            this.textBox_Noxppm2.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
-            // 
-            // textBox_Noxppm1
-            // 
-            // 
-            // 
-            // 
-            this.textBox_Noxppm1.CustomButton.Image = null;
-            this.textBox_Noxppm1.CustomButton.Location = new System.Drawing.Point(92, 2);
-            this.textBox_Noxppm1.CustomButton.Name = "";
-            this.textBox_Noxppm1.CustomButton.Size = new System.Drawing.Size(35, 35);
-            this.textBox_Noxppm1.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
-            this.textBox_Noxppm1.CustomButton.TabIndex = 1;
-            this.textBox_Noxppm1.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.textBox_Noxppm1.CustomButton.UseSelectable = true;
-            this.textBox_Noxppm1.CustomButton.Visible = false;
-            this.textBox_Noxppm1.FontSize = MetroFramework.MetroTextBoxSize.Tall;
-            this.textBox_Noxppm1.Lines = new string[0];
-            this.textBox_Noxppm1.Location = new System.Drawing.Point(104, 310);
-            this.textBox_Noxppm1.MaxLength = 32767;
-            this.textBox_Noxppm1.Name = "textBox_Noxppm1";
-            this.textBox_Noxppm1.PasswordChar = '\0';
-            this.textBox_Noxppm1.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.textBox_Noxppm1.SelectedText = "";
-            this.textBox_Noxppm1.SelectionLength = 0;
-            this.textBox_Noxppm1.SelectionStart = 0;
-            this.textBox_Noxppm1.ShortcutsEnabled = true;
-            this.textBox_Noxppm1.Size = new System.Drawing.Size(130, 40);
-            this.textBox_Noxppm1.TabIndex = 42;
-            this.textBox_Noxppm1.UseSelectable = true;
-            this.textBox_Noxppm1.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            this.textBox_Noxppm1.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
-            // 
             // metroLabel17
             // 
             this.metroLabel17.AutoSize = true;
@@ -3975,98 +3594,36 @@
             this.metroLabel34.TabIndex = 38;
             this.metroLabel34.Text = "Nox up";
             // 
-            // textBox_P1_bar
+            // textBox_11111
             // 
             // 
             // 
             // 
-            this.textBox_P1_bar.CustomButton.Image = null;
-            this.textBox_P1_bar.CustomButton.Location = new System.Drawing.Point(92, 2);
-            this.textBox_P1_bar.CustomButton.Name = "";
-            this.textBox_P1_bar.CustomButton.Size = new System.Drawing.Size(35, 35);
-            this.textBox_P1_bar.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
-            this.textBox_P1_bar.CustomButton.TabIndex = 1;
-            this.textBox_P1_bar.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.textBox_P1_bar.CustomButton.UseSelectable = true;
-            this.textBox_P1_bar.CustomButton.Visible = false;
-            this.textBox_P1_bar.FontSize = MetroFramework.MetroTextBoxSize.Tall;
-            this.textBox_P1_bar.Lines = new string[0];
-            this.textBox_P1_bar.Location = new System.Drawing.Point(104, 260);
-            this.textBox_P1_bar.MaxLength = 32767;
-            this.textBox_P1_bar.Name = "textBox_P1_bar";
-            this.textBox_P1_bar.PasswordChar = '\0';
-            this.textBox_P1_bar.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.textBox_P1_bar.SelectedText = "";
-            this.textBox_P1_bar.SelectionLength = 0;
-            this.textBox_P1_bar.SelectionStart = 0;
-            this.textBox_P1_bar.ShortcutsEnabled = true;
-            this.textBox_P1_bar.Size = new System.Drawing.Size(130, 40);
-            this.textBox_P1_bar.TabIndex = 37;
-            this.textBox_P1_bar.UseSelectable = true;
-            this.textBox_P1_bar.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            this.textBox_P1_bar.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
-            // 
-            // textBox_T3_temp
-            // 
-            // 
-            // 
-            // 
-            this.textBox_T3_temp.CustomButton.Image = null;
-            this.textBox_T3_temp.CustomButton.Location = new System.Drawing.Point(92, 2);
-            this.textBox_T3_temp.CustomButton.Name = "";
-            this.textBox_T3_temp.CustomButton.Size = new System.Drawing.Size(35, 35);
-            this.textBox_T3_temp.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
-            this.textBox_T3_temp.CustomButton.TabIndex = 1;
-            this.textBox_T3_temp.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.textBox_T3_temp.CustomButton.UseSelectable = true;
-            this.textBox_T3_temp.CustomButton.Visible = false;
-            this.textBox_T3_temp.FontSize = MetroFramework.MetroTextBoxSize.Tall;
-            this.textBox_T3_temp.Lines = new string[0];
-            this.textBox_T3_temp.Location = new System.Drawing.Point(104, 217);
-            this.textBox_T3_temp.MaxLength = 32767;
-            this.textBox_T3_temp.Name = "textBox_T3_temp";
-            this.textBox_T3_temp.PasswordChar = '\0';
-            this.textBox_T3_temp.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.textBox_T3_temp.SelectedText = "";
-            this.textBox_T3_temp.SelectionLength = 0;
-            this.textBox_T3_temp.SelectionStart = 0;
-            this.textBox_T3_temp.ShortcutsEnabled = true;
-            this.textBox_T3_temp.Size = new System.Drawing.Size(130, 40);
-            this.textBox_T3_temp.TabIndex = 36;
-            this.textBox_T3_temp.UseSelectable = true;
-            this.textBox_T3_temp.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            this.textBox_T3_temp.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
-            // 
-            // textBox_Tavg_temp
-            // 
-            // 
-            // 
-            // 
-            this.textBox_Tavg_temp.CustomButton.Image = null;
-            this.textBox_Tavg_temp.CustomButton.Location = new System.Drawing.Point(92, 2);
-            this.textBox_Tavg_temp.CustomButton.Name = "";
-            this.textBox_Tavg_temp.CustomButton.Size = new System.Drawing.Size(35, 35);
-            this.textBox_Tavg_temp.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
-            this.textBox_Tavg_temp.CustomButton.TabIndex = 1;
-            this.textBox_Tavg_temp.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.textBox_Tavg_temp.CustomButton.UseSelectable = true;
-            this.textBox_Tavg_temp.CustomButton.Visible = false;
-            this.textBox_Tavg_temp.FontSize = MetroFramework.MetroTextBoxSize.Tall;
-            this.textBox_Tavg_temp.Lines = new string[0];
-            this.textBox_Tavg_temp.Location = new System.Drawing.Point(104, 171);
-            this.textBox_Tavg_temp.MaxLength = 32767;
-            this.textBox_Tavg_temp.Name = "textBox_Tavg_temp";
-            this.textBox_Tavg_temp.PasswordChar = '\0';
-            this.textBox_Tavg_temp.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.textBox_Tavg_temp.SelectedText = "";
-            this.textBox_Tavg_temp.SelectionLength = 0;
-            this.textBox_Tavg_temp.SelectionStart = 0;
-            this.textBox_Tavg_temp.ShortcutsEnabled = true;
-            this.textBox_Tavg_temp.Size = new System.Drawing.Size(130, 40);
-            this.textBox_Tavg_temp.TabIndex = 35;
-            this.textBox_Tavg_temp.UseSelectable = true;
-            this.textBox_Tavg_temp.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            this.textBox_Tavg_temp.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
+            this.textBox_11111.CustomButton.Image = null;
+            this.textBox_11111.CustomButton.Location = new System.Drawing.Point(92, 2);
+            this.textBox_11111.CustomButton.Name = "";
+            this.textBox_11111.CustomButton.Size = new System.Drawing.Size(35, 35);
+            this.textBox_11111.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
+            this.textBox_11111.CustomButton.TabIndex = 1;
+            this.textBox_11111.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.textBox_11111.CustomButton.UseSelectable = true;
+            this.textBox_11111.CustomButton.Visible = false;
+            this.textBox_11111.FontSize = MetroFramework.MetroTextBoxSize.Tall;
+            this.textBox_11111.Lines = new string[0];
+            this.textBox_11111.Location = new System.Drawing.Point(104, 217);
+            this.textBox_11111.MaxLength = 32767;
+            this.textBox_11111.Name = "textBox_11111";
+            this.textBox_11111.PasswordChar = '\0';
+            this.textBox_11111.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.textBox_11111.SelectedText = "";
+            this.textBox_11111.SelectionLength = 0;
+            this.textBox_11111.SelectionStart = 0;
+            this.textBox_11111.ShortcutsEnabled = true;
+            this.textBox_11111.Size = new System.Drawing.Size(130, 40);
+            this.textBox_11111.TabIndex = 36;
+            this.textBox_11111.UseSelectable = true;
+            this.textBox_11111.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            this.textBox_11111.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
             // 
             // textBox_T2_temp
             // 
@@ -4098,37 +3655,6 @@
             this.textBox_T2_temp.UseSelectable = true;
             this.textBox_T2_temp.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
             this.textBox_T2_temp.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
-            // 
-            // textBox_T1_temp
-            // 
-            // 
-            // 
-            // 
-            this.textBox_T1_temp.CustomButton.Image = null;
-            this.textBox_T1_temp.CustomButton.Location = new System.Drawing.Point(92, 2);
-            this.textBox_T1_temp.CustomButton.Name = "";
-            this.textBox_T1_temp.CustomButton.Size = new System.Drawing.Size(35, 35);
-            this.textBox_T1_temp.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
-            this.textBox_T1_temp.CustomButton.TabIndex = 1;
-            this.textBox_T1_temp.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.textBox_T1_temp.CustomButton.UseSelectable = true;
-            this.textBox_T1_temp.CustomButton.Visible = false;
-            this.textBox_T1_temp.FontSize = MetroFramework.MetroTextBoxSize.Tall;
-            this.textBox_T1_temp.Lines = new string[0];
-            this.textBox_T1_temp.Location = new System.Drawing.Point(104, 71);
-            this.textBox_T1_temp.MaxLength = 32767;
-            this.textBox_T1_temp.Name = "textBox_T1_temp";
-            this.textBox_T1_temp.PasswordChar = '\0';
-            this.textBox_T1_temp.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.textBox_T1_temp.SelectedText = "";
-            this.textBox_T1_temp.SelectionLength = 0;
-            this.textBox_T1_temp.SelectionStart = 0;
-            this.textBox_T1_temp.ShortcutsEnabled = true;
-            this.textBox_T1_temp.Size = new System.Drawing.Size(130, 40);
-            this.textBox_T1_temp.TabIndex = 33;
-            this.textBox_T1_temp.UseSelectable = true;
-            this.textBox_T1_temp.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            this.textBox_T1_temp.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
             // 
             // textBox_Version
             // 
@@ -4349,7 +3875,7 @@
             // metroButton2
             // 
             this.metroButton2.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.metroButton2.Location = new System.Drawing.Point(967, 32);
+            this.metroButton2.Location = new System.Drawing.Point(910, 32);
             this.metroButton2.Name = "metroButton2";
             this.metroButton2.Size = new System.Drawing.Size(94, 37);
             this.metroButton2.TabIndex = 56;
@@ -4360,7 +3886,7 @@
             // metroButton1
             // 
             this.metroButton1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.metroButton1.Location = new System.Drawing.Point(867, 32);
+            this.metroButton1.Location = new System.Drawing.Point(810, 32);
             this.metroButton1.Name = "metroButton1";
             this.metroButton1.Size = new System.Drawing.Size(94, 37);
             this.metroButton1.TabIndex = 55;
@@ -4372,7 +3898,7 @@
             // 
             this.comboBox_port1.FormattingEnabled = true;
             this.comboBox_port1.ItemHeight = 23;
-            this.comboBox_port1.Location = new System.Drawing.Point(740, 35);
+            this.comboBox_port1.Location = new System.Drawing.Point(683, 35);
             this.comboBox_port1.Name = "comboBox_port1";
             this.comboBox_port1.Size = new System.Drawing.Size(110, 29);
             this.comboBox_port1.TabIndex = 89;
@@ -4382,7 +3908,7 @@
             // 
             this.label_port.AutoSize = true;
             this.label_port.Font = new System.Drawing.Font("맑은 고딕", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label_port.Location = new System.Drawing.Point(776, 17);
+            this.label_port.Location = new System.Drawing.Point(719, 17);
             this.label_port.Name = "label_port";
             this.label_port.Size = new System.Drawing.Size(29, 15);
             this.label_port.TabIndex = 88;
@@ -4405,11 +3931,22 @@
             this.contextMenuStrip1.Name = "contextMenuStrip1";
             this.contextMenuStrip1.Size = new System.Drawing.Size(61, 4);
             // 
+            // metroButton3
+            // 
+            this.metroButton3.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.metroButton3.Location = new System.Drawing.Point(1010, 32);
+            this.metroButton3.Name = "metroButton3";
+            this.metroButton3.Size = new System.Drawing.Size(94, 37);
+            this.metroButton3.TabIndex = 147;
+            this.metroButton3.Text = "Setting";
+            this.metroButton3.UseSelectable = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1149, 808);
+            this.Controls.Add(this.metroButton3);
             this.Controls.Add(this.panel13);
             this.Controls.Add(this.metroButton2);
             this.Controls.Add(this.metroTabControl1);
@@ -4455,7 +3992,6 @@
         private MetroFramework.Controls.MetroTextBox textBox_IHC;
         private MetroFramework.Controls.MetroTextBox textBox_Rate;
         private MetroFramework.Controls.MetroTextBox textBox_P;
-        private MetroFramework.Controls.MetroTextBox textBox_T4;
         private MetroFramework.Controls.MetroTextBox textBox_T3;
         private MetroFramework.Controls.MetroTextBox textBox_T2;
         private MetroFramework.Controls.MetroTextBox textBox_T1;
@@ -4495,11 +4031,8 @@
         private MetroFramework.Controls.MetroTextBox textBox_Lock;
         private MetroFramework.Controls.MetroLabel metroLabel16;
         private MetroFramework.Controls.MetroLabel metroLabel15;
-        private MetroFramework.Controls.MetroTextBox textBox_P1_bar;
-        private MetroFramework.Controls.MetroTextBox textBox_T3_temp;
-        private MetroFramework.Controls.MetroTextBox textBox_Tavg_temp;
+        private MetroFramework.Controls.MetroTextBox textBox_11111;
         private MetroFramework.Controls.MetroTextBox textBox_T2_temp;
-        private MetroFramework.Controls.MetroTextBox textBox_T1_temp;
         private MetroFramework.Controls.MetroTextBox textBox_Version;
         private MetroFramework.Controls.MetroLabel metroLabel26;
         private MetroFramework.Controls.MetroLabel metroLabel27;
@@ -4515,8 +4048,6 @@
         private MetroFramework.Controls.MetroLabel metroLabel46;
         private MetroFramework.Controls.MetroLabel metroLabel47;
         private MetroFramework.Controls.MetroLabel metroLabel48;
-        private MetroFramework.Controls.MetroTextBox textBox_TotalDosingRate;
-        private MetroFramework.Controls.MetroTextBox textBox_DosingRatehouer;
         private MetroFramework.Controls.MetroTextBox textBox_ScrFlag;
         private MetroFramework.Controls.MetroTextBox textBox_SystemSignal;
         private MetroFramework.Controls.MetroTextBox textBox_SystemCheck;
@@ -4527,30 +4058,22 @@
         private MetroFramework.Controls.MetroLabel metroLabel52;
         private MetroFramework.Controls.MetroLabel metroLabel53;
         private MetroFramework.Controls.MetroLabel metroLabel54;
-        private MetroFramework.Controls.MetroTextBox textBox_NoxReduction;
         private MetroFramework.Controls.MetroTextBox textBox_UreaQuality;
         private MetroFramework.Controls.MetroTextBox textBox_SCRMode;
-        private MetroFramework.Controls.MetroTextBox textBox_StatusAlpha;
         private MetroFramework.Controls.MetroLabel metroLabel35;
         private MetroFramework.Controls.MetroLabel metroLabel36;
         private MetroFramework.Controls.MetroLabel metroLabel37;
         private MetroFramework.Controls.MetroLabel metroLabel38;
         private MetroFramework.Controls.MetroTextBox textBox_Map_Y;
         private MetroFramework.Controls.MetroTextBox textBox_Map_X;
-        private MetroFramework.Controls.MetroTextBox textBox_BattVoltage;
         private MetroFramework.Controls.MetroTextBox textBox_TankLevelP;
         private MetroFramework.Controls.MetroTextBox textBox_TankTemp;
-        private MetroFramework.Controls.MetroTextBox textBox_Maf_temp;
         private MetroFramework.Controls.MetroLabel metroLabel39;
         private MetroFramework.Controls.MetroLabel metroLabel40;
         private MetroFramework.Controls.MetroLabel metroLabel41;
         private MetroFramework.Controls.MetroLabel metroLabel42;
         private MetroFramework.Controls.MetroLabel metroLabel43;
         private MetroFramework.Controls.MetroLabel metroLabel44;
-        private MetroFramework.Controls.MetroTextBox textBox_MafKg_H;
-        private MetroFramework.Controls.MetroTextBox textBox_DosingDuty;
-        private MetroFramework.Controls.MetroTextBox textBox_Noxppm2;
-        private MetroFramework.Controls.MetroTextBox textBox_Noxppm1;
         private MetroFramework.Controls.MetroLabel metroLabel17;
         private MetroFramework.Controls.MetroLabel metroLabel32;
         private MetroFramework.Controls.MetroLabel metroLabel33;
@@ -4587,37 +4110,37 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label18;
-        private System.Windows.Forms.TextBox textBox14;
-        private System.Windows.Forms.TextBox textBox13;
-        private System.Windows.Forms.TextBox textBox12;
-        private System.Windows.Forms.TextBox textBox11;
-        private System.Windows.Forms.TextBox textBox10;
-        private System.Windows.Forms.TextBox textBox9;
-        private System.Windows.Forms.TextBox textBox8;
-        private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox textBox_BattVoltage;
+        private System.Windows.Forms.TextBox textBox_NH3Dn;
+        private System.Windows.Forms.TextBox textBox_NH3Up;
+        private System.Windows.Forms.TextBox textBox_O2dn;
+        private System.Windows.Forms.TextBox textBox_O2up;
+        private System.Windows.Forms.TextBox textBox_Noxppm2;
+        private System.Windows.Forms.TextBox textBox_Noxppm1;
+        private System.Windows.Forms.TextBox textBox_Maf_temp;
+        private System.Windows.Forms.TextBox textBox_MafKg_H;
+        private System.Windows.Forms.TextBox textBox_P1_bar;
+        private System.Windows.Forms.TextBox textBox_T3_temp;
+        private System.Windows.Forms.TextBox textBox_Tavg_temp;
+        private System.Windows.Forms.TextBox textBox_T4;
+        private System.Windows.Forms.TextBox textBox_T1_temp;
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
-        private System.Windows.Forms.TextBox textBox24;
-        private System.Windows.Forms.TextBox textBox25;
+        private System.Windows.Forms.TextBox textBox_NOxRealReduce;
+        private System.Windows.Forms.TextBox textBox_NoxReduction;
         private System.Windows.Forms.Label label30;
         private System.Windows.Forms.Label label31;
-        private System.Windows.Forms.TextBox textBox21;
-        private System.Windows.Forms.TextBox textBox22;
-        private System.Windows.Forms.TextBox textBox23;
+        private System.Windows.Forms.TextBox textBox_TotalDosingRate;
+        private System.Windows.Forms.TextBox textBox_DosingDuty;
+        private System.Windows.Forms.TextBox textBox_DosingRatehouer;
         private System.Windows.Forms.Label label27;
         private System.Windows.Forms.Label label28;
         private System.Windows.Forms.Label label29;
-        private System.Windows.Forms.TextBox textBox15;
-        private System.Windows.Forms.TextBox textBox16;
-        private System.Windows.Forms.TextBox textBox17;
-        private System.Windows.Forms.TextBox textBox18;
-        private System.Windows.Forms.TextBox textBox19;
-        private System.Windows.Forms.TextBox textBox20;
+        private System.Windows.Forms.TextBox textBox_Formula3;
+        private System.Windows.Forms.TextBox textBox_Formula2;
+        private System.Windows.Forms.TextBox textBox_Formula1;
+        private System.Windows.Forms.TextBox textBox_Kp;
+        private System.Windows.Forms.TextBox textBox_Kl;
+        private System.Windows.Forms.TextBox textBox_StatusAlpha;
         private System.Windows.Forms.Label label21;
         private System.Windows.Forms.Label label22;
         private System.Windows.Forms.Label label23;

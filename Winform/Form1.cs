@@ -20,15 +20,16 @@ namespace Serial_Communication
 {
     public partial class Form1 : MetroFramework.Forms.MetroForm
     {
-        byte  m_ucRxDataCnt, m_ucRxCommand, m_ucRxID, ucLength, rdata;
+        byte m_ucRxDataCnt, m_ucRxCommand, m_ucRxID, ucLength, rdata;
         byte[] m_ucRxData = new byte[1024];
         byte m_ucRxStep, m_ucSyncCnt, m_ucLenCnt;
         short[] m_uiTVal = new short[4];
         short[] TVal = new short[4];
         short[] PVal = new short[2];
         int m_ucRxLength;
+        double NOxRealReduce;
 
-
+        private READ_VALUE ReadValue = new READ_VALUE();
         [StructLayout(LayoutKind.Sequential, Pack = 1)]
         public struct READ_VALUE
         {
@@ -59,59 +60,59 @@ namespace Serial_Communication
             public byte Speed;
             public byte Valid;
         }
-   
+        stSysValue ScrValue = new stSysValue();
         [StructLayout(LayoutKind.Sequential, Pack = 1)]
-public struct stSysValue
-{
-    public ushort Version;
-    public short T1_temp;
-    public short T2_temp;
-    public short Tavg_temp;
-    public short T3_temp;
-    public ushort P1_bar;
-   // [MarshalAs(UnmanagedType.ByValArray, SizeConst = 2)]
-    public short Noxppm1;
-    public short Noxppm2;
-    public ushort DosingDuty;
-    public ushort MafKg_H;
-    public short Maf_temp;
-    public short TankTemp;
-    public ushort TankLevelP;
-    public ushort BattVoltage;
-    public byte Map_X;
-    public byte Map_Y;
-    public byte StatusAlpha;
-    public byte SCRMode;
-    public ushort UreaQuality;
-    public ushort NoxReduction;
-    public byte SystemError; 
-    public byte SystemCheck;
-    public short SystemSignal;
-    public short ScrFlag;
-    public double DosingRatehouer;
-    public double TotalDosingRate;
-    public double curXk;
-    public double Xc;
-    public double H1k;
-    public double H2k;
-    public double Yk;
-    public double Kl;
-    public double Kp;
-    public double curXh;
-    public double Vk;
-    public double Gamma;
-    public double Formula1;
-    public double Formula2;
-    public double Formula3;
-    public double NH3Up;
-    public double NH3Dn;
-    public ushort PM_Senser1;
-    public ushort PM_Senser2;
-    public ushort PM_Senser3;
-    public ushort PM_Senser4;
-    //[MarshalAs(UnmanagedType.ByValArray, SizeConst = 2)]
-    public short NoxO2_1;
-    public short NoxO2_2;
+        public struct stSysValue
+        {
+            public ushort Version;
+            public short T1_temp;
+            public short T2_temp;
+            public short Tavg_temp;
+            public short T3_temp;
+            public ushort P1_bar;
+            // [MarshalAs(UnmanagedType.ByValArray, SizeConst = 2)]
+            public short Noxppm1;
+            public short Noxppm2;
+            public ushort DosingDuty;
+            public ushort MafKg_H;
+            public short Maf_temp;
+            public short TankTemp;
+            public ushort TankLevelP;
+            public ushort BattVoltage;
+            public byte Map_X;
+            public byte Map_Y;
+            public byte StatusAlpha;
+            public byte SCRMode;
+            public ushort UreaQuality;
+            public ushort NoxReduction;
+            public byte SystemError;
+            public byte SystemCheck;
+            public short SystemSignal;
+            public short ScrFlag;
+            public double DosingRatehouer;
+            public double TotalDosingRate;
+            public double curXk;
+            public double Xc;
+            public double H1k;
+            public double H2k;
+            public double Yk;
+            public double Kl;
+            public double Kp;
+            public double curXh;
+            public double Vk;
+            public double Gamma;
+            public double Formula1;
+            public double Formula2;
+            public double Formula3;
+            public double NH3Up;
+            public double NH3Dn;
+            public ushort PM_Senser1;
+            public ushort PM_Senser2;
+            public ushort PM_Senser3;
+            public ushort PM_Senser4;
+            //[MarshalAs(UnmanagedType.ByValArray, SizeConst = 2)]
+            public short NoxO2_1;
+            public short NoxO2_2;
         }
 
 
@@ -164,19 +165,19 @@ public struct stSysValue
             }
         }
         private void button_disconnect_click(object sender, EventArgs e)  //통신 연결끊기 버튼
-     {
-    if (serialPort1.IsOpen)  //시리얼포트가 열려 있으면
-    {
-        serialPort1.Close();  //시리얼포트 닫기
+        {
+            if (serialPort1.IsOpen)  //시리얼포트가 열려 있으면
+            {
+                serialPort1.Close();  //시리얼포트 닫기
 
-        label_status.Text = "포트가 닫혔습니다.";
-        comboBox_port1.Enabled = true;  //com포트설정 콤보박스 활성화
-    }
-    else  //시리얼포트가 닫혀 있으면
-    {
-        label_status.Text = "포트가 이미 닫혀 있습니다.";
-    }
-    }
+                label_status.Text = "포트가 닫혔습니다.";
+                comboBox_port1.Enabled = true;  //com포트설정 콤보박스 활성화
+            }
+            else  //시리얼포트가 닫혀 있으면
+            {
+                label_status.Text = "포트가 이미 닫혀 있습니다.";
+            }
+        }
         private void serialPort1_DataReceived(object sender, SerialDataReceivedEventArgs e)  //수신 이벤트가 발생하면 이 부분이 실행된다.
         {
             this.Invoke(new EventHandler(MySerialReceived));  //메인 쓰레드와 수신 쓰레드의 충돌 방지를 위해 Invoke 사용. MySerialReceived로 이동하여 추가 작업 실행.
@@ -203,13 +204,13 @@ public struct stSysValue
                         richTextBox1.AppendText(DateTime.Now.ToString("\r\n[HH:mm:ss] [RX] ") + BitConverter.ToString(buff).Replace("-", " "));
                         //debugText.AppendText(Encoding.ASCII.GetString(buff));
                         for (int i = 0; i < buff.Length; i++)
-                        {                        
-                                RxData(buff[i]);
+                        {
+                            RxData(buff[i]);
                         }
                     }
                     catch (System.Exception ex)
                     {
-                       // this.debugText.AppendText(ex.Message); //오류 메시지 출력 
+                        // this.debugText.AppendText(ex.Message); //오류 메시지 출력 
                     }
                 }
             }
@@ -309,20 +310,15 @@ public struct stSysValue
                     {
                         DecodeData();
                     }
-                        break;
+                    break;
             }
         }
         private void DecodeData()
         {
-
-
-
             switch (m_ucRxCommand)
             {
                 case 0x48:
-
-                    READ_VALUE ReadValue = new READ_VALUE();
-
+                   // READ_VALUE ReadValue = new READ_VALUE();
                     // 바이트 배열에 데이터 직접 복사
                     ReadValue.T1 = BitConverter.ToUInt16(m_ucRxData, 0);
                     ReadValue.T2 = BitConverter.ToUInt16(m_ucRxData, 2);
@@ -349,118 +345,124 @@ public struct stSysValue
                     ReadValue.t_OFFSCR = BitConverter.ToUInt16(m_ucRxData, 40);
                     ReadValue.Speed = (byte)BitConverter.ToUInt16(m_ucRxData, 42);
                     ReadValue.Valid = (byte)BitConverter.ToUInt16(m_ucRxData, 43);
-
-                    textBox_Size.Text = m_ucRxLength.ToString();
-                    textBox_T1.Text = ReadValue.T1.ToString();
-                    textBox_T2.Text = ReadValue.T2.ToString();
-                    textBox_T3.Text = ReadValue.T3.ToString();
-                    textBox_T4.Text = ReadValue.T4.ToString();
-                    textBox_P.Text = ReadValue.P.ToString();
-                    textBox_Rate.Text = ReadValue.Rate.ToString();
-                    textBox_IHC.Text = ReadValue.IHC.ToString();
-                    textBox_f_REG.Text = ReadValue.f_REG.ToString();
-                    textBox_CarType.Text = ReadValue.CarType.ToString();
-                    textBox_FPD.Text = ReadValue.FPD.ToString();
-                    textBox_Error.Text = ReadValue.Error.ToString();
-                    textBox_Check.Text = ReadValue.Check.ToString();
-                    textBox_t_REG.Text = ReadValue.t_REG.ToString();
-                    textBox_n_REG.Text = ReadValue.n_REG.ToString();
-                    textBox_Sig.Text = ReadValue.Sig.ToString();
-                    textBox_Sts.Text = ReadValue.Sts.ToString();
-                    textBox_Lock.Text = ReadValue.Lock.ToString();
-                    textBox_DrvTime.Text = ReadValue.DrvTime.ToString();
-                    textBox_baseP1.Text = ReadValue.baseP1.ToString();
-                    textBox_f_SCR.Text = ReadValue.f_SCR.ToString();
-                    textBox_t_SCR.Text = ReadValue.t_SCR.ToString();
-                    textBox_n_SCR.Text = ReadValue.n_SCR.ToString();
-                    textBox_RegenStartKey.Text = ReadValue.RegenStartKey.ToString();
-                    textBox_t_OFFSCR.Text = ReadValue.t_OFFSCR.ToString();
-                    textBox_Speed.Text = ReadValue.Speed.ToString();
-                    textBox_Valid.Text = ReadValue.Valid.ToString();
-
                     break;
-                    //UpdateVal();
 
-                    /* 이하 SCR DATA */
+                /* 이하 SCR DATA */
                 case 0x28:
-
-                    stSysValue ScrValue = new stSysValue();
-
+                    //stSysValue ScrValue = new stSysValue();
                     ScrValue.Version = BitConverter.ToUInt16(m_ucRxData, 0);
                     ScrValue.T1_temp = (short)BitConverter.ToUInt16(m_ucRxData, 2);
                     ScrValue.T2_temp = (short)BitConverter.ToUInt16(m_ucRxData, 4);
                     ScrValue.Tavg_temp = (short)BitConverter.ToUInt16(m_ucRxData, 6);
                     ScrValue.T3_temp = (short)BitConverter.ToUInt16(m_ucRxData, 8);
                     ScrValue.P1_bar = BitConverter.ToUInt16(m_ucRxData, 10);
-                     ScrValue.Noxppm1 = (short)BitConverter.ToUInt16(m_ucRxData, 12);
-                     ScrValue.Noxppm2 = (short)BitConverter.ToUInt16(m_ucRxData, 14);
-                     ScrValue.DosingDuty = BitConverter.ToUInt16(m_ucRxData, 16);
-                     ScrValue.MafKg_H = BitConverter.ToUInt16(m_ucRxData, 18);
-                     ScrValue.Maf_temp = (short)BitConverter.ToUInt16(m_ucRxData, 20);
-                     ScrValue.TankTemp = (short)BitConverter.ToUInt16(m_ucRxData, 22);
-                     ScrValue.TankLevelP = BitConverter.ToUInt16(m_ucRxData, 24);
-                     ScrValue.BattVoltage = BitConverter.ToUInt16(m_ucRxData, 26); 
-                     ScrValue.Map_X = (byte)BitConverter.ToUInt16(m_ucRxData, 28);
-                     ScrValue.Map_Y = (byte)BitConverter.ToUInt16(m_ucRxData, 29);
-                     ScrValue.StatusAlpha = (byte)BitConverter.ToUInt16(m_ucRxData, 30);
-                     ScrValue.SCRMode = (byte)BitConverter.ToUInt16(m_ucRxData, 31);
-                     ScrValue.UreaQuality = BitConverter.ToUInt16(m_ucRxData, 32);
-                     ScrValue.NoxReduction = BitConverter.ToUInt16(m_ucRxData, 34);
-                     ScrValue.SystemError = (byte)BitConverter.ToUInt16(m_ucRxData, 36);
-                     ScrValue.SystemCheck = (byte)BitConverter.ToUInt16(m_ucRxData, 37);
-                     ScrValue.SystemSignal = (short)BitConverter.ToUInt16(m_ucRxData, 38);
-                     ScrValue.ScrFlag = (short)BitConverter.ToUInt16(m_ucRxData, 40);
-                     ScrValue.DosingRatehouer = BitConverter.ToUInt32(m_ucRxData, 42);
-                     ScrValue.TotalDosingRate = BitConverter.ToUInt32(m_ucRxData, 50);
-                     ScrValue.curXk = BitConverter.ToUInt32(m_ucRxData, 58);
-                     ScrValue.Xc = BitConverter.ToUInt32(m_ucRxData, 66);
-                     ScrValue.H1k = BitConverter.ToUInt32(m_ucRxData, 74);
-                     ScrValue.H2k = BitConverter.ToUInt32(m_ucRxData, 82);
-                     ScrValue.Yk = BitConverter.ToUInt32(m_ucRxData, 90);
-                     ScrValue.Kl = BitConverter.ToUInt32(m_ucRxData, 98);
-                     ScrValue.Kp = BitConverter.ToUInt32(m_ucRxData, 106);
-                     ScrValue.curXh = BitConverter.ToUInt32(m_ucRxData, 114);
-                     ScrValue.Vk = BitConverter.ToUInt32(m_ucRxData, 122);
-                     ScrValue.Gamma = BitConverter.ToUInt32(m_ucRxData, 130);
-                     ScrValue.Formula1 = BitConverter.ToUInt32(m_ucRxData, 138);
-                     ScrValue.Formula2 = BitConverter.ToUInt32(m_ucRxData, 146);
-                     ScrValue.Formula3 = BitConverter.ToUInt32(m_ucRxData, 154);
-                     ScrValue.NH3Up = BitConverter.ToUInt32(m_ucRxData, 162);
-                     ScrValue.NH3Dn = BitConverter.ToUInt32(m_ucRxData, 170); 
-                     ScrValue.PM_Senser1 = BitConverter.ToUInt16(m_ucRxData, 178);
-                     ScrValue.PM_Senser2 = BitConverter.ToUInt16(m_ucRxData, 180);
-                     ScrValue.PM_Senser3 = BitConverter.ToUInt16(m_ucRxData, 182);
-                     ScrValue.PM_Senser4 = BitConverter.ToUInt16(m_ucRxData, 184);
-                     ScrValue.NoxO2_1 = (short)BitConverter.ToUInt16(m_ucRxData,186);
-                     ScrValue.NoxO2_2 = (short)BitConverter.ToUInt16(m_ucRxData, 188);
-
-
-                    textBox_Version.Text = ScrValue.Version.ToString();
-                    textBox_T1_temp.Text = ScrValue.T1_temp.ToString();
-                    textBox_T2_temp.Text = ScrValue.T2_temp.ToString();
-                    textBox_Tavg_temp.Text = ScrValue.Tavg_temp.ToString();
-                    textBox_T3_temp.Text = ScrValue.T3_temp.ToString();
-                    textBox_P1_bar.Text = ScrValue.P1_bar.ToString();
-                    textBox_Noxppm1.Text = ScrValue.Noxppm1.ToString();
-                    textBox_Noxppm2.Text = ScrValue.Noxppm2.ToString();
-                    textBox_DosingDuty.Text = ScrValue.DosingDuty.ToString();
-                    textBox_MafKg_H.Text = ScrValue.MafKg_H.ToString();
-                    textBox_Maf_temp.Text = ScrValue.Maf_temp.ToString();
-                    textBox_TankTemp.Text = ScrValue.TankTemp.ToString();
-                    textBox_TankLevelP.Text = ScrValue.TankLevelP.ToString();
-
-                    textBox_BattVoltage.Text = ScrValue.BattVoltage.ToString();
-                    textBox_Map_X.Text = ScrValue.Map_X.ToString();
-                    textBox_Map_Y.Text = ScrValue.Map_Y.ToString();
-                    textBox_StatusAlpha.Text = ScrValue.StatusAlpha.ToString();
-                    textBox_SCRMode.Text = ScrValue.SCRMode.ToString();
-                    textBox_UreaQuality.Text = ScrValue.UreaQuality.ToString();
-                    textBox_NoxReduction.Text = ScrValue.NoxReduction.ToString();
-                    textBox_SystemError.Text = ScrValue.SystemError.ToString();
+                    ScrValue.Noxppm1 = (short)BitConverter.ToUInt16(m_ucRxData, 12);
+                    ScrValue.Noxppm2 = (short)BitConverter.ToUInt16(m_ucRxData, 14);
+                    ScrValue.DosingDuty = BitConverter.ToUInt16(m_ucRxData, 16);
+                    ScrValue.MafKg_H = BitConverter.ToUInt16(m_ucRxData, 18);
+                    ScrValue.Maf_temp = (short)BitConverter.ToUInt16(m_ucRxData, 20);
+                    ScrValue.TankTemp = (short)BitConverter.ToUInt16(m_ucRxData, 22);
+                    ScrValue.TankLevelP = BitConverter.ToUInt16(m_ucRxData, 24);
+                    ScrValue.BattVoltage = BitConverter.ToUInt16(m_ucRxData, 26);
+                    ScrValue.Map_X = (byte)BitConverter.ToUInt16(m_ucRxData, 28);
+                    ScrValue.Map_Y = (byte)BitConverter.ToUInt16(m_ucRxData, 29);
+                    ScrValue.StatusAlpha = (byte)BitConverter.ToUInt16(m_ucRxData, 30);
+                    ScrValue.SCRMode = (byte)BitConverter.ToUInt16(m_ucRxData, 31);
+                    ScrValue.UreaQuality = BitConverter.ToUInt16(m_ucRxData, 32);
+                    ScrValue.NoxReduction = BitConverter.ToUInt16(m_ucRxData, 34);
+                    ScrValue.SystemError = (byte)BitConverter.ToUInt16(m_ucRxData, 36);
+                    ScrValue.SystemCheck = (byte)BitConverter.ToUInt16(m_ucRxData, 37);
+                    ScrValue.SystemSignal = (short)BitConverter.ToUInt16(m_ucRxData, 38);
+                    ScrValue.ScrFlag = (short)BitConverter.ToUInt16(m_ucRxData, 40);
+                    ScrValue.DosingRatehouer = BitConverter.ToUInt32(m_ucRxData, 42);
+                    ScrValue.TotalDosingRate = BitConverter.ToUInt32(m_ucRxData, 50);
+                    ScrValue.curXk = BitConverter.ToUInt32(m_ucRxData, 58);
+                    ScrValue.Xc = BitConverter.ToUInt32(m_ucRxData, 66);
+                    ScrValue.H1k = BitConverter.ToUInt32(m_ucRxData, 74);
+                    ScrValue.H2k = BitConverter.ToUInt32(m_ucRxData, 82);
+                    ScrValue.Yk = BitConverter.ToUInt32(m_ucRxData, 90);
+                    ScrValue.Kl = BitConverter.ToUInt32(m_ucRxData, 98);
+                    ScrValue.Kp = BitConverter.ToUInt32(m_ucRxData, 106);
+                    ScrValue.curXh = BitConverter.ToUInt32(m_ucRxData, 114);
+                    ScrValue.Vk = BitConverter.ToUInt32(m_ucRxData, 122);
+                    ScrValue.Gamma = BitConverter.ToUInt32(m_ucRxData, 130);
+                    ScrValue.Formula1 = BitConverter.ToUInt32(m_ucRxData, 138);
+                    ScrValue.Formula2 = BitConverter.ToUInt32(m_ucRxData, 146);
+                    ScrValue.Formula3 = BitConverter.ToUInt32(m_ucRxData, 154);
+                    ScrValue.NH3Up = BitConverter.ToUInt32(m_ucRxData, 162);
+                    ScrValue.NH3Dn = BitConverter.ToUInt32(m_ucRxData, 170);
+                    ScrValue.PM_Senser1 = BitConverter.ToUInt16(m_ucRxData, 178);
+                    ScrValue.PM_Senser2 = BitConverter.ToUInt16(m_ucRxData, 180);
+                    ScrValue.PM_Senser3 = BitConverter.ToUInt16(m_ucRxData, 182);
+                    ScrValue.PM_Senser4 = BitConverter.ToUInt16(m_ucRxData, 184);
+                    ScrValue.NoxO2_1 = (short)BitConverter.ToUInt16(m_ucRxData, 186);
+                    ScrValue.NoxO2_2 = (short)BitConverter.ToUInt16(m_ucRxData, 188);
                     break;
             }
-        }   
+            UpdateVal();
+        }
+        private void UpdateVal()
+        {   /* DPF Value */
+            textBox_Size.Text = m_ucRxLength.ToString();
+            textBox_T1.Text = ReadValue.T1.ToString();
+            textBox_T2.Text = ReadValue.T2.ToString();
+            textBox_T3.Text = ReadValue.T3.ToString();
+            textBox_T4.Text = ReadValue.T4.ToString();
+            textBox_P.Text = ReadValue.P.ToString();
+            textBox_Rate.Text = ReadValue.Rate.ToString();
+            textBox_IHC.Text = ReadValue.IHC.ToString();
+            textBox_f_REG.Text = ReadValue.f_REG.ToString();
+            textBox_CarType.Text = ReadValue.CarType.ToString();
+            textBox_FPD.Text = ReadValue.FPD.ToString();
+            textBox_Error.Text = ReadValue.Error.ToString();
+            textBox_Check.Text = ReadValue.Check.ToString();
+            textBox_t_REG.Text = ReadValue.t_REG.ToString();
+            textBox_n_REG.Text = ReadValue.n_REG.ToString();
+            textBox_Sig.Text = ReadValue.Sig.ToString();
+            textBox_Sts.Text = ReadValue.Sts.ToString();
+            textBox_Lock.Text = ReadValue.Lock.ToString();
+            textBox_DrvTime.Text = ReadValue.DrvTime.ToString();
+            textBox_baseP1.Text = ReadValue.baseP1.ToString();
+            textBox_f_SCR.Text = ReadValue.f_SCR.ToString();
+            textBox_t_SCR.Text = ReadValue.t_SCR.ToString();
+            textBox_n_SCR.Text = ReadValue.n_SCR.ToString();
+            textBox_RegenStartKey.Text = ReadValue.RegenStartKey.ToString();
+            textBox_t_OFFSCR.Text = ReadValue.t_OFFSCR.ToString();
+            textBox_Speed.Text = ReadValue.Speed.ToString();
+            textBox_Valid.Text = ReadValue.Valid.ToString();
+            /* SCR Value */
+            textBox_Version.Text = ScrValue.Version.ToString();
+            textBox_T1_temp.Text = ScrValue.T1_temp.ToString();
+            textBox_T2_temp.Text = ScrValue.T2_temp.ToString();
+            textBox_Tavg_temp.Text = ScrValue.Tavg_temp.ToString();
+            textBox_11111.Text = ScrValue.T3_temp.ToString();
+            textBox_P1_bar.Text = ScrValue.P1_bar.ToString();
+            textBox_Noxppm1.Text = ScrValue.Noxppm1.ToString();
+            textBox_Noxppm2.Text = ScrValue.Noxppm2.ToString();
+            if (ScrValue.Noxppm1 > 0)
+            {
+                double NOxRealReduce = ((double)(ScrValue.Noxppm1 - ScrValue.Noxppm2) / (double)ScrValue.Noxppm1) * 100.0;
+                textBox_NOxRealReduce.Text = NOxRealReduce.ToString("0.00");
+            }
+            else
+            {
+                textBox_NOxRealReduce.Text = "0.00";
+            }
 
+            textBox_DosingDuty.Text = ScrValue.DosingDuty.ToString();
+            textBox_MafKg_H.Text = ScrValue.MafKg_H.ToString();
+            textBox_Maf_temp.Text = ScrValue.Maf_temp.ToString();
+            textBox_TankTemp.Text = ScrValue.TankTemp.ToString();
+            textBox_TankLevelP.Text = ScrValue.TankLevelP.ToString();
+            textBox_BattVoltage.Text = (ScrValue.BattVoltage/100.0).ToString();
+            textBox_Map_X.Text = ScrValue.Map_X.ToString();
+            textBox_Map_Y.Text = ScrValue.Map_Y.ToString();
+            textBox_StatusAlpha.Text = ScrValue.StatusAlpha.ToString();
+            textBox_SCRMode.Text = ScrValue.SCRMode.ToString();
+            textBox_UreaQuality.Text = ScrValue.UreaQuality.ToString();
+            textBox_NoxReduction.Text = ScrValue.NoxReduction.ToString();
+            textBox_SystemError.Text = ScrValue.SystemError.ToString();
+        }
 
     }
 }
