@@ -130,7 +130,7 @@ namespace Serial_Communication
         {
             //Setting form = new Setting();
             //form.Show();
-            foreach (Form frm in Application.OpenForms)
+            foreach (Form frm in Application.OpenForms)// Form 중복실행을 방지한다. 
             {
                 if (frm.Name == "Setting")
                 {
