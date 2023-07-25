@@ -13,8 +13,7 @@ using System.Runtime.InteropServices; //추가
 using System.Threading;
 using Excel = Microsoft.Office.Interop.Excel; // 엑셀 파일 생성을 위함 
 using System.Timers;
-
-
+using System.IO;
 
 namespace Serial_Communication
 {
@@ -161,6 +160,54 @@ namespace Serial_Communication
             else  //시리얼포트가 열려 있으면
             {
                 label_status.Text = "포트가 이미 열려 있습니다.";
+            }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            // 현재 날짜와 시간을 가져옵니다.
+            DateTime now = DateTime.Now;
+
+            // 파일명 생성 (예: 230725.xls)
+            string fileName = now.ToString("yyMMdd") + ".xls";
+
+            // 파일 저장 위치 선택 다이얼로그 생성
+            SaveFileDialog saveFileDialog = new SaveFileDialog();
+            saveFileDialog.FileName = fileName;
+            saveFileDialog.Filter = "Excel 파일 (*.xls)|*.xls";
+
+            // 사용자가 저장 위치를 선택하고 확인을 눌렀을 때
+            if (saveFileDialog.ShowDialog() == DialogResult.OK)
+            {
+                string filePath = saveFileDialog.FileName;
+
+                // 파일 존재 여부 확인
+                if (File.Exists(filePath))
+                {
+                    MessageBox.Show("파일이 이미 존재합니다.");
+                }
+                else
+                {
+                    // 새 파일 생성
+                    try
+                    {
+                        // 새 파일을 만들고 원하는 작업을 수행하세요.
+                        // 이 예제에서는 빈 엑셀 파일을 생성하겠습니다.
+                        // 만약 Microsoft.Office.Interop.Excel 등의 라이브러리를 사용하여 데이터를 쓰고 싶다면 해당 라이브러리를 설치하고 활용하시면 됩니다.
+                        // StreamWriter를 사용하여 파일에 데이터 작성
+                        using (StreamWriter writer = new StreamWriter(filePath, true))
+                        {
+                            // 최상단 셀에 필드 데이터를 추가
+                            writer.WriteLine("Date\tTime\tStep\tRegTime\tRegCnt\tT-up\tT2\tT3\tT4\tP1\tBaseP1\tV\tIGC\tFPD\tIgniter\tMotor\tReady\tDrvS\tError\tCheck\tSpeed\tRate\tComPort\tComErrCnt\tComError");
+                        }
+                        //File.Create(filePath).Close();
+                        MessageBox.Show("새 파일을 생성하였습니다.");
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show("파일 생성 중 오류가 발생했습니다: " + ex.Message);
+                    }
+                }
             }
         }
 
