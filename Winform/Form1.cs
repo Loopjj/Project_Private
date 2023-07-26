@@ -199,7 +199,9 @@ namespace Serial_Communication
                         {
                             // 최상단 셀에 필드 데이터를 추가
                             writer.WriteLine("Date\tTime\tStep\tRegTime\tRegCnt\tT-up\tT2\tT3\tT4\tP1\tBaseP1\tV\tIGC\tFPD\tIgniter\tMotor\tReady\tDrvS\tError\tCheck\tSpeed\tRate\tComPort\tComErrCnt\tComError");
+                            writer.WriteLine($"{DateTime.Now.ToString("yyyy-MM-dd")}\t{DateTime.Now.ToString("HH:mm")}\tvalue1\tvalue2\tvalue3\tvalue4\tvalue5\tvalue6\tvalue7\tvalue8\tvalue9\tvalue10\tvalue11\tvalue12\tvalue13\tvalue14\tvalue15\tvalue16\tvalue17\tvalue18\tvalue19\tvalue20\tvalue21\tvalue22\tvalue23\tvalue24");
                         }
+                    
                         //File.Create(filePath).Close();
                         MessageBox.Show("새 파일을 생성하였습니다.");
                     }
@@ -546,11 +548,11 @@ namespace Serial_Communication
             /* System Check */
             if ((ScrValue.SystemCheck & 0x01) != 0x01)
                 label_Check_Noxin.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            else label_Check_Noxin.BackColor = System.Drawing.Color.Yellow;
+            else label_Check_Noxin.BackColor = System.Drawing.Color.DeepPink;
 
             if ((ScrValue.SystemCheck & 0x02) != 0x02)
                 label_Check_Noxout.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            else label_Check_Noxout.BackColor = System.Drawing.Color.Yellow;
+            else label_Check_Noxout.BackColor = System.Drawing.Color.DeepPink;
 
             /* System Signal */
             if ((ScrValue.SystemSignal & 0x01) != 0x01)
