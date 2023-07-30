@@ -14,11 +14,14 @@ using System.Threading;
 using Excel = Microsoft.Office.Interop.Excel; // 엑셀 파일 생성을 위함 
 using System.Timers;
 using System.IO;
+using static System.Collections.Specialized.BitVector32;
 
 namespace Serial_Communication
 {
     public partial class Form1 : MetroFramework.Forms.MetroForm
     {
+        string settingsFilePath = Path.Combine(Application.StartupPath, SettingsFileName);
+        private const string SettingsFileName = "Setting.ini"; 
         byte m_ucRxDataCnt, m_ucRxCommand, m_ucRxID, ucLength, rdata;
         byte[] m_ucRxData = new byte[1024];
         byte m_ucRxStep, m_ucSyncCnt, m_ucLenCnt;
@@ -118,13 +121,33 @@ namespace Serial_Communication
         public Form1()
         {
             InitializeComponent();
+            CheckAndCreateSettingsFile(); //최초 실행시 Setting.INI파일의 유무를 확인한다. 
         }
 
         private void Form1_Load(object sender, EventArgs e)  //폼이 로드되면
         {
             comboBox_port1.DataSource = SerialPort.GetPortNames(); //연결 가능한 시리얼포트 이름을 콤보박스에 가져오기 
         }
+        private void CheckAndCreateSettingsFile()
+        {
+          
 
+            if (!File.Exists(settingsFilePath))
+            {
+                // 설정 파일이 없는 경우, 설정 파일 생성
+                try
+                {
+                    File.Create(settingsFilePath).Close(); // 파일을 생성하고 즉시 닫습니다.
+                    // 이후에 필요한 설정 데이터를 파일에 저장할 수도 있습니다.
+                }
+                catch (Exception ex)
+                {
+                    // 파일 생성 중 오류가 발생한 경우 예외 처리를 수행합니다.
+                    // 예를 들어 로깅하거나 알림을 보여주는 등의 작업을 수행할 수 있습니다.
+                    Console.WriteLine("Setting.ini 파일 생성 중 오류 발생: " + ex.Message);
+                }
+            }
+        }
         private void metroButton3_Click(object sender, EventArgs e)
         {
             //Setting form = new Setting();
@@ -142,6 +165,39 @@ namespace Serial_Communication
             sfrm.Show();
         }
 
+        private void button1_Click(object sender, EventArgs e)
+        {
+            FolderBrowserDialog folderBrowserDialog = new FolderBrowserDialog();
+
+            if (folderBrowserDialog.ShowDialog() == DialogResult.OK)
+            {
+                string selectedFolderPath = folderBrowserDialog.SelectedPath;
+                MessageBox.Show("선택된 폴더 경로: " + selectedFolderPath);
+                WriteToIniFile("PATH", "데이터 저장 경로", selectedFolderPath);
+
+            }
+        }
+        private void WriteToIniFile(string section, string key, string value)
+        {
+            try
+            {
+                // 파일에 쓸 내용을 준비합니다.
+                string content = $"[{section}]\n{key}={value}\n";
+
+                // 설정 파일에 내용을 추가 모드로 엽니다.
+                using (StreamWriter writer = new StreamWriter(settingsFilePath, true))
+                {
+                    // 파일에 내용을 씁니다.
+                    writer.Write(content);
+                }
+
+                MessageBox.Show("설정이 성공적으로 저장되었습니다.");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"오류 발생: {ex.Message}");
+            }
+        }
         private void Button_connect_Click(object sender, EventArgs e)  //통신 연결하기 버튼
         {
             if (!serialPort1.IsOpen)  //시리얼포트가 열려 있지 않으면
@@ -162,57 +218,6 @@ namespace Serial_Communication
                 label_status.Text = "포트가 이미 열려 있습니다.";
             }
         }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            // 현재 날짜와 시간을 가져옵니다.
-            DateTime now = DateTime.Now;
-
-            // 파일명 생성 (예: 230725.xls)
-            string fileName = now.ToString("yyMMdd") + ".xls";
-
-            // 파일 저장 위치 선택 다이얼로그 생성
-            SaveFileDialog saveFileDialog = new SaveFileDialog();
-            saveFileDialog.FileName = fileName;
-            saveFileDialog.Filter = "Excel 파일 (*.xls)|*.xls";
-
-            // 사용자가 저장 위치를 선택하고 확인을 눌렀을 때
-            if (saveFileDialog.ShowDialog() == DialogResult.OK)
-            {
-                string filePath = saveFileDialog.FileName;
-
-                // 파일 존재 여부 확인
-                if (File.Exists(filePath))
-                {
-                    MessageBox.Show("파일이 이미 존재합니다.");
-                }
-                else
-                {
-                    // 새 파일 생성
-                    try
-                    {
-                        // 새 파일을 만들고 원하는 작업을 수행하세요.
-                        // 이 예제에서는 빈 엑셀 파일을 생성하겠습니다.
-                        // 만약 Microsoft.Office.Interop.Excel 등의 라이브러리를 사용하여 데이터를 쓰고 싶다면 해당 라이브러리를 설치하고 활용하시면 됩니다.
-                        // StreamWriter를 사용하여 파일에 데이터 작성
-                        using (StreamWriter writer = new StreamWriter(filePath, true))
-                        {
-                            // 최상단 셀에 필드 데이터를 추가
-                            writer.WriteLine("Date\tTime\tStep\tRegTime\tRegCnt\tT-up\tT2\tT3\tT4\tP1\tBaseP1\tV\tIGC\tFPD\tIgniter\tMotor\tReady\tDrvS\tError\tCheck\tSpeed\tRate\tComPort\tComErrCnt\tComError");
-                            writer.WriteLine($"{DateTime.Now.ToString("yyyy-MM-dd")}\t{DateTime.Now.ToString("HH:mm")}\tvalue1\tvalue2\tvalue3\tvalue4\tvalue5\tvalue6\tvalue7\tvalue8\tvalue9\tvalue10\tvalue11\tvalue12\tvalue13\tvalue14\tvalue15\tvalue16\tvalue17\tvalue18\tvalue19\tvalue20\tvalue21\tvalue22\tvalue23\tvalue24");
-                        }
-                    
-                        //File.Create(filePath).Close();
-                        MessageBox.Show("새 파일을 생성하였습니다.");
-                    }
-                    catch (Exception ex)
-                    {
-                        MessageBox.Show("파일 생성 중 오류가 발생했습니다: " + ex.Message);
-                    }
-                }
-            }
-        }
-
         private void button_disconnect_click(object sender, EventArgs e)  //통신 연결끊기 버튼
         {
             if (serialPort1.IsOpen)  //시리얼포트가 열려 있으면

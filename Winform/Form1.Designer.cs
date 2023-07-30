@@ -88,7 +88,7 @@
             this.T2 = new MetroFramework.Controls.MetroLabel();
             this.T1 = new MetroFramework.Controls.MetroLabel();
             this.metroTabPage5 = new MetroFramework.Controls.MetroTabPage();
-            this.button1 = new System.Windows.Forms.Button();
+            this.button_SavePath = new System.Windows.Forms.Button();
             this.label_Signal_Noxact = new System.Windows.Forms.Label();
             this.label_Signal_Dosing = new System.Windows.Forms.Label();
             this.label_Signal_Flushing = new System.Windows.Forms.Label();
@@ -262,10 +262,7 @@
             this.comboBox_port1 = new MetroFramework.Controls.MetroComboBox();
             this.label_port = new System.Windows.Forms.Label();
             this.panel13 = new System.Windows.Forms.Panel();
-            this.htmlToolTip1 = new MetroFramework.Drawing.Html.HtmlToolTip();
-            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.metroButton3 = new MetroFramework.Controls.MetroButton();
-            this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
             this.metroTabControl1.SuspendLayout();
             this.metroTabPage1.SuspendLayout();
             this.metroTabPage5.SuspendLayout();
@@ -1445,7 +1442,7 @@
             // 
             // metroTabPage5
             // 
-            this.metroTabPage5.Controls.Add(this.button1);
+            this.metroTabPage5.Controls.Add(this.button_SavePath);
             this.metroTabPage5.Controls.Add(this.label_Signal_Noxact);
             this.metroTabPage5.Controls.Add(this.label_Signal_Dosing);
             this.metroTabPage5.Controls.Add(this.label_Signal_Flushing);
@@ -1571,15 +1568,15 @@
             this.metroTabPage5.VerticalScrollbarHighlightOnWheel = false;
             this.metroTabPage5.VerticalScrollbarSize = 10;
             // 
-            // button1
+            // button_SavePath
             // 
-            this.button1.Location = new System.Drawing.Point(610, 32);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(120, 36);
-            this.button1.TabIndex = 146;
-            this.button1.Text = "Path Select";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.button_SavePath.Location = new System.Drawing.Point(610, 32);
+            this.button_SavePath.Name = "button_SavePath";
+            this.button_SavePath.Size = new System.Drawing.Size(120, 36);
+            this.button_SavePath.TabIndex = 146;
+            this.button_SavePath.Text = "Path Select";
+            this.button_SavePath.UseVisualStyleBackColor = true;
+            this.button_SavePath.Click += new System.EventHandler(this.button1_Click);
             // 
             // label_Signal_Noxact
             // 
@@ -3836,15 +3833,6 @@
             this.panel13.Size = new System.Drawing.Size(160, 3);
             this.panel13.TabIndex = 93;
             // 
-            // htmlToolTip1
-            // 
-            this.htmlToolTip1.OwnerDraw = true;
-            // 
-            // contextMenuStrip1
-            // 
-            this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(61, 4);
-            // 
             // metroButton3
             // 
             this.metroButton3.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
@@ -4005,7 +3993,6 @@
         private MetroFramework.Controls.MetroButton metroButton1;
         private System.Windows.Forms.Panel panel13;
         private System.Windows.Forms.Label label2;
-        private MetroFramework.Drawing.Html.HtmlToolTip htmlToolTip1;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Label label16;
@@ -4036,7 +4023,6 @@
         private System.Windows.Forms.TextBox textBox_Tavg_temp;
         private System.Windows.Forms.TextBox textBox_T4;
         private System.Windows.Forms.TextBox textBox_T1_temp;
-        private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
         private System.Windows.Forms.TextBox textBox_NOxRealReduce;
         private System.Windows.Forms.TextBox textBox_NoxReduction;
         private System.Windows.Forms.Label label30;
@@ -4120,8 +4106,7 @@
         private System.Windows.Forms.Label label_Noxin;
         private System.Windows.Forms.Label label_T1;
         private MetroFramework.Controls.MetroButton metroButton3;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.SaveFileDialog saveFileDialog1;
+        private System.Windows.Forms.Button button_SavePath;
     }
 }
 
