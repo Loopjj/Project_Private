@@ -263,6 +263,7 @@
             this.label_port = new System.Windows.Forms.Label();
             this.panel13 = new System.Windows.Forms.Panel();
             this.metroButton3 = new MetroFramework.Controls.MetroButton();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.metroTabControl1.SuspendLayout();
             this.metroTabPage1.SuspendLayout();
             this.metroTabPage5.SuspendLayout();
@@ -3844,6 +3845,12 @@
             this.metroButton3.UseSelectable = true;
             this.metroButton3.Click += new System.EventHandler(this.metroButton3_Click);
             // 
+            // timer1
+            // 
+            this.timer1.Enabled = true;
+            this.timer1.Interval = 1000;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
@@ -4107,6 +4114,7 @@
         private System.Windows.Forms.Label label_T1;
         private MetroFramework.Controls.MetroButton metroButton3;
         private System.Windows.Forms.Button button_SavePath;
+        public System.Windows.Forms.Timer timer1;
     }
 }
 

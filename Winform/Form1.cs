@@ -148,6 +148,45 @@ namespace Serial_Communication
                 }
             }
         }
+        private void button1_Click(object sender, EventArgs e)
+        {
+            FolderBrowserDialog folderBrowserDialog = new FolderBrowserDialog();
+
+            if (folderBrowserDialog.ShowDialog() == DialogResult.OK)
+            {
+                string SaveDataPath = folderBrowserDialog.SelectedPath;
+                MessageBox.Show("선택된 폴더 경로: " + SaveDataPath);
+                WriteToIniFile("PATH", "데이터 저장 경로", SaveDataPath);
+
+            }
+        }
+        private void WriteToIniFile(string section, string key, string value)
+        {
+            try
+            {
+                // 파일에 쓸 내용을 준비한다.
+                string content = $"[{section}]\n{key}={value}\n";
+
+                // 설정 파일에 내용을 추가 모드로 연다. 
+                using (StreamWriter writer = new StreamWriter(settingsFilePath, true))
+                {
+                    // 파일에 내용을 쓴다.
+                    writer.Write(content);
+                }
+
+                MessageBox.Show("설정이 성공적으로 저장되었습니다.");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"오류 발생: {ex.Message}");
+            }
+        }
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            DateTime now = DateTime.Now; //현재 날짜와시간을 가져온다. 
+            string fileName = now.ToString("yyMMdd") + ".xls"; 
+            
+        }
         private void metroButton3_Click(object sender, EventArgs e)
         {
             //Setting form = new Setting();
@@ -163,40 +202,6 @@ namespace Serial_Communication
 
             Setting sfrm = new Setting();
             sfrm.Show();
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            FolderBrowserDialog folderBrowserDialog = new FolderBrowserDialog();
-
-            if (folderBrowserDialog.ShowDialog() == DialogResult.OK)
-            {
-                string selectedFolderPath = folderBrowserDialog.SelectedPath;
-                MessageBox.Show("선택된 폴더 경로: " + selectedFolderPath);
-                WriteToIniFile("PATH", "데이터 저장 경로", selectedFolderPath);
-
-            }
-        }
-        private void WriteToIniFile(string section, string key, string value)
-        {
-            try
-            {
-                // 파일에 쓸 내용을 준비합니다.
-                string content = $"[{section}]\n{key}={value}\n";
-
-                // 설정 파일에 내용을 추가 모드로 엽니다.
-                using (StreamWriter writer = new StreamWriter(settingsFilePath, true))
-                {
-                    // 파일에 내용을 씁니다.
-                    writer.Write(content);
-                }
-
-                MessageBox.Show("설정이 성공적으로 저장되었습니다.");
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show($"오류 발생: {ex.Message}");
-            }
         }
         private void Button_connect_Click(object sender, EventArgs e)  //통신 연결하기 버튼
         {
