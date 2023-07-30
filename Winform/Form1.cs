@@ -20,6 +20,7 @@ namespace Serial_Communication
 {
     public partial class Form1 : MetroFramework.Forms.MetroForm
     {
+        String SavePath;
         string settingsFilePath = Path.Combine(Application.StartupPath, SettingsFileName);
         private const string SettingsFileName = "Setting.ini"; 
         byte m_ucRxDataCnt, m_ucRxCommand, m_ucRxID, ucLength, rdata;
@@ -156,9 +157,90 @@ namespace Serial_Communication
             {
                 string SaveDataPath = folderBrowserDialog.SelectedPath;
                 MessageBox.Show("선택된 폴더 경로: " + SaveDataPath);
-                WriteToIniFile("PATH", "데이터 저장 경로", SaveDataPath);
+                //WriteToIniFile("Setting", "Path", SaveDataPath);
+                // string FindPAth = ReadFromIniFile(sectionName, keyName);
+                Dictionary<string, string> iniData = ReadFromIniFile(settingsFilePath);
+                if (iniData.ContainsKey("Path"))
+                {
+                    // 이미 "Path" 키가 있으면 수정
+                    iniData["Path"] = SaveDataPath;
+                    ModifyIniData("Setting", "Path", SaveDataPath);
+                }
+                else
+                {
+                    // "Path" 키가 없으면 추가
+                    //iniData.Add("Path", SaveDataPath);
+                    WriteToIniFile("Setting", "Path", SaveDataPath);
+                }
+
+                // 수정된 데이터를 다시 INI 파일에 쓰기
+                //WriteToIniFile("Setting", "Path", SaveDataPath);
+
 
             }
+        }
+
+        private void ModifyIniData(string section, string key, string newValue)
+        {
+            try
+            {
+                // 기존 INI 파일 읽기
+                string[] lines = File.ReadAllLines(settingsFilePath);
+
+                // 수정된 데이터를 임시로 저장할 변수
+                string modifiedContent = string.Empty;
+
+                // 기존 데이터를 라인별로 검사하면서 수정할 데이터를 찾음
+                bool found = false;
+                foreach (string line in lines)
+                {
+                    string trimmedLine = line.Trim();
+                    if (found || trimmedLine.StartsWith($"[{section}]"))
+                    {
+                        if (trimmedLine.StartsWith($"{key}="))
+                        {
+                            // 찾은 데이터를 수정
+                            modifiedContent += $"{key}={newValue}\n";
+                            found = true;
+                        }
+                        else
+                        {
+                            modifiedContent += line + "\n";
+                        }
+                    }
+                    else
+                    {
+                        modifiedContent += line + "\n";
+                    }
+                }
+
+                // 수정된 내용을 INI 파일에 쓰기 (덮어쓰기)
+                File.WriteAllText(settingsFilePath, modifiedContent);
+
+                Console.WriteLine("INI 파일이 수정되었습니다.");
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"오류 발생: {ex.Message}");
+            }
+        }
+        private Dictionary<string, string> ReadFromIniFile(string filePath)
+        {
+            Dictionary<string, string> data = new Dictionary<string, string>();
+            string[] lines = File.ReadAllLines(filePath);
+
+            foreach (string line in lines)
+            {
+                string[] parts = line.Split('=');
+                if (parts.Length == 2)
+                {
+                    string key = parts[0].Trim();
+                    string value = parts[1].Trim();
+                    data[key] = value;
+                }
+            }
+
+            return data;
         }
         private void WriteToIniFile(string section, string key, string value)
         {
@@ -181,11 +263,62 @@ namespace Serial_Communication
                 MessageBox.Show($"오류 발생: {ex.Message}");
             }
         }
-        private void timer1_Tick(object sender, EventArgs e)
+        private string ReadFromIniFile(string section, string key)
+        {
+            try
+            {
+                // 설정 파일에서 데이터를 읽어오기 위해 StreamReader를 사용합니다.
+                using (StreamReader reader = new StreamReader(settingsFilePath))
+                {
+                    string line;
+                    while ((line = reader.ReadLine()) != null)
+                    {
+                        // 섹션과 키에 해당하는 줄을 찾습니다.
+                        if (line.StartsWith($"[{section}]"))
+                        {
+                            while ((line = reader.ReadLine()) != null)
+                            {
+                                // 해당 키를 찾았으면 값을 반환합니다.
+                                if (line.StartsWith($"{key}="))
+                                {
+                                    return line.Substring(key.Length + 1); // 값을 리턴합니다.
+                                }
+
+                                // 만약 다음 섹션을 만나면 중지합니다.
+                                if (line.StartsWith("["))
+                                    break;
+                            }
+                        }
+                    }
+                }
+
+                // 해당 섹션 또는 키를 찾지 못했을 경우 null을 반환합니다.
+                return null;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"오류 발생: {ex.Message}");
+                return null;
+            }
+        }
+        private void timer1_Tick(object sender, EventArgs e)    //사용자가 설정한 경로에 파일이 존재하는지 우선 확인한다. 
         {
             DateTime now = DateTime.Now; //현재 날짜와시간을 가져온다. 
-            string fileName = now.ToString("yyMMdd") + ".xls"; 
-            
+            string fileName = now.ToString("yyMMdd") + ".xls";
+            string sectionName = "Setting";
+            string keyName = "Path";
+            string directoryPath = ReadFromIniFile(sectionName, keyName);
+            string filePath = settingsFilePath;
+            //MessageBox.Show("선택된 폴더 경로: " + filePath);
+            //File.Exists(directoryPath);
+            if (File.Exists(filePath))
+            {
+                Console.WriteLine($"A 경로에 {fileName} 파일이 존재합니다.");
+            }
+            else
+            {
+                Console.WriteLine($"A 경로에 {fileName} 파일이 존재하지 않습니다.");
+            }
         }
         private void metroButton3_Click(object sender, EventArgs e)
         {
