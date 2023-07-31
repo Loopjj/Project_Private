@@ -308,15 +308,17 @@ namespace Serial_Communication
             string sectionName = "Setting";
             string keyName = "Path";
             string directoryPath = ReadFromIniFile(sectionName, keyName);
-            string filePath = settingsFilePath;
+            string filePath = Path.Combine(directoryPath, fileName);
             //MessageBox.Show("선택된 폴더 경로: " + filePath);
             //File.Exists(directoryPath);
             if (File.Exists(filePath))
             {
+                Console.WriteLine($"경로"+ filePath);
                 Console.WriteLine($"A 경로에 {fileName} 파일이 존재합니다.");
             }
             else
             {
+                Console.WriteLine($"경로" + filePath);
                 Console.WriteLine($"A 경로에 {fileName} 파일이 존재하지 않습니다.");
             }
         }
