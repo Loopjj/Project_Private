@@ -92,7 +92,7 @@
             this.metroButton13 = new MetroFramework.Controls.MetroButton();
             this.metroButton12 = new MetroFramework.Controls.MetroButton();
             this.metroButton11 = new MetroFramework.Controls.MetroButton();
-            this.metroButton10 = new MetroFramework.Controls.MetroButton();
+            this.Button_SCRDsiable = new MetroFramework.Controls.MetroButton();
             this.panel6 = new System.Windows.Forms.Panel();
             this.metroButton9 = new MetroFramework.Controls.MetroButton();
             this.metroButton8 = new MetroFramework.Controls.MetroButton();
@@ -1479,7 +1479,7 @@
             this.metroTabPage5.Controls.Add(this.metroButton13);
             this.metroTabPage5.Controls.Add(this.metroButton12);
             this.metroTabPage5.Controls.Add(this.metroButton11);
-            this.metroTabPage5.Controls.Add(this.metroButton10);
+            this.metroTabPage5.Controls.Add(this.Button_SCRDsiable);
             this.metroTabPage5.Controls.Add(this.panel6);
             this.metroTabPage5.Controls.Add(this.metroButton9);
             this.metroTabPage5.Controls.Add(this.metroButton8);
@@ -1670,15 +1670,15 @@
             this.metroButton11.Text = "Alarm Clear";
             this.metroButton11.UseSelectable = true;
             // 
-            // metroButton10
+            // Button_SCRDsiable
             // 
-            this.metroButton10.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.metroButton10.Location = new System.Drawing.Point(926, 33);
-            this.metroButton10.Name = "metroButton10";
-            this.metroButton10.Size = new System.Drawing.Size(97, 33);
-            this.metroButton10.TabIndex = 173;
-            this.metroButton10.Text = "SCR Stop";
-            this.metroButton10.UseSelectable = true;
+            this.Button_SCRDsiable.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.Button_SCRDsiable.Location = new System.Drawing.Point(926, 33);
+            this.Button_SCRDsiable.Name = "Button_SCRDsiable";
+            this.Button_SCRDsiable.Size = new System.Drawing.Size(97, 33);
+            this.Button_SCRDsiable.TabIndex = 173;
+            this.Button_SCRDsiable.Text = "SCR Stop";
+            this.Button_SCRDsiable.UseSelectable = true;
             // 
             // panel6
             // 
@@ -4520,7 +4520,7 @@
         private MetroFramework.Controls.MetroButton metroButton13;
         private MetroFramework.Controls.MetroButton metroButton12;
         private MetroFramework.Controls.MetroButton metroButton11;
-        private MetroFramework.Controls.MetroButton metroButton10;
+        private MetroFramework.Controls.MetroButton Button_SCRDsiable;
         private System.Windows.Forms.Panel panel6;
         private MetroFramework.Controls.MetroButton metroButton9;
         private MetroFramework.Controls.MetroButton metroButton8;

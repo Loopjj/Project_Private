@@ -240,23 +240,44 @@ namespace Serial_Communication
         }
         private void timer1_Tick(object sender, EventArgs e)    //사용자가 설정한 경로에 파일이 존재하는지 우선 확인한다. 
         {
-            DateTime now = DateTime.Now; //현재 날짜와시간을 가져온다. 
-            string fileName = now.ToString("yyMMdd") + ".xls";
-            string sectionName = "Setting";
-            string keyName = "Path";
-            string directoryPath = ReadFromIniFile(sectionName, keyName);
-            string filePath = Path.Combine(directoryPath, fileName);
-            //MessageBox.Show("선택된 폴더 경로: " + filePath);
-            //File.Exists(directoryPath);
-            if (File.Exists(filePath))
+            if (serialPort1.IsOpen)
             {
-                Console.WriteLine($"경로"+ filePath);
-                Console.WriteLine($"A 경로에 {fileName} 파일이 존재합니다.");
+                DateTime now = DateTime.Now; //현재 날짜와시간을 가져온다. 
+                string fileName = now.ToString("yyMMdd") + ".xls";
+                string sectionName = "Setting";
+                string keyName = "Path";
+                string directoryPath = ReadFromIniFile(sectionName, keyName);
+                string filePath = Path.Combine(directoryPath, fileName);
+                //MessageBox.Show("선택된 폴더 경로: " + filePath);
+                //File.Exists(directoryPath);
+                if (File.Exists(filePath))
+                {
+                    using (StreamWriter writer = new StreamWriter(filePath, true))
+                    {
+                        writer.WriteLine($"{DateTime.Now.ToString("yyyy-MM-dd")}\t{DateTime.Now.ToString("HH:mm")}\tvalue1\tvalue2\tvalue3\tvalue4\tvalue5\tvalue6\tvalue7\tvalue8\tvalue9\tvalue10\tvalue11\tvalue12\tvalue13\tvalue14\tvalue15\tvalue16\tvalue17\tvalue18\tvalue19\tvalue20\tvalue21\tvalue22\tvalue23\tvalue24");
+
+                    }
+                    Console.WriteLine($"경로" + filePath);
+                    Console.WriteLine($"A 경로에 {fileName} 파일이 존재합니다.");
+                }
+                else
+                {
+                    using (StreamWriter writer = new StreamWriter(filePath))
+                    {
+                        writer.WriteLine("Data\tTime\tSetp\tRegTime\tscrSetp\tscrRegTime\tT1\tT2\tT3\tT4\tP1\tBaseP1\tFPD\tReady\t" +
+                                         "NOxIn_T\tNOxOut_T\tTavg\tNOxIn\tNOxOut\tO2In\tO2Out\tMAF\tDosingRate\tTotalDosingRate\t" +
+                                         "BV\tUreaLevel\tCurrent\tIgniter\tMotor\tSupplyP\tStatusAlpha\t" +
+                                         "DpfError\tDpfCheck\tScrError\tScrCheck\tScrSignal\tdrvH\tRegenSts\t" +
+                                         "PM_Senser1\tPM_Senser2\tPM_Senser3\tPM_Senser4\tRegenMode\tSpeed\tUreaQuality\t" +
+                                         "Fomula1\tFomula2\tFomula3\tcurXk\tXc\tH1k\tH2k\tYk\tKl\tKp\tVk\tGamma\tXh\tAlpha");
+                    }
+                    Console.WriteLine($"경로" + filePath);
+                    Console.WriteLine($"A 경로에 {fileName} 파일이 존재하지 않습니다.");
+                }
             }
             else
             {
-                Console.WriteLine($"경로" + filePath);
-                Console.WriteLine($"A 경로에 {fileName} 파일이 존재하지 않습니다.");
+                return;
             }
         }
         private void metroButton3_Click(object sender, EventArgs e)
