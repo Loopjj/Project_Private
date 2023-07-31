@@ -156,75 +156,11 @@ namespace Serial_Communication
             if (folderBrowserDialog.ShowDialog() == DialogResult.OK)
             {
                 string SaveDataPath = folderBrowserDialog.SelectedPath;
-                MessageBox.Show("선택된 폴더 경로: " + SaveDataPath);
-                //WriteToIniFile("Setting", "Path", SaveDataPath);
-                // string FindPAth = ReadFromIniFile(sectionName, keyName);
-                Dictionary<string, string> iniData = ReadFromIniFile(settingsFilePath);
-                if (iniData.ContainsKey("Path"))
-                {
-                    // 이미 "Path" 키가 있으면 수정
-                    Console.WriteLine($"이미 Path가 있다." + SaveDataPath);
-                    iniData["Path"] = SaveDataPath;
-                    ModifyIniData("Setting", "Path", SaveDataPath);
-                }
-                else
-                {
-                    Console.WriteLine($"Path가 없다." + SaveDataPath);
+                //MessageBox.Show("선택된 폴더 경로: " + SaveDataPath);           
+                CheckAndCreateSettingsFile();
+                WriteToIniFile("Setting", "Path", SaveDataPath);
+                MetroFramework.MetroMessageBox.Show(this, "\n데이터 저장경로 설정완료.\n\n데이터 저장경로 수정시 Setting.INI 파일을 삭제하고 경로를 다시 설정하세요.", "Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
-                    // "Path" 키가 없으면 추가
-                    iniData.Add("Path", SaveDataPath);
-                    WriteToIniFile("Setting", "Path", SaveDataPath);
-                }
-
-                // 수정된 데이터를 다시 INI 파일에 쓰기
-                //WriteToIniFile("Setting", "Path", SaveDataPath);
-
-
-            }
-        }
-
-        private void ModifyIniData(string section, string key, string newValue)
-        {
-            try
-            {
-                // 기존 INI 파일 읽기
-                string[] lines = File.ReadAllLines(settingsFilePath);
-
-                // 수정된 데이터를 임시로 저장할 변수
-                string modifiedContent = string.Empty;
-
-                // 기존 데이터를 라인별로 검사하면서 수정할 데이터를 찾음
-                bool found = false;
-                foreach (string line in lines)
-                {
-                    string trimmedLine = line.Trim();
-                    if (found || trimmedLine.StartsWith($"[{section}]"))
-                    {
-                        if (trimmedLine.StartsWith($"{key}="))
-                        {
-                            // 찾은 데이터를 수정
-                            modifiedContent += $"{key}={newValue}\n";
-                            found = true;
-                        }
-                        else
-                        {
-                            modifiedContent += line + "\n";
-                        }
-                    }
-                    else
-                    {
-                        modifiedContent += line + "\n";
-                    }
-                }
-
-                // 수정된 내용을 INI 파일에 쓰기 (덮어쓰기)
-                File.WriteAllText(settingsFilePath, modifiedContent);
-
-                Console.WriteLine("INI 파일이 수정되었습니다.");
-            }
-            catch (Exception ex)
-            {
-                Console.WriteLine($"오류 발생: {ex.Message}");
             }
         }
         private Dictionary<string, string> ReadFromIniFile(string filePath)
@@ -258,8 +194,6 @@ namespace Serial_Communication
                     // 파일에 내용을 쓴다.
                     writer.Write(content);
                 }
-
-                MessageBox.Show("설정이 성공적으로 저장되었습니다.");
             }
             catch (Exception ex)
             {
