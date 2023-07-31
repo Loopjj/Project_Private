@@ -149,7 +149,7 @@ namespace Serial_Communication
                 }
             }
         }
-        private void button1_Click(object sender, EventArgs e)
+        public void button1_Click(object sender, EventArgs e)
         {
             FolderBrowserDialog folderBrowserDialog = new FolderBrowserDialog();
 
@@ -318,7 +318,6 @@ namespace Serial_Communication
             //// buffer[0]에 1바이트 데이터가 저장됩니다.
             //textBox4.Text = string.Format(buffer[0]);
         }
-
         private void MySerialReceived(object s, EventArgs e)  //여기에서 수신 데이타를 사용자의 용도에 따라 처리한다.
         {
             try
