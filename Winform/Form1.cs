@@ -163,13 +163,16 @@ namespace Serial_Communication
                 if (iniData.ContainsKey("Path"))
                 {
                     // 이미 "Path" 키가 있으면 수정
+                    Console.WriteLine($"이미 Path가 있다." + SaveDataPath);
                     iniData["Path"] = SaveDataPath;
                     ModifyIniData("Setting", "Path", SaveDataPath);
                 }
                 else
                 {
+                    Console.WriteLine($"Path가 없다." + SaveDataPath);
+
                     // "Path" 키가 없으면 추가
-                    //iniData.Add("Path", SaveDataPath);
+                    iniData.Add("Path", SaveDataPath);
                     WriteToIniFile("Setting", "Path", SaveDataPath);
                 }
 
