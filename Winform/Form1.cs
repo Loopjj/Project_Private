@@ -252,11 +252,12 @@ namespace Serial_Communication
                 string formattedTime = now.ToString("HH:mm:ss");
 
                 // 파일을 동시에 읽고 쓰기 위해 FileShare.ReadWrite 옵션을 사용하여 파일 열기
-                using (FileStream fileStream = new FileStream(filePath, FileMode.Append, FileAccess.Write, FileShare.ReadWrite))
-                {
+               // using (FileStream fileStream = new FileStream(filePath, FileMode.Append, FileAccess.Write, FileShare.ReadWrite))
+               // {
                     if (File.Exists(filePath))
                     {
-                        using (StreamWriter writer = new StreamWriter(fileStream))
+                    using (FileStream fileStream = new FileStream(filePath, FileMode.Append, FileAccess.Write, FileShare.ReadWrite))
+                    using (StreamWriter writer = new StreamWriter(fileStream))
                         {
                             writer.WriteLine($"{formattedDate}\t{formattedTime}\tvalue1\tvalue2\tvalue3\tvalue4\tvalue5\tvalue6\tvalue7\tvalue8\tvalue9\tvalue10\tvalue11\tvalue12\tvalue13\tvalue14\tvalue15\tvalue16\tvalue17\tvalue18\tvalue19\tvalue20\tvalue21\tvalue22\tvalue23\tvalue24");
                         }
@@ -265,7 +266,8 @@ namespace Serial_Communication
                     }
                     else
                     {
-                        using (StreamWriter writer = new StreamWriter(fileStream))
+                    using (FileStream fileStream = new FileStream(filePath, FileMode.Append, FileAccess.Write, FileShare.ReadWrite))
+                    using (StreamWriter writer = new StreamWriter(fileStream))
                         {
                             writer.WriteLine("Data\tTime\tSetp\tRegTime\tscrSetp\tscrRegTime\tT1\tT2\tT3\tT4\tP1\tBaseP1\tFPD\tReady\t" +
                                              "NOxIn_T\tNOxOut_T\tTavg\tNOxIn\tNOxOut\tO2In\tO2Out\tMAF\tDosingRate\tTotalDosingRate\t" +
@@ -274,12 +276,12 @@ namespace Serial_Communication
                                              "PM_Senser1\tPM_Senser2\tPM_Senser3\tPM_Senser4\tRegenMode\tSpeed\tUreaQuality\t" +
                                              "Fomula1\tFomula2\tFomula3\tcurXk\tXc\tH1k\tH2k\tYk\tKl\tKp\tVk\tGamma\tXh\tAlpha");
 
-                            writer.WriteLine($"{formattedDate}\t{formattedTime}\tvalue1\tvalue2\tvalue3\tvalue4\tvalue5\tvalue6\tvalue7\tvalue8\tvalue9\tvalue10\tvalue11\tvalue12\tvalue13\tvalue14\tvalue15\tvalue16\tvalue17\tvalue18\tvalue19\tvalue20\tvalue21\tvalue22\tvalue23\tvalue24");
+                            //writer.WriteLine($"{formattedDate}\t{formattedTime}\tvalue1\tvalue2\tvalue3\tvalue4\tvalue5\tvalue6\tvalue7\tvalue8\tvalue9\tvalue10\tvalue11\tvalue12\tvalue13\tvalue14\tvalue15\tvalue16\tvalue17\tvalue18\tvalue19\tvalue20\tvalue21\tvalue22\tvalue23\tvalue24");
                         }
                         Console.WriteLine($"경로" + filePath);
                         Console.WriteLine($"A 경로에 {fileName} 파일이 존재하지 않습니다.");
                     }
-                }
+               // }
             }
             else
             {
