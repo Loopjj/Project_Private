@@ -259,7 +259,15 @@ namespace Serial_Communication
                     using (FileStream fileStream = new FileStream(filePath, FileMode.Append, FileAccess.Write, FileShare.ReadWrite))
                     using (StreamWriter writer = new StreamWriter(fileStream))
                         {
-                            writer.WriteLine($"{formattedDate}\t{formattedTime}\tvalue1\tvalue2\tvalue3\tvalue4\tvalue5\tvalue6\tvalue7\tvalue8\tvalue9\tvalue10\tvalue11\tvalue12\tvalue13\tvalue14\tvalue15\tvalue16\tvalue17\tvalue18\tvalue19\tvalue20\tvalue21\tvalue22\tvalue23\tvalue24");
+                        writer.WriteLine($"{formattedDate}\t{formattedTime}\t{ReadValue.f_REG}\t{ReadValue.t_REG}\t{ReadValue.f_SCR}\t{ReadValue.t_SCR}\t{ReadValue.T1}\t" +
+                            $"{ReadValue.T2}\t{ReadValue.T3}\t{ReadValue.T4}\t{ReadValue.P}\t{ReadValue.baseP1}\t{ReadValue.FPD}\t{ReadValue.RegenStartKey}\t{ScrValue.T1_temp}\t" +
+                            $"{ScrValue.T2_temp}\t{ScrValue.Tavg_temp}\t{ScrValue.Noxppm1}\t{ScrValue.Noxppm2}\t{ScrValue.NoxO2_1}\t{ScrValue.NoxO2_2}\t{ScrValue.MafKg_H}\t{ScrValue.DosingRatehouer}\t" +
+                            $"{ScrValue.TotalDosingRate}\t{ScrValue.BattVoltage/100}\t{ScrValue.TankLevelP}\t{ReadValue.IHC}\t{(ReadValue.Sig >> 1) & 0x01}\t{(ReadValue.Sig >> 2) & 0x01}\t{ScrValue.P1_bar}\t{ScrValue.StatusAlpha}\t" +
+                            $"{ReadValue.Error}\t{ReadValue.Check}\t{ScrValue.SystemError}\t{ScrValue.SystemCheck}\t{ScrValue.SystemCheck}\t{ScrValue.SystemSignal}\t{ReadValue.DrvTime / 3600}\t{(ReadValue.Sig >> 5) & 0x03}\t" +
+                            $"{ScrValue.PM_Senser1}\t{ScrValue.PM_Senser2}\t{ScrValue.PM_Senser3}\t{ScrValue.PM_Senser4}\t{ReadValue.RegenStartKey}\t{0}\t{ScrValue.UreaQuality / 10}{ScrValue.UreaQuality % 10}\t" +
+                            $"{ScrValue.Formula1}\t{ScrValue.Formula2}\t{ScrValue.Formula3}\t{ScrValue.curXk}\t{ScrValue.Xc}\t{ScrValue.H1k}\t{ScrValue.Yk}\t{ScrValue.Kl}\t" +
+                            $"{ScrValue.Kp}\t{ScrValue.Vk}\t{ScrValue.Gamma}\t{ScrValue.curXh}\t{ScrValue.StatusAlpha}");
+                                //$"value15\tvalue16\tvalue17\tvalue18\tvalue19\tvalue20\tvalue21\tvalue22\tvalue23\tvalue24");
                         }
                         Console.WriteLine($"경로" + filePath);
                         Console.WriteLine($"A 경로에 {fileName} 파일이 존재합니다.");
@@ -269,7 +277,7 @@ namespace Serial_Communication
                     using (FileStream fileStream = new FileStream(filePath, FileMode.Append, FileAccess.Write, FileShare.ReadWrite))
                     using (StreamWriter writer = new StreamWriter(fileStream))
                         {
-                            writer.WriteLine("Data\tTime\tSetp\tRegTime\tscrSetp\tscrRegTime\tT1\tT2\tT3\tT4\tP1\tBaseP1\tFPD\tReady\t" +
+                            writer.WriteLine("Data\tTime\tStep\tRegTime\tscrSetp\tscrRegTime\tT1\tT2\tT3\tT4\tP1\tBaseP1\tFPD\tReady\t" +
                                              "NOxIn_T\tNOxOut_T\tTavg\tNOxIn\tNOxOut\tO2In\tO2Out\tMAF\tDosingRate\tTotalDosingRate\t" +
                                              "BV\tUreaLevel\tCurrent\tIgniter\tMotor\tSupplyP\tStatusAlpha\t" +
                                              "DpfError\tDpfCheck\tScrError\tScrCheck\tScrSignal\tdrvH\tRegenSts\t" +
