@@ -125,12 +125,12 @@ namespace Serial_Communication
         {
             InitializeComponent();
             CheckAndCreateSettingsFile(); //최초 실행시 Setting.INI파일의 유무를 확인한다. 
+            comboBox_Mode.SelectedItem = "AUTO";
         }
 
         private void Form1_Load(object sender, EventArgs e)  //폼이 로드되면
         {
             comboBox_port1.DataSource = SerialPort.GetPortNames(); //연결 가능한 시리얼포트 이름을 콤보박스에 가져오기
-            comboBox_Mode.SelectedItem = "AUTO";
         }
         private void CheckAndCreateSettingsFile()
         {
