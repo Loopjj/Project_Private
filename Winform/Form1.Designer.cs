@@ -118,8 +118,8 @@
             this.label50 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.metroButton5 = new MetroFramework.Controls.MetroButton();
-            this.metroComboBox1 = new MetroFramework.Controls.MetroComboBox();
+            this.metroButton_MODEClick = new MetroFramework.Controls.MetroButton();
+            this.comboBox_Mode = new MetroFramework.Controls.MetroComboBox();
             this.label_Signal_Noxact = new System.Windows.Forms.Label();
             this.label_Signal_Dosing = new System.Windows.Forms.Label();
             this.label_Signal_Flushing = new System.Windows.Forms.Label();
@@ -296,6 +296,7 @@
             this.panel13 = new System.Windows.Forms.Panel();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.metroButton4 = new MetroFramework.Controls.MetroButton();
+            this.metroButton14 = new MetroFramework.Controls.MetroButton();
             this.metroTabControl1.SuspendLayout();
             this.metroTabPage1.SuspendLayout();
             this.metroTabPage5.SuspendLayout();
@@ -1505,8 +1506,8 @@
             this.metroTabPage5.Controls.Add(this.label50);
             this.metroTabPage5.Controls.Add(this.panel3);
             this.metroTabPage5.Controls.Add(this.panel2);
-            this.metroTabPage5.Controls.Add(this.metroButton5);
-            this.metroTabPage5.Controls.Add(this.metroComboBox1);
+            this.metroTabPage5.Controls.Add(this.metroButton_MODEClick);
+            this.metroTabPage5.Controls.Add(this.comboBox_Mode);
             this.metroTabPage5.Controls.Add(this.label_Signal_Noxact);
             this.metroTabPage5.Controls.Add(this.label_Signal_Dosing);
             this.metroTabPage5.Controls.Add(this.label_Signal_Flushing);
@@ -1926,25 +1927,31 @@
             this.panel2.Size = new System.Drawing.Size(1104, 3);
             this.panel2.TabIndex = 148;
             // 
-            // metroButton5
+            // metroButton_MODEClick
             // 
-            this.metroButton5.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.metroButton5.Location = new System.Drawing.Point(10, 73);
-            this.metroButton5.Name = "metroButton5";
-            this.metroButton5.Size = new System.Drawing.Size(97, 33);
-            this.metroButton5.TabIndex = 147;
-            this.metroButton5.Text = "Mode Set";
-            this.metroButton5.UseSelectable = true;
+            this.metroButton_MODEClick.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.metroButton_MODEClick.Location = new System.Drawing.Point(10, 73);
+            this.metroButton_MODEClick.Name = "metroButton_MODEClick";
+            this.metroButton_MODEClick.Size = new System.Drawing.Size(97, 33);
+            this.metroButton_MODEClick.TabIndex = 147;
+            this.metroButton_MODEClick.Text = "Mode Set";
+            this.metroButton_MODEClick.UseSelectable = true;
+            this.metroButton_MODEClick.Click += new System.EventHandler(this.metroButton_MODEClick_Click);
             // 
-            // metroComboBox1
+            // comboBox_Mode
             // 
-            this.metroComboBox1.FormattingEnabled = true;
-            this.metroComboBox1.ItemHeight = 23;
-            this.metroComboBox1.Location = new System.Drawing.Point(10, 38);
-            this.metroComboBox1.Name = "metroComboBox1";
-            this.metroComboBox1.Size = new System.Drawing.Size(97, 29);
-            this.metroComboBox1.TabIndex = 146;
-            this.metroComboBox1.UseSelectable = true;
+            this.comboBox_Mode.FormattingEnabled = true;
+            this.comboBox_Mode.ItemHeight = 23;
+            this.comboBox_Mode.Items.AddRange(new object[] {
+            "AUTO",
+            "MANUAL",
+            "ALPHA",
+            "DOSING"});
+            this.comboBox_Mode.Location = new System.Drawing.Point(10, 38);
+            this.comboBox_Mode.Name = "comboBox_Mode";
+            this.comboBox_Mode.Size = new System.Drawing.Size(97, 29);
+            this.comboBox_Mode.TabIndex = 146;
+            this.comboBox_Mode.UseSelectable = true;
             // 
             // label_Signal_Noxact
             // 
@@ -4230,11 +4237,22 @@
             this.metroButton4.UseSelectable = true;
             this.metroButton4.Click += new System.EventHandler(this.button1_Click);
             // 
+            // metroButton14
+            // 
+            this.metroButton14.Location = new System.Drawing.Point(462, 55);
+            this.metroButton14.Name = "metroButton14";
+            this.metroButton14.Size = new System.Drawing.Size(139, 42);
+            this.metroButton14.TabIndex = 96;
+            this.metroButton14.Text = "metroButton14";
+            this.metroButton14.UseSelectable = true;
+            this.metroButton14.Click += new System.EventHandler(this.MetroButton14_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1149, 808);
+            this.Controls.Add(this.metroButton14);
             this.Controls.Add(this.metroButton4);
             this.Controls.Add(this.panel13);
             this.Controls.Add(this.metroButton2);
@@ -4495,8 +4513,8 @@
         private MetroFramework.Controls.MetroButton metroButton3;
         private MetroFramework.Controls.MetroButton metroButton4;
         private System.Windows.Forms.Panel panel2;
-        private MetroFramework.Controls.MetroButton metroButton5;
-        private MetroFramework.Controls.MetroComboBox metroComboBox1;
+        private MetroFramework.Controls.MetroButton metroButton_MODEClick;
+        private MetroFramework.Controls.MetroComboBox comboBox_Mode;
         private MetroFramework.Controls.MetroButton metroButton7;
         private System.Windows.Forms.Panel panel4;
         private MetroFramework.Controls.MetroButton metroButton6;
@@ -4526,6 +4544,7 @@
         private MetroFramework.Controls.MetroButton metroButton8;
         private System.Windows.Forms.TextBox textBox6;
         private System.Windows.Forms.Panel panel7;
+        private MetroFramework.Controls.MetroButton metroButton14;
     }
 }
 

@@ -41,5 +41,10 @@ namespace WINFORM_STUDY
             mbColor.SelectedIndex = 0;
             mbTheme.SelectedIndex = 0;
         }
+
+        private void metroButton1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -15,6 +15,8 @@ using Excel = Microsoft.Office.Interop.Excel; // 엑셀 파일 생성을 위함
 using System.Timers;
 using System.IO;
 using static System.Collections.Specialized.BitVector32;
+using MetroFramework.Components;
+using System.Net.Sockets;
 
 namespace Serial_Communication
 {
@@ -22,7 +24,7 @@ namespace Serial_Communication
     {
         String SavePath;
         string settingsFilePath = Path.Combine(Application.StartupPath, SettingsFileName);
-        private const string SettingsFileName = "Setting.ini"; 
+        private const string SettingsFileName = "Setting.ini";
         byte m_ucRxDataCnt, m_ucRxCommand, m_ucRxID, ucLength, rdata;
         byte[] m_ucRxData = new byte[1024];
         byte m_ucRxStep, m_ucSyncCnt, m_ucLenCnt;
@@ -127,11 +129,12 @@ namespace Serial_Communication
 
         private void Form1_Load(object sender, EventArgs e)  //폼이 로드되면
         {
-            comboBox_port1.DataSource = SerialPort.GetPortNames(); //연결 가능한 시리얼포트 이름을 콤보박스에 가져오기 
+            comboBox_port1.DataSource = SerialPort.GetPortNames(); //연결 가능한 시리얼포트 이름을 콤보박스에 가져오기
+            comboBox_Mode.SelectedItem = "AUTO";
         }
         private void CheckAndCreateSettingsFile()
         {
-          
+
 
             if (!File.Exists(settingsFilePath))
             {
@@ -252,44 +255,44 @@ namespace Serial_Communication
                 string formattedTime = now.ToString("HH:mm:ss");
 
                 // 파일을 동시에 읽고 쓰기 위해 FileShare.ReadWrite 옵션을 사용하여 파일 열기
-               // using (FileStream fileStream = new FileStream(filePath, FileMode.Append, FileAccess.Write, FileShare.ReadWrite))
-               // {
-                    if (File.Exists(filePath))
-                    {
+                // using (FileStream fileStream = new FileStream(filePath, FileMode.Append, FileAccess.Write, FileShare.ReadWrite))
+                // {
+                if (File.Exists(filePath))
+                {
                     using (FileStream fileStream = new FileStream(filePath, FileMode.Append, FileAccess.Write, FileShare.ReadWrite))
                     using (StreamWriter writer = new StreamWriter(fileStream))
-                        {
+                    {
                         writer.WriteLine($"{formattedDate}\t{formattedTime}\t{ReadValue.f_REG}\t{ReadValue.t_REG}\t{ReadValue.f_SCR}\t{ReadValue.t_SCR}\t{ReadValue.T1}\t" +
                             $"{ReadValue.T2}\t{ReadValue.T3}\t{ReadValue.T4}\t{ReadValue.P}\t{ReadValue.baseP1}\t{ReadValue.FPD}\t{ReadValue.RegenStartKey}\t{ScrValue.T1_temp}\t" +
                             $"{ScrValue.T2_temp}\t{ScrValue.Tavg_temp}\t{ScrValue.Noxppm1}\t{ScrValue.Noxppm2}\t{ScrValue.NoxO2_1}\t{ScrValue.NoxO2_2}\t{ScrValue.MafKg_H}\t{ScrValue.DosingRatehouer}\t" +
-                            $"{ScrValue.TotalDosingRate}\t{ScrValue.BattVoltage/100}\t{ScrValue.TankLevelP}\t{ReadValue.IHC}\t{(ReadValue.Sig >> 1) & 0x01}\t{(ReadValue.Sig >> 2) & 0x01}\t{ScrValue.P1_bar}\t{ScrValue.StatusAlpha}\t" +
+                            $"{ScrValue.TotalDosingRate}\t{ScrValue.BattVoltage / 100}\t{ScrValue.TankLevelP}\t{ReadValue.IHC}\t{(ReadValue.Sig >> 1) & 0x01}\t{(ReadValue.Sig >> 2) & 0x01}\t{ScrValue.P1_bar}\t{ScrValue.StatusAlpha}\t" +
                             $"{ReadValue.Error}\t{ReadValue.Check}\t{ScrValue.SystemError}\t{ScrValue.SystemCheck}\t{ScrValue.SystemCheck}\t{ScrValue.SystemSignal}\t{ReadValue.DrvTime / 3600}\t{(ReadValue.Sig >> 5) & 0x03}\t" +
                             $"{ScrValue.PM_Senser1}\t{ScrValue.PM_Senser2}\t{ScrValue.PM_Senser3}\t{ScrValue.PM_Senser4}\t{ReadValue.RegenStartKey}\t{0}\t{ScrValue.UreaQuality / 10}{ScrValue.UreaQuality % 10}\t" +
                             $"{ScrValue.Formula1}\t{ScrValue.Formula2}\t{ScrValue.Formula3}\t{ScrValue.curXk}\t{ScrValue.Xc}\t{ScrValue.H1k}\t{ScrValue.Yk}\t{ScrValue.Kl}\t" +
                             $"{ScrValue.Kp}\t{ScrValue.Vk}\t{ScrValue.Gamma}\t{ScrValue.curXh}\t{ScrValue.StatusAlpha}");
-                                //$"value15\tvalue16\tvalue17\tvalue18\tvalue19\tvalue20\tvalue21\tvalue22\tvalue23\tvalue24");
-                        }
-                        Console.WriteLine($"경로" + filePath);
-                        Console.WriteLine($"A 경로에 {fileName} 파일이 존재합니다.");
+                        //$"value15\tvalue16\tvalue17\tvalue18\tvalue19\tvalue20\tvalue21\tvalue22\tvalue23\tvalue24");
                     }
-                    else
-                    {
+                    Console.WriteLine($"경로" + filePath);
+                    Console.WriteLine($"A 경로에 {fileName} 파일이 존재합니다.");
+                }
+                else
+                {
                     using (FileStream fileStream = new FileStream(filePath, FileMode.Append, FileAccess.Write, FileShare.ReadWrite))
                     using (StreamWriter writer = new StreamWriter(fileStream))
-                        {
-                            writer.WriteLine("Data\tTime\tStep\tRegTime\tscrSetp\tscrRegTime\tT1\tT2\tT3\tT4\tP1\tBaseP1\tFPD\tReady\t" +
-                                             "NOxIn_T\tNOxOut_T\tTavg\tNOxIn\tNOxOut\tO2In\tO2Out\tMAF\tDosingRate\tTotalDosingRate\t" +
-                                             "BV\tUreaLevel\tCurrent\tIgniter\tMotor\tSupplyP\tStatusAlpha\t" +
-                                             "DpfError\tDpfCheck\tScrError\tScrCheck\tScrSignal\tdrvH\tRegenSts\t" +
-                                             "PM_Senser1\tPM_Senser2\tPM_Senser3\tPM_Senser4\tRegenMode\tSpeed\tUreaQuality\t" +
-                                             "Fomula1\tFomula2\tFomula3\tcurXk\tXc\tH1k\tH2k\tYk\tKl\tKp\tVk\tGamma\tXh\tAlpha");
+                    {
+                        writer.WriteLine("Data\tTime\tStep\tRegTime\tscrSetp\tscrRegTime\tT1\tT2\tT3\tT4\tP1\tBaseP1\tFPD\tReady\t" +
+                                         "NOxIn_T\tNOxOut_T\tTavg\tNOxIn\tNOxOut\tO2In\tO2Out\tMAF\tDosingRate\tTotalDosingRate\t" +
+                                         "BV\tUreaLevel\tCurrent\tIgniter\tMotor\tSupplyP\tStatusAlpha\t" +
+                                         "DpfError\tDpfCheck\tScrError\tScrCheck\tScrSignal\tdrvH\tRegenSts\t" +
+                                         "PM_Senser1\tPM_Senser2\tPM_Senser3\tPM_Senser4\tRegenMode\tSpeed\tUreaQuality\t" +
+                                         "Fomula1\tFomula2\tFomula3\tcurXk\tXc\tH1k\tH2k\tYk\tKl\tKp\tVk\tGamma\tXh\tAlpha");
 
-                            //writer.WriteLine($"{formattedDate}\t{formattedTime}\tvalue1\tvalue2\tvalue3\tvalue4\tvalue5\tvalue6\tvalue7\tvalue8\tvalue9\tvalue10\tvalue11\tvalue12\tvalue13\tvalue14\tvalue15\tvalue16\tvalue17\tvalue18\tvalue19\tvalue20\tvalue21\tvalue22\tvalue23\tvalue24");
-                        }
-                        Console.WriteLine($"경로" + filePath);
-                        Console.WriteLine($"A 경로에 {fileName} 파일이 존재하지 않습니다.");
+                        //writer.WriteLine($"{formattedDate}\t{formattedTime}\tvalue1\tvalue2\tvalue3\tvalue4\tvalue5\tvalue6\tvalue7\tvalue8\tvalue9\tvalue10\tvalue11\tvalue12\tvalue13\tvalue14\tvalue15\tvalue16\tvalue17\tvalue18\tvalue19\tvalue20\tvalue21\tvalue22\tvalue23\tvalue24");
                     }
-               // }
+                    Console.WriteLine($"경로" + filePath);
+                    Console.WriteLine($"A 경로에 {fileName} 파일이 존재하지 않습니다.");
+                }
+                // }
             }
             else
             {
@@ -386,6 +389,49 @@ namespace Serial_Communication
                 //this.debugText.AppendText(ex.Message);
             }
         }
+
+        private void metroButton_MODEClick_Click(object sender, EventArgs e) // Select Mode
+        {
+            byte[] sdata = new byte[8];
+            byte Mode = 0;
+            if (comboBox_Mode.SelectedItem != null)
+            {
+                string selectedMode = comboBox_Mode.SelectedItem.ToString();
+
+                if (selectedMode == "AUTO")
+                {
+                    Mode = 0;
+                }
+                else if (selectedMode == "MANUAL")
+                {
+                    Mode = 1;
+                }
+                else if (selectedMode == "ALPHA")
+                {
+                    Mode = 2;
+                }
+                else if (selectedMode == "DOSING")
+                {
+                    Mode = 3;
+                }
+            }
+            else
+            {
+                Mode = 0;  // ComboBox에서 아무 항목도 선택되지 않은 경우에 대한 처리를 원하면 여기에 추가할 수 있습니다.
+            }
+            //Convert.ToByte(comboBox_Mode.Text);
+            sdata[0] = Mode;
+            sdata[1] = 0x00;
+            sdata[2] = 0x00;
+            sdata[3] = 0x00;
+            sdata[4] = 0x00;
+            sdata[5] = 0x00;
+            sdata[6] = 0x00;
+            sdata[7] = 0x00;
+
+            TxData(0xC6, 8, 0x24, 0, sdata);
+        }
+
         //string ReceiveData = serialPort1.ReadExisting();  //시리얼 버터에 수신된 데이타를 ReceiveData 읽어오기
         //    richTextBox_received.Text = richTextBox_received.Text + string.Format("0x{0:X2}", ReceiveData);  //int 형식을 string형식으로 변환하여 출력
         //rdata = byte.ReceiveData;
@@ -630,7 +676,7 @@ namespace Serial_Communication
             textBox_UreaQuality.Text = (ScrValue.UreaQuality / 10.0).ToString();
             textBox_NoxReduction.Text = ScrValue.NoxReduction.ToString();
             textBox_SystemError.Text = ScrValue.SystemError.ToString();
-         /* System Error */
+            /* System Error */
             if ((ScrValue.SystemError & 0x01) != 0x01)
                 label_T1.BackColor = System.Drawing.SystemColors.ControlLightLight;
             else label_T1.BackColor = System.Drawing.Color.Red;
@@ -643,7 +689,7 @@ namespace Serial_Communication
                 label_Noxin.BackColor = System.Drawing.SystemColors.ControlLightLight;
             else label_Noxin.BackColor = System.Drawing.Color.Red;
 
-            if ((ScrValue.SystemError & 0x08) != 0x08) 
+            if ((ScrValue.SystemError & 0x08) != 0x08)
                 label_Noxout.BackColor = System.Drawing.SystemColors.ControlLightLight;
             else label_Noxout.BackColor = System.Drawing.Color.Red;
 
@@ -651,7 +697,7 @@ namespace Serial_Communication
                 label_ULevel.BackColor = System.Drawing.SystemColors.ControlLightLight;
             else label_ULevel.BackColor = System.Drawing.Color.Red;
 
-            if ((ScrValue.SystemError & 0x20) != 0x20) 
+            if ((ScrValue.SystemError & 0x20) != 0x20)
                 label_MAF.BackColor = System.Drawing.SystemColors.ControlLightLight;
             else label_MAF.BackColor = System.Drawing.Color.Red;
 
@@ -659,7 +705,7 @@ namespace Serial_Communication
                 label_UTemp.BackColor = System.Drawing.SystemColors.ControlLightLight;
             else label_UTemp.BackColor = System.Drawing.Color.Red;
 
-            if ((ScrValue.SystemError & 0x80) != 0x80) 
+            if ((ScrValue.SystemError & 0x80) != 0x80)
                 label_UQuality.BackColor = System.Drawing.SystemColors.ControlLightLight;
             else label_UQuality.BackColor = System.Drawing.Color.Red;
 
@@ -712,6 +758,62 @@ namespace Serial_Communication
             if ((ScrValue.SystemSignal & 0x200) != 0x200)
                 label_Signal_Noxact.BackColor = System.Drawing.SystemColors.ControlLightLight;
             else label_Signal_Noxact.BackColor = System.Drawing.Color.Blue;
+        }
+        private void TxData(byte sync, ushort len, byte command, byte id, byte[] data)
+        {
+            string str = "<-";
+            byte checkSum = 0;
+            ushort length = (ushort)(len + 2);
+
+            if (!serialPort1.IsOpen)
+            {
+                MessageBox.Show("Please Open the COM Port First.");
+                return;
+            }
+
+            byte[] txBuf = new byte[len + 9];
+            txBuf[0] = sync;
+            txBuf[1] = sync;
+            txBuf[2] = 0x7e;
+            txBuf[3] = (byte)(length & 0xff);
+            txBuf[4] = (byte)((length >> 8) & 0xff);
+            txBuf[5] = command;
+            txBuf[6] = id;
+
+            checkSum = (byte)((length & 0xff) ^ ((length >> 8) & 0xff) ^ command ^ id);
+
+            for (int i = 0; i < len; i++)
+            {
+                txBuf[i + 7] = data[i];
+                checkSum ^= txBuf[i + 7];
+            }
+
+            checkSum++;
+            txBuf[len + 7] = checkSum;
+            txBuf[len + 8] = 0x7d;
+
+            serialPort1.Write(txBuf, 0, len + 9);
+
+        }
+        private void TxCmd(byte sync, byte command, byte sig)
+        {
+            byte[] data = { sig };
+            TxData(sync, 1, command, 0, data);
+        }
+        private void MetroButton14_Click(object sender, EventArgs e)  //Only for debugging
+        {
+            byte[] sdata = new byte[8];
+
+            //sdata[0] = Convert.ToByte(comboBox_Mode.Text);
+            sdata[1] = 0x00;
+            sdata[2] = 0x00;
+            sdata[3] = 0x00;
+            sdata[4] = 0x00;
+            sdata[5] = 0x00;
+            sdata[6] = 0x00;
+            sdata[7] = 0x00;
+
+            TxData(0xC6, 8, 0x24, 0, sdata);
         }
     }
 }
