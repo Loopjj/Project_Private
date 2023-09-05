@@ -296,7 +296,6 @@
             this.panel13 = new System.Windows.Forms.Panel();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.metroButton4 = new MetroFramework.Controls.MetroButton();
-            this.metroButton14 = new MetroFramework.Controls.MetroButton();
             this.metroTabControl1.SuspendLayout();
             this.metroTabPage1.SuspendLayout();
             this.metroTabPage5.SuspendLayout();
@@ -4237,22 +4236,11 @@
             this.metroButton4.UseSelectable = true;
             this.metroButton4.Click += new System.EventHandler(this.button1_Click);
             // 
-            // metroButton14
-            // 
-            this.metroButton14.Location = new System.Drawing.Point(462, 55);
-            this.metroButton14.Name = "metroButton14";
-            this.metroButton14.Size = new System.Drawing.Size(139, 42);
-            this.metroButton14.TabIndex = 96;
-            this.metroButton14.Text = "metroButton14";
-            this.metroButton14.UseSelectable = true;
-            this.metroButton14.Click += new System.EventHandler(this.MetroButton14_Click);
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1149, 808);
-            this.Controls.Add(this.metroButton14);
             this.Controls.Add(this.metroButton4);
             this.Controls.Add(this.panel13);
             this.Controls.Add(this.metroButton2);
@@ -4544,7 +4532,6 @@
         private MetroFramework.Controls.MetroButton metroButton8;
         private System.Windows.Forms.TextBox textBox6;
         private System.Windows.Forms.Panel panel7;
-        private MetroFramework.Controls.MetroButton metroButton14;
     }
 }
 

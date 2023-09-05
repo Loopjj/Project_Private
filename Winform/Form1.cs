@@ -800,21 +800,6 @@ namespace Serial_Communication
             byte[] data = { sig };
             TxData(sync, 1, command, 0, data);
         }
-        private void MetroButton14_Click(object sender, EventArgs e)  //Only for debugging
-        {
-            byte[] sdata = new byte[8];
-
-            //sdata[0] = Convert.ToByte(comboBox_Mode.Text);
-            sdata[1] = 0x00;
-            sdata[2] = 0x00;
-            sdata[3] = 0x00;
-            sdata[4] = 0x00;
-            sdata[5] = 0x00;
-            sdata[6] = 0x00;
-            sdata[7] = 0x00;
-
-            TxData(0xC6, 8, 0x24, 0, sdata);
-        }
     }
 }
 
