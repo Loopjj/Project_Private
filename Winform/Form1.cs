@@ -390,7 +390,7 @@ namespace Serial_Communication
             }
         }
 
-        private void metroButton_MODEClick_Click(object sender, EventArgs e) // Select Mode
+        private void metroButton_MODE_Click(object sender, EventArgs e) // Select Mode
         {
             byte[] sdata = new byte[8];
             byte Mode = 0;

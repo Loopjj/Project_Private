@@ -118,7 +118,7 @@
             this.label50 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.metroButton_MODEClick = new MetroFramework.Controls.MetroButton();
+            this.metroButton_MODE = new MetroFramework.Controls.MetroButton();
             this.comboBox_Mode = new MetroFramework.Controls.MetroComboBox();
             this.label_Signal_Noxact = new System.Windows.Forms.Label();
             this.label_Signal_Dosing = new System.Windows.Forms.Label();
@@ -1505,7 +1505,7 @@
             this.metroTabPage5.Controls.Add(this.label50);
             this.metroTabPage5.Controls.Add(this.panel3);
             this.metroTabPage5.Controls.Add(this.panel2);
-            this.metroTabPage5.Controls.Add(this.metroButton_MODEClick);
+            this.metroTabPage5.Controls.Add(this.metroButton_MODE);
             this.metroTabPage5.Controls.Add(this.comboBox_Mode);
             this.metroTabPage5.Controls.Add(this.label_Signal_Noxact);
             this.metroTabPage5.Controls.Add(this.label_Signal_Dosing);
@@ -1926,16 +1926,16 @@
             this.panel2.Size = new System.Drawing.Size(1104, 3);
             this.panel2.TabIndex = 148;
             // 
-            // metroButton_MODEClick
+            // metroButton_MODE
             // 
-            this.metroButton_MODEClick.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.metroButton_MODEClick.Location = new System.Drawing.Point(10, 73);
-            this.metroButton_MODEClick.Name = "metroButton_MODEClick";
-            this.metroButton_MODEClick.Size = new System.Drawing.Size(97, 33);
-            this.metroButton_MODEClick.TabIndex = 147;
-            this.metroButton_MODEClick.Text = "Mode Set";
-            this.metroButton_MODEClick.UseSelectable = true;
-            this.metroButton_MODEClick.Click += new System.EventHandler(this.metroButton_MODEClick_Click);
+            this.metroButton_MODE.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.metroButton_MODE.Location = new System.Drawing.Point(10, 73);
+            this.metroButton_MODE.Name = "metroButton_MODE";
+            this.metroButton_MODE.Size = new System.Drawing.Size(97, 33);
+            this.metroButton_MODE.TabIndex = 147;
+            this.metroButton_MODE.Text = "Mode Set";
+            this.metroButton_MODE.UseSelectable = true;
+            this.metroButton_MODE.Click += new System.EventHandler(this.metroButton_MODE_Click);
             // 
             // comboBox_Mode
             // 
@@ -4501,7 +4501,7 @@
         private MetroFramework.Controls.MetroButton metroButton3;
         private MetroFramework.Controls.MetroButton metroButton4;
         private System.Windows.Forms.Panel panel2;
-        private MetroFramework.Controls.MetroButton metroButton_MODEClick;
+        private MetroFramework.Controls.MetroButton metroButton_MODE;
         private MetroFramework.Controls.MetroComboBox comboBox_Mode;
         private MetroFramework.Controls.MetroButton metroButton7;
         private System.Windows.Forms.Panel panel4;
