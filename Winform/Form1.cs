@@ -390,6 +390,57 @@ namespace Serial_Communication
             }
         }
 
+        private void metroButton_ManualSet_Click(object sender, EventArgs e)
+        {
+            ushort stmp;
+            byte[] sdata = new byte[8];
+
+            if (comboBox_Mode.SelectedIndex < 0)
+                comboBox_Mode.SelectedIndex = 0;
+            stmp = ushort.Parse(textBox_mTavg.Text);
+            sdata[0] = (byte)(stmp & 0xff);
+            sdata[1] = (byte)((stmp >> 8) & 0xff);
+            stmp = ushort.Parse(textBox_mMaf.Text);
+            sdata[2] = (byte)(stmp & 0xff);
+            sdata[3] = (byte)((stmp >> 8) & 0xff);
+            stmp = ushort.Parse(textBox_mNoxUp.Text);
+            sdata[4] = (byte)(stmp & 0xff);
+            sdata[5] = (byte)((stmp >> 8) & 0xff);
+            stmp = ushort.Parse(textBox_mNoxDn.Text);
+            sdata[6] = (byte)(stmp & 0xff);
+            sdata[7] = (byte)((stmp >> 8) & 0xff);
+
+            TxData(0xC6, 8, 0x23, 0, sdata);
+        }
+
+        private void metroButton_Alpha_Click(object sender, EventArgs e)
+        {
+            double dtmp;
+            ushort stmp;
+            byte[] sdata = new byte[8];
+
+            if (comboBox_Mode.SelectedIndex < 0)
+                comboBox_Mode.SelectedIndex = 0;
+
+            dtmp = double.Parse(textBox_mAlpha.Text) * 100.0;
+            stmp = (ushort)dtmp;
+            sdata[0] = (byte)(stmp & 0xff);
+            sdata[1] = (byte)((stmp >> 8) & 0xff);
+            sdata[2] = 0x00;
+            sdata[3] = 0x00;
+            sdata[4] = 0x00;
+            sdata[5] = 0x00;
+            sdata[6] = 0x00;
+            sdata[7] = 0x00;
+
+            TxData(0xC6, 8, 0x22, 0, sdata);
+        }
+
+        private void metroButton_Inject_Click(object sender, EventArgs e)
+        {
+
+        }
+
         private void metroButton_MODE_Click(object sender, EventArgs e) // Select Mode
         {
             byte[] sdata = new byte[8];

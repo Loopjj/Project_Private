@@ -1707,6 +1707,7 @@
             this.metroButton_Inject.TabIndex = 170;
             this.metroButton_Inject.Text = "Pump OFF";
             this.metroButton_Inject.UseSelectable = true;
+            this.metroButton_Inject.Click += new System.EventHandler(this.metroButton_Inject_Click);
             // 
             // textBox_mDosing
             // 
@@ -1763,6 +1764,7 @@
             this.metroButton_Alpha.TabIndex = 164;
             this.metroButton_Alpha.Text = "Alpha Set";
             this.metroButton_Alpha.UseSelectable = true;
+            this.metroButton_Alpha.Click += new System.EventHandler(this.metroButton_Alpha_Click);
             // 
             // panel4
             // 
@@ -1781,6 +1783,7 @@
             this.metroButton_ManualSet.TabIndex = 162;
             this.metroButton_ManualSet.Text = "Manual Set";
             this.metroButton_ManualSet.UseSelectable = true;
+            this.metroButton_ManualSet.Click += new System.EventHandler(this.metroButton_ManualSet_Click);
             // 
             // label54
             // 
