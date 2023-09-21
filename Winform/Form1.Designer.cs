@@ -89,31 +89,31 @@
             this.T1 = new MetroFramework.Controls.MetroLabel();
             this.metroTabPage5 = new MetroFramework.Controls.MetroTabPage();
             this.panel7 = new System.Windows.Forms.Panel();
-            this.metroButton13 = new MetroFramework.Controls.MetroButton();
-            this.metroButton12 = new MetroFramework.Controls.MetroButton();
-            this.metroButton11 = new MetroFramework.Controls.MetroButton();
-            this.Button_SCRDsiable = new MetroFramework.Controls.MetroButton();
+            this.metroButton_InitGegenCnt = new MetroFramework.Controls.MetroButton();
+            this.metroButton_AirPressure = new MetroFramework.Controls.MetroButton();
+            this.metroButton_AlarmClear = new MetroFramework.Controls.MetroButton();
+            this.metroButton_SCRDsiable = new MetroFramework.Controls.MetroButton();
             this.panel6 = new System.Windows.Forms.Panel();
-            this.metroButton9 = new MetroFramework.Controls.MetroButton();
-            this.metroButton8 = new MetroFramework.Controls.MetroButton();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.metroRadioButton2 = new MetroFramework.Controls.MetroRadioButton();
+            this.metroButton_VauleSet = new MetroFramework.Controls.MetroButton();
+            this.metroButton_Inject = new MetroFramework.Controls.MetroButton();
+            this.textBox_mDosing = new System.Windows.Forms.TextBox();
+            this.metroRadioButton_duty = new MetroFramework.Controls.MetroRadioButton();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.metroRadioButton1 = new MetroFramework.Controls.MetroRadioButton();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.metroButton7 = new MetroFramework.Controls.MetroButton();
+            this.metroRadioButton_gh = new MetroFramework.Controls.MetroRadioButton();
+            this.textBox_mAlpha = new System.Windows.Forms.TextBox();
+            this.metroButton_Alpha = new MetroFramework.Controls.MetroButton();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.metroButton6 = new MetroFramework.Controls.MetroButton();
+            this.metroButton_ManualSet = new MetroFramework.Controls.MetroButton();
             this.label54 = new System.Windows.Forms.Label();
             this.label57 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.textBox_mNoxDn = new System.Windows.Forms.TextBox();
+            this.textBox_mNoxUp = new System.Windows.Forms.TextBox();
             this.label58 = new System.Windows.Forms.Label();
             this.label59 = new System.Windows.Forms.Label();
             this.label53 = new System.Windows.Forms.Label();
             this.label52 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textBox_mMaf = new System.Windows.Forms.TextBox();
+            this.textBox_mTavg = new System.Windows.Forms.TextBox();
             this.label51 = new System.Windows.Forms.Label();
             this.label50 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
@@ -1476,31 +1476,31 @@
             // metroTabPage5
             // 
             this.metroTabPage5.Controls.Add(this.panel7);
-            this.metroTabPage5.Controls.Add(this.metroButton13);
-            this.metroTabPage5.Controls.Add(this.metroButton12);
-            this.metroTabPage5.Controls.Add(this.metroButton11);
-            this.metroTabPage5.Controls.Add(this.Button_SCRDsiable);
+            this.metroTabPage5.Controls.Add(this.metroButton_InitGegenCnt);
+            this.metroTabPage5.Controls.Add(this.metroButton_AirPressure);
+            this.metroTabPage5.Controls.Add(this.metroButton_AlarmClear);
+            this.metroTabPage5.Controls.Add(this.metroButton_SCRDsiable);
             this.metroTabPage5.Controls.Add(this.panel6);
-            this.metroTabPage5.Controls.Add(this.metroButton9);
-            this.metroTabPage5.Controls.Add(this.metroButton8);
-            this.metroTabPage5.Controls.Add(this.textBox6);
-            this.metroTabPage5.Controls.Add(this.metroRadioButton2);
+            this.metroTabPage5.Controls.Add(this.metroButton_VauleSet);
+            this.metroTabPage5.Controls.Add(this.metroButton_Inject);
+            this.metroTabPage5.Controls.Add(this.textBox_mDosing);
+            this.metroTabPage5.Controls.Add(this.metroRadioButton_duty);
             this.metroTabPage5.Controls.Add(this.panel5);
-            this.metroTabPage5.Controls.Add(this.metroRadioButton1);
-            this.metroTabPage5.Controls.Add(this.textBox5);
-            this.metroTabPage5.Controls.Add(this.metroButton7);
+            this.metroTabPage5.Controls.Add(this.metroRadioButton_gh);
+            this.metroTabPage5.Controls.Add(this.textBox_mAlpha);
+            this.metroTabPage5.Controls.Add(this.metroButton_Alpha);
             this.metroTabPage5.Controls.Add(this.panel4);
-            this.metroTabPage5.Controls.Add(this.metroButton6);
+            this.metroTabPage5.Controls.Add(this.metroButton_ManualSet);
             this.metroTabPage5.Controls.Add(this.label54);
             this.metroTabPage5.Controls.Add(this.label57);
-            this.metroTabPage5.Controls.Add(this.textBox3);
-            this.metroTabPage5.Controls.Add(this.textBox4);
+            this.metroTabPage5.Controls.Add(this.textBox_mNoxDn);
+            this.metroTabPage5.Controls.Add(this.textBox_mNoxUp);
             this.metroTabPage5.Controls.Add(this.label58);
             this.metroTabPage5.Controls.Add(this.label59);
             this.metroTabPage5.Controls.Add(this.label53);
             this.metroTabPage5.Controls.Add(this.label52);
-            this.metroTabPage5.Controls.Add(this.textBox2);
-            this.metroTabPage5.Controls.Add(this.textBox1);
+            this.metroTabPage5.Controls.Add(this.textBox_mMaf);
+            this.metroTabPage5.Controls.Add(this.textBox_mTavg);
             this.metroTabPage5.Controls.Add(this.label51);
             this.metroTabPage5.Controls.Add(this.label50);
             this.metroTabPage5.Controls.Add(this.panel3);
@@ -1640,45 +1640,45 @@
             this.panel7.Size = new System.Drawing.Size(1104, 3);
             this.panel7.TabIndex = 177;
             // 
-            // metroButton13
+            // metroButton_InitGegenCnt
             // 
-            this.metroButton13.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.metroButton13.Location = new System.Drawing.Point(1029, 78);
-            this.metroButton13.Name = "metroButton13";
-            this.metroButton13.Size = new System.Drawing.Size(97, 33);
-            this.metroButton13.TabIndex = 176;
-            this.metroButton13.Text = "Dosing Clear";
-            this.metroButton13.UseSelectable = true;
+            this.metroButton_InitGegenCnt.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.metroButton_InitGegenCnt.Location = new System.Drawing.Point(1029, 78);
+            this.metroButton_InitGegenCnt.Name = "metroButton_InitGegenCnt";
+            this.metroButton_InitGegenCnt.Size = new System.Drawing.Size(97, 33);
+            this.metroButton_InitGegenCnt.TabIndex = 176;
+            this.metroButton_InitGegenCnt.Text = "Dosing Clear";
+            this.metroButton_InitGegenCnt.UseSelectable = true;
             // 
-            // metroButton12
+            // metroButton_AirPressure
             // 
-            this.metroButton12.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.metroButton12.Location = new System.Drawing.Point(926, 78);
-            this.metroButton12.Name = "metroButton12";
-            this.metroButton12.Size = new System.Drawing.Size(97, 33);
-            this.metroButton12.TabIndex = 175;
-            this.metroButton12.Text = "Flushing On";
-            this.metroButton12.UseSelectable = true;
+            this.metroButton_AirPressure.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.metroButton_AirPressure.Location = new System.Drawing.Point(926, 78);
+            this.metroButton_AirPressure.Name = "metroButton_AirPressure";
+            this.metroButton_AirPressure.Size = new System.Drawing.Size(97, 33);
+            this.metroButton_AirPressure.TabIndex = 175;
+            this.metroButton_AirPressure.Text = "Flushing On";
+            this.metroButton_AirPressure.UseSelectable = true;
             // 
-            // metroButton11
+            // metroButton_AlarmClear
             // 
-            this.metroButton11.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.metroButton11.Location = new System.Drawing.Point(1029, 33);
-            this.metroButton11.Name = "metroButton11";
-            this.metroButton11.Size = new System.Drawing.Size(97, 33);
-            this.metroButton11.TabIndex = 174;
-            this.metroButton11.Text = "Alarm Clear";
-            this.metroButton11.UseSelectable = true;
+            this.metroButton_AlarmClear.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.metroButton_AlarmClear.Location = new System.Drawing.Point(1029, 33);
+            this.metroButton_AlarmClear.Name = "metroButton_AlarmClear";
+            this.metroButton_AlarmClear.Size = new System.Drawing.Size(97, 33);
+            this.metroButton_AlarmClear.TabIndex = 174;
+            this.metroButton_AlarmClear.Text = "Alarm Clear";
+            this.metroButton_AlarmClear.UseSelectable = true;
             // 
-            // Button_SCRDsiable
+            // metroButton_SCRDsiable
             // 
-            this.Button_SCRDsiable.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.Button_SCRDsiable.Location = new System.Drawing.Point(926, 33);
-            this.Button_SCRDsiable.Name = "Button_SCRDsiable";
-            this.Button_SCRDsiable.Size = new System.Drawing.Size(97, 33);
-            this.Button_SCRDsiable.TabIndex = 173;
-            this.Button_SCRDsiable.Text = "SCR Stop";
-            this.Button_SCRDsiable.UseSelectable = true;
+            this.metroButton_SCRDsiable.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.metroButton_SCRDsiable.Location = new System.Drawing.Point(926, 33);
+            this.metroButton_SCRDsiable.Name = "metroButton_SCRDsiable";
+            this.metroButton_SCRDsiable.Size = new System.Drawing.Size(97, 33);
+            this.metroButton_SCRDsiable.TabIndex = 173;
+            this.metroButton_SCRDsiable.Text = "SCR Stop";
+            this.metroButton_SCRDsiable.UseSelectable = true;
             // 
             // panel6
             // 
@@ -1688,44 +1688,44 @@
             this.panel6.Size = new System.Drawing.Size(3, 74);
             this.panel6.TabIndex = 172;
             // 
-            // metroButton9
+            // metroButton_VauleSet
             // 
-            this.metroButton9.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.metroButton9.Location = new System.Drawing.Point(806, 79);
-            this.metroButton9.Name = "metroButton9";
-            this.metroButton9.Size = new System.Drawing.Size(97, 33);
-            this.metroButton9.TabIndex = 171;
-            this.metroButton9.Text = "Value Set";
-            this.metroButton9.UseSelectable = true;
+            this.metroButton_VauleSet.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.metroButton_VauleSet.Location = new System.Drawing.Point(806, 79);
+            this.metroButton_VauleSet.Name = "metroButton_VauleSet";
+            this.metroButton_VauleSet.Size = new System.Drawing.Size(97, 33);
+            this.metroButton_VauleSet.TabIndex = 171;
+            this.metroButton_VauleSet.Text = "Value Set";
+            this.metroButton_VauleSet.UseSelectable = true;
             // 
-            // metroButton8
+            // metroButton_Inject
             // 
-            this.metroButton8.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.metroButton8.Location = new System.Drawing.Point(703, 79);
-            this.metroButton8.Name = "metroButton8";
-            this.metroButton8.Size = new System.Drawing.Size(97, 33);
-            this.metroButton8.TabIndex = 170;
-            this.metroButton8.Text = "Pump OFF";
-            this.metroButton8.UseSelectable = true;
+            this.metroButton_Inject.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.metroButton_Inject.Location = new System.Drawing.Point(703, 79);
+            this.metroButton_Inject.Name = "metroButton_Inject";
+            this.metroButton_Inject.Size = new System.Drawing.Size(97, 33);
+            this.metroButton_Inject.TabIndex = 170;
+            this.metroButton_Inject.Text = "Pump OFF";
+            this.metroButton_Inject.UseSelectable = true;
             // 
-            // textBox6
+            // textBox_mDosing
             // 
-            this.textBox6.Font = new System.Drawing.Font("맑은 고딕", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.textBox6.Location = new System.Drawing.Point(703, 40);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(97, 27);
-            this.textBox6.TabIndex = 169;
-            this.textBox6.Text = "0.00";
+            this.textBox_mDosing.Font = new System.Drawing.Font("맑은 고딕", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.textBox_mDosing.Location = new System.Drawing.Point(703, 40);
+            this.textBox_mDosing.Name = "textBox_mDosing";
+            this.textBox_mDosing.Size = new System.Drawing.Size(97, 27);
+            this.textBox_mDosing.TabIndex = 169;
+            this.textBox_mDosing.Text = "0.00";
             // 
-            // metroRadioButton2
+            // metroRadioButton_duty
             // 
-            this.metroRadioButton2.AutoSize = true;
-            this.metroRadioButton2.Location = new System.Drawing.Point(651, 79);
-            this.metroRadioButton2.Name = "metroRadioButton2";
-            this.metroRadioButton2.Size = new System.Drawing.Size(47, 15);
-            this.metroRadioButton2.TabIndex = 168;
-            this.metroRadioButton2.Text = "duty";
-            this.metroRadioButton2.UseSelectable = true;
+            this.metroRadioButton_duty.AutoSize = true;
+            this.metroRadioButton_duty.Location = new System.Drawing.Point(651, 79);
+            this.metroRadioButton_duty.Name = "metroRadioButton_duty";
+            this.metroRadioButton_duty.Size = new System.Drawing.Size(47, 15);
+            this.metroRadioButton_duty.TabIndex = 168;
+            this.metroRadioButton_duty.Text = "duty";
+            this.metroRadioButton_duty.UseSelectable = true;
             // 
             // panel5
             // 
@@ -1735,34 +1735,34 @@
             this.panel5.Size = new System.Drawing.Size(3, 74);
             this.panel5.TabIndex = 167;
             // 
-            // metroRadioButton1
+            // metroRadioButton_gh
             // 
-            this.metroRadioButton1.AutoSize = true;
-            this.metroRadioButton1.Location = new System.Drawing.Point(651, 45);
-            this.metroRadioButton1.Name = "metroRadioButton1";
-            this.metroRadioButton1.Size = new System.Drawing.Size(42, 15);
-            this.metroRadioButton1.TabIndex = 166;
-            this.metroRadioButton1.Text = "g/h";
-            this.metroRadioButton1.UseSelectable = true;
+            this.metroRadioButton_gh.AutoSize = true;
+            this.metroRadioButton_gh.Location = new System.Drawing.Point(651, 45);
+            this.metroRadioButton_gh.Name = "metroRadioButton_gh";
+            this.metroRadioButton_gh.Size = new System.Drawing.Size(42, 15);
+            this.metroRadioButton_gh.TabIndex = 166;
+            this.metroRadioButton_gh.Text = "g/h";
+            this.metroRadioButton_gh.UseSelectable = true;
             // 
-            // textBox5
+            // textBox_mAlpha
             // 
-            this.textBox5.Font = new System.Drawing.Font("맑은 고딕", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.textBox5.Location = new System.Drawing.Point(537, 39);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(97, 27);
-            this.textBox5.TabIndex = 165;
-            this.textBox5.Text = "0.00";
+            this.textBox_mAlpha.Font = new System.Drawing.Font("맑은 고딕", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.textBox_mAlpha.Location = new System.Drawing.Point(537, 39);
+            this.textBox_mAlpha.Name = "textBox_mAlpha";
+            this.textBox_mAlpha.Size = new System.Drawing.Size(97, 27);
+            this.textBox_mAlpha.TabIndex = 165;
+            this.textBox_mAlpha.Text = "0.00";
             // 
-            // metroButton7
+            // metroButton_Alpha
             // 
-            this.metroButton7.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.metroButton7.Location = new System.Drawing.Point(537, 73);
-            this.metroButton7.Name = "metroButton7";
-            this.metroButton7.Size = new System.Drawing.Size(97, 33);
-            this.metroButton7.TabIndex = 164;
-            this.metroButton7.Text = "Alpha Set";
-            this.metroButton7.UseSelectable = true;
+            this.metroButton_Alpha.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.metroButton_Alpha.Location = new System.Drawing.Point(537, 73);
+            this.metroButton_Alpha.Name = "metroButton_Alpha";
+            this.metroButton_Alpha.Size = new System.Drawing.Size(97, 33);
+            this.metroButton_Alpha.TabIndex = 164;
+            this.metroButton_Alpha.Text = "Alpha Set";
+            this.metroButton_Alpha.UseSelectable = true;
             // 
             // panel4
             // 
@@ -1772,15 +1772,15 @@
             this.panel4.Size = new System.Drawing.Size(3, 74);
             this.panel4.TabIndex = 163;
             // 
-            // metroButton6
+            // metroButton_ManualSet
             // 
-            this.metroButton6.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.metroButton6.Location = new System.Drawing.Point(425, 73);
-            this.metroButton6.Name = "metroButton6";
-            this.metroButton6.Size = new System.Drawing.Size(97, 33);
-            this.metroButton6.TabIndex = 162;
-            this.metroButton6.Text = "Manual Set";
-            this.metroButton6.UseSelectable = true;
+            this.metroButton_ManualSet.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.metroButton_ManualSet.Location = new System.Drawing.Point(425, 73);
+            this.metroButton_ManualSet.Name = "metroButton_ManualSet";
+            this.metroButton_ManualSet.Size = new System.Drawing.Size(97, 33);
+            this.metroButton_ManualSet.TabIndex = 162;
+            this.metroButton_ManualSet.Text = "Manual Set";
+            this.metroButton_ManualSet.UseSelectable = true;
             // 
             // label54
             // 
@@ -1804,23 +1804,23 @@
             this.label57.TabIndex = 160;
             this.label57.Text = "ppm";
             // 
-            // textBox3
+            // textBox_mNoxDn
             // 
-            this.textBox3.Font = new System.Drawing.Font("맑은 고딕", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.textBox3.Location = new System.Drawing.Point(340, 79);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(48, 25);
-            this.textBox3.TabIndex = 159;
-            this.textBox3.Text = "0";
+            this.textBox_mNoxDn.Font = new System.Drawing.Font("맑은 고딕", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.textBox_mNoxDn.Location = new System.Drawing.Point(340, 79);
+            this.textBox_mNoxDn.Name = "textBox_mNoxDn";
+            this.textBox_mNoxDn.Size = new System.Drawing.Size(48, 25);
+            this.textBox_mNoxDn.TabIndex = 159;
+            this.textBox_mNoxDn.Text = "0";
             // 
-            // textBox4
+            // textBox_mNoxUp
             // 
-            this.textBox4.Font = new System.Drawing.Font("맑은 고딕", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.textBox4.Location = new System.Drawing.Point(340, 45);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(48, 25);
-            this.textBox4.TabIndex = 158;
-            this.textBox4.Text = "0";
+            this.textBox_mNoxUp.Font = new System.Drawing.Font("맑은 고딕", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.textBox_mNoxUp.Location = new System.Drawing.Point(340, 45);
+            this.textBox_mNoxUp.Name = "textBox_mNoxUp";
+            this.textBox_mNoxUp.Size = new System.Drawing.Size(48, 25);
+            this.textBox_mNoxUp.TabIndex = 158;
+            this.textBox_mNoxUp.Text = "0";
             // 
             // label58
             // 
@@ -1868,23 +1868,23 @@
             this.label52.TabIndex = 154;
             this.label52.Text = "℃";
             // 
-            // textBox2
+            // textBox_mMaf
             // 
-            this.textBox2.Font = new System.Drawing.Font("맑은 고딕", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.textBox2.Location = new System.Drawing.Point(192, 79);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(48, 25);
-            this.textBox2.TabIndex = 153;
-            this.textBox2.Text = "0";
+            this.textBox_mMaf.Font = new System.Drawing.Font("맑은 고딕", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.textBox_mMaf.Location = new System.Drawing.Point(192, 79);
+            this.textBox_mMaf.Name = "textBox_mMaf";
+            this.textBox_mMaf.Size = new System.Drawing.Size(48, 25);
+            this.textBox_mMaf.TabIndex = 153;
+            this.textBox_mMaf.Text = "0";
             // 
-            // textBox1
+            // textBox_mTavg
             // 
-            this.textBox1.Font = new System.Drawing.Font("맑은 고딕", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.textBox1.Location = new System.Drawing.Point(192, 45);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(48, 25);
-            this.textBox1.TabIndex = 152;
-            this.textBox1.Text = "0";
+            this.textBox_mTavg.Font = new System.Drawing.Font("맑은 고딕", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.textBox_mTavg.Location = new System.Drawing.Point(192, 45);
+            this.textBox_mTavg.Name = "textBox_mTavg";
+            this.textBox_mTavg.Size = new System.Drawing.Size(48, 25);
+            this.textBox_mTavg.TabIndex = 152;
+            this.textBox_mTavg.Text = "0";
             // 
             // label51
             // 
@@ -4503,34 +4503,34 @@
         private System.Windows.Forms.Panel panel2;
         private MetroFramework.Controls.MetroButton metroButton_MODE;
         private MetroFramework.Controls.MetroComboBox comboBox_Mode;
-        private MetroFramework.Controls.MetroButton metroButton7;
+        private MetroFramework.Controls.MetroButton metroButton_Alpha;
         private System.Windows.Forms.Panel panel4;
-        private MetroFramework.Controls.MetroButton metroButton6;
+        private MetroFramework.Controls.MetroButton metroButton_ManualSet;
         private System.Windows.Forms.Label label54;
         private System.Windows.Forms.Label label57;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox textBox_mNoxDn;
+        private System.Windows.Forms.TextBox textBox_mNoxUp;
         private System.Windows.Forms.Label label58;
         private System.Windows.Forms.Label label59;
         private System.Windows.Forms.Label label53;
         private System.Windows.Forms.Label label52;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox textBox_mMaf;
+        private System.Windows.Forms.TextBox textBox_mTavg;
         private System.Windows.Forms.Label label51;
         private System.Windows.Forms.Label label50;
         private System.Windows.Forms.Panel panel3;
-        private MetroFramework.Controls.MetroRadioButton metroRadioButton2;
+        private MetroFramework.Controls.MetroRadioButton metroRadioButton_duty;
         private System.Windows.Forms.Panel panel5;
-        private MetroFramework.Controls.MetroRadioButton metroRadioButton1;
-        private System.Windows.Forms.TextBox textBox5;
-        private MetroFramework.Controls.MetroButton metroButton13;
-        private MetroFramework.Controls.MetroButton metroButton12;
-        private MetroFramework.Controls.MetroButton metroButton11;
-        private MetroFramework.Controls.MetroButton Button_SCRDsiable;
+        private MetroFramework.Controls.MetroRadioButton metroRadioButton_gh;
+        private System.Windows.Forms.TextBox textBox_mAlpha;
+        private MetroFramework.Controls.MetroButton metroButton_InitGegenCnt;
+        private MetroFramework.Controls.MetroButton metroButton_AirPressure;
+        private MetroFramework.Controls.MetroButton metroButton_AlarmClear;
+        private MetroFramework.Controls.MetroButton metroButton_SCRDsiable;
         private System.Windows.Forms.Panel panel6;
-        private MetroFramework.Controls.MetroButton metroButton9;
-        private MetroFramework.Controls.MetroButton metroButton8;
-        private System.Windows.Forms.TextBox textBox6;
+        private MetroFramework.Controls.MetroButton metroButton_VauleSet;
+        private MetroFramework.Controls.MetroButton metroButton_Inject;
+        private System.Windows.Forms.TextBox textBox_mDosing;
         private System.Windows.Forms.Panel panel7;
     }
 }
