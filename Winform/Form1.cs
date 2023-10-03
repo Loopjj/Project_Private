@@ -33,6 +33,7 @@ namespace Serial_Communication
         short[] PVal = new short[2];
         int m_ucRxLength;
         double NOxRealReduce;
+        private bool buttonClicked = false;
         private READ_VALUE ReadValue = new READ_VALUE();
         [StructLayout(LayoutKind.Sequential, Pack = 1)]
         public struct READ_VALUE
@@ -438,7 +439,51 @@ namespace Serial_Communication
 
         private void metroButton_Inject_Click(object sender, EventArgs e)
         {
+            byte[] sdata = new byte[8];
+            byte cmd;
+            double dtmp;
+            long ltmp;
 
+            if (comboBox_Mode.SelectedIndex < 0)
+                comboBox_Mode.SelectedIndex = 0;
+
+            if (buttonClicked == false)
+            {
+                metroButton_VauleSet.Enabled = false;
+                metroButton_Inject.Text = "Pump OFF";
+                buttonClicked = false;
+
+                sdata[0] = 0x00;
+                sdata[1] = 0x00;
+                sdata[2] = 0x00;
+                sdata[3] = 0x00;
+                sdata[4] = 0x00;
+                sdata[5] = 0x00;
+                sdata[6] = 0x00;
+                sdata[7] = 0x00;
+            }
+            else
+            {
+                metroButton_VauleSet.Enabled = true;
+                if (metroRadioButton_gh.Checked == true)
+                    cmd = 0x01;
+                else
+                    cmd = 0x02;
+
+                metroButton_Inject.Text = "Pump ON";
+                buttonClicked = true;
+                sdata[0] = cmd;
+                sdata[1] = 0x00;
+                sdata[2] = 0x00;
+                sdata[3] = 0x00;
+                dtmp = double.Parse(textBox_mDosing.Text) * 100.0;
+                ltmp = (long)dtmp;
+                sdata[4] = (byte)(ltmp & 0xff);
+                sdata[5] = (byte)((ltmp >> 8) & 0xff);
+                sdata[6] = (byte)((ltmp >> 16) & 0xff);
+                sdata[7] = (byte)((ltmp >> 24) & 0xff);
+            }
+                TxData(0xC6, 8, 0x21, 0, sdata);
         }
 
         private void metroButton_MODE_Click(object sender, EventArgs e) // Select Mode
