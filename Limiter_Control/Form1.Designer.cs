@@ -70,6 +70,7 @@
             this.label65 = new System.Windows.Forms.Label();
             this.label64 = new System.Windows.Forms.Label();
             this.panel8 = new System.Windows.Forms.Panel();
+            this.Vbat = new System.Windows.Forms.TextBox();
             this.Quality = new System.Windows.Forms.TextBox();
             this.Level = new System.Windows.Forms.TextBox();
             this.Limit = new System.Windows.Forms.TextBox();
@@ -344,7 +345,6 @@
             this.panel13 = new System.Windows.Forms.Panel();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.metroButton4 = new MetroFramework.Controls.MetroButton();
-            this.Vbat = new System.Windows.Forms.TextBox();
             this.metroTabControl1.SuspendLayout();
             this.metroTabPage1.SuspendLayout();
             this.panel10.SuspendLayout();
@@ -451,6 +451,7 @@
             this.Read.TabIndex = 148;
             this.Read.Text = "Read";
             this.Read.UseSelectable = true;
+            this.Read.Click += new System.EventHandler(this.Read_Click);
             // 
             // UreaBuzInt
             // 
@@ -795,6 +796,16 @@
             this.panel8.Name = "panel8";
             this.panel8.Size = new System.Drawing.Size(894, 211);
             this.panel8.TabIndex = 79;
+            // 
+            // Vbat
+            // 
+            this.Vbat.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.Vbat.Font = new System.Drawing.Font("굴림", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.Vbat.Location = new System.Drawing.Point(653, 50);
+            this.Vbat.Name = "Vbat";
+            this.Vbat.Size = new System.Drawing.Size(99, 81);
+            this.Vbat.TabIndex = 93;
+            this.Vbat.Text = "0";
             // 
             // Quality
             // 
@@ -4814,7 +4825,6 @@
             // 
             // timer1
             // 
-            this.timer1.Enabled = true;
             this.timer1.Interval = 1000;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
@@ -4828,16 +4838,6 @@
             this.metroButton4.Text = "Save As";
             this.metroButton4.UseSelectable = true;
             this.metroButton4.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // Vbat
-            // 
-            this.Vbat.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.Vbat.Font = new System.Drawing.Font("굴림", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.Vbat.Location = new System.Drawing.Point(653, 50);
-            this.Vbat.Name = "Vbat";
-            this.Vbat.Size = new System.Drawing.Size(99, 81);
-            this.Vbat.TabIndex = 93;
-            this.Vbat.Text = "0";
             // 
             // Form1
             // 

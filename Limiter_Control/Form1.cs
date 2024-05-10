@@ -167,6 +167,17 @@ namespace Serial_Communication
             public byte UreaAccFlag;       // 1 byte
         }
 
+        st_Setting Setting = new st_Setting();
+        [StructLayout(LayoutKind.Sequential, Pack = 1)]
+        public struct st_Setting
+        {
+            public uint TM;             // 4 bytes
+            public uint LT;                 // 4 bytes
+            public uint LN;                 // 4 bytes
+            public ushort basePress;        // 2 bytes
+
+ 
+        }
 
         public Form1()
         {
@@ -532,6 +543,11 @@ namespace Serial_Communication
                 TxData(0xC6, 8, 0x21, 0, sdata);
         }
 
+        private void Read_Click(object sender, EventArgs e) //Parameter Read
+        {
+            TxCmd(0xc6, 0x70, 0x12);
+        }
+
         private void metroButton_MODE_Click(object sender, EventArgs e) // Select Mode
         {
             byte[] sdata = new byte[8];
@@ -729,6 +745,14 @@ namespace Serial_Communication
                     //DecodaData.Text = " Decoda Data 들어옴";
                     //Flag.Text = SecData.TM.ToString();
                     break;
+
+                case 0x3B:
+                    // READ_VALUE ReadValue = new READ_VALUE();
+                   // MessageBox.Show("0x3B들어오네.");
+                    break;
+
+
+
             }
             UpdateVal();
         }
@@ -744,8 +768,7 @@ namespace Serial_Communication
         private void TxData(byte sync, ushort len, byte command, byte id, byte[] data)
         {
             string str = "<-";
-            byte checkSum = 0;
-            ushort length = (ushort)(len + 2);
+            byte checkSum ;
 
             if (!serialPort1.IsOpen)
             {
@@ -753,28 +776,30 @@ namespace Serial_Communication
                 return;
             }
 
-            byte[] txBuf = new byte[len + 9];
-            txBuf[0] = sync;
-            txBuf[1] = sync;
-            txBuf[2] = 0x7e;
-            txBuf[3] = (byte)(length & 0xff);
-            txBuf[4] = (byte)((length >> 8) & 0xff);
-            txBuf[5] = command;
-            txBuf[6] = id;
+            byte[] sdata = new byte[100];
+            byte check_sum;
 
-            checkSum = (byte)((length & 0xff) ^ ((length >> 8) & 0xff) ^ command ^ id);
+            sdata[0] = sync;
+            sdata[1] = sync;
+            sdata[2] = 0x7e;
+            sdata[3] = (byte)(len + 2);
+            sdata[4] = command;
+            check_sum = (byte)((len + 2) ^ command ^ id);
 
             for (int i = 0; i < len; i++)
             {
-                txBuf[i + 7] = data[i];
-                checkSum ^= txBuf[i + 7];
+                sdata[i + 6] = data[i];
+                check_sum ^= data[i];
             }
 
-            checkSum++;
-            txBuf[len + 7] = checkSum;
-            txBuf[len + 8] = 0x7d;
+            check_sum++;
+            sdata[len + 6] = check_sum;
+            sdata[len + 7] = 0x7d;
 
-            serialPort1.Write(txBuf, 0, len + 9);
+            for (int i = 0; i < len + 8; i++)
+            {
+                serialPort1.Write(new byte[] { sdata[i] }, 0, 1);
+            }
 
         }
         private void TxCmd(byte sync, byte command, byte sig)
