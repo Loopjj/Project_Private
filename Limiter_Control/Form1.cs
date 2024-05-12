@@ -171,12 +171,69 @@ namespace Serial_Communication
         [StructLayout(LayoutKind.Sequential, Pack = 1)]
         public struct st_Setting
         {
-            public uint TM;             // 4 bytes
-            public uint LT;                 // 4 bytes
-            public uint LN;                 // 4 bytes
-            public ushort basePress;        // 2 bytes
+            public byte TM_1;
+            public byte TM_2;
+            public byte TM_3;
+            public byte TM_4;
+            public byte TM_5;
+            public byte TM_6;
+            public byte TM_7;
+            public byte FW_Type;
+            public byte FW_Ver_1;
+            public byte FW_Ver_2;
+            public byte FW_Ver_3;
+            public byte FW_Ver_4;
+            public byte FW_Ver_5;
+            public byte FW_Ver_6;
+            public uint FW_Date;
+            public ushort t_DelayP;
+            public ushort t_Buzzer;
+            public ushort P1L_Set;
+            public ushort P1H_Set;
+            public ushort Prange;
+            public ushort Prangehigh;
+            public ushort Prangelow;
+            public ushort P1CalHigh;
+            public ushort P1CalLow;
+            public ushort T1Offset;
+            public ushort TLL_Set;
+            public ushort TLH_Set;
+            public ushort t_DelayTL;
+            public ushort LED;
+            public ushort IdlePress;
+            public byte UserNumber;
+            public byte CanBPS;
+            public byte PAlarm1;
+            public byte PAlarm2;
+            public byte PAlarm3;
 
- 
+            public byte UreaLvlHi;
+            public byte UreaLvlLo;
+            public byte UreaLvlAL;
+            public byte UreaConHi;
+            public byte UreaConLo;
+            public byte UreaAlHr1;
+            public byte UreaAlHr2;
+            public byte UreaBuzInt;
+
+            public byte UreaAlEn;
+            public byte FileOutput;
+            public byte PinCode1;
+            public byte PinCode2;
+            public byte PinCode3;
+            public byte PinCode4;
+            public byte PinCode5;
+            public byte PinCode6;
+            public byte ExtModemMode;
+            public byte ExtModemTelecom;
+            public byte ExtModemModel;
+
+            public ushort Azi;
+            public uint UpdateCount;
+            public byte FactoryNumber;
+            public byte NandType;
+            public ushort CRC16;
+
         }
 
         public Form1()
@@ -548,6 +605,34 @@ namespace Serial_Communication
             TxCmd(0xc6, 0x70, 0x12);
         }
 
+        private void Default_Click(object sender, EventArgs e)
+        {
+            UreaLvlHi.Text = 0.ToString();
+            UreaLvlLo.Text = 0.ToString();
+            UreaLvlAL.Text = 0.ToString();
+            UreaConHi.Text = 0.ToString();
+            UreaConLo.Text = 0.ToString();
+            UreaAlHr1.Text = 0.ToString();
+            UreaAlHr2.Text = 0.ToString();
+            UreaBuzInt.Text = 0.ToString();
+        }
+
+        private void Write_Click(object sender, EventArgs e)
+        {
+            byte[] sdata = new byte[8];
+            sdata[0] = Convert.ToByte(UreaLvlHi.Text);
+            sdata[1] = Convert.ToByte(UreaLvlLo.Text);
+            sdata[2] = Convert.ToByte(UreaLvlAL.Text);
+            sdata[3] = Convert.ToByte(UreaConHi.Text);
+            sdata[4] = Convert.ToByte(UreaConLo.Text);
+            sdata[5] = Convert.ToByte(UreaAlHr1.Text);
+            sdata[6] = Convert.ToByte(UreaAlHr2.Text);
+            sdata[7] = Convert.ToByte(UreaBuzInt.Text);
+
+            TxData(0xc6, 0x08, 0xff, 0x11, sdata);
+        }
+
+
         private void metroButton_MODE_Click(object sender, EventArgs e) // Select Mode
         {
             byte[] sdata = new byte[8];
@@ -687,7 +772,6 @@ namespace Serial_Communication
             switch (m_ucRxCommand)
             {
                 case 0x1A:
-                    // READ_VALUE ReadValue = new READ_VALUE();
                     Flag.Text = SecData.UreaAccFlag.ToString();
                     Level.Text = SecData.UreaLevel.ToString();
                     Quality.Text = SecData.Concentration.ToString();
@@ -747,8 +831,87 @@ namespace Serial_Communication
                     break;
 
                 case 0x3B:
-                    // READ_VALUE ReadValue = new READ_VALUE();
-                   // MessageBox.Show("0x3B들어오네.");
+                    UreaLvlHi.Text = Setting.UreaLvlHi.ToString();
+                    UreaLvlLo.Text = Setting.UreaLvlLo.ToString();
+                    UreaLvlAL.Text = Setting.UreaLvlAL.ToString();
+                    UreaConHi.Text = Setting.UreaConHi.ToString();
+                    UreaConLo.Text = Setting.UreaConLo.ToString();
+                    UreaAlHr1.Text = Setting.UreaAlHr1.ToString();
+                    UreaAlHr2.Text = Setting.UreaAlHr2.ToString();
+                    UreaBuzInt.Text = Setting.UreaBuzInt.ToString();
+
+
+                    Setting.TM_1 = (byte)BitConverter.ToUInt16(m_ucRxData, 0);
+                    Setting.TM_2 = (byte)BitConverter.ToUInt16(m_ucRxData, 1);
+                    Setting.TM_3 = (byte)BitConverter.ToUInt16(m_ucRxData, 2);
+                    Setting.TM_4 = (byte)BitConverter.ToUInt16(m_ucRxData, 3);
+                    Setting.TM_5 = (byte)BitConverter.ToUInt16(m_ucRxData, 4);
+                    Setting.TM_6 = (byte)BitConverter.ToUInt16(m_ucRxData, 5);
+                    Setting.TM_7 = (byte)BitConverter.ToUInt16(m_ucRxData, 6);
+
+                    Setting.FW_Type = (byte)BitConverter.ToUInt16(m_ucRxData, 7);
+
+                    Setting.FW_Ver_1 = (byte)BitConverter.ToUInt16(m_ucRxData, 8);
+                    Setting.FW_Ver_2 = (byte)BitConverter.ToUInt16(m_ucRxData, 9);
+                    Setting.FW_Ver_3 = (byte)BitConverter.ToUInt16(m_ucRxData, 10);
+                    Setting.FW_Ver_4 = (byte)BitConverter.ToUInt16(m_ucRxData, 11);
+                    Setting.FW_Ver_5 = (byte)BitConverter.ToUInt16(m_ucRxData, 12);
+                    Setting.FW_Ver_6 = (byte)BitConverter.ToUInt16(m_ucRxData, 13);
+
+                    Setting.FW_Date = BitConverter.ToUInt32(m_ucRxData, 14);
+
+                    Setting.t_DelayP = BitConverter.ToUInt16(m_ucRxData, 18);
+                    Setting.t_Buzzer = BitConverter.ToUInt16(m_ucRxData, 20);
+                    Setting.P1L_Set = BitConverter.ToUInt16(m_ucRxData, 22);
+                    Setting.P1H_Set = BitConverter.ToUInt16(m_ucRxData, 24);
+                    Setting.Prange = BitConverter.ToUInt16(m_ucRxData, 26);
+                    Setting.Prangehigh = BitConverter.ToUInt16(m_ucRxData, 28);
+                    Setting.Prangelow = BitConverter.ToUInt16(m_ucRxData, 30);
+                    Setting.P1CalHigh = BitConverter.ToUInt16(m_ucRxData, 32);
+                    Setting.P1CalLow = BitConverter.ToUInt16(m_ucRxData, 34);
+                    Setting.T1Offset = BitConverter.ToUInt16(m_ucRxData, 36);
+                    Setting.TLL_Set = BitConverter.ToUInt16(m_ucRxData, 38);
+                    Setting.TLH_Set = BitConverter.ToUInt16(m_ucRxData, 40);
+                    Setting.t_DelayTL = BitConverter.ToUInt16(m_ucRxData, 42);
+                    Setting.LED = BitConverter.ToUInt16(m_ucRxData, 44);
+                    Setting.IdlePress = BitConverter.ToUInt16(m_ucRxData, 46);
+
+                    Setting.UserNumber = (byte)BitConverter.ToUInt16(m_ucRxData, 48);
+                    Setting.CanBPS = (byte)BitConverter.ToUInt16(m_ucRxData, 49);
+
+                    Setting.PAlarm1 = (byte)BitConverter.ToUInt16(m_ucRxData, 50);
+                    Setting.PAlarm2 = (byte)BitConverter.ToUInt16(m_ucRxData, 51);
+                    Setting.PAlarm3 = (byte)BitConverter.ToUInt16(m_ucRxData, 52);
+
+                    Setting.UreaLvlHi = (byte)BitConverter.ToUInt16(m_ucRxData, 53);
+                    Setting.UreaLvlLo = (byte)BitConverter.ToUInt16(m_ucRxData, 54);
+                    Setting.UreaLvlAL = (byte)BitConverter.ToUInt16(m_ucRxData, 55);
+                    Setting.UreaConHi = (byte)BitConverter.ToUInt16(m_ucRxData, 56);
+                    Setting.UreaConLo = (byte)BitConverter.ToUInt16(m_ucRxData, 57);
+                    Setting.UreaAlHr1 = (byte)BitConverter.ToUInt16(m_ucRxData, 58);
+                    Setting.UreaAlHr2 = (byte)BitConverter.ToUInt16(m_ucRxData, 59);
+                    Setting.UreaBuzInt = (byte)BitConverter.ToUInt16(m_ucRxData, 60);
+
+                    Setting.UreaAlEn = (byte)BitConverter.ToUInt16(m_ucRxData, 61);
+                    Setting.FileOutput = (byte)BitConverter.ToUInt16(m_ucRxData, 62);
+
+                    Setting.PinCode1 = (byte)BitConverter.ToUInt16(m_ucRxData, 63);
+                    Setting.PinCode2 = (byte)BitConverter.ToUInt16(m_ucRxData, 64);
+                    Setting.PinCode3 = (byte)BitConverter.ToUInt16(m_ucRxData, 65);
+                    Setting.PinCode4 = (byte)BitConverter.ToUInt16(m_ucRxData, 66);
+                    Setting.PinCode5 = (byte)BitConverter.ToUInt16(m_ucRxData, 67);
+                    Setting.PinCode6 = (byte)BitConverter.ToUInt16(m_ucRxData, 68);
+
+                    Setting.ExtModemMode = (byte)BitConverter.ToUInt16(m_ucRxData, 69);
+                    Setting.ExtModemTelecom = (byte)BitConverter.ToUInt16(m_ucRxData, 70);
+                    Setting.ExtModemModel = (byte)BitConverter.ToUInt16(m_ucRxData, 71);
+
+                    Setting.Azi = BitConverter.ToUInt16(m_ucRxData, 72);
+                    Setting.UpdateCount = BitConverter.ToUInt32(m_ucRxData, 74);
+                    Setting.FactoryNumber = (byte)BitConverter.ToUInt16(m_ucRxData, 78);
+                    Setting.NandType = (byte)BitConverter.ToUInt16(m_ucRxData, 79);
+                    Setting.CRC16 = BitConverter.ToUInt16(m_ucRxData, 80);
+
                     break;
 
 

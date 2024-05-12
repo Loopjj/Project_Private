@@ -345,6 +345,7 @@
             this.panel13 = new System.Windows.Forms.Panel();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.metroButton4 = new MetroFramework.Controls.MetroButton();
+            this.Default = new MetroFramework.Controls.MetroButton();
             this.metroTabControl1.SuspendLayout();
             this.metroTabPage1.SuspendLayout();
             this.panel10.SuspendLayout();
@@ -368,7 +369,7 @@
             this.metroTabControl1.FontWeight = MetroFramework.MetroTabControlWeight.Regular;
             this.metroTabControl1.Location = new System.Drawing.Point(2, 84);
             this.metroTabControl1.Name = "metroTabControl1";
-            this.metroTabControl1.SelectedIndex = 0;
+            this.metroTabControl1.SelectedIndex = 1;
             this.metroTabControl1.Size = new System.Drawing.Size(1102, 710);
             this.metroTabControl1.TabIndex = 81;
             this.metroTabControl1.UseSelectable = true;
@@ -408,6 +409,7 @@
             // 
             this.panel10.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.panel10.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel10.Controls.Add(this.Default);
             this.panel10.Controls.Add(this.Write);
             this.panel10.Controls.Add(this.Read);
             this.panel10.Controls.Add(this.UreaBuzInt);
@@ -441,6 +443,7 @@
             this.Write.TabIndex = 149;
             this.Write.Text = "Write";
             this.Write.UseSelectable = true;
+            this.Write.Click += new System.EventHandler(this.Write_Click);
             // 
             // Read
             // 
@@ -4839,6 +4842,17 @@
             this.metroButton4.UseSelectable = true;
             this.metroButton4.Click += new System.EventHandler(this.button1_Click);
             // 
+            // Default
+            // 
+            this.Default.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.Default.Location = new System.Drawing.Point(30, 305);
+            this.Default.Name = "Default";
+            this.Default.Size = new System.Drawing.Size(75, 29);
+            this.Default.TabIndex = 150;
+            this.Default.Text = "Default";
+            this.Default.UseSelectable = true;
+            this.Default.Click += new System.EventHandler(this.Default_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
@@ -5191,6 +5205,7 @@
         private MetroFramework.Controls.MetroButton Write;
         private MetroFramework.Controls.MetroButton Read;
         private System.Windows.Forms.TextBox Vbat;
+        private MetroFramework.Controls.MetroButton Default;
     }
 }
 
