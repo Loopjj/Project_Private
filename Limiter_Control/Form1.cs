@@ -171,6 +171,7 @@ namespace Serial_Communication
         [StructLayout(LayoutKind.Sequential, Pack = 1)]
         public struct st_Setting
         {
+            public uint Identity;
             public byte TM_1;
             public byte TM_2;
             public byte TM_3;
@@ -178,6 +179,41 @@ namespace Serial_Communication
             public byte TM_5;
             public byte TM_6;
             public byte TM_7;
+
+            public ulong Drv_Name_1;
+            public ushort Drv_Name_2;
+
+            public ulong Drv_Code_1;
+            public ulong Drv_Code_2;
+            public ushort Drv_Code_3;
+
+            public ulong Car_Reg_No_1;
+            public uint Car_Reg_No_2;
+
+            public ulong Car_No_1;
+            public ulong Car_No_2;
+            public byte Car_No_3;
+
+            public ulong Company_Name_1;
+            public uint Company_Name_2;
+
+            public ulong Company_Reg_No_1;
+            public ushort Company_Reg_No_2;
+
+            public ulong Form_Approval_No_1;
+            public ushort Form_Approval_No_2;
+
+            public ulong Serial_No_1;
+            public uint Serial_No_2;
+            public ushort Serial_No_3;
+
+            public ulong Model_No_1;
+            public ulong Model_No_2;
+            public uint Model_No_3;
+
+            public ushort K_Factor;
+            public ushort RPM_Factor;
+
             public byte FW_Type;
             public byte FW_Ver_1;
             public byte FW_Ver_2;
@@ -228,6 +264,9 @@ namespace Serial_Communication
             public byte ExtModemTelecom;
             public byte ExtModemModel;
 
+            public uint Lat;
+            public uint Lon;
+
             public ushort Azi;
             public uint UpdateCount;
             public byte FactoryNumber;
@@ -241,6 +280,8 @@ namespace Serial_Communication
             InitializeComponent();
             CheckAndCreateSettingsFile(); //최초 실행시 Setting.INI파일의 유무를 확인한다. 
             comboBox_Mode.SelectedItem = "AUTO";
+            this.MinimumSize = new Size(1100, 720);
+            this.MaximumSize = new Size(1100, 720);
         }
 
         private void Form1_Load(object sender, EventArgs e)  //폼이 로드되면
@@ -607,14 +648,14 @@ namespace Serial_Communication
 
         private void Default_Click(object sender, EventArgs e)
         {
-            UreaLvlHi.Text = 0.ToString();
-            UreaLvlLo.Text = 0.ToString();
-            UreaLvlAL.Text = 0.ToString();
-            UreaConHi.Text = 0.ToString();
-            UreaConLo.Text = 0.ToString();
-            UreaAlHr1.Text = 0.ToString();
-            UreaAlHr2.Text = 0.ToString();
-            UreaBuzInt.Text = 0.ToString();
+            UreaLvlHi.Text = 20.ToString();
+            UreaLvlLo.Text = 10.ToString();
+            UreaLvlAL.Text = 2.ToString();
+            UreaConHi.Text = 40.ToString();
+            UreaConLo.Text = 26.ToString();
+            UreaAlHr1.Text = 10.ToString();
+            UreaAlHr2.Text = 20.ToString();
+            UreaBuzInt.Text = 10.ToString();
         }
 
         private void Write_Click(object sender, EventArgs e)
@@ -632,6 +673,42 @@ namespace Serial_Communication
             TxData(0xc6, 0x08, 0xff, 0x11, sdata);
         }
 
+        private void Set0_Click(object sender, EventArgs e)
+        {
+            UreaLvlHi.Text = 0.ToString();
+            UreaLvlLo.Text = 0.ToString();
+            UreaLvlAL.Text = 0.ToString();
+            UreaConHi.Text = 0.ToString();
+            UreaConLo.Text = 0.ToString();
+            UreaAlHr1.Text = 0.ToString();
+            UreaAlHr2.Text = 0.ToString();
+            UreaBuzInt.Text = 0.ToString();
+        }
+
+        private void metroButton5_Click(object sender, EventArgs e)
+        {
+            byte[] sdata = new byte[8];
+            sdata[0] = Convert.ToByte(Pedal_ADC_1.Text);
+            sdata[1] = Convert.ToByte(Pedal_ADC_2.Text);
+            sdata[2] = Convert.ToByte(Pedal_ADC_3.Text);
+            sdata[3] = Convert.ToByte(Pedal_ADC_4.Text);
+            sdata[4] = Convert.ToByte(Pedal_ADC_5.Text);
+            sdata[5] = Convert.ToByte(Pedal_ADC_6.Text);
+            sdata[6] = Convert.ToByte(Pedal_ADC_7.Text);
+            sdata[7] = Convert.ToByte(Pedal_ADC_8.Text);
+
+            TxData(0xc6, 0x08, 0x48, 0x11, sdata);
+        }
+
+        private void timer2_Tick(object sender, EventArgs e)
+        {
+            byte[] sdata = new byte[8];
+            if (serialPort1.IsOpen)
+            {
+                TxData(0xc6, 0x08, 0x48, 0x11, sdata);
+            }
+
+        }
 
         private void metroButton_MODE_Click(object sender, EventArgs e) // Select Mode
         {
@@ -780,8 +857,6 @@ namespace Serial_Communication
                     TempIn.Text = SecData.TempIn.ToString();
                     TempOut.Text = SecData.TempOut.ToString();
                     DosingRate.Text = SecData.DosingRate.ToString();
-                    Vbat.Text = SecData.Vbat.ToString();
-                    //Vbat.Text = SecData.UreaAccFlag.ToString();
                     MAF.Text = SecData.MAF.ToString();
 
                     SecData.TM = BitConverter.ToUInt32(m_ucRxData, 0);
@@ -825,9 +900,6 @@ namespace Serial_Communication
 
                     SecData.Vbat = BitConverter.ToUInt16(m_ucRxData, 61);
                     SecData.UreaAccFlag = (byte)BitConverter.ToUInt16(m_ucRxData, 63);
-                    //Status.Text = m_ucRxData.ToString();
-                    //DecodaData.Text = " Decoda Data 들어옴";
-                    //Flag.Text = SecData.TM.ToString();
                     break;
 
                 case 0x3B:
@@ -840,78 +912,14 @@ namespace Serial_Communication
                     UreaAlHr2.Text = Setting.UreaAlHr2.ToString();
                     UreaBuzInt.Text = Setting.UreaBuzInt.ToString();
 
-
-                    Setting.TM_1 = (byte)BitConverter.ToUInt16(m_ucRxData, 0);
-                    Setting.TM_2 = (byte)BitConverter.ToUInt16(m_ucRxData, 1);
-                    Setting.TM_3 = (byte)BitConverter.ToUInt16(m_ucRxData, 2);
-                    Setting.TM_4 = (byte)BitConverter.ToUInt16(m_ucRxData, 3);
-                    Setting.TM_5 = (byte)BitConverter.ToUInt16(m_ucRxData, 4);
-                    Setting.TM_6 = (byte)BitConverter.ToUInt16(m_ucRxData, 5);
-                    Setting.TM_7 = (byte)BitConverter.ToUInt16(m_ucRxData, 6);
-
-                    Setting.FW_Type = (byte)BitConverter.ToUInt16(m_ucRxData, 7);
-
-                    Setting.FW_Ver_1 = (byte)BitConverter.ToUInt16(m_ucRxData, 8);
-                    Setting.FW_Ver_2 = (byte)BitConverter.ToUInt16(m_ucRxData, 9);
-                    Setting.FW_Ver_3 = (byte)BitConverter.ToUInt16(m_ucRxData, 10);
-                    Setting.FW_Ver_4 = (byte)BitConverter.ToUInt16(m_ucRxData, 11);
-                    Setting.FW_Ver_5 = (byte)BitConverter.ToUInt16(m_ucRxData, 12);
-                    Setting.FW_Ver_6 = (byte)BitConverter.ToUInt16(m_ucRxData, 13);
-
-                    Setting.FW_Date = BitConverter.ToUInt32(m_ucRxData, 14);
-
-                    Setting.t_DelayP = BitConverter.ToUInt16(m_ucRxData, 18);
-                    Setting.t_Buzzer = BitConverter.ToUInt16(m_ucRxData, 20);
-                    Setting.P1L_Set = BitConverter.ToUInt16(m_ucRxData, 22);
-                    Setting.P1H_Set = BitConverter.ToUInt16(m_ucRxData, 24);
-                    Setting.Prange = BitConverter.ToUInt16(m_ucRxData, 26);
-                    Setting.Prangehigh = BitConverter.ToUInt16(m_ucRxData, 28);
-                    Setting.Prangelow = BitConverter.ToUInt16(m_ucRxData, 30);
-                    Setting.P1CalHigh = BitConverter.ToUInt16(m_ucRxData, 32);
-                    Setting.P1CalLow = BitConverter.ToUInt16(m_ucRxData, 34);
-                    Setting.T1Offset = BitConverter.ToUInt16(m_ucRxData, 36);
-                    Setting.TLL_Set = BitConverter.ToUInt16(m_ucRxData, 38);
-                    Setting.TLH_Set = BitConverter.ToUInt16(m_ucRxData, 40);
-                    Setting.t_DelayTL = BitConverter.ToUInt16(m_ucRxData, 42);
-                    Setting.LED = BitConverter.ToUInt16(m_ucRxData, 44);
-                    Setting.IdlePress = BitConverter.ToUInt16(m_ucRxData, 46);
-
-                    Setting.UserNumber = (byte)BitConverter.ToUInt16(m_ucRxData, 48);
-                    Setting.CanBPS = (byte)BitConverter.ToUInt16(m_ucRxData, 49);
-
-                    Setting.PAlarm1 = (byte)BitConverter.ToUInt16(m_ucRxData, 50);
-                    Setting.PAlarm2 = (byte)BitConverter.ToUInt16(m_ucRxData, 51);
-                    Setting.PAlarm3 = (byte)BitConverter.ToUInt16(m_ucRxData, 52);
-
-                    Setting.UreaLvlHi = (byte)BitConverter.ToUInt16(m_ucRxData, 53);
-                    Setting.UreaLvlLo = (byte)BitConverter.ToUInt16(m_ucRxData, 54);
-                    Setting.UreaLvlAL = (byte)BitConverter.ToUInt16(m_ucRxData, 55);
-                    Setting.UreaConHi = (byte)BitConverter.ToUInt16(m_ucRxData, 56);
-                    Setting.UreaConLo = (byte)BitConverter.ToUInt16(m_ucRxData, 57);
-                    Setting.UreaAlHr1 = (byte)BitConverter.ToUInt16(m_ucRxData, 58);
-                    Setting.UreaAlHr2 = (byte)BitConverter.ToUInt16(m_ucRxData, 59);
-                    Setting.UreaBuzInt = (byte)BitConverter.ToUInt16(m_ucRxData, 60);
-
-                    Setting.UreaAlEn = (byte)BitConverter.ToUInt16(m_ucRxData, 61);
-                    Setting.FileOutput = (byte)BitConverter.ToUInt16(m_ucRxData, 62);
-
-                    Setting.PinCode1 = (byte)BitConverter.ToUInt16(m_ucRxData, 63);
-                    Setting.PinCode2 = (byte)BitConverter.ToUInt16(m_ucRxData, 64);
-                    Setting.PinCode3 = (byte)BitConverter.ToUInt16(m_ucRxData, 65);
-                    Setting.PinCode4 = (byte)BitConverter.ToUInt16(m_ucRxData, 66);
-                    Setting.PinCode5 = (byte)BitConverter.ToUInt16(m_ucRxData, 67);
-                    Setting.PinCode6 = (byte)BitConverter.ToUInt16(m_ucRxData, 68);
-
-                    Setting.ExtModemMode = (byte)BitConverter.ToUInt16(m_ucRxData, 69);
-                    Setting.ExtModemTelecom = (byte)BitConverter.ToUInt16(m_ucRxData, 70);
-                    Setting.ExtModemModel = (byte)BitConverter.ToUInt16(m_ucRxData, 71);
-
-                    Setting.Azi = BitConverter.ToUInt16(m_ucRxData, 72);
-                    Setting.UpdateCount = BitConverter.ToUInt32(m_ucRxData, 74);
-                    Setting.FactoryNumber = (byte)BitConverter.ToUInt16(m_ucRxData, 78);
-                    Setting.NandType = (byte)BitConverter.ToUInt16(m_ucRxData, 79);
-                    Setting.CRC16 = BitConverter.ToUInt16(m_ucRxData, 80);
-
+                    Setting.UreaLvlHi = (byte)BitConverter.ToUInt16(m_ucRxData, 184);
+                    Setting.UreaLvlLo = (byte)BitConverter.ToUInt16(m_ucRxData, 185);
+                    Setting.UreaLvlAL = (byte)BitConverter.ToUInt16(m_ucRxData, 186);
+                    Setting.UreaConHi = (byte)BitConverter.ToUInt16(m_ucRxData, 187);
+                    Setting.UreaConLo = (byte)BitConverter.ToUInt16(m_ucRxData, 188);
+                    Setting.UreaAlHr1 = (byte)BitConverter.ToUInt16(m_ucRxData, 189);
+                    Setting.UreaAlHr2 = (byte)BitConverter.ToUInt16(m_ucRxData, 190);
+                    Setting.UreaBuzInt = (byte)BitConverter.ToUInt16(m_ucRxData, 191);
                     break;
 
 
@@ -972,41 +980,6 @@ namespace Serial_Communication
         }
     }
 }
-
-
-//            }
-
-//PRIVATE VOID BUTTON_SEND_CLICK(OBJECT SENDER, EVENTARGS E)  //보내기 버튼을 클릭하면
-//{
-//    SERIALPORT1.WRITE(TEXTBOX_SEND.TEXT);  //텍스트박스의 텍스트를 시리얼통신으로 송신
-//}
-
-
-/*
-     ReadValue.T2 = BitConverter.ToUInt16(m_ucRxData, 2);
-     ReadValue.T3 = BitConverter.ToUInt16(m_ucRxData, 4);
-     ReadValue.T4 = BitConverter.ToUInt16(m_ucRxData, 6);
-     ReadValue.P = BitConverter.ToUInt16(m_ucRxData, 8);
-     ReadValue.Rate = BitConverter.ToUInt16(m_ucRxData, 10);
-     ReadValue.IHC = BitConverter.ToUInt16(m_ucRxData, 12);
-     ReadValue.f_REG = BitConverter.ToUInt16(m_ucRxData, 14);
-     ReadValue.CarType = (byte)BitConverter.ToUInt16(m_ucRxData, 16);
-     ReadValue.FPD = (byte)BitConverter.ToUInt16(m_ucRxData, 17);
-     ReadValue.Error = (byte)BitConverter.ToUInt16(m_ucRxData, 18);
-     ReadValue.Check = (byte)BitConverter.ToUInt16(m_ucRxData, 19);
-     ReadValue.t_REG = BitConverter.ToUInt16(m_ucRxData, 20);
-     ReadValue.n_REG = BitConverter.ToUInt16(m_ucRxData, 22);
-     ReadValue.Sig = (byte)BitConverter.ToUInt16(m_ucRxData, 24);
-     ReadValue.Sts = (byte)BitConverter.ToUInt16(m_ucRxData, 25);
-     ReadValue.Lock = (byte)BitConverter.ToUInt16(m_ucRxData, 26);
-     ReadValue.DrvTime = BitConverter.ToUInt32(m_ucRxData, 28);
-     ReadValue.baseP1 = BitConverter.ToUInt16(m_ucRxData, 32);
-     ReadValue.f_SCR = BitConverter.ToUInt16(m_ucRxData, 34);
-     ReadValue.t_SCR = BitConverter.ToUInt16(m_ucRxData, 36);
-     ReadValue.RegenStartKey = (byte)BitConverter.ToUInt16(m_ucRxData, 38);
-     ReadValue.t_OFFSCR = BitConverter.ToUInt16(m_ucRxData, 40);
-     ReadValue.Speed = (byte)BitConverter.ToUInt16(m_ucRxData, 42);
-     ReadValue.Valid = (byte)BitConverter.ToUInt16(m_ucRxData, 43);*/
 
 
 
