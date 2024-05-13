@@ -279,9 +279,8 @@ namespace Serial_Communication
         {
             InitializeComponent();
             CheckAndCreateSettingsFile(); //최초 실행시 Setting.INI파일의 유무를 확인한다. 
-            comboBox_Mode.SelectedItem = "AUTO";
-            this.MinimumSize = new Size(1100, 720);
-            this.MaximumSize = new Size(1100, 720);
+            this.MinimumSize = new Size(1107, 727);
+            this.MaximumSize = new Size(1107, 727);
         }
 
         private void Form1_Load(object sender, EventArgs e)  //폼이 로드되면
@@ -483,12 +482,7 @@ namespace Serial_Communication
                 serialPort1.DataReceived += new SerialDataReceivedEventHandler(serialPort1_DataReceived); //이것이 꼭 필요하다
 
                 serialPort1.Open();  //시리얼포트 열기
-                label_status.Text = "포트가 열렸습니다.";
                 comboBox_port1.Enabled = false;  //COM포트설정 콤보박스 비활성화
-            }
-            else  //시리얼포트가 열려 있으면
-            {
-                label_status.Text = "포트가 이미 열려 있습니다.";
             }
         }
         private void button_disconnect_click(object sender, EventArgs e)  //통신 연결끊기 버튼
@@ -497,12 +491,7 @@ namespace Serial_Communication
             {
                 serialPort1.Close();  //시리얼포트 닫기
 
-                label_status.Text = "포트가 닫혔습니다.";
                 comboBox_port1.Enabled = true;  //com포트설정 콤보박스 활성화
-            }
-            else  //시리얼포트가 닫혀 있으면
-            {
-                label_status.Text = "포트가 이미 닫혀 있습니다.";
             }
         }
         private void serialPort1_DataReceived(object sender, SerialDataReceivedEventArgs e)  //수신 이벤트가 발생하면 이 부분이 실행된다.
@@ -527,7 +516,7 @@ namespace Serial_Communication
                     {
                         //textBox3.Text = iRecivedSize.ToString(); ;
                         serialPort1.Read(buff, 0, iRecivedSize);
-                        richTextBox1.AppendText(DateTime.Now.ToString("\r\n[HH:mm:ss] [RX] ") + BitConverter.ToString(buff).Replace("-", " "));
+                       // richTextBox1.AppendText(DateTime.Now.ToString("\r\n[HH:mm:ss] [RX] ") + BitConverter.ToString(buff).Replace("-", " "));
                         //debugText.AppendText(Encoding.ASCII.GetString(buff));
                         for (int i = 0; i < buff.Length; i++)
                         {
@@ -544,101 +533,6 @@ namespace Serial_Communication
             {
                 //this.debugText.AppendText(ex.Message);
             }
-        }
-
-        private void metroButton_ManualSet_Click(object sender, EventArgs e)
-        {
-            ushort stmp;
-            byte[] sdata = new byte[8];
-
-            if (comboBox_Mode.SelectedIndex < 0)
-                comboBox_Mode.SelectedIndex = 0;
-            stmp = ushort.Parse(textBox_mTavg.Text);
-            sdata[0] = (byte)(stmp & 0xff);
-            sdata[1] = (byte)((stmp >> 8) & 0xff);
-            stmp = ushort.Parse(textBox_mMaf.Text);
-            sdata[2] = (byte)(stmp & 0xff);
-            sdata[3] = (byte)((stmp >> 8) & 0xff);
-            stmp = ushort.Parse(textBox_mNoxUp.Text);
-            sdata[4] = (byte)(stmp & 0xff);
-            sdata[5] = (byte)((stmp >> 8) & 0xff);
-            stmp = ushort.Parse(textBox_mNoxDn.Text);
-            sdata[6] = (byte)(stmp & 0xff);
-            sdata[7] = (byte)((stmp >> 8) & 0xff);
-
-            TxData(0xC6, 8, 0x23, 0, sdata);
-        }
-
-        private void metroButton_Alpha_Click(object sender, EventArgs e)
-        {
-            double dtmp;
-            ushort stmp;
-            byte[] sdata = new byte[8];
-
-            if (comboBox_Mode.SelectedIndex < 0)
-                comboBox_Mode.SelectedIndex = 0;
-
-            dtmp = double.Parse(textBox_mAlpha.Text) * 100.0;
-            stmp = (ushort)dtmp;
-            sdata[0] = (byte)(stmp & 0xff);
-            sdata[1] = (byte)((stmp >> 8) & 0xff);
-            sdata[2] = 0x00;
-            sdata[3] = 0x00;
-            sdata[4] = 0x00;
-            sdata[5] = 0x00;
-            sdata[6] = 0x00;
-            sdata[7] = 0x00;
-
-            TxData(0xC6, 8, 0x22, 0, sdata);
-        }
-
-        private void metroButton_Inject_Click(object sender, EventArgs e)
-        {
-            byte[] sdata = new byte[8];
-            byte cmd;
-            double dtmp;
-            long ltmp;
-
-            if (comboBox_Mode.SelectedIndex < 0)
-                comboBox_Mode.SelectedIndex = 0;
-
-            if (buttonClicked == false)
-            {
-                metroButton_VauleSet.Enabled = false;
-                metroButton_Inject.Text = "Pump OFF";
-                buttonClicked = false;
-
-                sdata[0] = 0x00;
-                sdata[1] = 0x00;
-                sdata[2] = 0x00;
-                sdata[3] = 0x00;
-                sdata[4] = 0x00;
-                sdata[5] = 0x00;
-                sdata[6] = 0x00;
-                sdata[7] = 0x00;
-            }
-            else
-            {
-                metroButton_VauleSet.Enabled = true;
-                if (metroRadioButton_gh.Checked == true)
-                    cmd = 0x01;
-                else
-                    cmd = 0x02;
-
-                metroButton_Inject.Text = "Pump ON";
-                buttonClicked = true;
-                sdata[0] = cmd;
-                sdata[1] = 0x00;
-                sdata[2] = 0x00;
-                sdata[3] = 0x00;
-                dtmp = double.Parse(textBox_mDosing.Text) * 100.0;
-                ltmp = (long)dtmp;
-                sdata[4] = (byte)(ltmp & 0xff);
-                sdata[5] = (byte)((ltmp >> 8) & 0xff);
-                sdata[6] = (byte)((ltmp >> 16) & 0xff);
-                sdata[7] = (byte)((ltmp >> 24) & 0xff);
-            }
-                TxData(0xC6, 8, 0x21, 0, sdata);
         }
 
         private void Read_Click(object sender, EventArgs e) //Parameter Read
@@ -700,6 +594,30 @@ namespace Serial_Communication
             TxData(0xc6, 0x08, 0x48, 0x11, sdata);
         }
 
+        private void Test_0_Click(object sender, EventArgs e)
+        {
+            byte[] sdata = new byte[8];
+            TxCmd(0xc6, 0x30, 0x12);
+        }
+
+        private void Test_1_Click(object sender, EventArgs e)
+        {
+            byte[] sdata = new byte[8];
+            TxCmd(0xc6, 0x40, 0x12);
+        }
+
+        private void Test_2_Click(object sender, EventArgs e)
+        {
+            byte[] sdata = new byte[8];
+            TxCmd(0xc6, 0x50, 0x12);
+        }
+
+        private void Test_Exit_Click(object sender, EventArgs e)
+        {
+            byte[] sdata = new byte[8];
+            TxCmd(0xc6, 0x60, 0x12);
+        }
+
         private void timer2_Tick(object sender, EventArgs e)
         {
             byte[] sdata = new byte[8];
@@ -709,56 +627,6 @@ namespace Serial_Communication
             }
 
         }
-
-        private void metroButton_MODE_Click(object sender, EventArgs e) // Select Mode
-        {
-            byte[] sdata = new byte[8];
-            byte Mode = 0;
-            if (comboBox_Mode.SelectedItem != null)
-            {
-                string selectedMode = comboBox_Mode.SelectedItem.ToString();
-
-                if (selectedMode == "AUTO")
-                {
-                    Mode = 0;
-                }
-                else if (selectedMode == "MANUAL")
-                {
-                    Mode = 1;
-                }
-                else if (selectedMode == "ALPHA")
-                {
-                    Mode = 2;
-                }
-                else if (selectedMode == "DOSING")
-                {
-                    Mode = 3;
-                }
-            }
-            else
-            {
-                Mode = 0;  // ComboBox에서 아무 항목도 선택되지 않은 경우에 대한 처리를 원하면 여기에 추가할 수 있습니다.
-            }
-            //Convert.ToByte(comboBox_Mode.Text);
-            sdata[0] = Mode;
-            sdata[1] = 0x00;
-            sdata[2] = 0x00;
-            sdata[3] = 0x00;
-            sdata[4] = 0x00;
-            sdata[5] = 0x00;
-            sdata[6] = 0x00;
-            sdata[7] = 0x00;
-
-            TxData(0xC6, 8, 0x24, 0, sdata);
-        }
-
-        //string ReceiveData = serialPort1.ReadExisting();  //시리얼 버터에 수신된 데이타를 ReceiveData 읽어오기
-        //    richTextBox_received.Text = richTextBox_received.Text + string.Format("0x{0:X2}", ReceiveData);  //int 형식을 string형식으로 변환하여 출력
-        //rdata = byte.ReceiveData;
-        //RxData(rdata);
-        //textBox1.Text = string.Format("0x{0:X2}", ReceiveData);
-        //textBox2.Text = "연결상태 양호";
-        //textBox3.Text = string.Format("0x{0:X2}", ReceiveData);
         public void RxData(byte rdata)  // Data Protocol 
         {
             byte checksum;
@@ -858,6 +726,9 @@ namespace Serial_Communication
                     TempOut.Text = SecData.TempOut.ToString();
                     DosingRate.Text = SecData.DosingRate.ToString();
                     MAF.Text = SecData.MAF.ToString();
+                    if (SecData.UreaAccFlag == 1) Limit.Text = 10.ToString() + '%';
+                    else if (SecData.UreaAccFlag == 2) Limit.Text = 25.ToString() + '%';
+                    else Limit.Text = 0.ToString() + '%';
 
                     SecData.TM = BitConverter.ToUInt32(m_ucRxData, 0);
                     SecData.LT = BitConverter.ToUInt32(m_ucRxData, 4);
@@ -880,23 +751,6 @@ namespace Serial_Communication
                     SecData.MAF = BitConverter.ToUInt16(m_ucRxData, 41);
                     SecData.State = (byte)BitConverter.ToUInt16(m_ucRxData, 43);
                     SecData.Concentration = (byte)BitConverter.ToUInt16(m_ucRxData, 44);
-                    SecData.SystemError_1 = (byte)BitConverter.ToUInt16(m_ucRxData, 45);
-                    SecData.SystemError_2 = (byte)BitConverter.ToUInt16(m_ucRxData, 46);
-                    SecData.SystemError_3 = (byte)BitConverter.ToUInt16(m_ucRxData, 47);
-                    SecData.SystemError_4 = (byte)BitConverter.ToUInt16(m_ucRxData, 48);
-                    SecData.SystemError_5 = (byte)BitConverter.ToUInt16(m_ucRxData, 49);
-                    SecData.SystemError_6 = (byte)BitConverter.ToUInt16(m_ucRxData, 50);
-                    SecData.SystemError_7 = (byte)BitConverter.ToUInt16(m_ucRxData, 51);
-                    SecData.SystemError_8 = (byte)BitConverter.ToUInt16(m_ucRxData, 52);
-
-                    SecData.DoserError_1 = (byte)BitConverter.ToUInt16(m_ucRxData, 53);
-                    SecData.DoserError_2 = (byte)BitConverter.ToUInt16(m_ucRxData, 54);
-                    SecData.DoserError_3 = (byte)BitConverter.ToUInt16(m_ucRxData, 55);
-                    SecData.DoserError_4 = (byte)BitConverter.ToUInt16(m_ucRxData, 56);
-                    SecData.DoserError_5 = (byte)BitConverter.ToUInt16(m_ucRxData, 57);
-                    SecData.DoserError_6 = (byte)BitConverter.ToUInt16(m_ucRxData, 58);
-                    SecData.DoserError_7 = (byte)BitConverter.ToUInt16(m_ucRxData, 59);
-                    SecData.DoserError_8 = (byte)BitConverter.ToUInt16(m_ucRxData, 60);
 
                     SecData.Vbat = BitConverter.ToUInt16(m_ucRxData, 61);
                     SecData.UreaAccFlag = (byte)BitConverter.ToUInt16(m_ucRxData, 63);
