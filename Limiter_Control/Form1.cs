@@ -718,17 +718,32 @@ namespace Serial_Communication
             {
                 case 0x1A:
                     Flag.Text = SecData.UreaAccFlag.ToString();
-                    Level.Text = SecData.UreaLevel.ToString();
-                    Quality.Text = SecData.Concentration.ToString();
+                    Level.Text = SecData.UreaLevel.ToString() +'%';
+                    Quality.Text = SecData.Concentration.ToString() + '%';
                     NOxIn.Text = SecData.NOxIn.ToString();
                     NOxOut.Text = SecData.NOxOut.ToString();
                     TempIn.Text = SecData.TempIn.ToString();
                     TempOut.Text = SecData.TempOut.ToString();
                     DosingRate.Text = SecData.DosingRate.ToString();
                     MAF.Text = SecData.MAF.ToString();
-                    if (SecData.UreaAccFlag == 1) Limit.Text = 10.ToString() + '%';
-                    else if (SecData.UreaAccFlag == 2) Limit.Text = 25.ToString() + '%';
-                    else Limit.Text = 0.ToString() + '%';
+                    if (SecData.UreaAccFlag == 1)
+                    {
+                        Limit.Text = 10.ToString() + '%';
+                        Limit.ForeColor = Color.Red;
+                        Flag.ForeColor = Color.Red;
+                    }
+                    else if (SecData.UreaAccFlag == 2)
+                    {
+                        Limit.Text = 25.ToString() + '%';
+                        Limit.ForeColor = Color.Red;
+                        Flag.ForeColor = Color.Red;
+                    }   
+                    else
+                    {
+                        Limit.Text = 0.ToString() + '%';
+                        Limit.ForeColor = Color.Black;
+                        Flag.ForeColor = Color.Black;
+                    }
 
                     SecData.TM = BitConverter.ToUInt32(m_ucRxData, 0);
                     SecData.LT = BitConverter.ToUInt32(m_ucRxData, 4);

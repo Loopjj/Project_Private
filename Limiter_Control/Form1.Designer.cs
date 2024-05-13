@@ -695,30 +695,30 @@
             // TempIn
             // 
             this.TempIn.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.TempIn.Font = new System.Drawing.Font("굴림", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.TempIn.Font = new System.Drawing.Font("Impact", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TempIn.Location = new System.Drawing.Point(51, 97);
             this.TempIn.Name = "TempIn";
-            this.TempIn.Size = new System.Drawing.Size(106, 44);
+            this.TempIn.Size = new System.Drawing.Size(141, 53);
             this.TempIn.TabIndex = 4;
             this.TempIn.Text = "0";
             // 
             // TempOut
             // 
             this.TempOut.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.TempOut.Font = new System.Drawing.Font("굴림", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.TempOut.Font = new System.Drawing.Font("Impact", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TempOut.Location = new System.Drawing.Point(229, 97);
             this.TempOut.Name = "TempOut";
-            this.TempOut.Size = new System.Drawing.Size(106, 44);
+            this.TempOut.Size = new System.Drawing.Size(141, 53);
             this.TempOut.TabIndex = 5;
             this.TempOut.Text = "0";
             // 
             // DosingRate
             // 
             this.DosingRate.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.DosingRate.Font = new System.Drawing.Font("굴림", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.DosingRate.Font = new System.Drawing.Font("Impact", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.DosingRate.Location = new System.Drawing.Point(409, 97);
             this.DosingRate.Name = "DosingRate";
-            this.DosingRate.Size = new System.Drawing.Size(106, 44);
+            this.DosingRate.Size = new System.Drawing.Size(141, 53);
             this.DosingRate.TabIndex = 6;
             this.DosingRate.Text = "0";
             // 
@@ -758,30 +758,30 @@
             // NOxIn
             // 
             this.NOxIn.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.NOxIn.Font = new System.Drawing.Font("굴림", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.NOxIn.Font = new System.Drawing.Font("Impact", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.NOxIn.Location = new System.Drawing.Point(51, 212);
             this.NOxIn.Name = "NOxIn";
-            this.NOxIn.Size = new System.Drawing.Size(106, 44);
+            this.NOxIn.Size = new System.Drawing.Size(141, 53);
             this.NOxIn.TabIndex = 10;
             this.NOxIn.Text = "0";
             // 
             // NOxOut
             // 
             this.NOxOut.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.NOxOut.Font = new System.Drawing.Font("굴림", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.NOxOut.Font = new System.Drawing.Font("Impact", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.NOxOut.Location = new System.Drawing.Point(229, 212);
             this.NOxOut.Name = "NOxOut";
-            this.NOxOut.Size = new System.Drawing.Size(106, 44);
+            this.NOxOut.Size = new System.Drawing.Size(141, 53);
             this.NOxOut.TabIndex = 11;
             this.NOxOut.Text = "0";
             // 
             // MAF
             // 
             this.MAF.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.MAF.Font = new System.Drawing.Font("굴림", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.MAF.Font = new System.Drawing.Font("Impact", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.MAF.Location = new System.Drawing.Point(409, 212);
             this.MAF.Name = "MAF";
-            this.MAF.Size = new System.Drawing.Size(106, 44);
+            this.MAF.Size = new System.Drawing.Size(141, 53);
             this.MAF.TabIndex = 12;
             this.MAF.Text = "0";
             // 
