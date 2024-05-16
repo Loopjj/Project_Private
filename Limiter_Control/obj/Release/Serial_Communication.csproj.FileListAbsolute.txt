@@ -198,9 +198,6 @@ D:\240427_S\Winform\obj\Release\Serial_Communication.pdb
 E:\Private\Project_Private\Limiter_Control\bin\Release\Serial_Communication.exe.config
 E:\Private\Project_Private\Limiter_Control\bin\Release\Serial_Communication.exe
 E:\Private\Project_Private\Limiter_Control\bin\Release\Serial_Communication.pdb
-E:\Private\Project_Private\Limiter_Control\bin\Release\MetroFramework.Design.dll
-E:\Private\Project_Private\Limiter_Control\bin\Release\MetroFramework.dll
-E:\Private\Project_Private\Limiter_Control\bin\Release\MetroFramework.Fonts.dll
 E:\Private\Project_Private\Limiter_Control\obj\Release\Serial_Communication.csproj.AssemblyReference.cache
 E:\Private\Project_Private\Limiter_Control\obj\Release\Serial_Communication.csproj.SuggestedBindingRedirects.cache
 E:\Private\Project_Private\Limiter_Control\obj\Release\Serial_Communication.csproj.ResolveComReference.cache
@@ -229,3 +226,6 @@ D:\Winform_Project\Project_Private\Limiter_Control\obj\Release\Serial_Communicat
 D:\Winform_Project\Project_Private\Limiter_Control\obj\Release\Serial_Communication.csproj.CopyComplete
 D:\Winform_Project\Project_Private\Limiter_Control\obj\Release\Serial_Communication.exe
 D:\Winform_Project\Project_Private\Limiter_Control\obj\Release\Serial_Communication.pdb
+E:\Private\Project_Private\Limiter_Control\bin\Release\System.Diagnostics.DiagnosticSource.xml
+E:\Private\Project_Private\Limiter_Control\obj\Release\Serial_Communication.csproj.Fody.CopyLocal.cache
+E:\Private\Project_Private\Limiter_Control\obj\Release\Serial_Communication.csproj.Fody.RuntimeCopyLocal.cache

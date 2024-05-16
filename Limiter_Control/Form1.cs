@@ -7,11 +7,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.IO.Ports;  //시리얼통신을 위해 추가해줘야 함
-using System.Security.Cryptography.X509Certificates; //추가
-using System.Runtime.InteropServices; //추가 
+using System.IO.Ports;
+using System.Security.Cryptography.X509Certificates;
+using System.Runtime.InteropServices;
 using System.Threading;
-using Excel = Microsoft.Office.Interop.Excel; // 엑셀 파일 생성을 위함 
+using Excel = Microsoft.Office.Interop.Excel;
 using System.Timers;
 using System.IO;
 using static System.Collections.Specialized.BitVector32;
@@ -279,13 +279,13 @@ namespace Serial_Communication
         {
             InitializeComponent();
             CheckAndCreateSettingsFile(); //최초 실행시 Setting.INI파일의 유무를 확인한다. 
-            this.MinimumSize = new Size(1107, 727);
-            this.MaximumSize = new Size(1107, 727);
+            this.MinimumSize = new Size(926, 727);
+            this.MaximumSize = new Size(926, 727);
         }
 
         private void Form1_Load(object sender, EventArgs e)  //폼이 로드되면
         {
-            comboBox_port1.DataSource = SerialPort.GetPortNames(); //연결 가능한 시리얼포트 이름을 콤보박스에 가져오기
+            comboBox_port1.DataSource = SerialPort.GetPortNames();
         }
         private void CheckAndCreateSettingsFile()
         {
@@ -296,13 +296,11 @@ namespace Serial_Communication
                 // 설정 파일이 없는 경우, 설정 파일 생성
                 try
                 {
-                    File.Create(settingsFilePath).Close(); // 파일을 생성하고 즉시 닫습니다.
-                    // 이후에 필요한 설정 데이터를 파일에 저장할 수도 있습니다.
+                    File.Create(settingsFilePath).Close(); // 파일을 생성하고 닫기
                 }
                 catch (Exception ex)
                 {
-                    // 파일 생성 중 오류가 발생한 경우 예외 처리를 수행합니다.
-                    // 예를 들어 로깅하거나 알림을 보여주는 등의 작업을 수행할 수 있습니다.
+                    // 파일 생성 중 오류가 발생한 경우 예외 처리
                     Console.WriteLine("Setting.ini 파일 생성 중 오류 발생: " + ex.Message);
                 }
             }
@@ -362,24 +360,24 @@ namespace Serial_Communication
         {
             try
             {
-                // 설정 파일에서 데이터를 읽어오기 위해 StreamReader를 사용합니다.
+                // 설정 파일에서 데이터를 읽어오기 위해 StreamReader를 사용
                 using (StreamReader reader = new StreamReader(settingsFilePath))
                 {
                     string line;
                     while ((line = reader.ReadLine()) != null)
                     {
-                        // 섹션과 키에 해당하는 줄을 찾습니다.
+                        // 섹션과 키에 해당하는 줄을 찾기
                         if (line.StartsWith($"[{section}]"))
                         {
                             while ((line = reader.ReadLine()) != null)
                             {
-                                // 해당 키를 찾았으면 값을 반환합니다.
+                                // 해당 키를 찾았으면 값을 반환
                                 if (line.StartsWith($"{key}="))
                                 {
-                                    return line.Substring(key.Length + 1); // 값을 리턴합니다.
+                                    return line.Substring(key.Length + 1); // 값 리턴
                                 }
 
-                                // 만약 다음 섹션을 만나면 중지합니다.
+                                // 만약 다음 섹션을 만나면 중지
                                 if (line.StartsWith("["))
                                     break;
                             }
@@ -387,7 +385,7 @@ namespace Serial_Communication
                     }
                 }
 
-                // 해당 섹션 또는 키를 찾지 못했을 경우 null을 반환합니다.
+                // 해당 섹션 또는 키를 찾지 못했을 경우 null을 반환
                 return null;
             }
             catch (Exception ex)
@@ -729,8 +727,8 @@ namespace Serial_Communication
                     if (SecData.UreaAccFlag == 1)
                     {
                         Limit.Text = 10.ToString() + '%';
-                        Limit.ForeColor = Color.Red;
-                        Flag.ForeColor = Color.Red;
+                        Limit.ForeColor = Color.OrangeRed;
+                        Flag.ForeColor = Color.OrangeRed;
                     }
                     else if (SecData.UreaAccFlag == 2)
                     {
@@ -817,23 +815,23 @@ namespace Serial_Communication
             }
 
             byte[] sdata = new byte[100];
-            byte check_sum;
+          
 
             sdata[0] = sync;
             sdata[1] = sync;
             sdata[2] = 0x7e;
             sdata[3] = (byte)(len + 2);
             sdata[4] = command;
-            check_sum = (byte)((len + 2) ^ command ^ id);
+            checkSum = (byte)((len + 2) ^ command ^ id);
 
             for (int i = 0; i < len; i++)
             {
                 sdata[i + 6] = data[i];
-                check_sum ^= data[i];
+                checkSum ^= data[i];
             }
 
-            check_sum++;
-            sdata[len + 6] = check_sum;
+            checkSum++;
+            sdata[len + 6] = checkSum;
             sdata[len + 7] = 0x7d;
 
             for (int i = 0; i < len + 8; i++)
