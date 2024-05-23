@@ -1,0 +1,1541 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V7.60.1.11101/W32 for ARM       09/Jan/2023  17:31:20
+# Copyright 1999-2016 IAR Systems AB.
+#
+#    Cpu mode     =  thumb
+#    Endian       =  little
+#    Source file  =  
+#        E:\LOOP\SCRDPF\OBD\freeRTOS_STM32F2xx_Modem_CC_Large\Libraries\USB\STM32_USB_HOST_Library\Class\MSC\src\usbh_msc_scsi.c
+#    Command line =  
+#        E:\LOOP\SCRDPF\OBD\freeRTOS_STM32F2xx_Modem_CC_Large\Libraries\USB\STM32_USB_HOST_Library\Class\MSC\src\usbh_msc_scsi.c
+#        -D USE_STDPERIPH_DRIVER -D STM32F2XX -D USE_USB_OTG_FS -lC
+#        E:\LOOP\SCRDPF\OBD\freeRTOS_STM32F2xx_Modem_CC_Large\Project\Debug\List
+#        --diag_suppress Pa050 -o
+#        E:\LOOP\SCRDPF\OBD\freeRTOS_STM32F2xx_Modem_CC_Large\Project\Debug\Obj
+#        --no_unroll --no_inline --no_tbaa --no_scheduling --debug
+#        --endian=little --cpu=Cortex-M3 -e --fpu=None --dlib_config
+#        "C:\Program Files (x86)\IAR Systems\Embedded Workbench
+#        7.4\arm\INC\c\DLib_Config_Full.h" -I
+#        E:\LOOP\SCRDPF\OBD\freeRTOS_STM32F2xx_Modem_CC_Large\Project\ -I
+#        E:\LOOP\SCRDPF\OBD\freeRTOS_STM32F2xx_Modem_CC_Large\Project\..\cpu\
+#        -I
+#        E:\LOOP\SCRDPF\OBD\freeRTOS_STM32F2xx_Modem_CC_Large\Project\..\Drv\
+#        -I
+#        E:\LOOP\SCRDPF\OBD\freeRTOS_STM32F2xx_Modem_CC_Large\Project\..\App\
+#        -I
+#        E:\LOOP\SCRDPF\OBD\freeRTOS_STM32F2xx_Modem_CC_Large\Project\..\App\fat\
+#        -I
+#        E:\LOOP\SCRDPF\OBD\freeRTOS_STM32F2xx_Modem_CC_Large\Project\..\bsp\
+#        -I
+#        E:\LOOP\SCRDPF\OBD\freeRTOS_STM32F2xx_Modem_CC_Large\Project\..\Dev\
+#        -I
+#        E:\LOOP\SCRDPF\OBD\freeRTOS_STM32F2xx_Modem_CC_Large\Project\..\OsConfig\
+#        -I
+#        E:\LOOP\SCRDPF\OBD\freeRTOS_STM32F2xx_Modem_CC_Large\Project\..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F2xx\
+#        -I
+#        E:\LOOP\SCRDPF\OBD\freeRTOS_STM32F2xx_Modem_CC_Large\Project\..\Libraries\FAT_FS\inc\
+#        -I
+#        E:\LOOP\SCRDPF\OBD\freeRTOS_STM32F2xx_Modem_CC_Large\Project\..\Libraries\STM32F2xx_StdPeriph_Driver\inc\
+#        -I
+#        E:\LOOP\SCRDPF\OBD\freeRTOS_STM32F2xx_Modem_CC_Large\Project\..\Libraries\USB\STM32_USB_HOST_Library\Class\MSC\inc\
+#        -I
+#        E:\LOOP\SCRDPF\OBD\freeRTOS_STM32F2xx_Modem_CC_Large\Project\..\Libraries\USB\STM32_USB_HOST_Library\Core\inc\
+#        -I
+#        E:\LOOP\SCRDPF\OBD\freeRTOS_STM32F2xx_Modem_CC_Large\Project\..\Libraries\USB\STM32_USB_OTG_Driver\inc\
+#        -I
+#        E:\LOOP\SCRDPF\OBD\freeRTOS_STM32F2xx_Modem_CC_Large\Project\..\Util\Third_Party\FreeRTOS_v7.6.0\portable\IAR\ARM_CM3\
+#        -I
+#        E:\LOOP\SCRDPF\OBD\freeRTOS_STM32F2xx_Modem_CC_Large\Project\..\Util\Third_Party\FreeRTOS_v7.6.0\include\
+#        -I
+#        E:\LOOP\SCRDPF\OBD\freeRTOS_STM32F2xx_Modem_CC_Large\Project\..\OsConfig\usbConf\
+#        -I
+#        E:\LOOP\SCRDPF\OBD\freeRTOS_STM32F2xx_Modem_CC_Large\Project\..\Libraries\FAT_FS\
+#        -I
+#        E:\LOOP\SCRDPF\OBD\freeRTOS_STM32F2xx_Modem_CC_Large\Project\..\Libraries\FAT_FS\drivers\
+#        -Om --use_c++_inline -I "C:\Program Files (x86)\IAR Systems\Embedded
+#        Workbench 7.4\arm\CMSIS\Include\"
+#    Locale       =  C
+#    List file    =  
+#        E:\LOOP\SCRDPF\OBD\freeRTOS_STM32F2xx_Modem_CC_Large\Project\Debug\List\usbh_msc_scsi.lst
+#    Object file  =  
+#        E:\LOOP\SCRDPF\OBD\freeRTOS_STM32F2xx_Modem_CC_Large\Project\Debug\Obj\usbh_msc_scsi.o
+#
+###############################################################################
+
+E:\LOOP\SCRDPF\OBD\freeRTOS_STM32F2xx_Modem_CC_Large\Libraries\USB\STM32_USB_HOST_Library\Class\MSC\src\usbh_msc_scsi.c
+      1          /**
+      2            ******************************************************************************
+      3            * @file    usbh_msc_scsi.c 
+      4            * @author  MCD Application Team
+      5            * @version V2.1.0
+      6            * @date    19-March-2012
+      7            * @brief   This file implements the SCSI commands
+      8            ******************************************************************************
+      9            * @attention
+     10            *
+     11            * <h2><center>&copy; COPYRIGHT 2012 STMicroelectronics</center></h2>
+     12            *
+     13            * Licensed under MCD-ST Liberty SW License Agreement V2, (the "License");
+     14            * You may not use this file except in compliance with the License.
+     15            * You may obtain a copy of the License at:
+     16            *
+     17            *        http://www.st.com/software_license_agreement_liberty_v2
+     18            *
+     19            * Unless required by applicable law or agreed to in writing, software 
+     20            * distributed under the License is distributed on an "AS IS" BASIS, 
+     21            * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     22            * See the License for the specific language governing permissions and
+     23            * limitations under the License.
+     24            *
+     25            ******************************************************************************
+     26            */ 
+     27          
+     28          /* Includes ------------------------------------------------------------------*/
+     29          #include "usbh_msc_core.h"
+     30          #include "usbh_msc_scsi.h"
+     31          #include "usbh_msc_bot.h"
+     32          #include "usbh_ioreq.h"
+     33          #include "usbh_def.h"
+     34          
+     35          
+     36          /** @addtogroup USBH_LIB
+     37            * @{
+     38            */
+     39          
+     40          /** @addtogroup USBH_CLASS
+     41            * @{
+     42            */
+     43          
+     44          /** @addtogroup USBH_MSC_CLASS
+     45            * @{
+     46            */
+     47            
+     48          /** @defgroup USBH_MSC_SCSI 
+     49            * @brief    This file includes the mass storage related functions
+     50            * @{
+     51            */ 
+     52          
+     53          
+     54          /** @defgroup USBH_MSC_SCSI_Private_TypesDefinitions
+     55            * @{
+     56            */ 
+     57          
+
+   \                                 In section .bss, align 4
+     58          MassStorageParameter_TypeDef USBH_MSC_Param; 
+   \                     USBH_MSC_Param:
+   \   00000000                      DS8 16
+     59          /**
+     60            * @}
+     61            */ 
+     62          
+     63          /** @defgroup USBH_MSC_SCSI_Private_Defines
+     64            * @{
+     65            */ 
+     66          /**
+     67            * @}
+     68            */ 
+     69          
+     70          /** @defgroup USBH_MSC_SCSI_Private_Macros
+     71            * @{
+     72            */ 
+     73          /**
+     74            * @}
+     75            */ 
+     76          
+     77          
+     78          /** @defgroup USBH_MSC_SCSI_Private_Variables
+     79            * @{
+     80            */ 
+     81            
+     82          #ifdef USB_OTG_HS_INTERNAL_DMA_ENABLED
+     83            #if defined ( __ICCARM__ ) /*!< IAR Compiler */
+     84              #pragma data_alignment=4   
+     85            #endif
+     86          #endif /* USB_OTG_HS_INTERNAL_DMA_ENABLED */
+
+   \                                 In section .bss, align 4
+     87          __ALIGN_BEGIN uint8_t USBH_DataInBuffer[512] __ALIGN_END ;
+   \                     USBH_DataInBuffer:
+   \   00000000                      DS8 512
+     88          
+     89          #ifdef USB_OTG_HS_INTERNAL_DMA_ENABLED
+     90            #if defined ( __ICCARM__ ) /*!< IAR Compiler */
+     91              #pragma data_alignment=4   
+     92            #endif
+     93          #endif /* USB_OTG_HS_INTERNAL_DMA_ENABLED */
+
+   \                                 In section .bss, align 4
+     94          __ALIGN_BEGIN uint8_t USBH_DataOutBuffer[512] __ALIGN_END ;
+   \                     USBH_DataOutBuffer:
+   \   00000000                      DS8 512
+     95          /**
+     96            * @}
+     97            */ 
+     98          
+     99          
+    100          /** @defgroup USBH_MSC_SCSI_Private_FunctionPrototypes
+    101            * @{
+    102            */ 
+    103          /**
+    104            * @}
+    105            */ 
+    106          
+    107          
+    108          /** @defgroup USBH_MSC_SCSI_Exported_Variables
+    109            * @{
+    110            */ 
+    111          
+    112          /**
+    113            * @}
+    114            */ 
+    115          
+    116          
+    117          /** @defgroup USBH_MSC_SCSI_Private_Functions
+    118            * @{
+    119            */ 
+    120          
+    121          
+    122          /**
+    123            * @brief  USBH_MSC_TestUnitReady 
+    124            *         Issues 'Test unit ready' command to the device. Once the response  
+    125            *         received, it updates the status to upper layer.
+    126            * @param  None
+    127            * @retval Status
+    128            */
+
+   \                                 In section .text, align 2, keep-with-next
+    129          uint8_t USBH_MSC_Inquiry (USB_OTG_CORE_HANDLE *pdev)
+    130          {
+   \                     USBH_MSC_Inquiry: (+1)
+   \   00000000   0xB538             PUSH     {R3-R5,LR}
+    131            USBH_MSC_Status_TypeDef status = USBH_MSC_BUSY;
+   \   00000002   0x2403             MOVS     R4,#+3
+    132            
+    133            uint8_t index;
+    134            
+    135            
+    136            if(HCD_IsDeviceConnected(pdev))
+   \   00000004   0x.... 0x....      BL       HCD_IsDeviceConnected
+   \   00000008   0x2800             CMP      R0,#+0
+   \   0000000A   0xD042             BEQ.N    ??USBH_MSC_Inquiry_0
+    137            {  
+    138              switch(USBH_MSC_BOTXferParam.CmdStateMachine)
+   \   0000000C   0x.... 0x....      LDR.W    R0,??DataTable6
+   \   00000010   0x78C1             LDRB     R1,[R0, #+3]
+   \   00000012   0x2901             CMP      R1,#+1
+   \   00000014   0xD002             BEQ.N    ??USBH_MSC_Inquiry_1
+   \   00000016   0x2902             CMP      R1,#+2
+   \   00000018   0xD029             BEQ.N    ??USBH_MSC_Inquiry_2
+   \   0000001A   0xE03A             B.N      ??USBH_MSC_Inquiry_0
+    139              {
+    140              case CMD_SEND_STATE:
+    141                
+    142                /*Prepare the CBW and relevent field*/
+    143                USBH_MSC_CBWData.field.CBWTransferLength = \
+    144                                                          DATA_LEN_INQUIRY;
+   \                     ??USBH_MSC_Inquiry_1: (+1)
+   \   0000001C   0x.... 0x....      LDR.W    R1,??DataTable6_1
+   \   00000020   0x2224             MOVS     R2,#+36
+   \   00000022   0x608A             STR      R2,[R1, #+8]
+    145                USBH_MSC_CBWData.field.CBWFlags = USB_EP_DIR_IN;
+   \   00000024   0x2280             MOVS     R2,#+128
+   \   00000026   0x730A             STRB     R2,[R1, #+12]
+    146                USBH_MSC_CBWData.field.CBWLength = CBW_LENGTH;
+   \   00000028   0x220A             MOVS     R2,#+10
+   \   0000002A   0x738A             STRB     R2,[R1, #+14]
+    147                
+    148                USBH_MSC_BOTXferParam.pRxTxBuff = USBH_DataInBuffer;
+   \   0000002C   0x.... 0x....      LDR.W    R2,??DataTable6_2
+   \   00000030   0x6082             STR      R2,[R0, #+8]
+    149                USBH_MSC_BOTXferParam.MSCStateBkp = USBH_MSC_BOTXferParam.MSCStateCurrent;
+   \   00000032   0x7882             LDRB     R2,[R0, #+2]
+   \   00000034   0x7042             STRB     R2,[R0, #+1]
+    150                USBH_MSC_BOTXferParam.MSCStateCurrent = USBH_MSC_INQUIRY;
+   \   00000036   0x220B             MOVS     R2,#+11
+   \   00000038   0x7082             STRB     R2,[R0, #+2]
+    151                
+    152          
+    153                for(index = CBW_CB_LENGTH; index != 0; index--)
+   \   0000003A   0x2210             MOVS     R2,#+16
+   \   0000003C   0xE004             B.N      ??USBH_MSC_Inquiry_3
+    154                {
+    155                  USBH_MSC_CBWData.field.CBWCB[index] = 0x00;
+   \                     ??USBH_MSC_Inquiry_4: (+1)
+   \   0000003E   0x2300             MOVS     R3,#+0
+   \   00000040   0xB2D2             UXTB     R2,R2
+   \   00000042   0x188D             ADDS     R5,R1,R2
+   \   00000044   0x73EB             STRB     R3,[R5, #+15]
+    156                }    
+   \   00000046   0x1E52             SUBS     R2,R2,#+1
+   \                     ??USBH_MSC_Inquiry_3: (+1)
+   \   00000048   0x4613             MOV      R3,R2
+   \   0000004A   0xB2DB             UXTB     R3,R3
+   \   0000004C   0x2B00             CMP      R3,#+0
+   \   0000004E   0xD1F6             BNE.N    ??USBH_MSC_Inquiry_4
+    157                
+    158                USBH_MSC_CBWData.field.CBWCB[0]  = OPCODE_INQUIRY; 
+   \   00000050   0x2212             MOVS     R2,#+18
+   \   00000052   0x73CA             STRB     R2,[R1, #+15]
+    159                USBH_MSC_CBWData.field.CBWCB[1]  = DESC_REQUEST_SENSE;
+   \   00000054   0x2200             MOVS     R2,#+0
+   \   00000056   0x740A             STRB     R2,[R1, #+16]
+    160                USBH_MSC_CBWData.field.CBWCB[4]  = 0x24;
+   \   00000058   0x2224             MOVS     R2,#+36
+   \   0000005A   0x74CA             STRB     R2,[R1, #+19]
+    161                
+    162                USBH_MSC_BOTXferParam.BOTState = USBH_MSC_SEND_CBW;
+   \   0000005C   0x2101             MOVS     R1,#+1
+   \   0000005E   0x7101             STRB     R1,[R0, #+4]
+    163                /* Start the transfer, then let the state machine magage 
+    164                the other transactions */
+    165                USBH_MSC_BOTXferParam.MSCState = USBH_MSC_BOT_USB_TRANSFERS;
+   \   00000060   0x2107             MOVS     R1,#+7
+   \   00000062   0x7001             STRB     R1,[R0, #+0]
+    166                USBH_MSC_BOTXferParam.BOTXferStatus = USBH_MSC_BUSY;
+   \   00000064   0x4621             MOV      R1,R4
+   \   00000066   0x73C1             STRB     R1,[R0, #+15]
+    167                USBH_MSC_BOTXferParam.CmdStateMachine = CMD_WAIT_STATUS;
+   \   00000068   0x2102             MOVS     R1,#+2
+   \   0000006A   0x70C1             STRB     R1,[R0, #+3]
+    168                
+    169                status = USBH_MSC_BUSY;
+    170                
+    171                break;
+   \   0000006C   0xE011             B.N      ??USBH_MSC_Inquiry_0
+    172                
+    173              case CMD_WAIT_STATUS:
+    174                
+    175                if(USBH_MSC_BOTXferParam.BOTXferStatus == USBH_MSC_OK)
+   \                     ??USBH_MSC_Inquiry_2: (+1)
+   \   0000006E   0x7BC1             LDRB     R1,[R0, #+15]
+   \   00000070   0x000A             MOVS     R2,R1
+   \   00000072   0xD103             BNE.N    ??USBH_MSC_Inquiry_5
+    176                {
+    177                  /* Get Sense data*/
+    178                  //USB Infomation Data
+    179                  /* Commands successfully sent and Response Received  */       
+    180                  USBH_MSC_BOTXferParam.CmdStateMachine = CMD_SEND_STATE;
+   \   00000074   0x2101             MOVS     R1,#+1
+   \   00000076   0x70C1             STRB     R1,[R0, #+3]
+    181                  status = USBH_MSC_OK;      
+   \   00000078   0x2400             MOVS     R4,#+0
+   \   0000007A   0xE00A             B.N      ??USBH_MSC_Inquiry_0
+    182                }
+    183                else if ( USBH_MSC_BOTXferParam.BOTXferStatus == USBH_MSC_FAIL )
+   \                     ??USBH_MSC_Inquiry_5: (+1)
+   \   0000007C   0x2901             CMP      R1,#+1
+   \   0000007E   0xD103             BNE.N    ??USBH_MSC_Inquiry_6
+    184                {
+    185                  /* Failure Mode */
+    186                  USBH_MSC_BOTXferParam.CmdStateMachine = CMD_SEND_STATE;
+   \   00000080   0x2101             MOVS     R1,#+1
+   \   00000082   0x70C1             STRB     R1,[R0, #+3]
+    187                  status = USBH_MSC_FAIL;
+   \   00000084   0x460C             MOV      R4,R1
+   \   00000086   0xE004             B.N      ??USBH_MSC_Inquiry_0
+    188                }
+    189                
+    190                else if ( USBH_MSC_BOTXferParam.BOTXferStatus == USBH_MSC_PHASE_ERROR )
+   \                     ??USBH_MSC_Inquiry_6: (+1)
+   \   00000088   0x2902             CMP      R1,#+2
+   \   0000008A   0xD102             BNE.N    ??USBH_MSC_Inquiry_0
+    191                {
+    192                  /* Failure Mode */
+    193                  USBH_MSC_BOTXferParam.CmdStateMachine = CMD_SEND_STATE;
+   \   0000008C   0x2101             MOVS     R1,#+1
+   \   0000008E   0x70C1             STRB     R1,[R0, #+3]
+    194                  status = USBH_MSC_PHASE_ERROR;    
+   \   00000090   0x2402             MOVS     R4,#+2
+    195                }
+    196                
+    197                else
+    198                {
+    199                  /* Wait for the Commands to get Completed */
+    200                  /* NO Change in state Machine */
+    201                }
+    202                break;
+    203                
+    204              default:
+    205                break;
+    206              }
+    207            }
+    208            return status;
+   \                     ??USBH_MSC_Inquiry_0: (+1)
+   \   00000092   0x4620             MOV      R0,R4
+   \   00000094   0xBD32             POP      {R1,R4,R5,PC}    ;; return
+    209          }
+    210          
+    211          /**
+    212            * @brief  USBH_MSC_TestUnitReady 
+    213            *         Issues 'Test unit ready' command to the device. Once the response  
+    214            *         received, it updates the status to upper layer.
+    215            * @param  None
+    216            * @retval Status
+    217            */
+
+   \                                 In section .text, align 2, keep-with-next
+    218          uint8_t USBH_MSC_TestUnitReady (USB_OTG_CORE_HANDLE *pdev)
+    219          {
+   \                     USBH_MSC_TestUnitReady: (+1)
+   \   00000000   0xB538             PUSH     {R3-R5,LR}
+    220            uint8_t index;
+    221            USBH_MSC_Status_TypeDef status = USBH_MSC_BUSY;
+   \   00000002   0x2403             MOVS     R4,#+3
+    222            
+    223            if(HCD_IsDeviceConnected(pdev))
+   \   00000004   0x.... 0x....      BL       HCD_IsDeviceConnected
+   \   00000008   0x2800             CMP      R0,#+0
+   \   0000000A   0xD03D             BEQ.N    ??USBH_MSC_TestUnitReady_0
+    224            {  
+    225              switch(USBH_MSC_BOTXferParam.CmdStateMachine)
+   \   0000000C   0x.... 0x....      LDR.W    R0,??DataTable6
+   \   00000010   0x78C1             LDRB     R1,[R0, #+3]
+   \   00000012   0x2901             CMP      R1,#+1
+   \   00000014   0xD002             BEQ.N    ??USBH_MSC_TestUnitReady_1
+   \   00000016   0x2902             CMP      R1,#+2
+   \   00000018   0xD024             BEQ.N    ??USBH_MSC_TestUnitReady_2
+   \   0000001A   0xE035             B.N      ??USBH_MSC_TestUnitReady_0
+    226              {
+    227              case CMD_SEND_STATE:  
+    228                /*Prepare the CBW and relevent field*/
+    229                USBH_MSC_CBWData.field.CBWTransferLength = 0;       /* No Data Transfer */
+   \                     ??USBH_MSC_TestUnitReady_1: (+1)
+   \   0000001C   0x.... 0x....      LDR.W    R1,??DataTable6_1
+   \   00000020   0x2200             MOVS     R2,#+0
+   \   00000022   0x608A             STR      R2,[R1, #+8]
+    230                USBH_MSC_CBWData.field.CBWFlags = USB_EP_DIR_OUT;
+   \   00000024   0x730A             STRB     R2,[R1, #+12]
+    231                USBH_MSC_CBWData.field.CBWLength = CBW_LENGTH_TEST_UNIT_READY;
+   \   00000026   0x220A             MOVS     R2,#+10
+   \   00000028   0x738A             STRB     R2,[R1, #+14]
+    232                USBH_MSC_BOTXferParam.pRxTxBuff = USBH_MSC_CSWData.CSWArray;
+   \   0000002A   0x.... 0x....      LDR.W    R2,??DataTable6_3
+   \   0000002E   0x6082             STR      R2,[R0, #+8]
+    233                USBH_MSC_BOTXferParam.DataLength = USBH_MSC_CSW_MAX_LENGTH;
+   \   00000030   0x223F             MOVS     R2,#+63
+   \   00000032   0x8182             STRH     R2,[R0, #+12]
+    234                USBH_MSC_BOTXferParam.MSCStateCurrent = USBH_MSC_TEST_UNIT_READY;
+   \   00000034   0x4622             MOV      R2,R4
+   \   00000036   0x7082             STRB     R2,[R0, #+2]
+    235                
+    236                for(index = CBW_CB_LENGTH; index != 0; index--)
+   \   00000038   0x2210             MOVS     R2,#+16
+   \   0000003A   0xE004             B.N      ??USBH_MSC_TestUnitReady_3
+    237                {
+    238                  USBH_MSC_CBWData.field.CBWCB[index] = 0x00;
+   \                     ??USBH_MSC_TestUnitReady_4: (+1)
+   \   0000003C   0x2300             MOVS     R3,#+0
+   \   0000003E   0xB2D2             UXTB     R2,R2
+   \   00000040   0x188D             ADDS     R5,R1,R2
+   \   00000042   0x73EB             STRB     R3,[R5, #+15]
+    239                }
+   \   00000044   0x1E52             SUBS     R2,R2,#+1
+   \                     ??USBH_MSC_TestUnitReady_3: (+1)
+   \   00000046   0x4613             MOV      R3,R2
+   \   00000048   0xB2DB             UXTB     R3,R3
+   \   0000004A   0x2B00             CMP      R3,#+0
+   \   0000004C   0xD1F6             BNE.N    ??USBH_MSC_TestUnitReady_4
+    240                
+    241                USBH_MSC_CBWData.field.CBWCB[0]  = OPCODE_TEST_UNIT_READY; 
+   \   0000004E   0x2200             MOVS     R2,#+0
+   \   00000050   0x73CA             STRB     R2,[R1, #+15]
+    242                USBH_MSC_BOTXferParam.BOTState = USBH_MSC_SEND_CBW;
+   \   00000052   0x2101             MOVS     R1,#+1
+   \   00000054   0x7101             STRB     R1,[R0, #+4]
+    243                /* Start the transfer, then let the state 
+    244                machine magage the other transactions */
+    245                USBH_MSC_BOTXferParam.MSCState = USBH_MSC_BOT_USB_TRANSFERS;
+   \   00000056   0x2107             MOVS     R1,#+7
+   \   00000058   0x7001             STRB     R1,[R0, #+0]
+    246                USBH_MSC_BOTXferParam.BOTXferStatus = USBH_MSC_BUSY;
+   \   0000005A   0x4621             MOV      R1,R4
+   \   0000005C   0x73C1             STRB     R1,[R0, #+15]
+    247                USBH_MSC_BOTXferParam.CmdStateMachine = CMD_WAIT_STATUS;
+   \   0000005E   0x2102             MOVS     R1,#+2
+   \   00000060   0x70C1             STRB     R1,[R0, #+3]
+    248                
+    249                status = USBH_MSC_BUSY;
+    250                
+    251                break;
+   \   00000062   0xE011             B.N      ??USBH_MSC_TestUnitReady_0
+    252                
+    253              case CMD_WAIT_STATUS: 
+    254                if(USBH_MSC_BOTXferParam.BOTXferStatus == USBH_MSC_OK)
+   \                     ??USBH_MSC_TestUnitReady_2: (+1)
+   \   00000064   0x7BC1             LDRB     R1,[R0, #+15]
+   \   00000066   0x000A             MOVS     R2,R1
+   \   00000068   0xD103             BNE.N    ??USBH_MSC_TestUnitReady_5
+    255                { 
+    256                  /* Commands successfully sent and Response Received  */       
+    257                  USBH_MSC_BOTXferParam.CmdStateMachine = CMD_SEND_STATE;
+   \   0000006A   0x2101             MOVS     R1,#+1
+   \   0000006C   0x70C1             STRB     R1,[R0, #+3]
+    258                 
+    259                  status = USBH_MSC_OK;      
+   \   0000006E   0x2400             MOVS     R4,#+0
+   \   00000070   0xE00A             B.N      ??USBH_MSC_TestUnitReady_0
+    260                }
+    261                else if ( USBH_MSC_BOTXferParam.BOTXferStatus == USBH_MSC_FAIL )
+   \                     ??USBH_MSC_TestUnitReady_5: (+1)
+   \   00000072   0x2901             CMP      R1,#+1
+   \   00000074   0xD103             BNE.N    ??USBH_MSC_TestUnitReady_6
+    262                {
+    263                  /* Failure Mode */
+    264                  USBH_MSC_BOTXferParam.CmdStateMachine = CMD_SEND_STATE;
+   \   00000076   0x2101             MOVS     R1,#+1
+   \   00000078   0x70C1             STRB     R1,[R0, #+3]
+    265                  status = USBH_MSC_FAIL;
+   \   0000007A   0x460C             MOV      R4,R1
+   \   0000007C   0xE004             B.N      ??USBH_MSC_TestUnitReady_0
+    266                }
+    267                
+    268                else if ( USBH_MSC_BOTXferParam.BOTXferStatus == USBH_MSC_PHASE_ERROR )
+   \                     ??USBH_MSC_TestUnitReady_6: (+1)
+   \   0000007E   0x2902             CMP      R1,#+2
+   \   00000080   0xD102             BNE.N    ??USBH_MSC_TestUnitReady_0
+    269                {
+    270                  /* Failure Mode */
+    271                  USBH_MSC_BOTXferParam.CmdStateMachine = CMD_SEND_STATE;
+   \   00000082   0x2101             MOVS     R1,#+1
+   \   00000084   0x70C1             STRB     R1,[R0, #+3]
+    272                  status = USBH_MSC_PHASE_ERROR;    
+   \   00000086   0x2402             MOVS     R4,#+2
+    273                }  
+    274                break;
+    275                
+    276              default:
+    277                break;
+    278              }
+    279            }
+    280            return status;
+   \                     ??USBH_MSC_TestUnitReady_0: (+1)
+   \   00000088   0x4620             MOV      R0,R4
+   \   0000008A   0xBD32             POP      {R1,R4,R5,PC}    ;; return
+    281          }
+    282          
+    283          
+    284          /**
+    285            * @brief  USBH_MSC_ReadCapacity10  
+    286            *         Issue the read capacity command to the device. Once the response 
+    287            *         received, it updates the status to upper layer
+    288            * @param  None
+    289            * @retval Status
+    290            */
+
+   \                                 In section .text, align 2, keep-with-next
+    291          uint8_t USBH_MSC_ReadCapacity10(USB_OTG_CORE_HANDLE *pdev)
+    292          {
+   \                     USBH_MSC_ReadCapacity10: (+1)
+   \   00000000   0xB538             PUSH     {R3-R5,LR}
+    293            uint8_t index;
+    294            USBH_MSC_Status_TypeDef status = USBH_MSC_BUSY;
+   \   00000002   0x2403             MOVS     R4,#+3
+    295            
+    296            if(HCD_IsDeviceConnected(pdev))
+   \   00000004   0x.... 0x....      BL       HCD_IsDeviceConnected
+   \   00000008   0x2800             CMP      R0,#+0
+   \   0000000A   0xD048             BEQ.N    ??USBH_MSC_ReadCapacity10_0
+    297            {  
+    298              switch(USBH_MSC_BOTXferParam.CmdStateMachine)
+   \   0000000C   0x.... 0x....      LDR.W    R0,??DataTable6
+   \   00000010   0x78C1             LDRB     R1,[R0, #+3]
+   \   00000012   0x2901             CMP      R1,#+1
+   \   00000014   0xD002             BEQ.N    ??USBH_MSC_ReadCapacity10_1
+   \   00000016   0x2902             CMP      R1,#+2
+   \   00000018   0xD021             BEQ.N    ??USBH_MSC_ReadCapacity10_2
+   \   0000001A   0xE040             B.N      ??USBH_MSC_ReadCapacity10_0
+    299              {
+    300              case CMD_SEND_STATE:
+    301                /*Prepare the CBW and relevent field*/
+    302                USBH_MSC_CBWData.field.CBWTransferLength = XFER_LEN_READ_CAPACITY10;
+   \                     ??USBH_MSC_ReadCapacity10_1: (+1)
+   \   0000001C   0x....             LDR.N    R1,??DataTable6_1
+   \   0000001E   0x2208             MOVS     R2,#+8
+   \   00000020   0x608A             STR      R2,[R1, #+8]
+    303                USBH_MSC_CBWData.field.CBWFlags = USB_EP_DIR_IN;
+   \   00000022   0x2280             MOVS     R2,#+128
+   \   00000024   0x730A             STRB     R2,[R1, #+12]
+    304                USBH_MSC_CBWData.field.CBWLength = CBW_LENGTH;
+   \   00000026   0x220A             MOVS     R2,#+10
+   \   00000028   0x738A             STRB     R2,[R1, #+14]
+    305                
+    306                USBH_MSC_BOTXferParam.pRxTxBuff = USBH_DataInBuffer;
+   \   0000002A   0x....             LDR.N    R2,??DataTable6_2
+   \   0000002C   0x6082             STR      R2,[R0, #+8]
+    307                USBH_MSC_BOTXferParam.MSCStateCurrent = USBH_MSC_READ_CAPACITY10;
+   \   0000002E   0x2204             MOVS     R2,#+4
+   \   00000030   0x7082             STRB     R2,[R0, #+2]
+    308                
+    309                for(index = CBW_CB_LENGTH; index != 0; index--)
+   \   00000032   0x2210             MOVS     R2,#+16
+   \   00000034   0xE004             B.N      ??USBH_MSC_ReadCapacity10_3
+    310                {
+    311                  USBH_MSC_CBWData.field.CBWCB[index] = 0x00;
+   \                     ??USBH_MSC_ReadCapacity10_4: (+1)
+   \   00000036   0x2300             MOVS     R3,#+0
+   \   00000038   0xB2D2             UXTB     R2,R2
+   \   0000003A   0x188D             ADDS     R5,R1,R2
+   \   0000003C   0x73EB             STRB     R3,[R5, #+15]
+    312                }    
+   \   0000003E   0x1E52             SUBS     R2,R2,#+1
+   \                     ??USBH_MSC_ReadCapacity10_3: (+1)
+   \   00000040   0x4613             MOV      R3,R2
+   \   00000042   0xB2DB             UXTB     R3,R3
+   \   00000044   0x2B00             CMP      R3,#+0
+   \   00000046   0xD1F6             BNE.N    ??USBH_MSC_ReadCapacity10_4
+    313                
+    314                USBH_MSC_CBWData.field.CBWCB[0]  = OPCODE_READ_CAPACITY10; 
+   \   00000048   0x2225             MOVS     R2,#+37
+   \   0000004A   0x73CA             STRB     R2,[R1, #+15]
+    315                USBH_MSC_BOTXferParam.BOTState = USBH_MSC_SEND_CBW;
+   \   0000004C   0x2101             MOVS     R1,#+1
+   \   0000004E   0x7101             STRB     R1,[R0, #+4]
+    316                
+    317                /* Start the transfer, then let the state machine manage the other 
+    318                                                                          transactions */
+    319                USBH_MSC_BOTXferParam.MSCState = USBH_MSC_BOT_USB_TRANSFERS;
+   \   00000050   0x2107             MOVS     R1,#+7
+   \   00000052   0x7001             STRB     R1,[R0, #+0]
+    320                USBH_MSC_BOTXferParam.BOTXferStatus = USBH_MSC_BUSY;
+   \   00000054   0x4621             MOV      R1,R4
+   \   00000056   0x73C1             STRB     R1,[R0, #+15]
+    321                USBH_MSC_BOTXferParam.CmdStateMachine = CMD_WAIT_STATUS;
+   \   00000058   0x2102             MOVS     R1,#+2
+   \   0000005A   0x70C1             STRB     R1,[R0, #+3]
+    322                
+    323                status = USBH_MSC_BUSY;
+    324                break;
+   \   0000005C   0xE01F             B.N      ??USBH_MSC_ReadCapacity10_0
+    325                
+    326              case CMD_WAIT_STATUS:
+    327                if(USBH_MSC_BOTXferParam.BOTXferStatus == USBH_MSC_OK)
+   \                     ??USBH_MSC_ReadCapacity10_2: (+1)
+   \   0000005E   0x7BC1             LDRB     R1,[R0, #+15]
+   \   00000060   0x000A             MOVS     R2,R1
+   \   00000062   0xD111             BNE.N    ??USBH_MSC_ReadCapacity10_5
+    328                {
+    329                  /*assign the capacity*/
+    330                  (((uint8_t*)&USBH_MSC_Param.MSCapacity )[3]) = USBH_DataInBuffer[0];
+   \   00000064   0x....             LDR.N    R1,??DataTable6_4
+   \   00000066   0x....             LDR.N    R2,??DataTable6_2
+   \   00000068   0x7813             LDRB     R3,[R2, #+0]
+   \   0000006A   0x70CB             STRB     R3,[R1, #+3]
+    331                  (((uint8_t*)&USBH_MSC_Param.MSCapacity )[2]) = USBH_DataInBuffer[1];
+   \   0000006C   0x7853             LDRB     R3,[R2, #+1]
+   \   0000006E   0x708B             STRB     R3,[R1, #+2]
+    332                  (((uint8_t*)&USBH_MSC_Param.MSCapacity )[1]) = USBH_DataInBuffer[2];
+   \   00000070   0x7893             LDRB     R3,[R2, #+2]
+   \   00000072   0x704B             STRB     R3,[R1, #+1]
+    333                  (((uint8_t*)&USBH_MSC_Param.MSCapacity )[0]) = USBH_DataInBuffer[3];
+   \   00000074   0x78D3             LDRB     R3,[R2, #+3]
+   \   00000076   0x700B             STRB     R3,[R1, #+0]
+    334                  
+    335                  /*assign the page length*/
+    336                  (((uint8_t*)&USBH_MSC_Param.MSPageLength )[1]) = USBH_DataInBuffer[6];
+   \   00000078   0x7993             LDRB     R3,[R2, #+6]
+   \   0000007A   0x724B             STRB     R3,[R1, #+9]
+    337                  (((uint8_t*)&USBH_MSC_Param.MSPageLength )[0]) = USBH_DataInBuffer[7];
+   \   0000007C   0x79D2             LDRB     R2,[R2, #+7]
+   \   0000007E   0x720A             STRB     R2,[R1, #+8]
+    338                  
+    339                  /* Commands successfully sent and Response Received  */       
+    340                  USBH_MSC_BOTXferParam.CmdStateMachine = CMD_SEND_STATE;
+   \   00000080   0x2101             MOVS     R1,#+1
+   \   00000082   0x70C1             STRB     R1,[R0, #+3]
+    341                  status = USBH_MSC_OK;      
+   \   00000084   0x2400             MOVS     R4,#+0
+   \   00000086   0xE00A             B.N      ??USBH_MSC_ReadCapacity10_0
+    342                }
+    343                else if ( USBH_MSC_BOTXferParam.BOTXferStatus == USBH_MSC_FAIL )
+   \                     ??USBH_MSC_ReadCapacity10_5: (+1)
+   \   00000088   0x2901             CMP      R1,#+1
+   \   0000008A   0xD103             BNE.N    ??USBH_MSC_ReadCapacity10_6
+    344                {
+    345                  /* Failure Mode */
+    346                  USBH_MSC_BOTXferParam.CmdStateMachine = CMD_SEND_STATE;
+   \   0000008C   0x2101             MOVS     R1,#+1
+   \   0000008E   0x70C1             STRB     R1,[R0, #+3]
+    347                  status = USBH_MSC_FAIL;
+   \   00000090   0x460C             MOV      R4,R1
+   \   00000092   0xE004             B.N      ??USBH_MSC_ReadCapacity10_0
+    348                }  
+    349                else if ( USBH_MSC_BOTXferParam.BOTXferStatus == USBH_MSC_PHASE_ERROR )
+   \                     ??USBH_MSC_ReadCapacity10_6: (+1)
+   \   00000094   0x2902             CMP      R1,#+2
+   \   00000096   0xD102             BNE.N    ??USBH_MSC_ReadCapacity10_0
+    350                {
+    351                  /* Failure Mode */
+    352                  USBH_MSC_BOTXferParam.CmdStateMachine = CMD_SEND_STATE;
+   \   00000098   0x2101             MOVS     R1,#+1
+   \   0000009A   0x70C1             STRB     R1,[R0, #+3]
+    353                  status = USBH_MSC_PHASE_ERROR;    
+   \   0000009C   0x2402             MOVS     R4,#+2
+    354                } 
+    355                else
+    356                {
+    357                  /* Wait for the Commands to get Completed */
+    358                  /* NO Change in state Machine */
+    359                }
+    360                break;
+    361                
+    362              default:
+    363                break;
+    364              }
+    365            }
+    366            return status;
+   \                     ??USBH_MSC_ReadCapacity10_0: (+1)
+   \   0000009E   0x4620             MOV      R0,R4
+   \   000000A0   0xBD32             POP      {R1,R4,R5,PC}    ;; return
+    367          }
+    368          
+    369          
+    370          /**
+    371            * @brief  USBH_MSC_ModeSense6  
+    372            *         Issue the Mode Sense6 Command to the device. This function is used 
+    373            *          for reading the WriteProtect Status of the Mass-Storage device. 
+    374            * @param  None
+    375            * @retval Status
+    376            */
+
+   \                                 In section .text, align 2, keep-with-next
+    377          uint8_t USBH_MSC_ModeSense6(USB_OTG_CORE_HANDLE *pdev)
+    378          {
+   \                     USBH_MSC_ModeSense6: (+1)
+   \   00000000   0xB538             PUSH     {R3-R5,LR}
+    379            uint8_t index;
+    380            USBH_MSC_Status_TypeDef status = USBH_MSC_BUSY;
+   \   00000002   0x2403             MOVS     R4,#+3
+    381            
+    382            if(HCD_IsDeviceConnected(pdev))
+   \   00000004   0x.... 0x....      BL       HCD_IsDeviceConnected
+   \   00000008   0x2800             CMP      R0,#+0
+   \   0000000A   0xD046             BEQ.N    ??USBH_MSC_ModeSense6_0
+    383            {  
+    384              switch(USBH_MSC_BOTXferParam.CmdStateMachine)
+   \   0000000C   0x....             LDR.N    R0,??DataTable6
+   \   0000000E   0x78C1             LDRB     R1,[R0, #+3]
+   \   00000010   0x2901             CMP      R1,#+1
+   \   00000012   0xD002             BEQ.N    ??USBH_MSC_ModeSense6_1
+   \   00000014   0x2902             CMP      R1,#+2
+   \   00000016   0xD024             BEQ.N    ??USBH_MSC_ModeSense6_2
+   \   00000018   0xE03F             B.N      ??USBH_MSC_ModeSense6_0
+    385              {
+    386              case CMD_SEND_STATE:
+    387                /*Prepare the CBW and relevent field*/
+    388                USBH_MSC_CBWData.field.CBWTransferLength = XFER_LEN_MODE_SENSE6;
+   \                     ??USBH_MSC_ModeSense6_1: (+1)
+   \   0000001A   0x....             LDR.N    R1,??DataTable6_1
+   \   0000001C   0x223F             MOVS     R2,#+63
+   \   0000001E   0x608A             STR      R2,[R1, #+8]
+    389                USBH_MSC_CBWData.field.CBWFlags = USB_EP_DIR_IN;
+   \   00000020   0x2280             MOVS     R2,#+128
+   \   00000022   0x730A             STRB     R2,[R1, #+12]
+    390                USBH_MSC_CBWData.field.CBWLength = CBW_LENGTH;
+   \   00000024   0x220A             MOVS     R2,#+10
+   \   00000026   0x738A             STRB     R2,[R1, #+14]
+    391                
+    392                USBH_MSC_BOTXferParam.pRxTxBuff = USBH_DataInBuffer;
+   \   00000028   0x....             LDR.N    R2,??DataTable6_2
+   \   0000002A   0x6082             STR      R2,[R0, #+8]
+    393                USBH_MSC_BOTXferParam.MSCStateCurrent = USBH_MSC_MODE_SENSE6;
+   \   0000002C   0x2205             MOVS     R2,#+5
+   \   0000002E   0x7082             STRB     R2,[R0, #+2]
+    394                
+    395                for(index = CBW_CB_LENGTH; index != 0; index--)
+   \   00000030   0x2210             MOVS     R2,#+16
+   \   00000032   0xE004             B.N      ??USBH_MSC_ModeSense6_3
+    396                {
+    397                  USBH_MSC_CBWData.field.CBWCB[index] = 0x00;
+   \                     ??USBH_MSC_ModeSense6_4: (+1)
+   \   00000034   0x2300             MOVS     R3,#+0
+   \   00000036   0xB2D2             UXTB     R2,R2
+   \   00000038   0x188D             ADDS     R5,R1,R2
+   \   0000003A   0x73EB             STRB     R3,[R5, #+15]
+    398                }    
+   \   0000003C   0x1E52             SUBS     R2,R2,#+1
+   \                     ??USBH_MSC_ModeSense6_3: (+1)
+   \   0000003E   0x4613             MOV      R3,R2
+   \   00000040   0xB2DB             UXTB     R3,R3
+   \   00000042   0x2B00             CMP      R3,#+0
+   \   00000044   0xD1F6             BNE.N    ??USBH_MSC_ModeSense6_4
+    399                
+    400                USBH_MSC_CBWData.field.CBWCB[0]  = OPCODE_MODE_SENSE6; 
+   \   00000046   0x221A             MOVS     R2,#+26
+   \   00000048   0x73CA             STRB     R2,[R1, #+15]
+    401                USBH_MSC_CBWData.field.CBWCB[2]  = MODE_SENSE_PAGE_CONTROL_FIELD | \
+    402                                                   MODE_SENSE_PAGE_CODE;
+   \   0000004A   0x223F             MOVS     R2,#+63
+   \   0000004C   0x744A             STRB     R2,[R1, #+17]
+    403                                                     
+    404                USBH_MSC_CBWData.field.CBWCB[4]  = XFER_LEN_MODE_SENSE6;
+   \   0000004E   0x74CA             STRB     R2,[R1, #+19]
+    405                                                                                                
+    406                USBH_MSC_BOTXferParam.BOTState = USBH_MSC_SEND_CBW;
+   \   00000050   0x2101             MOVS     R1,#+1
+   \   00000052   0x7101             STRB     R1,[R0, #+4]
+    407                
+    408                /* Start the transfer, then let the state machine manage the other 
+    409                                                                          transactions */
+    410                USBH_MSC_BOTXferParam.MSCState = USBH_MSC_BOT_USB_TRANSFERS;
+   \   00000054   0x2107             MOVS     R1,#+7
+   \   00000056   0x7001             STRB     R1,[R0, #+0]
+    411                USBH_MSC_BOTXferParam.BOTXferStatus = USBH_MSC_BUSY;
+   \   00000058   0x4621             MOV      R1,R4
+   \   0000005A   0x73C1             STRB     R1,[R0, #+15]
+    412                USBH_MSC_BOTXferParam.CmdStateMachine = CMD_WAIT_STATUS;
+   \   0000005C   0x2102             MOVS     R1,#+2
+   \   0000005E   0x70C1             STRB     R1,[R0, #+3]
+    413                
+    414                status = USBH_MSC_BUSY;
+    415                break;
+   \   00000060   0xE01B             B.N      ??USBH_MSC_ModeSense6_0
+    416                
+    417              case CMD_WAIT_STATUS:
+    418                if(USBH_MSC_BOTXferParam.BOTXferStatus == USBH_MSC_OK)
+   \                     ??USBH_MSC_ModeSense6_2: (+1)
+   \   00000062   0x7BC1             LDRB     R1,[R0, #+15]
+   \   00000064   0x000A             MOVS     R2,R1
+   \   00000066   0xD10D             BNE.N    ??USBH_MSC_ModeSense6_5
+    419                {
+    420                  /* Assign the Write Protect status */
+    421                  /* If WriteProtect = 0, Writing is allowed 
+    422                     If WriteProtect != 0, Disk is Write Protected */
+    423                  if ( USBH_DataInBuffer[2] & MASK_MODE_SENSE_WRITE_PROTECT)
+   \   00000068   0x....             LDR.N    R1,??DataTable6_2
+   \   0000006A   0x7889             LDRB     R1,[R1, #+2]
+   \   0000006C   0xF001 0x0180      AND      R1,R1,#0x80
+   \   00000070   0x1E4A             SUBS     R2,R1,#+1
+   \   00000072   0x4192             SBCS     R2,R2,R2
+   \   00000074   0x43D2             MVNS     R2,R2
+   \   00000076   0x0FD2             LSRS     R2,R2,#+31
+   \   00000078   0x....             LDR.N    R1,??DataTable6_4
+   \   0000007A   0x730A             STRB     R2,[R1, #+12]
+    424                  {
+    425                    USBH_MSC_Param.MSWriteProtect   = DISK_WRITE_PROTECTED;
+    426                  }
+    427                  else
+    428                  {
+    429                    USBH_MSC_Param.MSWriteProtect   = 0;
+    430                  }
+    431                  
+    432                  /* Commands successfully sent and Response Received  */       
+    433                  USBH_MSC_BOTXferParam.CmdStateMachine = CMD_SEND_STATE;
+   \   0000007C   0x2101             MOVS     R1,#+1
+   \   0000007E   0x70C1             STRB     R1,[R0, #+3]
+    434                  status = USBH_MSC_OK;      
+   \   00000080   0x2400             MOVS     R4,#+0
+   \   00000082   0xE00A             B.N      ??USBH_MSC_ModeSense6_0
+    435                }
+    436                else if ( USBH_MSC_BOTXferParam.BOTXferStatus == USBH_MSC_FAIL )
+   \                     ??USBH_MSC_ModeSense6_5: (+1)
+   \   00000084   0x2901             CMP      R1,#+1
+   \   00000086   0xD103             BNE.N    ??USBH_MSC_ModeSense6_6
+    437                {
+    438                  /* Failure Mode */
+    439                  USBH_MSC_BOTXferParam.CmdStateMachine = CMD_SEND_STATE;
+   \   00000088   0x2101             MOVS     R1,#+1
+   \   0000008A   0x70C1             STRB     R1,[R0, #+3]
+    440                  status = USBH_MSC_FAIL;
+   \   0000008C   0x460C             MOV      R4,R1
+   \   0000008E   0xE004             B.N      ??USBH_MSC_ModeSense6_0
+    441                }
+    442                else if ( USBH_MSC_BOTXferParam.BOTXferStatus == USBH_MSC_PHASE_ERROR )
+   \                     ??USBH_MSC_ModeSense6_6: (+1)
+   \   00000090   0x2902             CMP      R1,#+2
+   \   00000092   0xD102             BNE.N    ??USBH_MSC_ModeSense6_0
+    443                {
+    444                  /* Failure Mode */
+    445                  USBH_MSC_BOTXferParam.CmdStateMachine = CMD_SEND_STATE;
+   \   00000094   0x2101             MOVS     R1,#+1
+   \   00000096   0x70C1             STRB     R1,[R0, #+3]
+    446                  status = USBH_MSC_PHASE_ERROR;    
+   \   00000098   0x2402             MOVS     R4,#+2
+    447                }
+    448                else
+    449                {
+    450                  /* Wait for the Commands to get Completed */
+    451                  /* NO Change in state Machine */
+    452                }
+    453                break;
+    454                
+    455              default:
+    456                break;
+    457              }
+    458            }
+    459            return status;
+   \                     ??USBH_MSC_ModeSense6_0: (+1)
+   \   0000009A   0x4620             MOV      R0,R4
+   \   0000009C   0xBD32             POP      {R1,R4,R5,PC}    ;; return
+    460          }
+    461          
+    462          /**
+    463            * @brief  USBH_MSC_RequestSense  
+    464            *         Issues the Request Sense command to the device. Once the response 
+    465            *         received, it updates the status to upper layer
+    466            * @param  None
+    467            * @retval Status
+    468            */
+
+   \                                 In section .text, align 2, keep-with-next
+    469          uint8_t USBH_MSC_RequestSense(USB_OTG_CORE_HANDLE *pdev)
+    470          {
+   \                     USBH_MSC_RequestSense: (+1)
+   \   00000000   0xB538             PUSH     {R3-R5,LR}
+    471            USBH_MSC_Status_TypeDef status = USBH_MSC_BUSY;
+   \   00000002   0x2403             MOVS     R4,#+3
+    472            
+    473            uint8_t index;
+    474            
+    475            
+    476            if(HCD_IsDeviceConnected(pdev))
+   \   00000004   0x.... 0x....      BL       HCD_IsDeviceConnected
+   \   00000008   0x2800             CMP      R0,#+0
+   \   0000000A   0xD049             BEQ.N    ??USBH_MSC_RequestSense_0
+    477            {  
+    478             switch(USBH_MSC_BOTXferParam.CmdStateMachine)
+   \   0000000C   0x....             LDR.N    R0,??DataTable6
+   \   0000000E   0x78C1             LDRB     R1,[R0, #+3]
+   \   00000010   0x2901             CMP      R1,#+1
+   \   00000012   0xD002             BEQ.N    ??USBH_MSC_RequestSense_1
+   \   00000014   0x2902             CMP      R1,#+2
+   \   00000016   0xD027             BEQ.N    ??USBH_MSC_RequestSense_2
+   \   00000018   0xE042             B.N      ??USBH_MSC_RequestSense_0
+    479              {
+    480              case CMD_SEND_STATE:
+    481                
+    482                /*Prepare the CBW and relevent field*/
+    483                USBH_MSC_CBWData.field.CBWTransferLength = \
+    484                                                          DATA_LEN_REQUEST_SENSE; //ALLOCATION_LENGTH_REQUEST_SENSE;
+   \                     ??USBH_MSC_RequestSense_1: (+1)
+   \   0000001A   0x....             LDR.N    R1,??DataTable6_1
+   \   0000001C   0x220E             MOVS     R2,#+14
+   \   0000001E   0x608A             STR      R2,[R1, #+8]
+    485                USBH_MSC_CBWData.field.CBWFlags = USB_EP_DIR_IN;
+   \   00000020   0x2280             MOVS     R2,#+128
+   \   00000022   0x730A             STRB     R2,[R1, #+12]
+    486                USBH_MSC_CBWData.field.CBWLength = CBW_LENGTH;
+   \   00000024   0x220A             MOVS     R2,#+10
+   \   00000026   0x738A             STRB     R2,[R1, #+14]
+    487                
+    488                USBH_MSC_BOTXferParam.pRxTxBuff = USBH_DataInBuffer;
+   \   00000028   0x....             LDR.N    R2,??DataTable6_2
+   \   0000002A   0x6082             STR      R2,[R0, #+8]
+    489                USBH_MSC_BOTXferParam.MSCStateBkp = USBH_MSC_BOTXferParam.MSCStateCurrent;
+   \   0000002C   0x7882             LDRB     R2,[R0, #+2]
+   \   0000002E   0x7042             STRB     R2,[R0, #+1]
+    490                USBH_MSC_BOTXferParam.MSCStateCurrent = USBH_MSC_REQUEST_SENSE;
+   \   00000030   0x2206             MOVS     R2,#+6
+   \   00000032   0x7082             STRB     R2,[R0, #+2]
+    491                
+    492          
+    493                for(index = CBW_CB_LENGTH; index != 0; index--)
+   \   00000034   0x2210             MOVS     R2,#+16
+   \   00000036   0xE004             B.N      ??USBH_MSC_RequestSense_3
+    494                {
+    495                  USBH_MSC_CBWData.field.CBWCB[index] = 0x00;
+   \                     ??USBH_MSC_RequestSense_4: (+1)
+   \   00000038   0x2300             MOVS     R3,#+0
+   \   0000003A   0xB2D2             UXTB     R2,R2
+   \   0000003C   0x188D             ADDS     R5,R1,R2
+   \   0000003E   0x73EB             STRB     R3,[R5, #+15]
+    496                }    
+   \   00000040   0x1E52             SUBS     R2,R2,#+1
+   \                     ??USBH_MSC_RequestSense_3: (+1)
+   \   00000042   0x4613             MOV      R3,R2
+   \   00000044   0xB2DB             UXTB     R3,R3
+   \   00000046   0x2B00             CMP      R3,#+0
+   \   00000048   0xD1F6             BNE.N    ??USBH_MSC_RequestSense_4
+    497                
+    498                USBH_MSC_CBWData.field.CBWCB[0]  = OPCODE_REQUEST_SENSE; 
+   \   0000004A   0x4622             MOV      R2,R4
+   \   0000004C   0x73CA             STRB     R2,[R1, #+15]
+    499                USBH_MSC_CBWData.field.CBWCB[1]  = DESC_REQUEST_SENSE;
+   \   0000004E   0x2200             MOVS     R2,#+0
+   \   00000050   0x740A             STRB     R2,[R1, #+16]
+    500                USBH_MSC_CBWData.field.CBWCB[4]  = DATA_LEN_REQUEST_SENSE; //ALLOCATION_LENGTH_REQUEST_SENSE;
+   \   00000052   0x220E             MOVS     R2,#+14
+   \   00000054   0x74CA             STRB     R2,[R1, #+19]
+    501                
+    502                USBH_MSC_BOTXferParam.BOTState = USBH_MSC_SEND_CBW;
+   \   00000056   0x2101             MOVS     R1,#+1
+   \   00000058   0x7101             STRB     R1,[R0, #+4]
+    503                /* Start the transfer, then let the state machine magage 
+    504                the other transactions */
+    505                USBH_MSC_BOTXferParam.MSCState = USBH_MSC_BOT_USB_TRANSFERS;
+   \   0000005A   0x2107             MOVS     R1,#+7
+   \   0000005C   0x7001             STRB     R1,[R0, #+0]
+    506                USBH_MSC_BOTXferParam.BOTXferStatus = USBH_MSC_BUSY;
+   \   0000005E   0x4621             MOV      R1,R4
+   \   00000060   0x73C1             STRB     R1,[R0, #+15]
+    507                USBH_MSC_BOTXferParam.CmdStateMachine = CMD_WAIT_STATUS;
+   \   00000062   0x2102             MOVS     R1,#+2
+   \   00000064   0x70C1             STRB     R1,[R0, #+3]
+    508                
+    509                status = USBH_MSC_BUSY;
+    510                break;
+   \   00000066   0xE01B             B.N      ??USBH_MSC_RequestSense_0
+    511                
+    512              case CMD_WAIT_STATUS:
+    513                
+    514          //      USB_OTG_BSP_mDelay(200);
+    515                if(USBH_MSC_BOTXferParam.BOTXferStatus == USBH_MSC_OK)
+   \                     ??USBH_MSC_RequestSense_2: (+1)
+   \   00000068   0x7BC1             LDRB     R1,[R0, #+15]
+   \   0000006A   0x000A             MOVS     R2,R1
+   \   0000006C   0xD10D             BNE.N    ??USBH_MSC_RequestSense_5
+    516                {
+    517                  /* Get Sense data*/
+    518                  (((uint8_t*)&USBH_MSC_Param.MSSenseKey )[3]) = USBH_DataInBuffer[0];
+   \   0000006E   0x....             LDR.N    R1,??DataTable6_4
+   \   00000070   0x....             LDR.N    R2,??DataTable6_2
+   \   00000072   0x7813             LDRB     R3,[R2, #+0]
+   \   00000074   0x71CB             STRB     R3,[R1, #+7]
+    519                  (((uint8_t*)&USBH_MSC_Param.MSSenseKey )[2]) = USBH_DataInBuffer[1];
+   \   00000076   0x7853             LDRB     R3,[R2, #+1]
+   \   00000078   0x718B             STRB     R3,[R1, #+6]
+    520                  (((uint8_t*)&USBH_MSC_Param.MSSenseKey )[1]) = USBH_DataInBuffer[2];
+   \   0000007A   0x7893             LDRB     R3,[R2, #+2]
+   \   0000007C   0x714B             STRB     R3,[R1, #+5]
+    521                  (((uint8_t*)&USBH_MSC_Param.MSSenseKey )[0]) = USBH_DataInBuffer[3];
+   \   0000007E   0x78D2             LDRB     R2,[R2, #+3]
+   \   00000080   0x710A             STRB     R2,[R1, #+4]
+    522                  
+    523                  /* Commands successfully sent and Response Received  */       
+    524                  USBH_MSC_BOTXferParam.CmdStateMachine = CMD_SEND_STATE;
+   \   00000082   0x2101             MOVS     R1,#+1
+   \   00000084   0x70C1             STRB     R1,[R0, #+3]
+    525                  status = USBH_MSC_OK;      
+   \   00000086   0x2400             MOVS     R4,#+0
+   \   00000088   0xE00A             B.N      ??USBH_MSC_RequestSense_0
+    526                }
+    527                else if ( USBH_MSC_BOTXferParam.BOTXferStatus == USBH_MSC_FAIL )
+   \                     ??USBH_MSC_RequestSense_5: (+1)
+   \   0000008A   0x2901             CMP      R1,#+1
+   \   0000008C   0xD103             BNE.N    ??USBH_MSC_RequestSense_6
+    528                {
+    529                  /* Failure Mode */
+    530                  USBH_MSC_BOTXferParam.CmdStateMachine = CMD_SEND_STATE;
+   \   0000008E   0x2101             MOVS     R1,#+1
+   \   00000090   0x70C1             STRB     R1,[R0, #+3]
+    531                  status = USBH_MSC_FAIL;
+   \   00000092   0x460C             MOV      R4,R1
+   \   00000094   0xE004             B.N      ??USBH_MSC_RequestSense_0
+    532                }
+    533                
+    534                else if ( USBH_MSC_BOTXferParam.BOTXferStatus == USBH_MSC_PHASE_ERROR )
+   \                     ??USBH_MSC_RequestSense_6: (+1)
+   \   00000096   0x2902             CMP      R1,#+2
+   \   00000098   0xD102             BNE.N    ??USBH_MSC_RequestSense_0
+    535                {
+    536                  /* Failure Mode */
+    537                  USBH_MSC_BOTXferParam.CmdStateMachine = CMD_SEND_STATE;
+   \   0000009A   0x2101             MOVS     R1,#+1
+   \   0000009C   0x70C1             STRB     R1,[R0, #+3]
+    538                  status = USBH_MSC_PHASE_ERROR;    
+   \   0000009E   0x2402             MOVS     R4,#+2
+    539                }
+    540                
+    541                else
+    542                {
+    543                  /* Wait for the Commands to get Completed */
+    544                  /* NO Change in state Machine */
+    545                }
+    546                break;
+    547                
+    548              default:
+    549                break;
+    550              }
+    551            }
+    552            return status;
+   \                     ??USBH_MSC_RequestSense_0: (+1)
+   \   000000A0   0x4620             MOV      R0,R4
+   \   000000A2   0xBD32             POP      {R1,R4,R5,PC}    ;; return
+    553          }
+    554          
+    555          
+    556          /**
+    557            * @brief  USBH_MSC_Write10 
+    558            *         Issue the write command to the device. Once the response received, 
+    559            *         it updates the status to upper layer
+    560            * @param  dataBuffer : DataBuffer contains the data to write
+    561            * @param  address : Address to which the data will be written
+    562            * @param  nbOfbytes : NbOfbytes to be written
+    563            * @retval Status
+    564            */
+
+   \                                 In section .text, align 2, keep-with-next
+    565          uint8_t USBH_MSC_Write10(USB_OTG_CORE_HANDLE *pdev, 
+    566                                   uint8_t *dataBuffer,
+    567                                   uint32_t address,
+    568                                   uint32_t nbOfbytes)
+    569          {
+   \                     USBH_MSC_Write10: (+1)
+   \   00000000   0xB576             PUSH     {R1,R2,R4-R6,LR}
+   \   00000002   0x460E             MOV      R6,R1
+   \   00000004   0x461D             MOV      R5,R3
+    570            uint8_t index;
+    571            USBH_MSC_Status_TypeDef status = USBH_MSC_BUSY;
+   \   00000006   0x2403             MOVS     R4,#+3
+    572            uint16_t nbOfPages;
+    573            
+    574            if(HCD_IsDeviceConnected(pdev))
+   \   00000008   0x.... 0x....      BL       HCD_IsDeviceConnected
+   \   0000000C   0x2800             CMP      R0,#+0
+   \   0000000E   0xD049             BEQ.N    ??USBH_MSC_Write10_0
+    575            {  
+    576              switch(USBH_MSC_BOTXferParam.CmdStateMachine)
+   \   00000010   0x....             LDR.N    R0,??DataTable6
+   \   00000012   0x78C1             LDRB     R1,[R0, #+3]
+   \   00000014   0x2901             CMP      R1,#+1
+   \   00000016   0xD002             BEQ.N    ??USBH_MSC_Write10_1
+   \   00000018   0x2902             CMP      R1,#+2
+   \   0000001A   0xD032             BEQ.N    ??USBH_MSC_Write10_2
+   \   0000001C   0xE042             B.N      ??USBH_MSC_Write10_0
+    577              {
+    578              case CMD_SEND_STATE:   
+    579                USBH_MSC_CBWData.field.CBWTransferLength = nbOfbytes;
+   \                     ??USBH_MSC_Write10_1: (+1)
+   \   0000001E   0x....             LDR.N    R1,??DataTable6_1
+   \   00000020   0x608D             STR      R5,[R1, #+8]
+    580                USBH_MSC_CBWData.field.CBWFlags = USB_EP_DIR_OUT;
+   \   00000022   0x2200             MOVS     R2,#+0
+   \   00000024   0x730A             STRB     R2,[R1, #+12]
+    581                USBH_MSC_CBWData.field.CBWLength = CBW_LENGTH;
+   \   00000026   0x220A             MOVS     R2,#+10
+   \   00000028   0x738A             STRB     R2,[R1, #+14]
+    582                USBH_MSC_BOTXferParam.pRxTxBuff = dataBuffer;
+   \   0000002A   0x6086             STR      R6,[R0, #+8]
+    583                
+    584                
+    585                for(index = CBW_CB_LENGTH; index != 0; index--)  
+   \   0000002C   0x2210             MOVS     R2,#+16
+   \   0000002E   0xE004             B.N      ??USBH_MSC_Write10_3
+    586                {
+    587                  USBH_MSC_CBWData.field.CBWCB[index] = 0x00;
+   \                     ??USBH_MSC_Write10_4: (+1)
+   \   00000030   0x2300             MOVS     R3,#+0
+   \   00000032   0xB2D2             UXTB     R2,R2
+   \   00000034   0x188E             ADDS     R6,R1,R2
+   \   00000036   0x73F3             STRB     R3,[R6, #+15]
+    588                }
+   \   00000038   0x1E52             SUBS     R2,R2,#+1
+   \                     ??USBH_MSC_Write10_3: (+1)
+   \   0000003A   0x4613             MOV      R3,R2
+   \   0000003C   0xB2DB             UXTB     R3,R3
+   \   0000003E   0x2B00             CMP      R3,#+0
+   \   00000040   0xD1F6             BNE.N    ??USBH_MSC_Write10_4
+    589                
+    590                USBH_MSC_CBWData.field.CBWCB[0]  = OPCODE_WRITE10; 
+   \   00000042   0x222A             MOVS     R2,#+42
+   \   00000044   0x73CA             STRB     R2,[R1, #+15]
+    591                
+    592                /*logical block address*/
+    593                USBH_MSC_CBWData.field.CBWCB[2]  = (((uint8_t*)&address)[3]) ;
+   \   00000046   0xF89D 0x2007      LDRB     R2,[SP, #+7]
+   \   0000004A   0x744A             STRB     R2,[R1, #+17]
+    594                USBH_MSC_CBWData.field.CBWCB[3]  = (((uint8_t*)&address)[2]);
+   \   0000004C   0xF89D 0x2006      LDRB     R2,[SP, #+6]
+   \   00000050   0x748A             STRB     R2,[R1, #+18]
+    595                USBH_MSC_CBWData.field.CBWCB[4]  = (((uint8_t*)&address)[1]);
+   \   00000052   0xF89D 0x2005      LDRB     R2,[SP, #+5]
+   \   00000056   0x74CA             STRB     R2,[R1, #+19]
+    596                USBH_MSC_CBWData.field.CBWCB[5]  = (((uint8_t*)&address)[0]);
+   \   00000058   0xF89D 0x2004      LDRB     R2,[SP, #+4]
+   \   0000005C   0x750A             STRB     R2,[R1, #+20]
+    597                
+    598                /*USBH_MSC_PAGE_LENGTH = 512*/
+    599                nbOfPages = nbOfbytes/ USBH_MSC_PAGE_LENGTH; 
+   \   0000005E   0x0A6A             LSRS     R2,R5,#+9
+   \   00000060   0xF8AD 0x2000      STRH     R2,[SP, #+0]
+    600                
+    601                /*Tranfer length */
+    602                USBH_MSC_CBWData.field.CBWCB[7]  = (((uint8_t *)&nbOfPages)[1]) ; 
+   \   00000064   0xF89D 0x2001      LDRB     R2,[SP, #+1]
+   \   00000068   0x758A             STRB     R2,[R1, #+22]
+    603                USBH_MSC_CBWData.field.CBWCB[8]  = (((uint8_t *)&nbOfPages)[0]) ; 
+   \   0000006A   0xF89D 0x2000      LDRB     R2,[SP, #+0]
+   \   0000006E   0x75CA             STRB     R2,[R1, #+23]
+    604                
+    605                USBH_MSC_BOTXferParam.BOTState = USBH_MSC_SEND_CBW;
+   \   00000070   0x2101             MOVS     R1,#+1
+   \   00000072   0x7101             STRB     R1,[R0, #+4]
+    606                /* Start the transfer, then let the state machine 
+    607                magage the other transactions */
+    608                USBH_MSC_BOTXferParam.MSCState = USBH_MSC_BOT_USB_TRANSFERS;
+   \   00000074   0x2107             MOVS     R1,#+7
+   \   00000076   0x7001             STRB     R1,[R0, #+0]
+    609                USBH_MSC_BOTXferParam.BOTXferStatus = USBH_MSC_BUSY;
+   \   00000078   0x4621             MOV      R1,R4
+   \   0000007A   0x73C1             STRB     R1,[R0, #+15]
+    610                USBH_MSC_BOTXferParam.CmdStateMachine = CMD_WAIT_STATUS;
+   \   0000007C   0x2102             MOVS     R1,#+2
+   \   0000007E   0x70C1             STRB     R1,[R0, #+3]
+    611                
+    612                status = USBH_MSC_BUSY;
+    613                
+    614                break;
+   \   00000080   0xE010             B.N      ??USBH_MSC_Write10_0
+    615                
+    616              case CMD_WAIT_STATUS:
+    617                if(USBH_MSC_BOTXferParam.BOTXferStatus == USBH_MSC_OK)
+   \                     ??USBH_MSC_Write10_2: (+1)
+   \   00000082   0x7BC1             LDRB     R1,[R0, #+15]
+   \   00000084   0x000A             MOVS     R2,R1
+   \   00000086   0xD103             BNE.N    ??USBH_MSC_Write10_5
+    618                { 
+    619                  /* Commands successfully sent and Response Received  */       
+    620                  USBH_MSC_BOTXferParam.CmdStateMachine = CMD_SEND_STATE;
+   \   00000088   0x2101             MOVS     R1,#+1
+   \   0000008A   0x70C1             STRB     R1,[R0, #+3]
+    621                  status = USBH_MSC_OK;      
+   \   0000008C   0x2400             MOVS     R4,#+0
+   \   0000008E   0xE009             B.N      ??USBH_MSC_Write10_0
+    622                }
+    623                else if ( USBH_MSC_BOTXferParam.BOTXferStatus == USBH_MSC_FAIL )
+   \                     ??USBH_MSC_Write10_5: (+1)
+   \   00000090   0x2901             CMP      R1,#+1
+   \   00000092   0xD102             BNE.N    ??USBH_MSC_Write10_6
+    624                {
+    625                  /* Failure Mode */
+    626                  USBH_MSC_BOTXferParam.CmdStateMachine = CMD_SEND_STATE;
+   \   00000094   0x2101             MOVS     R1,#+1
+   \   00000096   0x70C1             STRB     R1,[R0, #+3]
+   \   00000098   0xE004             B.N      ??USBH_MSC_Write10_0
+    627                }
+    628                
+    629                else if ( USBH_MSC_BOTXferParam.BOTXferStatus == USBH_MSC_PHASE_ERROR )
+   \                     ??USBH_MSC_Write10_6: (+1)
+   \   0000009A   0x2902             CMP      R1,#+2
+   \   0000009C   0xD102             BNE.N    ??USBH_MSC_Write10_0
+    630                {
+    631                  /* Failure Mode */
+    632                  USBH_MSC_BOTXferParam.CmdStateMachine = CMD_SEND_STATE;
+   \   0000009E   0x2101             MOVS     R1,#+1
+   \   000000A0   0x70C1             STRB     R1,[R0, #+3]
+    633                  status = USBH_MSC_PHASE_ERROR;    
+   \   000000A2   0x2402             MOVS     R4,#+2
+    634                }
+    635                break;
+    636                
+    637              default:
+    638                break;
+    639              }
+    640            }
+    641            return status;
+   \                     ??USBH_MSC_Write10_0: (+1)
+   \   000000A4   0x4620             MOV      R0,R4
+   \   000000A6   0xBD76             POP      {R1,R2,R4-R6,PC}  ;; return
+    642          }
+    643          
+    644          /**
+    645            * @brief  USBH_MSC_Read10 
+    646            *         Issue the read command to the device. Once the response received, 
+    647            *         it updates the status to upper layer
+    648            * @param  dataBuffer : DataBuffer will contain the data to be read
+    649            * @param  address : Address from which the data will be read
+    650            * @param  nbOfbytes : NbOfbytes to be read
+    651            * @retval Status
+    652            */
+
+   \                                 In section .text, align 2, keep-with-next
+    653          uint8_t USBH_MSC_Read10(USB_OTG_CORE_HANDLE *pdev,
+    654                                  uint8_t *dataBuffer,
+    655                                  uint32_t address,
+    656                                  uint32_t nbOfbytes)
+    657          {
+   \                     USBH_MSC_Read10: (+1)
+   \   00000000   0xE92D 0x41F6      PUSH     {R1,R2,R4-R8,LR}
+   \   00000004   0x4680             MOV      R8,R0
+   \   00000006   0x460F             MOV      R7,R1
+   \   00000008   0x461D             MOV      R5,R3
+    658            uint8_t index;
+    659            static USBH_MSC_Status_TypeDef status = USBH_MSC_BUSY;
+    660            uint16_t nbOfPages;
+    661            status = USBH_MSC_BUSY;
+   \   0000000A   0x....             LDR.N    R4,??DataTable6_5
+   \   0000000C   0x2003             MOVS     R0,#+3
+   \   0000000E   0x7020             STRB     R0,[R4, #+0]
+    662            
+    663            if(HCD_IsDeviceConnected(pdev))
+   \   00000010   0x4640             MOV      R0,R8
+   \   00000012   0x.... 0x....      BL       HCD_IsDeviceConnected
+   \   00000016   0x2800             CMP      R0,#+0
+   \   00000018   0xD059             BEQ.N    ??USBH_MSC_Read10_0
+    664            {
+    665              switch(USBH_MSC_BOTXferParam.CmdStateMachine)
+   \   0000001A   0x....             LDR.N    R6,??DataTable6
+   \   0000001C   0x78F0             LDRB     R0,[R6, #+3]
+   \   0000001E   0x2801             CMP      R0,#+1
+   \   00000020   0xD002             BEQ.N    ??USBH_MSC_Read10_1
+   \   00000022   0x2802             CMP      R0,#+2
+   \   00000024   0xD034             BEQ.N    ??USBH_MSC_Read10_2
+   \   00000026   0xE052             B.N      ??USBH_MSC_Read10_0
+    666              {
+    667              case CMD_SEND_STATE:
+    668                /*Prepare the CBW and relevent field*/
+    669                USBH_MSC_CBWData.field.CBWTransferLength = nbOfbytes;
+   \                     ??USBH_MSC_Read10_1: (+1)
+   \   00000028   0x....             LDR.N    R0,??DataTable6_1
+   \   0000002A   0x6085             STR      R5,[R0, #+8]
+    670                USBH_MSC_CBWData.field.CBWFlags = USB_EP_DIR_IN;
+   \   0000002C   0x2180             MOVS     R1,#+128
+   \   0000002E   0x7301             STRB     R1,[R0, #+12]
+    671                USBH_MSC_CBWData.field.CBWLength = CBW_LENGTH;
+   \   00000030   0x210A             MOVS     R1,#+10
+   \   00000032   0x7381             STRB     R1,[R0, #+14]
+    672                
+    673                USBH_MSC_BOTXferParam.pRxTxBuff = dataBuffer;
+   \   00000034   0x60B7             STR      R7,[R6, #+8]
+    674                
+    675                for(index = CBW_CB_LENGTH; index != 0; index--)
+   \   00000036   0x2110             MOVS     R1,#+16
+   \   00000038   0xE004             B.N      ??USBH_MSC_Read10_3
+    676                {
+    677                  USBH_MSC_CBWData.field.CBWCB[index] = 0x00;
+   \                     ??USBH_MSC_Read10_4: (+1)
+   \   0000003A   0x2200             MOVS     R2,#+0
+   \   0000003C   0xB2C9             UXTB     R1,R1
+   \   0000003E   0x1843             ADDS     R3,R0,R1
+   \   00000040   0x73DA             STRB     R2,[R3, #+15]
+    678                }
+   \   00000042   0x1E49             SUBS     R1,R1,#+1
+   \                     ??USBH_MSC_Read10_3: (+1)
+   \   00000044   0x460A             MOV      R2,R1
+   \   00000046   0xB2D2             UXTB     R2,R2
+   \   00000048   0x2A00             CMP      R2,#+0
+   \   0000004A   0xD1F6             BNE.N    ??USBH_MSC_Read10_4
+    679                
+    680                USBH_MSC_CBWData.field.CBWCB[0]  = OPCODE_READ10; 
+   \   0000004C   0x2128             MOVS     R1,#+40
+   \   0000004E   0x73C1             STRB     R1,[R0, #+15]
+    681                
+    682                /*logical block address*/
+    683                
+    684                USBH_MSC_CBWData.field.CBWCB[2]  = (((uint8_t*)&address)[3]);
+   \   00000050   0xF89D 0x1007      LDRB     R1,[SP, #+7]
+   \   00000054   0x7441             STRB     R1,[R0, #+17]
+    685                USBH_MSC_CBWData.field.CBWCB[3]  = (((uint8_t*)&address)[2]);
+   \   00000056   0xF89D 0x1006      LDRB     R1,[SP, #+6]
+   \   0000005A   0x7481             STRB     R1,[R0, #+18]
+    686                USBH_MSC_CBWData.field.CBWCB[4]  = (((uint8_t*)&address)[1]);
+   \   0000005C   0xF89D 0x1005      LDRB     R1,[SP, #+5]
+   \   00000060   0x74C1             STRB     R1,[R0, #+19]
+    687                USBH_MSC_CBWData.field.CBWCB[5]  = (((uint8_t*)&address)[0]);
+   \   00000062   0xF89D 0x1004      LDRB     R1,[SP, #+4]
+   \   00000066   0x7501             STRB     R1,[R0, #+20]
+    688                
+    689                /*USBH_MSC_PAGE_LENGTH = 512*/
+    690                nbOfPages = nbOfbytes/ USBH_MSC_PAGE_LENGTH;  
+   \   00000068   0x0A69             LSRS     R1,R5,#+9
+   \   0000006A   0xF8AD 0x1000      STRH     R1,[SP, #+0]
+    691                
+    692                /*Tranfer length */
+    693                USBH_MSC_CBWData.field.CBWCB[7]  = (((uint8_t *)&nbOfPages)[1]) ; 
+   \   0000006E   0xF89D 0x1001      LDRB     R1,[SP, #+1]
+   \   00000072   0x7581             STRB     R1,[R0, #+22]
+    694                USBH_MSC_CBWData.field.CBWCB[8]  = (((uint8_t *)&nbOfPages)[0]) ; 
+   \   00000074   0xF89D 0x1000      LDRB     R1,[SP, #+0]
+   \   00000078   0x75C1             STRB     R1,[R0, #+23]
+    695                
+    696                
+    697                USBH_MSC_BOTXferParam.BOTState = USBH_MSC_SEND_CBW;
+   \   0000007A   0x2001             MOVS     R0,#+1
+   \   0000007C   0x7130             STRB     R0,[R6, #+4]
+    698                /* Start the transfer, then let the state machine 
+    699                magage the other transactions */
+    700                USBH_MSC_BOTXferParam.MSCState = USBH_MSC_BOT_USB_TRANSFERS;
+   \   0000007E   0x2007             MOVS     R0,#+7
+   \   00000080   0x7030             STRB     R0,[R6, #+0]
+    701                USBH_MSC_BOTXferParam.BOTXferStatus = USBH_MSC_BUSY;
+   \   00000082   0x2003             MOVS     R0,#+3
+   \   00000084   0x73F0             STRB     R0,[R6, #+15]
+    702                USBH_MSC_BOTXferParam.CmdStateMachine = CMD_WAIT_STATUS;
+   \   00000086   0x2002             MOVS     R0,#+2
+   \   00000088   0x70F0             STRB     R0,[R6, #+3]
+    703                
+    704                status = USBH_MSC_BUSY;
+   \   0000008A   0x2003             MOVS     R0,#+3
+   \   0000008C   0x7020             STRB     R0,[R4, #+0]
+    705                
+    706                break;
+   \   0000008E   0xE01E             B.N      ??USBH_MSC_Read10_0
+    707                
+    708              case CMD_WAIT_STATUS:
+    709                
+    710                if((USBH_MSC_BOTXferParam.BOTXferStatus == USBH_MSC_OK) && \
+    711                  (HCD_IsDeviceConnected(pdev)))
+   \                     ??USBH_MSC_Read10_2: (+1)
+   \   00000090   0x7BF0             LDRB     R0,[R6, #+15]
+   \   00000092   0x2800             CMP      R0,#+0
+   \   00000094   0xD109             BNE.N    ??USBH_MSC_Read10_5
+   \   00000096   0x4640             MOV      R0,R8
+   \   00000098   0x.... 0x....      BL       HCD_IsDeviceConnected
+   \   0000009C   0x2800             CMP      R0,#+0
+   \   0000009E   0xD004             BEQ.N    ??USBH_MSC_Read10_5
+    712                { 
+    713                  /* Commands successfully sent and Response Received  */       
+    714                  USBH_MSC_BOTXferParam.CmdStateMachine = CMD_SEND_STATE;
+   \   000000A0   0x2001             MOVS     R0,#+1
+   \   000000A2   0x70F0             STRB     R0,[R6, #+3]
+    715                  status = USBH_MSC_OK;      
+   \   000000A4   0x2000             MOVS     R0,#+0
+   \   000000A6   0x7020             STRB     R0,[R4, #+0]
+   \   000000A8   0xE011             B.N      ??USBH_MSC_Read10_0
+    716                }
+    717                else if (( USBH_MSC_BOTXferParam.BOTXferStatus == USBH_MSC_FAIL ) && \
+    718                  (HCD_IsDeviceConnected(pdev)))
+   \                     ??USBH_MSC_Read10_5: (+1)
+   \   000000AA   0x7BF0             LDRB     R0,[R6, #+15]
+   \   000000AC   0x2801             CMP      R0,#+1
+   \   000000AE   0xD107             BNE.N    ??USBH_MSC_Read10_6
+   \   000000B0   0x4640             MOV      R0,R8
+   \   000000B2   0x.... 0x....      BL       HCD_IsDeviceConnected
+   \   000000B6   0x2800             CMP      R0,#+0
+   \   000000B8   0xD002             BEQ.N    ??USBH_MSC_Read10_6
+    719                {
+    720                  /* Failure Mode */
+    721                  USBH_MSC_BOTXferParam.CmdStateMachine = CMD_SEND_STATE;
+   \   000000BA   0x2001             MOVS     R0,#+1
+   \   000000BC   0x70F0             STRB     R0,[R6, #+3]
+   \   000000BE   0xE006             B.N      ??USBH_MSC_Read10_0
+    722                }
+    723                
+    724                else if ( USBH_MSC_BOTXferParam.BOTXferStatus == USBH_MSC_PHASE_ERROR )
+   \                     ??USBH_MSC_Read10_6: (+1)
+   \   000000C0   0x7BF0             LDRB     R0,[R6, #+15]
+   \   000000C2   0x2802             CMP      R0,#+2
+   \   000000C4   0xD103             BNE.N    ??USBH_MSC_Read10_0
+    725                {
+    726                  /* Failure Mode */
+    727                  USBH_MSC_BOTXferParam.CmdStateMachine = CMD_SEND_STATE;
+   \   000000C6   0x2001             MOVS     R0,#+1
+   \   000000C8   0x70F0             STRB     R0,[R6, #+3]
+    728                  status = USBH_MSC_PHASE_ERROR;    
+   \   000000CA   0x2002             MOVS     R0,#+2
+   \   000000CC   0x7020             STRB     R0,[R4, #+0]
+    729                }
+    730                else
+    731                {
+    732                  /* Wait for the Commands to get Completed */
+    733                  /* NO Change in state Machine */
+    734                }
+    735                break;
+    736                
+    737              default:
+    738                break;
+    739              }
+    740            }
+    741            return status;
+   \                     ??USBH_MSC_Read10_0: (+1)
+   \   000000CE   0x7820             LDRB     R0,[R4, #+0]
+   \   000000D0   0xE8BD 0x81F6      POP      {R1,R2,R4-R8,PC}  ;; return
+    742          }
+
+   \                                 In section .data, align 1
+   \                     `USBH_MSC_Read10::status`:
+   \   00000000   0x03               DC8 3
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable6:
+   \   00000000   0x........         DC32     USBH_MSC_BOTXferParam
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable6_1:
+   \   00000000   0x........         DC32     USBH_MSC_CBWData
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable6_2:
+   \   00000000   0x........         DC32     USBH_DataInBuffer
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable6_3:
+   \   00000000   0x........         DC32     USBH_MSC_CSWData
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable6_4:
+   \   00000000   0x........         DC32     USBH_MSC_Param
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable6_5:
+   \   00000000   0x........         DC32     `USBH_MSC_Read10::status`
+    743          
+    744          
+    745          /**
+    746            * @}
+    747            */ 
+    748          
+    749          /**
+    750            * @}
+    751            */ 
+    752          
+    753          /**
+    754            * @}
+    755            */
+    756          
+    757          /**
+    758            * @}
+    759            */ 
+    760          
+    761          /**
+    762            * @}
+    763            */
+    764          
+    765          /************************ (C) COPYRIGHT STMicroelectronics *****END OF FILE****/
+    766          
+    767          
+    768          
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+      16   USBH_MSC_Inquiry
+        16   -> HCD_IsDeviceConnected
+      16   USBH_MSC_ModeSense6
+        16   -> HCD_IsDeviceConnected
+      32   USBH_MSC_Read10
+        32   -> HCD_IsDeviceConnected
+      16   USBH_MSC_ReadCapacity10
+        16   -> HCD_IsDeviceConnected
+      16   USBH_MSC_RequestSense
+        16   -> HCD_IsDeviceConnected
+      16   USBH_MSC_TestUnitReady
+        16   -> HCD_IsDeviceConnected
+      24   USBH_MSC_Write10
+        24   -> HCD_IsDeviceConnected
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable6
+       4  ??DataTable6_1
+       4  ??DataTable6_2
+       4  ??DataTable6_3
+       4  ??DataTable6_4
+       4  ??DataTable6_5
+     512  USBH_DataInBuffer
+     512  USBH_DataOutBuffer
+     150  USBH_MSC_Inquiry
+     158  USBH_MSC_ModeSense6
+      16  USBH_MSC_Param
+     212  USBH_MSC_Read10
+     162  USBH_MSC_ReadCapacity10
+     164  USBH_MSC_RequestSense
+     140  USBH_MSC_TestUnitReady
+     168  USBH_MSC_Write10
+       1  status
+
+ 
+ 1 040 bytes in section .bss
+     1 byte  in section .data
+ 1 178 bytes in section .text
+ 
+ 1 178 bytes of CODE memory
+ 1 041 bytes of DATA memory
+
+Errors: none
+Warnings: none

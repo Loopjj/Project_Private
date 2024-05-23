@@ -1,0 +1,1784 @@
+###############################################################################
+#
+# IAR ELF Linker V7.60.1.11101/W32 for ARM                18/Dec/2023  17:37:06
+# Copyright 2007-2016 IAR Systems AB.
+#
+#    Output file  =  
+#        E:\LOOP\SCRDPF\OBD\freeRTOS_STM32F2xx_Modem_CC_Large\Project\Debug\Exe\OBDPro.out
+#    Map file     =  
+#        E:\LOOP\SCRDPF\OBD\freeRTOS_STM32F2xx_Modem_CC_Large\Project\Debug\List\OBDPro.map
+#    Command line =  
+#        E:\LOOP\SCRDPF\OBD\freeRTOS_STM32F2xx_Modem_CC_Large\Project\Debug\Obj\avg.o
+#        E:\LOOP\SCRDPF\OBD\freeRTOS_STM32F2xx_Modem_CC_Large\Project\Debug\Obj\bsp_free.o
+#        E:\LOOP\SCRDPF\OBD\freeRTOS_STM32F2xx_Modem_CC_Large\Project\Debug\Obj\bsp_util.o
+#        E:\LOOP\SCRDPF\OBD\freeRTOS_STM32F2xx_Modem_CC_Large\Project\Debug\Obj\can.o
+#        E:\LOOP\SCRDPF\OBD\freeRTOS_STM32F2xx_Modem_CC_Large\Project\Debug\Obj\cli.o
+#        E:\LOOP\SCRDPF\OBD\freeRTOS_STM32F2xx_Modem_CC_Large\Project\Debug\Obj\commrtos.o
+#        E:\LOOP\SCRDPF\OBD\freeRTOS_STM32F2xx_Modem_CC_Large\Project\Debug\Obj\crc16.o
+#        E:\LOOP\SCRDPF\OBD\freeRTOS_STM32F2xx_Modem_CC_Large\Project\Debug\Obj\croutine.o
+#        E:\LOOP\SCRDPF\OBD\freeRTOS_STM32F2xx_Modem_CC_Large\Project\Debug\Obj\debug.o
+#        E:\LOOP\SCRDPF\OBD\freeRTOS_STM32F2xx_Modem_CC_Large\Project\Debug\Obj\delay.o
+#        E:\LOOP\SCRDPF\OBD\freeRTOS_STM32F2xx_Modem_CC_Large\Project\Debug\Obj\diskio.o
+#        E:\LOOP\SCRDPF\OBD\freeRTOS_STM32F2xx_Modem_CC_Large\Project\Debug\Obj\drivefree.o
+#        E:\LOOP\SCRDPF\OBD\freeRTOS_STM32F2xx_Modem_CC_Large\Project\Debug\Obj\extern.o
+#        E:\LOOP\SCRDPF\OBD\freeRTOS_STM32F2xx_Modem_CC_Large\Project\Debug\Obj\fatfs_sd_sdio.o
+#        E:\LOOP\SCRDPF\OBD\freeRTOS_STM32F2xx_Modem_CC_Large\Project\Debug\Obj\fatfs_usb.o
+#        E:\LOOP\SCRDPF\OBD\freeRTOS_STM32F2xx_Modem_CC_Large\Project\Debug\Obj\ff.o
+#        E:\LOOP\SCRDPF\OBD\freeRTOS_STM32F2xx_Modem_CC_Large\Project\Debug\Obj\fnd.o
+#        E:\LOOP\SCRDPF\OBD\freeRTOS_STM32F2xx_Modem_CC_Large\Project\Debug\Obj\fsmc_nand.o
+#        E:\LOOP\SCRDPF\OBD\freeRTOS_STM32F2xx_Modem_CC_Large\Project\Debug\Obj\guiproto.o
+#        E:\LOOP\SCRDPF\OBD\freeRTOS_STM32F2xx_Modem_CC_Large\Project\Debug\Obj\heap_2.o
+#        E:\LOOP\SCRDPF\OBD\freeRTOS_STM32F2xx_Modem_CC_Large\Project\Debug\Obj\i2cfram_FM24CL64B.o
+#        E:\LOOP\SCRDPF\OBD\freeRTOS_STM32F2xx_Modem_CC_Large\Project\Debug\Obj\key.o
+#        E:\LOOP\SCRDPF\OBD\freeRTOS_STM32F2xx_Modem_CC_Large\Project\Debug\Obj\list.o
+#        E:\LOOP\SCRDPF\OBD\freeRTOS_STM32F2xx_Modem_CC_Large\Project\Debug\Obj\main.o
+#        E:\LOOP\SCRDPF\OBD\freeRTOS_STM32F2xx_Modem_CC_Large\Project\Debug\Obj\misc.o
+#        E:\LOOP\SCRDPF\OBD\freeRTOS_STM32F2xx_Modem_CC_Large\Project\Debug\Obj\modem.o
+#        E:\LOOP\SCRDPF\OBD\freeRTOS_STM32F2xx_Modem_CC_Large\Project\Debug\Obj\modem_Loop.o
+#        E:\LOOP\SCRDPF\OBD\freeRTOS_STM32F2xx_Modem_CC_Large\Project\Debug\Obj\modem_sms.o
+#        E:\LOOP\SCRDPF\OBD\freeRTOS_STM32F2xx_Modem_CC_Large\Project\Debug\Obj\nmeap.o
+#        E:\LOOP\SCRDPF\OBD\freeRTOS_STM32F2xx_Modem_CC_Large\Project\Debug\Obj\nv.o
+#        E:\LOOP\SCRDPF\OBD\freeRTOS_STM32F2xx_Modem_CC_Large\Project\Debug\Obj\obd.o
+#        E:\LOOP\SCRDPF\OBD\freeRTOS_STM32F2xx_Modem_CC_Large\Project\Debug\Obj\port.o
+#        E:\LOOP\SCRDPF\OBD\freeRTOS_STM32F2xx_Modem_CC_Large\Project\Debug\Obj\portasm.o
+#        E:\LOOP\SCRDPF\OBD\freeRTOS_STM32F2xx_Modem_CC_Large\Project\Debug\Obj\queue.o
+#        E:\LOOP\SCRDPF\OBD\freeRTOS_STM32F2xx_Modem_CC_Large\Project\Debug\Obj\Rtimers.o
+#        E:\LOOP\SCRDPF\OBD\freeRTOS_STM32F2xx_Modem_CC_Large\Project\Debug\Obj\spi_MAX6675.o
+#        E:\LOOP\SCRDPF\OBD\freeRTOS_STM32F2xx_Modem_CC_Large\Project\Debug\Obj\spiflash_W25Q64BV.o
+#        E:\LOOP\SCRDPF\OBD\freeRTOS_STM32F2xx_Modem_CC_Large\Project\Debug\Obj\startup_stm32f2xx.o
+#        E:\LOOP\SCRDPF\OBD\freeRTOS_STM32F2xx_Modem_CC_Large\Project\Debug\Obj\stm32f2xx_adc.o
+#        E:\LOOP\SCRDPF\OBD\freeRTOS_STM32F2xx_Modem_CC_Large\Project\Debug\Obj\stm32f2xx_can.o
+#        E:\LOOP\SCRDPF\OBD\freeRTOS_STM32F2xx_Modem_CC_Large\Project\Debug\Obj\stm32f2xx_cryp.o
+#        E:\LOOP\SCRDPF\OBD\freeRTOS_STM32F2xx_Modem_CC_Large\Project\Debug\Obj\stm32f2xx_cryp_tdes.o
+#        E:\LOOP\SCRDPF\OBD\freeRTOS_STM32F2xx_Modem_CC_Large\Project\Debug\Obj\stm32f2xx_dma.o
+#        E:\LOOP\SCRDPF\OBD\freeRTOS_STM32F2xx_Modem_CC_Large\Project\Debug\Obj\stm32f2xx_exti.o
+#        E:\LOOP\SCRDPF\OBD\freeRTOS_STM32F2xx_Modem_CC_Large\Project\Debug\Obj\stm32f2xx_flash.o
+#        E:\LOOP\SCRDPF\OBD\freeRTOS_STM32F2xx_Modem_CC_Large\Project\Debug\Obj\stm32f2xx_fsmc.o
+#        E:\LOOP\SCRDPF\OBD\freeRTOS_STM32F2xx_Modem_CC_Large\Project\Debug\Obj\stm32f2xx_gpio.o
+#        E:\LOOP\SCRDPF\OBD\freeRTOS_STM32F2xx_Modem_CC_Large\Project\Debug\Obj\stm32f2xx_i2c.o
+#        E:\LOOP\SCRDPF\OBD\freeRTOS_STM32F2xx_Modem_CC_Large\Project\Debug\Obj\stm32f2xx_it.o
+#        E:\LOOP\SCRDPF\OBD\freeRTOS_STM32F2xx_Modem_CC_Large\Project\Debug\Obj\stm32f2xx_iwdg.o
+#        E:\LOOP\SCRDPF\OBD\freeRTOS_STM32F2xx_Modem_CC_Large\Project\Debug\Obj\stm32f2xx_pwr.o
+#        E:\LOOP\SCRDPF\OBD\freeRTOS_STM32F2xx_Modem_CC_Large\Project\Debug\Obj\stm32f2xx_rcc.o
+#        E:\LOOP\SCRDPF\OBD\freeRTOS_STM32F2xx_Modem_CC_Large\Project\Debug\Obj\stm32f2xx_rtc.o
+#        E:\LOOP\SCRDPF\OBD\freeRTOS_STM32F2xx_Modem_CC_Large\Project\Debug\Obj\stm32f2xx_sdio.o
+#        E:\LOOP\SCRDPF\OBD\freeRTOS_STM32F2xx_Modem_CC_Large\Project\Debug\Obj\stm32f2xx_spi.o
+#        E:\LOOP\SCRDPF\OBD\freeRTOS_STM32F2xx_Modem_CC_Large\Project\Debug\Obj\stm32f2xx_syscfg.o
+#        E:\LOOP\SCRDPF\OBD\freeRTOS_STM32F2xx_Modem_CC_Large\Project\Debug\Obj\stm32f2xx_tim.o
+#        E:\LOOP\SCRDPF\OBD\freeRTOS_STM32F2xx_Modem_CC_Large\Project\Debug\Obj\stm32f2xx_usart.o
+#        E:\LOOP\SCRDPF\OBD\freeRTOS_STM32F2xx_Modem_CC_Large\Project\Debug\Obj\sys_struct.o
+#        E:\LOOP\SCRDPF\OBD\freeRTOS_STM32F2xx_Modem_CC_Large\Project\Debug\Obj\syscall.o
+#        E:\LOOP\SCRDPF\OBD\freeRTOS_STM32F2xx_Modem_CC_Large\Project\Debug\Obj\system_stm32f2xx.o
+#        E:\LOOP\SCRDPF\OBD\freeRTOS_STM32F2xx_Modem_CC_Large\Project\Debug\Obj\tasks.o
+#        E:\LOOP\SCRDPF\OBD\freeRTOS_STM32F2xx_Modem_CC_Large\Project\Debug\Obj\tmr.o
+#        E:\LOOP\SCRDPF\OBD\freeRTOS_STM32F2xx_Modem_CC_Large\Project\Debug\Obj\unicode.o
+#        E:\LOOP\SCRDPF\OBD\freeRTOS_STM32F2xx_Modem_CC_Large\Project\Debug\Obj\usb_bsp.o
+#        E:\LOOP\SCRDPF\OBD\freeRTOS_STM32F2xx_Modem_CC_Large\Project\Debug\Obj\usb_core.o
+#        E:\LOOP\SCRDPF\OBD\freeRTOS_STM32F2xx_Modem_CC_Large\Project\Debug\Obj\usb_hcd.o
+#        E:\LOOP\SCRDPF\OBD\freeRTOS_STM32F2xx_Modem_CC_Large\Project\Debug\Obj\usb_hcd_int.o
+#        E:\LOOP\SCRDPF\OBD\freeRTOS_STM32F2xx_Modem_CC_Large\Project\Debug\Obj\usb_msc_app.o
+#        E:\LOOP\SCRDPF\OBD\freeRTOS_STM32F2xx_Modem_CC_Large\Project\Debug\Obj\usbh_core.o
+#        E:\LOOP\SCRDPF\OBD\freeRTOS_STM32F2xx_Modem_CC_Large\Project\Debug\Obj\usbh_hcs.o
+#        E:\LOOP\SCRDPF\OBD\freeRTOS_STM32F2xx_Modem_CC_Large\Project\Debug\Obj\usbh_ioreq.o
+#        E:\LOOP\SCRDPF\OBD\freeRTOS_STM32F2xx_Modem_CC_Large\Project\Debug\Obj\usbh_msc_bot.o
+#        E:\LOOP\SCRDPF\OBD\freeRTOS_STM32F2xx_Modem_CC_Large\Project\Debug\Obj\usbh_msc_core.o
+#        E:\LOOP\SCRDPF\OBD\freeRTOS_STM32F2xx_Modem_CC_Large\Project\Debug\Obj\usbh_msc_scsi.o
+#        E:\LOOP\SCRDPF\OBD\freeRTOS_STM32F2xx_Modem_CC_Large\Project\Debug\Obj\usbh_stdreq.o
+#        E:\LOOP\SCRDPF\OBD\freeRTOS_STM32F2xx_Modem_CC_Large\Project\Debug\Obj\usbh_usr.o
+#        --redirect _Printf=_PrintfFull --redirect _Scanf=_ScanfFull -o
+#        E:\LOOP\SCRDPF\OBD\freeRTOS_STM32F2xx_Modem_CC_Large\Project\Debug\Exe\OBDPro.out
+#        --map
+#        E:\LOOP\SCRDPF\OBD\freeRTOS_STM32F2xx_Modem_CC_Large\Project\Debug\List\OBDPro.map
+#        --config
+#        E:\LOOP\SCRDPF\OBD\freeRTOS_STM32F2xx_Modem_CC_Large\Project\stm32f2xx_flash.icf
+#        --semihosting --entry __iar_program_start --vfe
+#
+###############################################################################
+
+*******************************************************************************
+*** RUNTIME MODEL ATTRIBUTES
+***
+
+CppFlavor                     = *
+__Heap_Handler                = Basic
+__SystemLibrary               = DLib
+__dlib_dynamic_initialization = normal
+
+
+*******************************************************************************
+*** PLACEMENT SUMMARY
+***
+
+"A2":  place at 0x08010000 { ro section .intvec };
+"P1":  place in [from 0x08010000 to 0x080fffff] { ro };
+"P2":  place in [from 0x20000000 to 0x20020000] { rw, block CSTACK, block HEAP };
+initialize by copy { rw };
+
+  Section             Kind        Address     Size  Object
+  -------             ----        -------     ----  ------
+"A2":                                        0x184
+  .intvec             ro code  0x08010000    0x184  startup_stm32f2xx.o [1]
+                             - 0x08010184    0x184
+
+"P1":                                      0x1626f
+  .text               ro code  0x08010184   0x2e2c  modem.o [1]
+  .text               ro code  0x08012fb0     0xf4  commrtos.o [1]
+  .text               ro code  0x080130a4    0x182  stm32f2xx_usart.o [1]
+  .text               ro code  0x08013226      0xa  xsprout.o [3]
+  .text               ro code  0x08013230    0x7b4  tasks.o [1]
+  .text               ro code  0x080139e4    0x1d8  cli.o [1]
+  .text               ro code  0x08013bbc     0x3a  ABImemset48.o [5]
+  .text               ro code  0x08013bf6      0x4  modem_sms.o [1]
+  .text               ro code  0x08013bfc     0x66  ABImemset.o [5]
+  .text               ro code  0x08013c64     0x76  ABImemcpy_unaligned.o [5]
+  .text               ro code  0x08013cdc    0x454  i2cfram_FM24CL64B.o [1]
+  .text               ro code  0x08014130     0x34  sprintf.o [3]
+  .text               ro code  0x08014164   0x1604  modem_sms.o [1]
+  .text               ro code  0x08015768   0x14c4  modem_Loop.o [1]
+  .text               ro code  0x08016c2c    0xf8c  bsp_free.o [1]
+  .text               ro code  0x08017bb8    0x4c4  queue.o [1]
+  .text               ro code  0x0801807c     0xcc  port.o [1]
+  .text               ro code  0x08018148    0x200  stm32f2xx_rcc.o [1]
+  .text               ro code  0x08018348     0x90  list.o [1]
+  .text               ro code  0x080183d8    0x330  Rtimers.o [1]
+  CODE                ro code  0x08018708     0x7c  portasm.o [1]
+  .text               ro code  0x08018784    0x58c  main.o [1]
+  .text               ro code  0x08018d10     0x62  memcmp_unaligned.o [5]
+  .text               ro code  0x08018d74     0xf4  heap_2.o [1]
+  .text               ro code  0x08018e68     0x2c  vsprintf.o [3]
+  .text               ro code  0x08018e94     0x2e  strstr.o [3]
+  .text               ro code  0x08018ec4    0x202  stm32f2xx_i2c.o [1]
+  .text               ro code  0x080190c8    0x2c4  bsp_util.o [1]
+  .text               ro code  0x0801938c   0x119e  xprintffull.o [3]
+  .text               ro code  0x0801a52c    0x4f8  spiflash_W25Q64BV.o [1]
+  .text               ro code  0x0801aa24    0x264  crc16.o [1]
+  .text               ro code  0x0801ac88     0x7c  nv.o [1]
+  .text               ro code  0x0801ad04     0x34  stm32f2xx_iwdg.o [1]
+  .text               ro code  0x0801ad38     0x22  delay.o [1]
+  .text               ro code  0x0801ad5c     0xd8  system_stm32f2xx.o [1]
+  .text               ro code  0x0801ae34   0x1438  fatfs_sd_sdio.o [1]
+  .text               ro code  0x0801c26c     0xb0  misc.o [1]
+  .text               ro code  0x0801c31c      0xc  stm32f2xx_pwr.o [1]
+  .text               ro code  0x0801c328    0x3fa  stm32f2xx_rtc.o [1]
+  .text               ro code  0x0801c724     0x94  stm32f2xx_exti.o [1]
+  .text               ro code  0x0801c7b8     0xc6  stm32f2xx_gpio.o [1]
+  .text               ro code  0x0801c880     0x2c  stm32f2xx_syscfg.o [1]
+  .text               ro code  0x0801c8ac    0x454  stm32f2xx_can.o [1]
+  .text               ro code  0x0801cd00     0x66  stm32f2xx_spi.o [1]
+  .text               ro code  0x0801cd68    0x150  stm32f2xx_adc.o [1]
+  .text               ro code  0x0801ceb8    0x240  stm32f2xx_dma.o [1]
+  .text               ro code  0x0801d0f8   0x12a4  can.o [1]
+  .text               ro code  0x0801e39c   0x1380  key.o [1]
+  .text               ro code  0x0801f71c     0x6c  sys_struct.o [1]
+  .text               ro code  0x0801f788     0xec  tmr.o [1]
+  .text               ro code  0x0801f874    0x2fc  fnd.o [1]
+  .text               ro code  0x0801fb70     0x16  strchr.o [5]
+  .text               ro code  0x0801fb88     0xf4  mktime.o [3]
+  .text               ro code  0x0801fc7c      0xa  gmtime.o [3]
+  .text               ro code  0x0801fc86     0x20  xmbtowc.o [3]
+  .text               ro code  0x0801fca8     0x36  strlen.o [5]
+  .text               ro code  0x0801fce0     0x58  memchr.o [5]
+  .text               ro code  0x0801fd38      0xa  xmbcurmax.o [3]
+  .text               ro code  0x0801fd44     0xb0  xxmemxmalloc.o [3]
+  .text               ro code  0x0801fdf4     0x1a  xwctomb.o [3]
+  .text               ro code  0x0801fe10     0x80  xxmemxfree.o [3]
+  .text               ro code  0x0801fe90     0xee  I64DivMod.o [5]
+  .text               ro code  0x0801ff7e     0x44  xdnorm.o [4]
+  .text               ro code  0x0801ffc4     0x2e  DblCmpLe.o [4]
+  .text               ro code  0x0801fff4     0x2e  DblCmpGe.o [4]
+  .text               ro code  0x08020024    0x10c  xdscale.o [4]
+  .text               ro code  0x08020130     0x58  DblToI32.o [4]
+  .text               ro code  0x08020188     0x30  I32ToDbl.o [4]
+  .text               ro code  0x080201b8    0x180  DblSub.o [4]
+  .text               ro code  0x08020338    0x1a2  DblMul.o [4]
+  .text               ro code  0x080204dc    0x256  DblDiv.o [4]
+  .text               ro code  0x08020734     0x6c  localeconv.o [3]
+  .text               ro code  0x080207a0      0xe  div.o [3]
+  .text               ro code  0x080207b0    0x13c  stm32f2xx_sdio.o [1]
+  .text               ro code  0x080208ec   0x19bc  ff.o [1]
+  .text               ro code  0x080222a8   0x13e4  obd.o [1]
+  .text               ro code  0x0802368c    0x1bc  xttotm.o [3]
+  .text               ro code  0x08023848     0xa8  localtim.o [3]
+  .text               ro code  0x080238f0     0x54  setlocale.o [3]
+  .text               ro code  0x08023944     0x60  xencoding_sb.o [3]
+  .text               ro code  0x080239a4     0x2c  xgetmemchunk.o [3]
+  .text               ro code  0x080239d0      0x2  I64DivZer.o [5]
+  .text               ro code  0x080239d4     0xe8  DblAdd.o [4]
+  .text               ro code  0x08023abc      0x2  xtls.o [3]
+  .text               ro code  0x08023ac0     0xdc  diskio.o [1]
+  .text               ro code  0x08023b9c      0x8  abs.o [3]
+  .text               ro code  0x08023ba4     0xf4  drivefree.o [1]
+  .text               ro code  0x08023c98    0x148  xisdst.o [3]
+  .text               ro code  0x08023de0      0xa  getzone.o [3]
+  .text               ro code  0x08023dea     0x42  xgettime.o [3]
+  .text               ro code  0x08023e2c     0x88  xstol.o [3]
+  .text               ro code  0x08023eb4    0x168  fatfs_usb.o [1]
+  .text               ro code  0x0802401c    0x15e  xgetdst.o [3]
+  .text               ro code  0x0802417a     0x28  isxxx.o [3]
+  .text               ro code  0x080241a4    0x198  xstoul.o [3]
+  .text               ro code  0x0802433c      0xc  errno.o [3]
+  .text               ro code  0x08024348     0x2c  usb_hcd.o [1]
+  .text               ro code  0x08024374    0x18c  usbh_msc_scsi.o [1]
+  .text               ro code  0x08024500    0x388  usbh_msc_bot.o [1]
+  .text               ro code  0x08024888     0x16  xlocale_c.o [3]
+  .text               ro code  0x0802489e     0x14  xlocale_c.o [3]
+  .text               ro code  0x080248b2     0x14  tolower.o [3]
+  .text               ro code  0x080248c8    0x140  usb_core.o [1]
+  .text               ro code  0x08024a08     0xc6  usbh_ioreq.o [1]
+  .text               ro code  0x08024ad0     0x34  usbh_stdreq.o [1]
+  .text               ro code  0x08024b04      0xc  xlocale_c.o [3]
+  .text               ro code  0x08024b10    0xaec  nmeap.o [1]
+  .text               ro code  0x080255fc     0x24  ABIassert.o [6]
+  .text               ro code  0x08025620      0x8  atof.o [4]
+  .text               ro code  0x08025628     0x6c  strncpy_unaligned.o [5]
+  .text               ro code  0x08025694     0x2c  strncmp.o [3]
+  .text               ro code  0x080256c0     0x1a  isalnum.o [3]
+  .text               ro code  0x080256da     0x1e  isxdigit.o [3]
+  .text               ro code  0x080256f8      0x8  atoi.o [3]
+  .text               ro code  0x08025700      0x6  abort.o [3]
+  .text               ro code  0x08025708    0x14c  xstod.o [4]
+  .text               ro code  0x08025854     0x14  exit.o [6]
+  .text               ro code  0x08025868    0x122  xstopfx.o [3]
+  .text               ro code  0x0802598c    0x1d0  xstoflt.o [3]
+  .text               ro code  0x08025b60    0x200  xdtento.o [4]
+  .text               ro code  0x08025d60    0x234  xstoxflt.o [3]
+  .text               ro code  0x08025f94     0x20  DblCmpEq.o [4]
+  .text               ro code  0x08025fb4     0x52  xdunscal.o [4]
+  .text               ro code  0x08026006     0x78  lz77_init_single.o [5]
+  .text               ro code  0x08026080     0x6e  stm32f2xx_it.o [1]
+  .text               ro code  0x080260ee     0x40  zero_init3.o [5]
+  .text               ro code  0x08026130     0x28  data_init.o [5]
+  .iar.init_table     const    0x08026158     0x20  - Linker created -
+  .rodata             const    0x08026178     0x1c  extern.o [1]
+  .text               ro code  0x08026194     0x1a  cmain.o [5]
+  .text               ro code  0x080261ae      0x4  low_level_init.o [3]
+  .text               ro code  0x080261b2      0x4  exit.o [3]
+  .text               ro code  0x080261b8      0xa  cexit.o [5]
+  .text               ro code  0x080261c4     0x10  startup_stm32f2xx.o [1]
+  .text               ro code  0x080261d4      0xc  cstartup_M.o [5]
+  .text               ro code  0x080261e0      0x4  startup_stm32f2xx.o [1]
+  .text               ro code  0x080261e4      0x4  startup_stm32f2xx.o [1]
+  .text               ro code  0x080261e8      0x4  startup_stm32f2xx.o [1]
+  .text               ro code  0x080261ec      0x4  startup_stm32f2xx.o [1]
+  .text               ro code  0x080261f0      0x4  startup_stm32f2xx.o [1]
+  .text               ro code  0x080261f4      0x4  startup_stm32f2xx.o [1]
+  .text               ro code  0x080261f8      0x4  startup_stm32f2xx.o [1]
+  .text               ro code  0x080261fc      0x4  startup_stm32f2xx.o [1]
+  .text               ro code  0x08026200      0x4  startup_stm32f2xx.o [1]
+  .text               ro code  0x08026204      0x4  startup_stm32f2xx.o [1]
+  .text               ro code  0x08026208      0x4  startup_stm32f2xx.o [1]
+  .text               ro code  0x0802620c      0x4  startup_stm32f2xx.o [1]
+  .text               ro code  0x08026210      0x4  startup_stm32f2xx.o [1]
+  .text               ro code  0x08026214      0x4  startup_stm32f2xx.o [1]
+  .text               ro code  0x08026218      0x4  startup_stm32f2xx.o [1]
+  .text               ro code  0x0802621c      0x4  startup_stm32f2xx.o [1]
+  .text               ro code  0x08026220      0x4  startup_stm32f2xx.o [1]
+  .text               ro code  0x08026224      0x4  startup_stm32f2xx.o [1]
+  .text               ro code  0x08026228      0x4  startup_stm32f2xx.o [1]
+  .text               ro code  0x0802622c      0x4  startup_stm32f2xx.o [1]
+  .text               ro code  0x08026230      0x4  startup_stm32f2xx.o [1]
+  .text               ro code  0x08026234      0x4  startup_stm32f2xx.o [1]
+  .text               ro code  0x08026238      0x4  startup_stm32f2xx.o [1]
+  .text               ro code  0x0802623c      0x4  startup_stm32f2xx.o [1]
+  .text               ro code  0x08026240      0x4  startup_stm32f2xx.o [1]
+  .text               ro code  0x08026244      0x4  startup_stm32f2xx.o [1]
+  .text               ro code  0x08026248      0x4  startup_stm32f2xx.o [1]
+  .text               ro code  0x0802624c      0x4  startup_stm32f2xx.o [1]
+  .text               ro code  0x08026250      0x4  startup_stm32f2xx.o [1]
+  .text               ro code  0x08026254      0x4  startup_stm32f2xx.o [1]
+  .text               ro code  0x08026258      0x4  startup_stm32f2xx.o [1]
+  .text               ro code  0x0802625c      0x4  startup_stm32f2xx.o [1]
+  .text               ro code  0x08026260      0x4  startup_stm32f2xx.o [1]
+  .text               ro code  0x08026264      0x4  startup_stm32f2xx.o [1]
+  .text               ro code  0x08026268      0x4  startup_stm32f2xx.o [1]
+  .text               ro code  0x0802626c      0x4  startup_stm32f2xx.o [1]
+  .text               ro code  0x08026270      0x4  startup_stm32f2xx.o [1]
+  .text               ro code  0x08026274      0x4  startup_stm32f2xx.o [1]
+  .text               ro code  0x08026278      0x4  startup_stm32f2xx.o [1]
+  .text               ro code  0x0802627c      0x4  startup_stm32f2xx.o [1]
+  .text               ro code  0x08026280      0x4  startup_stm32f2xx.o [1]
+  .text               ro code  0x08026284      0x4  startup_stm32f2xx.o [1]
+  .text               ro code  0x08026288      0x4  startup_stm32f2xx.o [1]
+  .text               ro code  0x0802628c      0x4  startup_stm32f2xx.o [1]
+  .text               ro code  0x08026290      0x4  startup_stm32f2xx.o [1]
+  .text               ro code  0x08026294      0x4  startup_stm32f2xx.o [1]
+  .text               ro code  0x08026298      0x4  startup_stm32f2xx.o [1]
+  .text               ro code  0x0802629c      0x4  startup_stm32f2xx.o [1]
+  .text               ro code  0x080262a0      0x4  startup_stm32f2xx.o [1]
+  .text               ro code  0x080262a4      0x4  startup_stm32f2xx.o [1]
+  .text               ro code  0x080262a8      0x4  startup_stm32f2xx.o [1]
+  .text               ro code  0x080262ac      0x4  startup_stm32f2xx.o [1]
+  .text               ro code  0x080262b0      0x4  startup_stm32f2xx.o [1]
+  .text               ro code  0x080262b4      0x4  startup_stm32f2xx.o [1]
+  .text               ro code  0x080262b8      0x4  startup_stm32f2xx.o [1]
+  .text               ro code  0x080262bc      0x4  startup_stm32f2xx.o [1]
+  .text               ro code  0x080262c0      0x4  startup_stm32f2xx.o [1]
+  .text               ro code  0x080262c4      0x4  startup_stm32f2xx.o [1]
+  .text               ro code  0x080262c8      0x4  startup_stm32f2xx.o [1]
+  .text               ro code  0x080262cc      0x4  startup_stm32f2xx.o [1]
+  .text               ro code  0x080262d0      0x4  startup_stm32f2xx.o [1]
+  .text               ro code  0x080262d4      0x4  startup_stm32f2xx.o [1]
+  .text               ro code  0x080262d8      0x4  startup_stm32f2xx.o [1]
+  .text               ro code  0x080262dc      0x4  startup_stm32f2xx.o [1]
+  .text               ro code  0x080262e0      0x4  startup_stm32f2xx.o [1]
+  .text               ro code  0x080262e4      0x4  startup_stm32f2xx.o [1]
+  .text               ro code  0x080262e8      0x4  startup_stm32f2xx.o [1]
+  .text               ro code  0x080262ec      0x4  startup_stm32f2xx.o [1]
+  .text               ro code  0x080262f0      0x4  startup_stm32f2xx.o [1]
+  .text               ro code  0x080262f4      0x4  startup_stm32f2xx.o [1]
+  .text               ro code  0x080262f8      0x4  startup_stm32f2xx.o [1]
+  .rodata             const    0x080262fc      0x0  zero_init3.o [5]
+  .rodata             const    0x080262fc      0x0  lz77_init_single.o [5]
+  Initializer bytes   const    0x080262fc     0xf7  <for P2-1>
+                             - 0x080263f3  0x1626f
+
+"P2", part 1 of 3:                          0x428b
+  P2-1                         0x20000000   0x428b  <Init block>
+    .data             inited   0x20000000     0x74  cli.o [1]
+    .data             inited   0x20000074     0x10  commrtos.o [1]
+    .data             inited   0x20000084   0x4018  heap_2.o [1]
+    .data             inited   0x2000409c      0x4  port.o [1]
+    .data             inited   0x200040a0     0x10  stm32f2xx_rcc.o [1]
+    .data             inited   0x200040b0     0x9c  tasks.o [1]
+    __DLIB_PERTHREAD  inited   0x2000414c     0x2c  xttotm.o [3]
+    __DLIB_PERTHREAD  inited   0x20004178      0x8  localtim.o [3]
+    __DLIB_PERTHREAD  inited   0x20004180      0x4  xisdst.o [3]
+    __DLIB_PERTHREAD  inited   0x20004184     0x74  setlocale.o [3]
+    __DLIB_PERTHREAD  inited   0x200041f8     0x88  localeconv.o [3]
+    __DLIB_PERTHREAD  inited   0x20004280      0x4  errno.o [3]
+    __DLIB_PERTHREAD  inited   0x20004284      0x4  xisdstData.o [3]
+    .data             inited   0x20004288      0x1  fatfs_sd_sdio.o [1]
+    .data             inited   0x20004289      0x1  fatfs_usb.o [1]
+    .data             inited   0x2000428a      0x1  usbh_msc_scsi.o [1]
+                             - 0x2000428b   0x428b
+
+"P2", part 2 of 3:                          0x8000
+  CSTACK                       0x20004290   0x4000  <Block>
+    CSTACK            uninit   0x20004290   0x4000  <Block tail>
+  HEAP                         0x20008290   0x4000  <Block>
+    HEAP              uninit   0x20008290   0x4000  <Block tail>
+                             - 0x2000c290   0x8000
+
+"P2", part 3 of 3:                         0x115dc
+  .bss                zero     0x2000c290   0x9600  extern.o [1]
+  .bss                zero     0x20015890   0x1800  modem.o [1]
+  .bss                zero     0x20017090   0x110c  modem.o [1]
+  .bss                zero     0x2001819c   0x1028  modem_Loop.o [1]
+  .bss                zero     0x200191c4   0x1000  nv.o [1]
+  .bss                zero     0x2001a1c4    0xab4  commrtos.o [1]
+  .bss                zero     0x2001ac78    0x634  usb_msc_app.o [1]
+  .bss                zero     0x2001b2ac    0x40c  i2cfram_FM24CL64B.o [1]
+  .bss                zero     0x2001b6b8    0x3e8  nmeap.o [1]
+  .bss                zero     0x2001baa0    0x2a0  extern.o [1]
+  .bss                zero     0x2001bd40    0x234  obd.o [1]
+  .bss                zero     0x2001bf74    0x224  extern.o [1]
+  .bss                zero     0x2001c198    0x224  extern.o [1]
+  .bss                zero     0x2001c3bc    0x200  cli.o [1]
+  .bss                zero     0x2001c5bc    0x200  cli.o [1]
+  .bss                zero     0x2001c7bc    0x200  nmeap.o [1]
+  .bss                zero     0x2001c9bc    0x18c  modem.o [1]
+  .bss                zero     0x2001cb48    0x180  modem.o [1]
+  .bss                zero     0x2001ccc8    0x100  extern.o [1]
+  .bss                zero     0x2001cdc8    0x100  modem.o [1]
+  .bss                zero     0x2001cec8     0xf0  tasks.o [1]
+  .bss                zero     0x2001cfb8     0x8c  tmr.o [1]
+  .bss                zero     0x2001d044     0x80  extern.o [1]
+  .bss                zero     0x2001d0c4     0x80  extern.o [1]
+  .bss                zero     0x2001d144     0x80  obd.o [1]
+  .bss                zero     0x2001d1c4     0x7c  fatfs_sd_sdio.o [1]
+  .bss                zero     0x2001d240     0x78  modem.o [1]
+  .bss                zero     0x2001d2b8     0x74  modem_sms.o [1]
+  .bss                zero     0x2001d32c     0x60  sys_struct.o [1]
+  .bss                zero     0x2001d38c     0x4c  usbh_msc_core.o [1]
+  .bss                zero     0x2001d3d8     0x58  fatfs_sd_sdio.o [1]
+  .bss                zero     0x2001d430     0x48  modem.o [1]
+  .bss                zero     0x2001d478     0x40  extern.o [1]
+  .bss                zero     0x2001d4b8     0x40  modem.o [1]
+  .bss                zero     0x2001d4f8     0x34  key.o [1]
+  .bss                zero     0x2001d52c     0x34  Rtimers.o [1]
+  .bss                zero     0x2001d560     0x34  usbh_msc_bot.o [1]
+  .bss                zero     0x2001d594     0x30  extern.o [1]
+  .bss                zero     0x2001d5c4     0x2c  bsp_util.o [1]
+  .bss                zero     0x2001d5f0     0x2c  drivefree.o [1]
+  .bss                zero     0x2001d61c     0x24  extern.o [1]
+  .bss                zero     0x2001d640     0x24  modem_Loop.o [1]
+  .bss                zero     0x2001d664     0x20  usbh_msc_bot.o [1]
+  .bss                zero     0x2001d684     0x1c  sys_struct.o [1]
+  .bss                zero     0x2001d6a0     0x18  extern.o [1]
+  .bss                zero     0x2001d6b8     0x14  modem.o [1]
+  .bss                zero     0x2001d6cc     0x14  modem.o [1]
+  .bss                zero     0x2001d6e0     0x10  extern.o [1]
+  .bss                zero     0x2001d6f0     0x10  main.o [1]
+  .bss                zero     0x2001d700     0x10  obd.o [1]
+  .bss                zero     0x2001d710     0x10  usbh_msc_scsi.o [1]
+  .bss                zero     0x2001d720      0xc  can.o [1]
+  .bss                zero     0x2001d72c      0xc  extern.o [1]
+  .bss                zero     0x2001d738      0xc  extern.o [1]
+  .bss                zero     0x2001d744      0xc  extern.o [1]
+  .bss                zero     0x2001d750      0xc  ff.o [1]
+  .bss                zero     0x2001d75c      0xc  modem.o [1]
+  .bss                zero     0x2001d768      0xc  modem_sms.o [1]
+  .bss                zero     0x2001d774      0xc  obd.o [1]
+  .bss                zero     0x2001d780      0xa  fnd.o [1]
+  .bss                zero     0x2001d78a      0x2  extern.o [1]
+  .bss                zero     0x2001d78c      0x8  bsp_util.o [1]
+  .bss                zero     0x2001d794      0x8  cli.o [1]
+  .bss                zero     0x2001d79c      0x8  extern.o [1]
+  .bss                zero     0x2001d7a4      0x8  extern.o [1]
+  .bss                zero     0x2001d7ac      0x8  extern.o [1]
+  .bss                zero     0x2001d7b4      0x8  modem.o [1]
+  .bss                zero     0x2001d7bc      0x8  nmeap.o [1]
+  .bss                zero     0x2001d7c4      0x8  xxmemxmalloc.o [3]
+  .bss                zero     0x2001d7cc      0x4  bsp_free.o [1]
+  .bss                zero     0x2001d7d0      0x4  bsp_util.o [1]
+  .bss                zero     0x2001d7d4      0x4  extern.o [1]
+  .bss                zero     0x2001d7d8      0x4  extern.o [1]
+  .bss                zero     0x2001d7dc      0x4  extern.o [1]
+  .bss                zero     0x2001d7e0      0x4  extern.o [1]
+  .bss                zero     0x2001d7e4      0x4  extern.o [1]
+  .bss                zero     0x2001d7e8      0x4  extern.o [1]
+  .bss                zero     0x2001d7ec      0x4  extern.o [1]
+  .bss                zero     0x2001d7f0      0x4  extern.o [1]
+  .bss                zero     0x2001d7f4      0x4  extern.o [1]
+  .bss                zero     0x2001d7f8      0x4  extern.o [1]
+  .bss                zero     0x2001d7fc      0x4  extern.o [1]
+  .bss                zero     0x2001d800      0x4  extern.o [1]
+  .bss                zero     0x2001d804      0x4  main.o [1]
+  .bss                zero     0x2001d808      0x4  main.o [1]
+  .bss                zero     0x2001d80c      0x4  main.o [1]
+  .bss                zero     0x2001d810      0x4  main.o [1]
+  .bss                zero     0x2001d814      0x4  main.o [1]
+  .bss                zero     0x2001d818      0x4  main.o [1]
+  .bss                zero     0x2001d81c      0x4  main.o [1]
+  .bss                zero     0x2001d820      0x4  modem.o [1]
+  .bss                zero     0x2001d824      0x4  modem.o [1]
+  .bss                zero     0x2001d828      0x4  modem.o [1]
+  .bss                zero     0x2001d82c      0x4  modem.o [1]
+  .bss                zero     0x2001d830      0x4  Rtimers.o [1]
+  .bss                zero     0x2001d834      0x4  usbh_core.o [1]
+  .bss                zero     0x2001d838      0x4  xgetmemchunk.o [3]
+  .bss                zero     0x2001d83c      0x2  extern.o [1]
+  .bss                zero     0x2001d83e      0x2  extern.o [1]
+  .bss                zero     0x2001d840      0x2  extern.o [1]
+  .bss                zero     0x2001d842      0x2  extern.o [1]
+  .bss                zero     0x2001d844      0x2  extern.o [1]
+  .bss                zero     0x2001d846      0x2  extern.o [1]
+  .bss                zero     0x2001d848      0x2  extern.o [1]
+  .bss                zero     0x2001d84a      0x2  extern.o [1]
+  .bss                zero     0x2001d84c      0x2  extern.o [1]
+  .bss                zero     0x2001d84e      0x2  extern.o [1]
+  .bss                zero     0x2001d850      0x1  extern.o [1]
+  .bss                zero     0x2001d851      0x1  extern.o [1]
+  .bss                zero     0x2001d852      0x1  extern.o [1]
+  .bss                zero     0x2001d853      0x1  extern.o [1]
+  .bss                zero     0x2001d854      0x1  extern.o [1]
+  .bss                zero     0x2001d855      0x1  extern.o [1]
+  .bss                zero     0x2001d856      0x1  extern.o [1]
+  .bss                zero     0x2001d857      0x1  extern.o [1]
+  .bss                zero     0x2001d858      0x1  extern.o [1]
+  .bss                zero     0x2001d859      0x1  extern.o [1]
+  .bss                zero     0x2001d85a      0x1  extern.o [1]
+  .bss                zero     0x2001d85b      0x1  extern.o [1]
+  .bss                zero     0x2001d85c      0x1  extern.o [1]
+  .bss                zero     0x2001d85d      0x1  extern.o [1]
+  .bss                zero     0x2001d85e      0x1  extern.o [1]
+  .bss                zero     0x2001d85f      0x1  ff.o [1]
+  .bss                zero     0x2001d860      0x1  fnd.o [1]
+  .bss                zero     0x2001d861      0x1  i2cfram_FM24CL64B.o [1]
+  .bss                zero     0x2001d862      0x1  modem.o [1]
+  .bss                zero     0x2001d863      0x1  modem.o [1]
+  .bss                zero     0x2001d864      0x1  modem.o [1]
+  .bss                zero     0x2001d865      0x1  modem.o [1]
+  .bss                zero     0x2001d866      0x1  modem.o [1]
+  .bss                zero     0x2001d867      0x1  modem.o [1]
+  .bss                zero     0x2001d868      0x1  modem.o [1]
+  .bss                zero     0x2001d869      0x1  modem_Loop.o [1]
+  .bss                zero     0x2001d86a      0x1  tmr.o [1]
+                             - 0x2001d86b  0x115db
+
+
+*******************************************************************************
+*** INIT TABLE
+***
+
+          Address     Size
+          -------     ----
+Zero (__iar_zero_init3)
+    1 destination range, total size 0x115db:
+          0x2000c290  0x115db
+
+Copy/lz77 (__iar_lz77_init_single3)
+    1 source range, total size 0xf7 (1% of destination):
+          0x080262fc     0xf7
+    1 destination range, total size 0x428b:
+          0x20000000   0x428b
+
+
+
+*******************************************************************************
+*** MODULE SUMMARY
+***
+
+    Module                 ro code  ro data  rw data
+    ------                 -------  -------  -------
+E:\LOOP\SCRDPF\OBD\freeRTOS_STM32F2xx_Modem_CC_Large\Project\Debug\Obj: [1]
+    Rtimers.o                  816                56
+    bsp_free.o               3 980                 4
+    bsp_util.o                 708                56
+    can.o                    4 772                12
+    cli.o                      472        1    1 148
+    commrtos.o                 244             2 756
+    crc16.o                    612
+    delay.o                     34
+    diskio.o                   220
+    drivefree.o                244                44
+    extern.o                             28   41 013
+    fatfs_sd_sdio.o          5 176               213
+    fatfs_usb.o                360                 1
+    ff.o                     6 588                13
+    fnd.o                      764                11
+    heap_2.o                   244      238   16 408
+    i2cfram_FM24CL64B.o      1 108             1 037
+    key.o                    4 992                52
+    list.o                     144
+    main.o                   1 420                44
+    misc.o                     176
+    modem.o                 11 820            11 883
+    modem_Loop.o             5 316             4 173
+    modem_sms.o              5 640               128
+    nmeap.o                  2 796             1 520
+    nv.o                       124             4 096
+    obd.o                    5 092               720
+    port.o                     204                 4
+    portasm.o                  124
+    queue.o                  1 220
+    spiflash_W25Q64BV.o      1 272
+    startup_stm32f2xx.o        688
+    stm32f2xx_adc.o            336
+    stm32f2xx_can.o          1 108
+    stm32f2xx_dma.o            576
+    stm32f2xx_exti.o           148
+    stm32f2xx_gpio.o           198
+    stm32f2xx_i2c.o            514
+    stm32f2xx_it.o             110
+    stm32f2xx_iwdg.o            52
+    stm32f2xx_pwr.o             12
+    stm32f2xx_rcc.o            512        1       16
+    stm32f2xx_rtc.o          1 018
+    stm32f2xx_sdio.o           316
+    stm32f2xx_spi.o            102
+    stm32f2xx_syscfg.o          44
+    stm32f2xx_usart.o          386
+    sys_struct.o               108               124
+    system_stm32f2xx.o         216
+    tasks.o                  1 972        2      396
+    tmr.o                      236               141
+    usb_core.o                 320
+    usb_hcd.o                   44
+    usb_msc_app.o                              1 588
+    usbh_core.o                                    4
+    usbh_ioreq.o               198
+    usbh_msc_bot.o             904                84
+    usbh_msc_core.o                               76
+    usbh_msc_scsi.o            396        1       17
+    usbh_stdreq.o               52
+    ------------------------------------------------
+    Total:                  77 248      271   87 838
+
+command line: [2]
+    ------------------------------------------------
+    Total:
+
+dl7M_tlf.a: [3]
+    abort.o                      6
+    abs.o                        8
+    atoi.o                       8
+    div.o                       14
+    errno.o                     12                 4
+    exit.o                       4
+    getzone.o                   10
+    gmtime.o                    10
+    isalnum.o                   26
+    isxdigit.o                  30
+    isxxx.o                     40
+    localeconv.o               108        2      136
+    localtim.o                 168                 8
+    low_level_init.o             4
+    mktime.o                   244
+    setlocale.o                 84        1      116
+    sprintf.o                   52
+    strncmp.o                   44
+    strstr.o                    46
+    tolower.o                   20
+    vsprintf.o                  44
+    xencoding_sb.o              96
+    xgetdst.o                  350
+    xgetmemchunk.o              44                 4
+    xgettime.o                  66
+    xisdst.o                   328                 4
+    xisdstData.o                                   4
+    xlocale_c.o                 54
+    xmbcurmax.o                 10
+    xmbtowc.o                   32
+    xprintffull.o            4 510
+    xsprout.o                   10
+    xstoflt.o                  464
+    xstol.o                    136
+    xstopfx.o                  290
+    xstoul.o                   408
+    xstoxflt.o                 564
+    xtls.o                       2
+    xttotm.o                   444        1       44
+    xwctomb.o                   26
+    xxmemxfree.o               128
+    xxmemxmalloc.o             176                 8
+    ------------------------------------------------
+    Total:                   9 120        4      328
+
+m7M_tl.a: [4]
+    DblAdd.o                   232
+    DblCmpEq.o                  32
+    DblCmpGe.o                  46
+    DblCmpLe.o                  46
+    DblDiv.o                   598
+    DblMul.o                   418
+    DblSub.o                   384
+    DblToI32.o                  88
+    I32ToDbl.o                  48
+    atof.o                       8
+    xdnorm.o                    68
+    xdscale.o                  268
+    xdtento.o                  512
+    xdunscal.o                  82
+    xstod.o                    332
+    ------------------------------------------------
+    Total:                   3 162
+
+rt7M_tl.a: [5]
+    ABImemcpy_unaligned.o      118
+    ABImemset.o                102
+    ABImemset48.o               58
+    I64DivMod.o                238
+    I64DivZer.o                  2
+    cexit.o                     10
+    cmain.o                     26
+    cstartup_M.o                12
+    data_init.o                 40
+    lz77_init_single.o         120
+    memchr.o                    88
+    memcmp_unaligned.o          98
+    strchr.o                    22
+    strlen.o                    54
+    strncpy_unaligned.o        108
+    zero_init3.o                64
+    ------------------------------------------------
+    Total:                   1 160
+
+shb_l.a: [6]
+    ABIassert.o                 36
+    exit.o                      20
+    ------------------------------------------------
+    Total:                      56
+
+    Gaps                        70
+    Linker created                       32   32 768
+----------------------------------------------------
+    Grand Total:            90 816      307  120 934
+
+
+*******************************************************************************
+*** ENTRY LIST
+***
+
+Entry                      Address    Size  Type      Object
+-----                      -------    ----  ----      ------
+.iar.init_table$$Base   0x08026158           --   Gb  - Linker created -
+.iar.init_table$$Limit  0x08026178           --   Gb  - Linker created -
+?main                   0x08026195          Code  Gb  cmain.o [5]
+ADC_Cmd                 0x0801cddf    0x16  Code  Gb  stm32f2xx_adc.o [1]
+ADC_CommonInit          0x0801cdc3    0x1c  Code  Gb  stm32f2xx_adc.o [1]
+ADC_DMACmd              0x0801ce7b    0x16  Code  Gb  stm32f2xx_adc.o [1]
+ADC_DMARequestAfterLastTransferCmd
+                        0x0801ce91    0x16  Code  Gb  stm32f2xx_adc.o [1]
+ADC_DeInit              0x0801cd69    0x1a  Code  Gb  stm32f2xx_adc.o [1]
+ADC_Init                0x0801cd83    0x40  Code  Gb  stm32f2xx_adc.o [1]
+ADC_RegularChannelConfig
+                        0x0801cdf5    0x7c  Code  Gb  stm32f2xx_adc.o [1]
+ADC_SoftwareStartConv   0x0801ce71     0xa  Code  Gb  stm32f2xx_adc.o [1]
+APBAHBPrescTable        0x200040a0    0x10  Data  Lc  stm32f2xx_rcc.o [1]
+APNProcess              0x0801117d   0x276  Code  Gb  modem.o [1]
+APNProcessCnt           0x2001c9dc     0x2  Data  Gb  modem.o [1]
+APN_Name                0x2001c9f8    0x20  Data  Gb  modem.o [1]
+ATCmdRxMsg              0x2001cb48   0x140  Data  Gb  modem.o [1]
+AT_Response             0x2001cdc8   0x100  Data  Gb  modem.o [1]
+AT_SendWithRecieveCNUM  0x08010b9d    0xbe  Code  Gb  modem.o [1]
+AT_SendWithRecieveData  0x0801081d    0xf6  Code  Gb  modem.o [1]
+AT_SendWithRecieveData2
+                        0x08010913   0x10c  Code  Gb  modem.o [1]
+AccFiles                0x2001d83e     0x2  Data  Gb  extern.o [1]
+AccSize                 0x2001d7ec     0x4  Data  Gb  extern.o [1]
+Analysis                0x08022e11   0x1b0  Code  Gb  obd.o [1]
+AsciiToVal              0x0801048b    0x54  Code  Gb  modem.o [1]
+BOTStallErrorCount      0x2001d584     0x4  Data  Lc  usbh_msc_bot.o [1]
+BSP_ADC1ConStart        0x080176c3     0x8  Code  Gb  bsp_free.o [1]
+BSP_ADC1_DMA_Init       0x0801764b    0x78  Code  Lc  bsp_free.o [1]
+BSP_ADC1_Init           0x080176cb    0x96  Code  Lc  bsp_free.o [1]
+BSP_BKRtcSem            0x2001d814     0x4  Data  Gb  main.o [1]
+BSP_BKSramSem           0x2001d810     0x4  Data  Gb  main.o [1]
+BSP_CAN1_Init           0x08017153   0x1a0  Code  Lc  bsp_free.o [1]
+BSP_CAN_Init            0x08016c8f     0x2  Code  Gb  bsp_free.o [1]
+BSP_CanSem              0x2001d818     0x4  Data  Gb  main.o [1]
+BSP_EXTI_Init           0x0801704f    0x5c  Code  Lc  bsp_free.o [1]
+BSP_GPIO_Init           0x08016e59   0x1f6  Code  Lc  bsp_free.o [1]
+BSP_I2C1Sem             0x2001d80c     0x4  Data  Gb  main.o [1]
+BSP_I2C1_Init           0x080170ab    0xa8  Code  Lc  bsp_free.o [1]
+BSP_IWDG_Init           0x08016d5b    0x3a  Code  Lc  bsp_free.o [1]
+BSP_KeySem              0x2001d81c     0x4  Data  Gb  main.o [1]
+BSP_LED_Toggle          0x08017ad1    0x36  Code  Gb  bsp_free.o [1]
+BSP_Lowlevel_Init       0x08016c4b    0x44  Code  Gb  bsp_free.o [1]
+BSP_NVIC_Init           0x08016c91    0xca  Code  Lc  bsp_free.o [1]
+BSP_RTC_Init            0x08016d95    0xc4  Code  Lc  bsp_free.o [1]
+BSP_SPI1_Init           0x080172f3   0x100  Code  Lc  bsp_free.o [1]
+BSP_SPI2_Init           0x080173f3   0x10c  Code  Lc  bsp_free.o [1]
+BSP_SaveSem             0x2001d808     0x4  Data  Gb  main.o [1]
+BSP_UART1RX_IntEnable   0x08017597     0xe  Code  Gb  bsp_free.o [1]
+BSP_UART2RX_IntEnable   0x0801763d     0xe  Code  Gb  bsp_free.o [1]
+BSP_USART1_Init         0x080174ff    0x98  Code  Lc  bsp_free.o [1]
+BSP_USART2_Init         0x080175a5    0x98  Code  Lc  bsp_free.o [1]
+BSRAMSemaphore_Init     0x080190c9    0x56  Code  Gb  bsp_util.o [1]
+BackUpFlag              0x2001d85a     0x1  Data  Gb  extern.o [1]
+BusFault_Handler        0x0802609b     0xa  Code  Gb  stm32f2xx_it.o [1]
+BuzzerOn                0x0801e647    0x2a  Code  Gb  key.o [1]
+CAN1_RX0_IRQHandler     0x080179ad    0x2c  Code  Gb  bsp_free.o [1]
+CAN_ClearITPendingBit   0x0801cc69    0x7a  Code  Gb  stm32f2xx_can.o [1]
+CAN_DeInit              0x0801c8ad    0x3a  Code  Gb  stm32f2xx_can.o [1]
+CAN_Decode              0x0801d835   0x808  Code  Gb  can.o [1]
+CAN_FilterInit          0x0801c9f1    0xba  Code  Gb  stm32f2xx_can.o [1]
+CAN_GetITStatus         0x0801cb6d    0xfc  Code  Gb  stm32f2xx_can.o [1]
+CAN_ITConfig            0x0801cb59    0x14  Code  Gb  stm32f2xx_can.o [1]
+CAN_Init                0x0801c8e7   0x10a  Code  Gb  stm32f2xx_can.o [1]
+CAN_Receive_mk          0x08017761    0x7e  Code  Gb  bsp_free.o [1]
+CAN_Transmit            0x0801caab    0xae  Code  Gb  stm32f2xx_can.o [1]
+CID_Tab                 0x2001d21c    0x10  Data  Lc  fatfs_sd_sdio.o [1]
+CLI_SetConsolPort       0x080139e5    0x14  Code  Gb  cli.o [1]
+COM_Command_Char        0x2001c9bf     0x1  Data  Gb  modem.o [1]
+CSD_Tab                 0x2001d20c    0x10  Data  Lc  fatfs_sd_sdio.o [1]
+CSTACK$$Base            0x20004290           --   Gb  - Linker created -
+CSTACK$$Limit           0x20008290           --   Gb  - Linker created -
+CanFotaFile             0x0801d4e1   0x2b4  Code  Gb  can.o [1]
+CanFotaFile::CheckResponseCount
+                        0x2001d724     0x1  Data  Lc  can.o [1]
+CanFotaFile::nStatus    0x2001d723     0x1  Data  Lc  can.o [1]
+CanSemaphore_Init       0x0801d10f    0x2e  Code  Gb  can.o [1]
+CanTxFile               0x0801d1cd   0x308  Code  Gb  can.o [1]
+CanTxFile::CheckResponseCount
+                        0x2001d722     0x1  Data  Lc  can.o [1]
+CanTxFile::nStatus      0x2001d721     0x1  Data  Lc  can.o [1]
+Can_RxMsg               0x2001d6e0    0x10  Data  Gb  extern.o [1]
+CardType                0x2001d22c     0x4  Data  Lc  fatfs_sd_sdio.o [1]
+CheckAPNChange          0x08012c1b    0x28  Code  Gb  modem.o [1]
+CheckITStatus           0x0801ccf5     0xc  Code  Lc  stm32f2xx_can.o [1]
+CmdError                0x0801bb27    0x2c  Code  Lc  fatfs_sd_sdio.o [1]
+CmdResp1Error           0x0801bb93    0xec  Code  Lc  fatfs_sd_sdio.o [1]
+CmdResp2Error           0x0801bcad    0x3a  Code  Lc  fatfs_sd_sdio.o [1]
+CmdResp3Error           0x0801bc7f    0x2c  Code  Lc  fatfs_sd_sdio.o [1]
+CmdResp6Error           0x0801bce7    0x72  Code  Lc  fatfs_sd_sdio.o [1]
+CmdResp7Error           0x0801bb53    0x40  Code  Lc  fatfs_sd_sdio.o [1]
+ComRxAPN_Name           0x2001ca18    0x20  Data  Gb  modem.o [1]
+CommBuf                 0x2001a1c4   0xab4  Data  Gb  commrtos.o [1]
+CommInit                0x08012fb1    0x7c  Code  Gb  commrtos.o [1]
+CommReInit              0x0801302d    0x44  Code  Gb  commrtos.o [1]
+CommaCnt                0x2001d2c4     0x4  Data  Gb  modem_sms.o [1]
+Console_Port            0x20000028     0x4  Data  Lc  cli.o [1]
+Crc16_Table             0x0801aa88   0x200  Data  Lc  crc16.o [1]
+CurrVol                 0x2001d85f     0x1  Data  Lc  ff.o [1]
+DMA2_Stream3_IRQHandler
+                        0x0801c269     0x4  Code  Gb  fatfs_sd_sdio.o [1]
+DMAEndOfTransfer        0x2001d23c     0x4  Data  Gb  fatfs_sd_sdio.o [1]
+DMA_ClearFlag           0x0801d03d    0x1c  Code  Gb  stm32f2xx_dma.o [1]
+DMA_Cmd                 0x0801d00f    0x16  Code  Gb  stm32f2xx_dma.o [1]
+DMA_DeInit              0x0801ceb9   0x108  Code  Gb  stm32f2xx_dma.o [1]
+DMA_FlowControllerConfig
+                        0x0801d025    0x18  Code  Gb  stm32f2xx_dma.o [1]
+DMA_ITConfig            0x0801d059    0x3a  Code  Gb  stm32f2xx_dma.o [1]
+DMA_Init                0x0801cfc1    0x4e  Code  Gb  stm32f2xx_dma.o [1]
+DMS_ver                 0x2001d78a     0x2  Data  Gb  extern.o [1]
+DVal                    0x2001d4f8     0x8  Data  Gb  key.o [1]
+DataAddrToSend          0x2001c9e0     0x4  Data  Gb  modem.o [1]
+DataSaveAddr            0x2001d7d4     0x4  Data  Gb  extern.o [1]
+DataSentAddr            0x2001d7d8     0x4  Data  Gb  extern.o [1]
+DataServerFlag          0x2001c9c0     0x1  Data  Gb  modem.o [1]
+DataServerRetryCount    0x2001d820     0x4  Data  Gb  modem.o [1]
+DataSvrStep             0x2001d866     0x1  Data  Gb  modem.o [1]
+DataSvrWaitCount        0x2001d824     0x4  Data  Gb  modem.o [1]
+DataTxContinue          0x2001d659     0x1  Data  Gb  modem_Loop.o [1]
+DebugMon_Handler        0x080260af     0x6  Code  Gb  stm32f2xx_it.o [1]
+DecodeSMS               0x0801496d   0xbf8  Code  Gb  modem_sms.o [1]
+DefaultSet              0x080224bf   0x12a  Code  Gb  obd.o [1]
+DelFiles                0x2001d840     0x2  Data  Gb  extern.o [1]
+DetectFlag              0x2001d859     0x1  Data  Gb  extern.o [1]
+Disk_Dtect              0x08022c9d    0x2c  Code  Gb  obd.o [1]
+Disk_Full               0x2001d857     0x1  Data  Gb  extern.o [1]
+Disp                    0x0801e39d    0x16  Code  Gb  key.o [1]
+Disp2                   0x0801e3b3    0x3a  Code  Gb  key.o [1]
+Disp2DotVal             0x0801e4d5    0x4e  Code  Gb  key.o [1]
+Disp3                   0x0801e3ed    0x3e  Code  Gb  key.o [1]
+DispDpfErr              0x0801e523    0x54  Code  Gb  key.o [1]
+DispEcu                 0x0801e487    0x4e  Code  Gb  key.o [1]
+DispScrErr              0x0801e577    0x54  Code  Gb  key.o [1]
+DispVal                 0x0801e439    0x4e  Code  Gb  key.o [1]
+DisplayLogo             0x08013ad1    0x3a  Code  Gb  cli.o [1]
+Display_Parm            0x0801f2d1   0x38e  Code  Gb  key.o [1]
+DmsApnPushRxCnt         0x2001c9d8     0x1  Data  Gb  modem.o [1]
+DmsApnPushRxFlag        0x2001c9d7     0x1  Data  Gb  modem.o [1]
+DmsPushApnName          0x2001cb28    0x20  Data  Gb  modem.o [1]
+DrvDataUpdate           0x080222f5    0x46  Code  Gb  obd.o [1]
+ETH_IRQHandler          0x080260ed     0x2  Code  Gb  stm32f2xx_it.o [1]
+EXTI9_5_IRQHandler      0x080179e1    0x1e  Code  Gb  bsp_free.o [1]
+EXTI_ClearITPendingBit  0x0801c7a7     0x6  Code  Gb  stm32f2xx_exti.o [1]
+EXTI_GetITStatus        0x0801c78f    0x18  Code  Gb  stm32f2xx_exti.o [1]
+EXTI_Init               0x0801c725    0x6a  Code  Gb  stm32f2xx_exti.o [1]
+ExCvt                   0x08022228    0x80  Data  Lc  ff.o [1]
+F2_Info                 0x2001d64c     0xc  Data  Gb  modem_Loop.o [1]
+FND_DATA                0x2001d780     0x8  Data  Gb  fnd.o [1]
+FND_DispCnt             0x2001d788     0x2  Data  Gb  fnd.o [1]
+FRAMByteWrite           0x08013ee7    0x1e  Code  Gb  i2cfram_FM24CL64B.o [1]
+FRAMMultiRead           0x080140d3    0x2c  Code  Gb  i2cfram_FM24CL64B.o [1]
+FRAMMultiWrite          0x080140a5    0x2e  Code  Gb  i2cfram_FM24CL64B.o [1]
+FRAM_Wait               0x08014081    0x24  Code  Gb  i2cfram_FM24CL64B.o [1]
+FRAM_WaitFlag           0x2001d861     0x1  Data  Gb  i2cfram_FM24CL64B.o [1]
+FWDN_Svr                0x2001d4b8    0x40  Data  Gb  modem.o [1]
+FW_Info                 0x2001d640     0xc  Data  Gb  modem_Loop.o [1]
+F_Name                  0x2001d738     0xc  Data  Gb  extern.o [1]
+FatFs                   0x2001d754     0x8  Data  Lc  ff.o [1]
+FatFs                   0x2001bd40   0x234  Data  Lc  obd.o [1]
+FileCreate              0x08022b85   0x118  Code  Gb  obd.o [1]
+FileSize                0x2001d728     0x4  Data  Gb  can.o [1]
+File_Name               0x08022fd9    0x52  Code  Gb  obd.o [1]
+FindSCR                 0x0801be49   0x174  Code  Lc  fatfs_sd_sdio.o [1]
+Finfo                   0x2001d5f0    0x18  Data  Gb  drivefree.o [1]
+Flags                   0x2001d7e4     0x4  Data  Gb  extern.o [1]
+Flags1                  0x2001d7e8     0x4  Data  Gb  extern.o [1]
+Flash_Save_Buff         0x2001d7dc     0x4  Data  Gb  extern.o [1]
+Flash_Write_SaveData    0x08022439    0x86  Code  Gb  obd.o [1]
+FotaRespFlag            0x2001c9c7     0x1  Data  Gb  modem.o [1]
+Fota_FW_Ver             0x2001d72c     0xc  Data  Gb  extern.o [1]
+Fsid                    0x2001d750     0x2  Data  Lc  ff.o [1]
+GPIO_Init               0x0801c7b9    0x74  Code  Gb  stm32f2xx_gpio.o [1]
+GPIO_PinAFConfig        0x0801c859    0x26  Code  Gb  stm32f2xx_gpio.o [1]
+GPIO_ReadInputDataBit   0x0801c82d     0xe  Code  Gb  stm32f2xx_gpio.o [1]
+GPIO_ReadOutputData     0x0801c83b     0x6  Code  Gb  stm32f2xx_gpio.o [1]
+GPIO_ResetBits          0x0801c845     0x4  Code  Gb  stm32f2xx_gpio.o [1]
+GPIO_SetBits            0x0801c841     0x4  Code  Gb  stm32f2xx_gpio.o [1]
+GPIO_Write              0x0801c855     0x4  Code  Gb  stm32f2xx_gpio.o [1]
+GPIO_WriteBit           0x0801c849     0xc  Code  Gb  stm32f2xx_gpio.o [1]
+GPSNotValidCount        0x2001d708     0x4  Data  Gb  obd.o [1]
+GPS_Fault               0x2001d7bc     0x1  Data  Gb  nmeap.o [1]
+GPS_Not_Valid_Cnt       0x2001d7c2     0x1  Data  Gb  nmeap.o [1]
+GPS_ResetProcess        0x08025329    0x20  Code  Gb  nmeap.o [1]
+GPS_Reset_Cnt           0x2001d7bd     0x1  Data  Gb  nmeap.o [1]
+GPS_Reset_Flag          0x2001d7be     0x1  Data  Gb  nmeap.o [1]
+GPS_RxBuf               0x2001c7bc   0x200  Data  Gb  nmeap.o [1]
+GPS_RxHead              0x2001b6f0     0x2  Data  Gb  nmeap.o [1]
+GPS_RxTail              0x2001b6f2     0x2  Data  Gb  nmeap.o [1]
+GPS_SigWait_Cnt         0x2001d7bf     0x1  Data  Gb  nmeap.o [1]
+GPS_Speed_Val           0x2001d853     0x1  Data  Gb  extern.o [1]
+GPS_SyncOKTime          0x2001d77c     0x4  Data  Gb  obd.o [1]
+GPS_Time_NoSyncCnt      0x2001d775     0x1  Data  Gb  obd.o [1]
+GPS_Time_Sync           0x2001d774     0x1  Data  Gb  obd.o [1]
+GPS_Valid               0x2001d7c0     0x1  Data  Gb  nmeap.o [1]
+GPS_Valid_Char          0x2001d7c1     0x1  Data  Gb  nmeap.o [1]
+GPS_parse_proc          0x0802529d    0x8c  Code  Gb  nmeap.o [1]
+GenerateCRC             0x0801aa25    0x62  Code  Gb  crc16.o [1]
+GetFlashAreaCRC         0x0801ac99    0x64  Code  Gb  nv.o [1]
+GetRTCTime              0x0801919f    0x64  Code  Gb  bsp_util.o [1]
+Gpck                    0x2001819c  0x1028  Data  Gb  modem_Loop.o [1]
+GpsDataUpdate           0x0802233b    0xfe  Code  Gb  obd.o [1]
+HCD_GetURB_State        0x0802434f     0x8  Code  Gb  usb_hcd.o [1]
+HCD_GetXferCnt          0x08024357     0xa  Code  Gb  usb_hcd.o [1]
+HCD_IsDeviceConnected   0x08024349     0x6  Code  Gb  usb_hcd.o [1]
+HCD_SubmitRequest       0x08024361    0x14  Code  Gb  usb_hcd.o [1]
+HEAP$$Base              0x20008290           --   Gb  - Linker created -
+HEAP$$Limit             0x2000c290           --   Gb  - Linker created -
+HTLvHCnt                0x2001d844     0x2  Data  Gb  extern.o [1]
+HTLvLCnt                0x2001d842     0x2  Data  Gb  extern.o [1]
+HardFault_Handler       0x08026087     0xa  Code  Gb  stm32f2xx_it.o [1]
+HostSvr                 0x2001d430    0x40  Data  Gb  modem.o [1]
+I2C1_ER_IRQHandler      0x0801798d    0x20  Code  Gb  bsp_free.o [1]
+I2C1_EV_IRQHandler      0x08017989     0x4  Code  Gb  bsp_free.o [1]
+I2CADDRESS              0x2001b2ae     0x1  Data  Gb  i2cfram_FM24CL64B.o [1]
+I2C_AcknowledgeConfig   0x08019061    0x18  Code  Gb  stm32f2xx_i2c.o [1]
+I2C_BLOCKED             0x2001b2ad     0x1  Data  Gb  i2cfram_FM24CL64B.o [1]
+I2C_ClearITPendingBit   0x080190c1     0x6  Code  Gb  stm32f2xx_i2c.o [1]
+I2C_Cmd                 0x08019007    0x18  Code  Gb  stm32f2xx_i2c.o [1]
+I2C_DIR                 0x2001b2ac     0x1  Data  Gb  i2cfram_FM24CL64B.o [1]
+I2C_DeInit              0x08018ec5    0x5e  Code  Gb  stm32f2xx_i2c.o [1]
+I2C_GenerateSTART       0x0801901f    0x18  Code  Gb  stm32f2xx_i2c.o [1]
+I2C_GenerateSTOP        0x08019037    0x18  Code  Gb  stm32f2xx_i2c.o [1]
+I2C_GetITStatus         0x080190a5    0x1c  Code  Gb  stm32f2xx_i2c.o [1]
+I2C_GetLastEvent        0x08019097     0xe  Code  Gb  stm32f2xx_i2c.o [1]
+I2C_ITConfig            0x08019083    0x14  Code  Gb  stm32f2xx_i2c.o [1]
+I2C_Init                0x08018f23    0xb2  Code  Gb  stm32f2xx_i2c.o [1]
+I2C_ReceiveData         0x0801907d     0x6  Code  Gb  stm32f2xx_i2c.o [1]
+I2C_Send7bitAddress     0x0801904f    0x12  Code  Gb  stm32f2xx_i2c.o [1]
+I2C_SendData            0x08019079     0x4  Code  Gb  stm32f2xx_i2c.o [1]
+I2C_Serve               0x08017851   0x138  Code  Gb  bsp_free.o [1]
+I2C_StructInit          0x08018fe9    0x1e  Code  Gb  stm32f2xx_i2c.o [1]
+IWDG_Enable             0x0801ad21     0xa  Code  Gb  stm32f2xx_iwdg.o [1]
+IWDG_ReloadCounter      0x0801ad17     0xa  Code  Gb  stm32f2xx_iwdg.o [1]
+IWDG_SetPrescaler       0x0801ad0b     0x6  Code  Gb  stm32f2xx_iwdg.o [1]
+IWDG_SetReload          0x0801ad11     0x6  Code  Gb  stm32f2xx_iwdg.o [1]
+IWDG_WriteAccessCmd     0x0801ad05     0x6  Code  Gb  stm32f2xx_iwdg.o [1]
+InitPara                0x080225e9   0x2e0  Code  Gb  obd.o [1]
+Init_CANcommRxProc      0x0801d0f9    0x16  Code  Gb  can.o [1]
+IsSameString            0x080104df    0x1e  Code  Gb  modem.o [1]
+IsSameString2           0x080104fd    0x36  Code  Gb  modem.o [1]
+KeyOn_Process           0x08022d39    0x52  Code  Gb  obd.o [1]
+KeySemaphore_Init       0x0801f65f    0x2c  Code  Gb  key.o [1]
+KeypadInit              0x0801e5d9    0x22  Code  Gb  key.o [1]
+KtfState                0x2001c9da     0x2  Data  Gb  modem.o [1]
+LoadInt                 0x080199fb    0x70  Code  Lc  xprintffull.o [3]
+LoopFotaFlag            0x2001c9cb     0x1  Data  Gb  modem.o [1]
+LoopFotaStep            0x2001c9cc     0x1  Data  Gb  modem.o [1]
+Loop_SendTimeCnt        0x2001d474     0x4  Data  Gb  modem.o [1]
+MMCSaveData             0x080228c9   0x2b6  Code  Gb  obd.o [1]
+MMC_Check               0x08022cc9    0x70  Code  Gb  obd.o [1]
+MSC_Machine             0x2001d38c    0x4c  Data  Gb  usbh_msc_core.o [1]
+MakePackMassage         0x0801d13d    0x2c  Code  Gb  can.o [1]
+MdmTmpString            0x2001ca38    0x64  Data  Gb  modem.o [1]
+MemManage_Handler       0x08026091     0xa  Code  Gb  stm32f2xx_it.o [1]
+Model_Name              0x08026178    0x10  Data  Gb  extern.o [1]
+ModemBuff               0x20015890  0x1800  Data  Gb  modem.o [1]
+ModemCTN                0x2001d75c     0xc  Data  Gb  modem.o [1]
+ModemCommBuf            0x20017090  0x110c  Data  Lc  modem.o [1]
+ModemCommGetChar        0x080101e1    0x40  Code  Gb  modem.o [1]
+ModemCommInit           0x080101a3    0x12  Code  Gb  modem.o [1]
+ModemCommPutRxChar      0x080101b5    0x2c  Code  Gb  modem.o [1]
+ModemInfo               0x2001cc88    0x40  Data  Gb  modem.o [1]
+ModemInit               0x08012a25   0x1f6  Code  Gb  modem.o [1]
+ModemInitCnt            0x2001c9cd     0x1  Data  Gb  modem.o [1]
+ModemOffFlag            0x2001c9c1     0x1  Data  Gb  modem.o [1]
+ModemPowerOnFlag        0x2001c9c3     0x1  Data  Gb  modem.o [1]
+ModemReadyFlag          0x2001c9c2     0x1  Data  Gb  modem.o [1]
+ModemServiceFault       0x2001c9d6     0x1  Data  Gb  modem.o [1]
+ModemServiceFaultCnt    0x2001c9d5     0x1  Data  Gb  modem.o [1]
+ModemStep               0x2001c9c6     0x1  Data  Gb  modem.o [1]
+ModemVer                0x2001d6b8    0x14  Data  Gb  modem.o [1]
+ModemWaitCnt            0x2001c9e4     0x4  Data  Gb  modem.o [1]
+Modem_CREG_Check        0x08010c7d    0xba  Code  Gb  modem.o [1]
+Modem_CSQ_Check         0x08010dad    0x92  Code  Gb  modem.o [1]
+Modem_CheckConnectIP    0x08011e19    0x7a  Code  Gb  modem.o [1]
+Modem_CheckTelecom      0x08011475    0xd8  Code  Gb  modem.o [1]
+Modem_DataIdleProcess_Loop
+                        0x08016aed    0x20  Code  Gb  modem_Loop.o [1]
+Modem_DataSvrProcess_Loop
+                        0x080166fd   0x2b4  Code  Gb  modem_Loop.o [1]
+Modem_FotaFlag          0x2001c9ce     0x1  Data  Gb  modem.o [1]
+Modem_GetIP             0x08011ae5   0x152  Code  Gb  modem.o [1]
+Modem_Init_Loop         0x08016a81    0x12  Code  Gb  modem_Loop.o [1]
+Modem_Initialize        0x08011585   0x38c  Code  Gb  modem.o [1]
+Modem_LoopFotaProcess   0x080169d1    0xa8  Code  Gb  modem_Loop.o [1]
+Modem_PPPClose          0x080110c9    0x8c  Code  Gb  modem.o [1]
+Modem_PPPOpen           0x08010ffd    0x8c  Code  Gb  modem.o [1]
+Modem_Parameter_Reset   0x08012901   0x11e  Code  Gb  modem.o [1]
+Modem_PowerOff          0x08010a51    0x7a  Code  Gb  modem.o [1]
+Modem_PowerOn           0x08010b69    0x1c  Code  Gb  modem.o [1]
+Modem_PowerOnCheck      0x08010b0d    0x38  Code  Gb  modem.o [1]
+Modem_ResetProcess      0x08012887    0x7a  Code  Gb  modem.o [1]
+Modem_RxChar_Loop       0x08015769   0x298  Code  Gb  modem_Loop.o [1]
+Modem_RxDecode_Loop     0x08015ac5   0x882  Code  Gb  modem_Loop.o [1]
+Modem_RxDecode_Loop::crc_same_flag
+                        0x2001d658     0x1  Data  Lc  modem_Loop.o [1]
+Modem_SMSSend           0x08014183    0xea  Code  Gb  modem_sms.o [1]
+Modem_SMS_Delete        0x0801434d    0x64  Code  Gb  modem_sms.o [1]
+Modem_SMS_DeleteAll     0x080142b1    0x48  Code  Gb  modem_sms.o [1]
+Modem_SMS_ReadAll       0x08014685   0x266  Code  Gb  modem_sms.o [1]
+Modem_SecIntProcess     0x08012c43    0x20  Code  Gb  modem.o [1]
+Modem_SecInt_Loop       0x08016a99    0x54  Code  Gb  modem_Loop.o [1]
+Modem_SendData_Loop     0x080164d5   0x1de  Code  Gb  modem_Loop.o [1]
+Modem_SocketClose       0x08011f21    0x8a  Code  Gb  modem.o [1]
+Modem_SocketConnect     0x080126b1   0x1d6  Code  Gb  modem.o [1]
+Modem_SocketOpenIP      0x08011c75    0xfe  Code  Gb  modem.o [1]
+Modem_SocketOpenSvrName
+                        0x08011e93    0x64  Code  Gb  modem.o [1]
+Modem_State_Check       0x08010e95    0xea  Code  Gb  modem.o [1]
+Modem_TxData_Loop       0x08015a01    0xc4  Code  Gb  modem_Loop.o [1]
+Modem_URC_Parser        0x0801236d   0x2ce  Code  Gb  modem.o [1]
+Modem_parse_proc        0x08012699    0x18  Code  Gb  modem.o [1]
+MsgData                 0x2001d2bc     0x2  Data  Gb  modem_sms.o [1]
+MsgIdx                  0x2001d2b8     0x1  Data  Gb  modem_sms.o [1]
+MtChangeAPNFlag         0x2001c9be     0x1  Data  Gb  modem.o [1]
+MtReadAPNFlag           0x2001c9bd     0x1  Data  Gb  modem.o [1]
+MtTxAPNFlag             0x2001c9bc     0x1  Data  Gb  modem.o [1]
+NMI_Handler             0x08026081     0x6  Code  Gb  stm32f2xx_it.o [1]
+NVIC_Init               0x0801c277    0x5c  Code  Gb  misc.o [1]
+NVIC_PriorityGroupConfig
+                        0x0801c26d     0xa  Code  Gb  misc.o [1]
+NVIC_SetPriority        0x08018785    0x1e  Code  Lc  main.o [1]
+NVIC_SetVectorTable     0x0801c2d3     0xc  Code  Gb  misc.o [1]
+NVIC_SystemReset        0x08016c2d    0x1e  Code  Lc  bsp_free.o [1]
+NVIC_SystemReset        0x08010185    0x1e  Code  Lc  modem.o [1]
+NVIC_SystemReset        0x08014165    0x1e  Code  Lc  modem_sms.o [1]
+NetRespFlag             0x2001c9d0     0x1  Data  Gb  modem.o [1]
+NetRespNo               0x2001c9f4     0x4  Data  Gb  modem.o [1]
+NoxData                 0x2001d7ac     0x8  Data  Gb  extern.o [1]
+NoxErr                  0x2001d84c     0x2  Data  Gb  extern.o [1]
+NoxFail                 0x2001d84a     0x2  Data  Gb  extern.o [1]
+NoxO2                   0x2001d800     0x4  Data  Gb  extern.o [1]
+PCB_HW_Ver              0x08026188     0xc  Data  Gb  extern.o [1]
+PWR_BackupAccessCmd     0x0801c31d     0x6  Code  Gb  stm32f2xx_pwr.o [1]
+P_BUF                   0x2001d6a0    0x18  Data  Gb  extern.o [1]
+Par_Buf                 0x2001d478    0x40  Data  Gb  extern.o [1]
+Par_Cnt                 0x2001d85e     0x1  Data  Gb  extern.o [1]
+Par_Flag                0x2001d85d     0x1  Data  Gb  extern.o [1]
+Par_Time                0x2001d84e     0x2  Data  Gb  extern.o [1]
+PppState                0x2001c9d2     0x1  Data  Gb  modem.o [1]
+PreDay                  0x2001d856     0x1  Data  Gb  extern.o [1]
+PrevLat                 0x2001d700     0x4  Data  Gb  obd.o [1]
+PrevLon                 0x2001d704     0x4  Data  Gb  obd.o [1]
+PrevReadValue           0x2001d144    0x80  Data  Gb  obd.o [1]
+PrevSecTime             0x2001d70c     0x4  Data  Gb  obd.o [1]
+Prev_rmctime            0x2001d778     0x4  Data  Gb  obd.o [1]
+PrintkSem               0x2001d798     0x4  Data  Gb  cli.o [1]
+PromptSem               0x2001d794     0x4  Data  Gb  cli.o [1]
+QualityCnt              0x2001d846     0x2  Data  Gb  extern.o [1]
+RCA                     0x2001d230     0x4  Data  Lc  fatfs_sd_sdio.o [1]
+RCC_AHB1PeriphClockCmd  0x08018261    0x16  Code  Gb  stm32f2xx_rcc.o [1]
+RCC_APB1PeriphClockCmd  0x08018277    0x16  Code  Gb  stm32f2xx_rcc.o [1]
+RCC_APB1PeriphResetCmd  0x080182a3    0x16  Code  Gb  stm32f2xx_rcc.o [1]
+RCC_APB2PeriphClockCmd  0x0801828d    0x16  Code  Gb  stm32f2xx_rcc.o [1]
+RCC_APB2PeriphResetCmd  0x080182b9    0x16  Code  Gb  stm32f2xx_rcc.o [1]
+RCC_ClearFlag           0x080182f3     0xc  Code  Gb  stm32f2xx_rcc.o [1]
+RCC_DeInit              0x08018149    0x2e  Code  Gb  stm32f2xx_rcc.o [1]
+RCC_GetClocksFreq       0x080181a3    0x92  Code  Gb  stm32f2xx_rcc.o [1]
+RCC_GetFlagStatus       0x080182cf    0x24  Code  Gb  stm32f2xx_rcc.o [1]
+RCC_HSEConfig           0x08018177     0xc  Code  Gb  stm32f2xx_rcc.o [1]
+RCC_LSEConfig           0x08018183    0x20  Code  Gb  stm32f2xx_rcc.o [1]
+RCC_RTCCLKCmd           0x0801825b     0x6  Code  Gb  stm32f2xx_rcc.o [1]
+RCC_RTCCLKConfig        0x08018235    0x26  Code  Gb  stm32f2xx_rcc.o [1]
+RD_Sec_Data             0x2001d0c4    0x80  Data  Gb  extern.o [1]
+RSSI                    0x2001d855     0x1  Data  Gb  extern.o [1]
+RTC_Bcd2ToByte          0x0801c70f    0x14  Code  Lc  stm32f2xx_rtc.o [1]
+RTC_ByteToBcd2          0x0801c6f9    0x16  Code  Lc  stm32f2xx_rtc.o [1]
+RTC_ClearITPendingBit   0x0801c6bd    0x18  Code  Gb  stm32f2xx_rtc.o [1]
+RTC_DateStructure       0x2001d78c     0x4  Data  Gb  bsp_util.o [1]
+RTC_EnterInitMode       0x0801c371    0x3e  Code  Gb  stm32f2xx_rtc.o [1]
+RTC_ExitInitMode        0x0801c3af    0x10  Code  Gb  stm32f2xx_rtc.o [1]
+RTC_GPS_Val             0x2001d7fc     0x4  Data  Gb  extern.o [1]
+RTC_GetDate             0x0801c577    0x48  Code  Gb  stm32f2xx_rtc.o [1]
+RTC_GetITStatus         0x0801c693    0x2a  Code  Gb  stm32f2xx_rtc.o [1]
+RTC_GetTime             0x0801c497    0x4a  Code  Gb  stm32f2xx_rtc.o [1]
+RTC_ITConfig            0x0801c657    0x3c  Code  Gb  stm32f2xx_rtc.o [1]
+RTC_Init                0x0801c329    0x48  Code  Gb  stm32f2xx_rtc.o [1]
+RTC_LVal                0x2001d7f8     0x4  Data  Gb  extern.o [1]
+RTC_SetDate             0x0801c4e1    0x96  Code  Gb  stm32f2xx_rtc.o [1]
+RTC_SetTime             0x0801c403    0x94  Code  Gb  stm32f2xx_rtc.o [1]
+RTC_SetWakeUpCounter    0x0801c5dd    0x12  Code  Gb  stm32f2xx_rtc.o [1]
+RTC_Time                0x2001d7a4     0x8  Data  Gb  extern.o [1]
+RTC_TimeRegulate        0x08019127    0x78  Code  Gb  bsp_util.o [1]
+RTC_TimeStructure       0x2001d790     0x4  Data  Gb  bsp_util.o [1]
+RTC_WKUP_IRQHandler     0x080177df    0x72  Code  Gb  bsp_free.o [1]
+RTC_WaitForSynchro      0x0801c3bf    0x44  Code  Gb  stm32f2xx_rtc.o [1]
+RTC_WakeUpClockConfig   0x0801c5bf    0x1e  Code  Gb  stm32f2xx_rtc.o [1]
+RTC_WakeUpCmd           0x0801c5ef    0x4e  Code  Gb  stm32f2xx_rtc.o [1]
+RTC_WriteBackupRegister
+                        0x0801c63d    0x1a  Code  Gb  stm32f2xx_rtc.o [1]
+RcvNum                  0x2001d318    0x14  Data  Gb  modem_sms.o [1]
+ReadValue               0x2001d044    0x80  Data  Gb  extern.o [1]
+ReadValue_Buff          0x2000c290  0x9600  Data  Gb  extern.o [1]
+Region$$Table$$Base     0x08026158           --   Gb  - Linker created -
+Region$$Table$$Limit    0x08026178           --   Gb  - Linker created -
+RespMsg                 0x2001d2c8    0x50  Data  Gb  modem_sms.o [1]
+ResponseTime            0x08019265    0x28  Code  Gb  bsp_util.o [1]
+Retry_FWSD              0x2001d869     0x1  Data  Gb  modem_Loop.o [1]
+RxBinData               0x2001d6cd     0x1  Data  Gb  modem.o [1]
+RxHexStr                0x2001d6d0     0xc  Data  Gb  modem.o [1]
+RxHexStrCnt             0x2001d6dc     0x2  Data  Gb  modem.o [1]
+RxHexStrData            0x080121f1   0x162  Code  Gb  modem.o [1]
+RxHexStrLen             0x2001d6de     0x2  Data  Gb  modem.o [1]
+RxHexStrStep            0x2001d6cc     0x1  Data  Gb  modem.o [1]
+RxSmsCnt                0x2001d2ba     0x1  Data  Gb  modem_sms.o [1]
+SDCardInfo              0x2001d3d8    0x58  Data  Gb  fatfs_sd_sdio.o [1]
+SDEnWideBus             0x0801bd5d    0xe6  Code  Lc  fatfs_sd_sdio.o [1]
+SDIO_ClearFlag          0x08020899     0x6  Code  Gb  stm32f2xx_sdio.o [1]
+SDIO_ClearITPendingBit  0x080208af     0x6  Code  Gb  stm32f2xx_sdio.o [1]
+SDIO_ClockCmd           0x080207ef     0x6  Code  Gb  stm32f2xx_sdio.o [1]
+SDIO_CmdInitStructure   0x2001d1f8    0x14  Data  Gb  fatfs_sd_sdio.o [1]
+SDIO_DMACmd             0x0802086d     0x6  Code  Gb  stm32f2xx_sdio.o [1]
+SDIO_DataConfig         0x08020841    0x26  Code  Gb  stm32f2xx_sdio.o [1]
+SDIO_DataInitStructure  0x2001d1e0    0x18  Data  Gb  fatfs_sd_sdio.o [1]
+SDIO_DeInit             0x080207b1    0x1a  Code  Gb  stm32f2xx_sdio.o [1]
+SDIO_GetCommandResponse
+                        0x08020825     0x8  Code  Gb  stm32f2xx_sdio.o [1]
+SDIO_GetFlagStatus      0x08020889    0x10  Code  Gb  stm32f2xx_sdio.o [1]
+SDIO_GetITStatus        0x0802089f    0x10  Code  Gb  stm32f2xx_sdio.o [1]
+SDIO_GetPowerState      0x080207fb     0xa  Code  Gb  stm32f2xx_sdio.o [1]
+SDIO_GetResponse        0x0802082d    0x14  Code  Gb  stm32f2xx_sdio.o [1]
+SDIO_IRQHandler         0x0801c265     0x4  Code  Gb  fatfs_sd_sdio.o [1]
+SDIO_ITConfig           0x08020873    0x16  Code  Gb  stm32f2xx_sdio.o [1]
+SDIO_Init               0x080207cb    0x24  Code  Gb  stm32f2xx_sdio.o [1]
+SDIO_InitStructure      0x2001d1c4    0x18  Data  Gb  fatfs_sd_sdio.o [1]
+SDIO_ReadData           0x08020867     0x6  Code  Gb  stm32f2xx_sdio.o [1]
+SDIO_SendCommand        0x08020805    0x20  Code  Gb  stm32f2xx_sdio.o [1]
+SDIO_SetPowerState      0x080207f5     0x6  Code  Gb  stm32f2xx_sdio.o [1]
+SD_DeInit               0x0801af49     0x4  Code  Gb  fatfs_sd_sdio.o [1]
+SD_Detect               0x0801b027    0x22  Code  Gb  fatfs_sd_sdio.o [1]
+SD_EnableWideBusOperation
+                        0x0801b60b    0x76  Code  Gb  fatfs_sd_sdio.o [1]
+SD_GetCardInfo          0x0801b2d7   0x334  Code  Gb  fatfs_sd_sdio.o [1]
+SD_GetState             0x0801affd    0x2a  Code  Gb  fatfs_sd_sdio.o [1]
+SD_GetStatus            0x0801afe3    0x1a  Code  Gb  fatfs_sd_sdio.o [1]
+SD_Init                 0x0801af4d    0x96  Code  Gb  fatfs_sd_sdio.o [1]
+SD_InitializeCards      0x0801b1db    0xfc  Code  Gb  fatfs_sd_sdio.o [1]
+SD_LowLevel_DMA_RxConfig
+                        0x0801c1bd    0x8a  Code  Gb  fatfs_sd_sdio.o [1]
+SD_LowLevel_DMA_TxConfig
+                        0x0801c133    0x86  Code  Gb  fatfs_sd_sdio.o [1]
+SD_LowLevel_DeInit      0x0801bfbd    0x92  Code  Gb  fatfs_sd_sdio.o [1]
+SD_LowLevel_Init        0x0801c04f    0xe4  Code  Gb  fatfs_sd_sdio.o [1]
+SD_PowerON              0x0801b049   0x192  Code  Gb  fatfs_sd_sdio.o [1]
+SD_ProcessDMAIRQ        0x0801bb05    0x22  Code  Gb  fatfs_sd_sdio.o [1]
+SD_ProcessIRQSrc        0x0801ba4b    0xba  Code  Gb  fatfs_sd_sdio.o [1]
+SD_ReadMultiBlocks      0x0801b6ad    0xea  Code  Gb  fatfs_sd_sdio.o [1]
+SD_SelectDeselect       0x0801b681    0x2c  Code  Gb  fatfs_sd_sdio.o [1]
+SD_SendStatus           0x0801ba09    0x42  Code  Gb  fatfs_sd_sdio.o [1]
+SD_StopTransfer         0x0801b9d5    0x28  Code  Gb  fatfs_sd_sdio.o [1]
+SD_WaitReadOperation    0x0801b797    0x7e  Code  Gb  fatfs_sd_sdio.o [1]
+SD_WaitWriteOperation   0x0801b969    0x6c  Code  Gb  fatfs_sd_sdio.o [1]
+SD_WriteMultiBlocks     0x0801b815   0x146  Code  Gb  fatfs_sd_sdio.o [1]
+SMSData                 0x2001ca9c    0x8c  Data  Gb  modem.o [1]
+SMSDecodeWaitCnt        0x2001c9ec     0x4  Data  Gb  modem.o [1]
+SMS_No                  0x2001d2c0     0x4  Data  Gb  modem_sms.o [1]
+SMS_No_Flag             0x2001d2b9     0x1  Data  Gb  modem_sms.o [1]
+SMS_Process             0x08014411   0x25c  Code  Gb  modem_sms.o [1]
+SPI_Cmd                 0x0801cd39    0x18  Code  Gb  stm32f2xx_spi.o [1]
+SPI_FLASH_BlockErase    0x0801a6a5    0x7c  Code  Gb  spiflash_W25Q64BV.o [1]
+SPI_FLASH_BlockErase::__func__
+                        0x0801a9e0    0x18  Data  Lc  spiflash_W25Q64BV.o [1]
+SPI_FLASH_BufferRead    0x0801a88d    0x8a  Code  Gb  spiflash_W25Q64BV.o [1]
+SPI_FLASH_BufferRead::__func__
+                        0x0801aa0c    0x18  Data  Lc  spiflash_W25Q64BV.o [1]
+SPI_FLASH_BufferWrite   0x0801a7c1    0xcc  Code  Gb  spiflash_W25Q64BV.o [1]
+SPI_FLASH_PageErase     0x0801a629    0x7c  Code  Gb  spiflash_W25Q64BV.o [1]
+SPI_FLASH_PageErase::__func__
+                        0x0801a9cc    0x14  Data  Lc  spiflash_W25Q64BV.o [1]
+SPI_FLASH_PageWrite     0x0801a721    0xa0  Code  Gb  spiflash_W25Q64BV.o [1]
+SPI_FLASH_PageWrite::__func__
+                        0x0801a9f8    0x14  Data  Lc  spiflash_W25Q64BV.o [1]
+SPI_FLASH_SectorErase   0x0801a5ad    0x7c  Code  Gb  spiflash_W25Q64BV.o [1]
+SPI_FLASH_SectorErase::__func__
+                        0x0801a9ac    0x18  Data  Lc  spiflash_W25Q64BV.o [1]
+SPI_FLASH_SendByte      0x0801a917    0x30  Code  Gb  spiflash_W25Q64BV.o [1]
+SPI_FLASH_WaitForWEL    0x0801a96f    0x2e  Code  Gb  spiflash_W25Q64BV.o [1]
+SPI_FLASH_WaitForWriteEnd
+                        0x0801a947    0x28  Code  Gb  spiflash_W25Q64BV.o [1]
+SPI_FLASH_WriteDisable  0x0801a589    0x24  Code  Gb  spiflash_W25Q64BV.o [1]
+SPI_FLASH_WriteEnable   0x0801a565    0x24  Code  Gb  spiflash_W25Q64BV.o [1]
+SPI_I2S_GetFlagStatus   0x0801cd59     0xe  Code  Gb  stm32f2xx_spi.o [1]
+SPI_I2S_ReceiveData     0x0801cd51     0x4  Code  Gb  stm32f2xx_spi.o [1]
+SPI_I2S_SendData        0x0801cd55     0x4  Code  Gb  stm32f2xx_spi.o [1]
+SPI_Init                0x0801cd01    0x38  Code  Gb  stm32f2xx_spi.o [1]
+SYSCFG_EXTILineConfig   0x0801c881    0x26  Code  Gb  stm32f2xx_syscfg.o [1]
+SaveCnt                 0x2001d852     0x1  Data  Gb  extern.o [1]
+SaveCount               0x2001d85b     0x1  Data  Gb  extern.o [1]
+Save_SecData_Cnt        0x2001d83c     0x2  Data  Gb  extern.o [1]
+Save_SecData_Flag       0x2001d854     0x1  Data  Gb  extern.o [1]
+ScrMap                  0x2001baa0   0x2a0  Data  Gb  extern.o [1]
+ScrValue                0x2001d61c    0x24  Data  Gb  extern.o [1]
+SecDataSave             0x08022d8b    0x62  Code  Gb  obd.o [1]
+SendCanMassage          0x0801d169    0x4a  Code  Gb  can.o [1]
+SendCanMassage::__func__
+                        0x0801d1b4    0x10  Data  Lc  can.o [1]
+SendCountPerConnect     0x2001d65c     0x4  Data  Gb  modem_Loop.o [1]
+SendDailyDataFlag       0x2001d868     0x1  Data  Gb  modem.o [1]
+SendData_EndTime        0x2001d828     0x4  Data  Gb  modem.o [1]
+SendData_StartTime      0x2001d470     0x4  Data  Gb  modem.o [1]
+SendPacket              0x2001d7f0     0x4  Data  Gb  extern.o [1]
+SendResetFlag           0x0801e2e7    0x2a  Code  Gb  can.o [1]
+SendSaveFlag            0x0801e2bd    0x2a  Code  Gb  can.o [1]
+SendSettingFlag         0x2001d867     0x1  Data  Gb  modem.o [1]
+ServerIPCheckFlag       0x2001c9ca     0x1  Data  Gb  modem.o [1]
+ServerRW                0x2001d850     0x1  Data  Gb  extern.o [1]
+Server_TxData_Loop      0x0801e03d    0x14  Code  Gb  can.o [1]
+SetDataFND              0x0801f875    0xe2  Code  Gb  fnd.o [1]
+SetFnd                  0x0801f959   0x1e8  Code  Gb  fnd.o [1]
+SetRTCTime              0x08019203     0x2  Code  Gb  bsp_util.o [1]
+SetSysClock             0x0801ad93    0x8a  Code  Lc  system_stm32f2xx.o [1]
+Set_Management          0x0801ea31   0x87e  Code  Gb  key.o [1]
+Setting                 0x2001ccc8   0x100  Data  Gb  extern.o [1]
+SmsState                0x2001c9d4     0x1  Data  Gb  modem.o [1]
+SocketConnectStep       0x2001c9c8     0x1  Data  Gb  modem.o [1]
+SocketRetryCnt          0x2001c9c9     0x1  Data  Gb  modem.o [1]
+SocketWaitCnt           0x2001c9e8     0x4  Data  Gb  modem.o [1]
+SpiFlashDevSem          0x2001d804     0x4  Data  Gb  main.o [1]
+Start_Download          0x0801e94f    0xda  Code  Gb  key.o [1]
+Start_Flag              0x2001d851     0x1  Data  Gb  extern.o [1]
+StopCondition           0x2001d234     0x4  Data  Gb  fatfs_sd_sdio.o [1]
+StringLen               0x08010461    0x18  Code  Gb  modem.o [1]
+SvrEventCode            0x2001d864     0x1  Data  Gb  modem.o [1]
+SvrEventFlag            0x2001d863     0x1  Data  Gb  modem.o [1]
+SvrSvcError             0x2001d865     0x1  Data  Gb  modem.o [1]
+SysCtl                  0x2001d594    0x30  Data  Gb  extern.o [1]
+SysTick_CLKSourceConfig
+                        0x0801c2df    0x1a  Code  Gb  misc.o [1]
+SysTick_Config          0x080187a3    0x2a  Code  Lc  main.o [1]
+SysTick_Handler         0x080260b5    0x18  Code  Gb  stm32f2xx_it.o [1]
+SystemInit              0x0801ad5d    0x36  Code  Gb  system_stm32f2xx.o [1]
+TCP_Open                0x2001c9c4     0x1  Data  Gb  modem.o [1]
+TLv_Beep                0x2001d848     0x2  Data  Gb  extern.o [1]
+TM_FATFS_SDIO_WriteEnabled
+                        0x0801ae35     0x4  Code  Gb  fatfs_sd_sdio.o [1]
+TM_FATFS_SD_SDIO_Stat   0x20004288     0x1  Data  Lc  fatfs_sd_sdio.o [1]
+TM_FATFS_SD_SDIO_disk_initialize
+                        0x0801ae39    0x42  Code  Gb  fatfs_sd_sdio.o [1]
+TM_FATFS_SD_SDIO_disk_ioctl
+                        0x0801af2f    0x1a  Code  Gb  fatfs_sd_sdio.o [1]
+TM_FATFS_SD_SDIO_disk_read
+                        0x0801aea9    0x3a  Code  Gb  fatfs_sd_sdio.o [1]
+TM_FATFS_SD_SDIO_disk_status
+                        0x0801ae7b    0x2e  Code  Gb  fatfs_sd_sdio.o [1]
+TM_FATFS_SD_SDIO_disk_write
+                        0x0801aee3    0x4c  Code  Gb  fatfs_sd_sdio.o [1]
+TM_FATFS_USB_disk_initialize
+                        0x08023eb5    0x2e  Code  Gb  fatfs_usb.o [1]
+TM_FATFS_USB_disk_ioctl
+                        0x08023fd1    0x38  Code  Gb  fatfs_usb.o [1]
+TM_FATFS_USB_disk_read  0x08023ee9    0x6c  Code  Gb  fatfs_usb.o [1]
+TM_FATFS_USB_disk_status
+                        0x08023ee3     0x6  Code  Gb  fatfs_usb.o [1]
+TM_FATFS_USB_disk_write
+                        0x08023f55    0x7c  Code  Gb  fatfs_usb.o [1]
+TM_USB_MSCHOST_INT_Initialized
+                        0x2001ac78     0x1  Data  Gb  usb_msc_app.o [1]
+TM_USB_MSCHOST_INT_Result
+                        0x2001ac79     0x1  Data  Gb  usb_msc_app.o [1]
+Task_CAN                0x0801e051   0x1f8  Code  Gb  can.o [1]
+Task_CLI                0x08013b11    0x2c  Code  Gb  cli.o [1]
+Task_GPS                0x08025351   0x104  Code  Gb  nmeap.o [1]
+Task_KEY                0x0801f691    0x40  Code  Gb  key.o [1]
+Task_MOD                0x08012c69   0x238  Code  Gb  modem.o [1]
+Task_OBD                0x080230d1   0x2e0  Code  Gb  obd.o [1]
+TcpState                0x2001c9c5     0x1  Data  Gb  modem.o [1]
+TellRespDecode          0x08011fd1   0x15e  Code  Gb  modem.o [1]
+TellRespFlag            0x2001c9cf     0x1  Data  Gb  modem.o [1]
+TellRespNo              0x2001c9f0     0x4  Data  Gb  modem.o [1]
+TimeParsorSet           0x08019205    0x60  Code  Gb  bsp_util.o [1]
+TldState                0x2001c9d3     0x1  Data  Gb  modem.o [1]
+TmrChk                  0x0801f789    0x22  Code  Gb  tmr.o [1]
+TmrSetT                 0x0801f7ab    0x2c  Code  Gb  tmr.o [1]
+TmrStart                0x0801f7d7    0x22  Code  Gb  tmr.o [1]
+TmrTask                 0x0801f7f9    0x72  Code  Gb  tmr.o [1]
+TmrTbl                  0x2001cfb8    0x8c  Data  Gb  tmr.o [1]
+TmrTickCtr              0x2001d86a     0x1  Data  Lc  tmr.o [1]
+TotalPacket             0x2001d7f4     0x4  Data  Gb  extern.o [1]
+TransferEnd             0x2001d238     0x4  Data  Gb  fatfs_sd_sdio.o [1]
+TransferError           0x2001d1dc     0x1  Data  Gb  fatfs_sd_sdio.o [1]
+TxCharToModem           0x08010567    0x20  Code  Gb  modem.o [1]
+TxCommand               0x2001d660     0x4  Data  Gb  modem_Loop.o [1]
+TxDataStrToModem        0x0801054d    0x1a  Code  Gb  modem.o [1]
+TxHexStrToModem         0x08010587   0x1b0  Code  Gb  modem.o [1]
+TxMsgLen                0x2001d7b8     0x4  Data  Gb  modem.o [1]
+TxResp                  0x2001d7b4     0x1  Data  Gb  modem.o [1]
+TxRespStep              0x2001d7b5     0x1  Data  Gb  modem.o [1]
+TxSmsResp               0x2001d768     0xc  Data  Gb  modem_sms.o [1]
+TxStrToModem            0x08010537    0x16  Code  Gb  modem.o [1]
+USART1_IRQHandler       0x080179ff    0x70  Code  Gb  bsp_free.o [1]
+USART2_IRQHandler       0x08017a75    0x5c  Code  Gb  bsp_free.o [1]
+USART_ClearFlag         0x080131c9     0x6  Code  Gb  stm32f2xx_usart.o [1]
+USART_ClearITPendingBit
+                        0x08013217    0x10  Code  Gb  stm32f2xx_usart.o [1]
+USART_Cmd               0x08013159    0x18  Code  Gb  stm32f2xx_usart.o [1]
+USART_GetFlagStatus     0x080131bb     0xe  Code  Gb  stm32f2xx_usart.o [1]
+USART_GetITStatus       0x080131cf    0x48  Code  Gb  stm32f2xx_usart.o [1]
+USART_ITConfig          0x08013181    0x3a  Code  Gb  stm32f2xx_usart.o [1]
+USART_Init              0x080130a5    0xaa  Code  Gb  stm32f2xx_usart.o [1]
+USART_ReceiveData       0x08013179     0x8  Code  Gb  stm32f2xx_usart.o [1]
+USART_SendData          0x08013171     0x8  Code  Gb  stm32f2xx_usart.o [1]
+USBH_BulkReceiveData    0x08024a89    0x32  Code  Gb  usbh_ioreq.o [1]
+USBH_BulkSendData       0x08024a57    0x32  Code  Gb  usbh_ioreq.o [1]
+USBH_ClrFeature         0x08024ad1    0x34  Code  Gb  usbh_stdreq.o [1]
+USBH_CtlReq             0x08024a09    0x4e  Code  Gb  usbh_ioreq.o [1]
+USBH_HandleControl::timeout
+                        0x2001d836     0x2  Data  Lc  usbh_core.o [1]
+USBH_MSC_BOTXferParam   0x2001d560    0x10  Data  Gb  usbh_msc_bot.o [1]
+USBH_MSC_BOT_Abort      0x080247e5    0x3a  Code  Gb  usbh_msc_bot.o [1]
+USBH_MSC_CBWData        0x2001d664    0x20  Data  Gb  usbh_msc_bot.o [1]
+USBH_MSC_CSWData        0x2001d570    0x10  Data  Gb  usbh_msc_bot.o [1]
+USBH_MSC_DecodeCSW      0x0802481f    0x54  Code  Gb  usbh_msc_bot.o [1]
+USBH_MSC_HandleBOTXfer  0x08024501   0x2e4  Code  Gb  usbh_msc_bot.o [1]
+USBH_MSC_HandleBOTXfer::datapointer
+                        0x2001d58c     0x4  Data  Lc  usbh_msc_bot.o [1]
+USBH_MSC_HandleBOTXfer::datapointer_prev
+                        0x2001d590     0x4  Data  Lc  usbh_msc_bot.o [1]
+USBH_MSC_HandleBOTXfer::error_direction
+                        0x2001d580     0x1  Data  Lc  usbh_msc_bot.o [1]
+USBH_MSC_HandleBOTXfer::remainingDataLength
+                        0x2001d588     0x4  Data  Lc  usbh_msc_bot.o [1]
+USBH_MSC_Param          0x2001d710    0x10  Data  Gb  usbh_msc_scsi.o [1]
+USBH_MSC_Read10         0x0802441d    0xd4  Code  Gb  usbh_msc_scsi.o [1]
+USBH_MSC_Read10::status
+                        0x2000428a     0x1  Data  Lc  usbh_msc_scsi.o [1]
+USBH_MSC_Write10        0x08024375    0xa8  Code  Gb  usbh_msc_scsi.o [1]
+USBH_SubmitSetupRequest
+                        0x08024abb    0x14  Code  Lc  usbh_ioreq.o [1]
+USB_Host                0x2001b228    0x84  Data  Gb  usb_msc_app.o [1]
+USB_OTG_Core            0x2001ac7c   0x5ac  Data  Gb  usb_msc_app.o [1]
+USB_OTG_HC_StartXfer    0x08024909   0x100  Code  Gb  usb_core.o [1]
+USB_OTG_IsEvenFrame     0x080248f9     0xe  Code  Gb  usb_core.o [1]
+USB_OTG_WritePacket     0x080248c9    0x30  Code  Gb  usb_core.o [1]
+USB_RespWaitCount       0x2001d834     0x1  Data  Gb  usbh_core.o [1]
+USB_Stat                0x20004289     0x1  Data  Lc  fatfs_usb.o [1]
+UpdateTimeToGPSTime     0x080222a9    0x4c  Code  Gb  obd.o [1]
+Urc                     0x2001d240    0x78  Data  Gb  modem.o [1]
+UsageFault_Handler      0x080260a5     0xa  Code  Gb  stm32f2xx_it.o [1]
+UsimState               0x2001c9d1     0x1  Data  Gb  modem.o [1]
+VdisServerFlag          0x2001d862     0x1  Data  Gb  modem.o [1]
+_EncodingSb_Mbtowc      0x0802395f    0x30  Code  Gb  xencoding_sb.o [3]
+_EncodingSb_Mbtowc::initial
+                        0x0802399c     0x8  Data  Lc  xencoding_sb.o [3]
+_EncodingSb_Wctomb      0x08023945    0x1a  Code  Gb  xencoding_sb.o [3]
+_EncodingSb_Wctomb::initial
+                        0x08023994     0x8  Data  Lc  xencoding_sb.o [3]
+_GenldFull              0x0801a28d   0x254  Code  Lc  xprintffull.o [3]
+_Getdst                 0x08024049   0x132  Code  Gb  xgetdst.o [3]
+_Gettime                0x08023deb    0x42  Code  Gb  xgettime.o [3]
+_IsdstStr               0x20004188     0x4  Data  Gb  setlocale.o [3]
+_Isdst_olddst           0x20004180     0x4  Data  Lc  xisdst.o [3]
+_Isdst_rules            0x20004284     0x4  Data  Gb  xisdstData.o [3]
+_LdtobFull              0x08019e81   0x406  Code  Lc  xprintffull.o [3]
+_LitobFull              0x08019d77   0x10a  Code  Lc  xprintffull.o [3]
+_LocaleC_isalpha        0x08024889    0x16  Code  Gb  xlocale_c.o [3]
+_LocaleC_isspace        0x0802489f    0x14  Code  Gb  xlocale_c.o [3]
+_LocaleC_tolower        0x08024b05     0xc  Code  Gb  xlocale_c.o [3]
+_LocaleEncoding         0x0802392b     0xe  Code  Gb  setlocale.o [3]
+_LocaleForCat           0x08023917    0x14  Code  Gb  setlocale.o [3]
+_LocaleReturnString     0x200041a8    0x50  Data  Lc  setlocale.o [3]
+_Locale_Profile         0x2000418c    0x1c  Data  Gb  setlocale.o [3]
+_Locale_aeabi_lconv     0x20004248    0x38  Data  Gb  localeconv.o [3]
+_Locale_lconv           0x200041f8    0x50  Data  Gb  localeconv.o [3]
+_Localtime_oldzone      0x20004178     0x4  Data  Lc  localtim.o [3]
+_Localtime_tzoff        0x2000417c     0x4  Data  Lc  localtim.o [3]
+_Mbtowc                 0x0801fc87    0x20  Code  Gb  xmbtowc.o [3]
+_PrintfFull             0x0801938d   0x658  Code  Gb  xprintffull.o [3]
+_PutcharsFull           0x0801a4e1    0x2e  Code  Lc  xprintffull.o [3]
+_PutstrFull             0x08019a6b   0x306  Code  Lc  xprintffull.o [3]
+_SProut                 0x08013227     0xa  Code  Gb  xsprout.o [3]
+_Stoflt                 0x0802598d   0x1d0  Code  Gb  xstoflt.o [3]
+_Stopfx                 0x08025869   0x122  Code  Gb  xstopfx.o [3]
+_Stoxflt                0x08025d61   0x1fa  Code  Gb  xstoxflt.o [3]
+_Stoxflt::digits        0x08025f64    0x18  Data  Lc  xstoxflt.o [3]
+_Stoxflt::vals          0x08025f7c    0x18  Data  Lc  xstoxflt.o [3]
+_Ttotm_ts               0x2000414c    0x2c  Data  Lc  xttotm.o [3]
+_Tzoff                  0x08023849    0x9a  Code  Gb  localtim.o [3]
+_TzoneStr               0x20004184     0x4  Data  Gb  setlocale.o [3]
+_Wctomb                 0x0801fdf5    0x1a  Code  Gb  xwctomb.o [3]
+__aeabi_assert          0x080255fd    0x24  Code  Gb  ABIassert.o [6]
+__aeabi_cdcmpeq         0x08025f95          Code  Gb  DblCmpEq.o [4]
+__aeabi_cdcmple         0x0801ffc5          Code  Gb  DblCmpLe.o [4]
+__aeabi_cdrcmple        0x0801fff5          Code  Gb  DblCmpGe.o [4]
+__aeabi_d2iz            0x08020131          Code  Gb  DblToI32.o [4]
+__aeabi_d2uiz           0x0802015d          Code  Gb  DblToI32.o [4]
+__aeabi_dadd            0x080239d5          Code  Gb  DblAdd.o [4]
+__aeabi_ddiv            0x080204dd          Code  Gb  DblDiv.o [4]
+__aeabi_dmul            0x08020339          Code  Gb  DblMul.o [4]
+__aeabi_dsub            0x080201b9          Code  Gb  DblSub.o [4]
+__aeabi_errno_addr      0x0802433d     0x6  Code  Gb  errno.o [3]
+__aeabi_i2d             0x08020189          Code  Gb  I32ToDbl.o [4]
+__aeabi_ldiv0           0x080239d1          Code  Gb  I64DivZer.o [5]
+__aeabi_memset          0x08013bfd          Code  Gb  ABImemset.o [5]
+__aeabi_memset4         0x08013bbd          Code  Gb  ABImemset48.o [5]
+__aeabi_memset8         0x08013bbd          Code  Gb  ABImemset48.o [5]
+__aeabi_ui2d            0x0802019d          Code  Gb  I32ToDbl.o [4]
+__aeabi_uldivmod        0x0801fe91          Code  Gb  I64DivMod.o [5]
+__cmain                 0x08026195          Code  Gb  cmain.o [5]
+__data_Aldata           0x2001d7c4     0x8  Data  Gb  xxmemxmalloc.o [3]
+__data_GetMemChunk      0x080239a5    0x2c  Code  Gb  xgetmemchunk.o [3]
+__data_GetMemChunk::start
+                        0x2001d838     0x4  Data  Lc  xgetmemchunk.o [3]
+__exit                  0x08025855    0x14  Code  Gb  exit.o [6]
+__getzone               0x08023de1     0x6  Code  Gb  getzone.o [3]
+__gmtime32              0x0801fc7d     0xa  Code  Gb  gmtime.o [3]
+__iar_Daysto32          0x0802368d    0x3a  Code  Gb  xttotm.o [3]
+__iar_Dnorm             0x0801ff7f    0x44  Code  Gb  xdnorm.o [4]
+__iar_Dscale            0x08020025   0x10c  Code  Gb  xdscale.o [4]
+__iar_Dtentox           0x08025bb3   0x14e  Code  Gb  xdtento.o [4]
+__iar_Dunscale          0x08025fb5    0x52  Code  Gb  xdunscal.o [4]
+__iar_Errno             0x20004280     0x4  Data  Gb  errno.o [3]
+__iar_Isdst32           0x08023c99   0x148  Code  Gb  xisdst.o [3]
+__iar_Locale_lconv_init
+                        0x08020735    0x3a  Code  Gb  localeconv.o [3]
+__iar_Mbcurmax          0x0801fd39     0xa  Code  Gb  xmbcurmax.o [3]
+__iar_Memchr            0x0801fce1          Code  Gb  memchr.o [5]
+__iar_Memset            0x08013bfd          Code  Gb  ABImemset.o [5]
+__iar_Memset4_word      0x08013bc5          Code  Gb  ABImemset48.o [5]
+__iar_Memset8_word      0x08013bc5          Code  Gb  ABImemset48.o [5]
+__iar_Memset_word       0x08013c05          Code  Gb  ABImemset.o [5]
+__iar_Stod              0x08025851     0x4  Code  Gb  xstod.o [4]
+__iar_Stodx             0x08025709   0x13c  Code  Gb  xstod.o [4]
+__iar_Stolx             0x08023e2d    0x88  Code  Gb  xstol.o [3]
+__iar_Stoul             0x080242e9     0x4  Code  Gb  xstoul.o [3]
+__iar_Stoulx            0x080241a5   0x13e  Code  Gb  xstoul.o [3]
+__iar_Strchr            0x0801fb71          Code  Gb  strchr.o [5]
+__iar_Strstr            0x08018e95    0x2e  Code  Gb  strstr.o [3]
+__iar_Ttotm32           0x080236c7   0x130  Code  Gb  xttotm.o [3]
+__iar_TzoneStr_init     0x080238f1    0x26  Code  Gb  setlocale.o [3]
+__iar_d2uiz             0x08020169          Code  Gb  DblToI32.o [4]
+__iar_dadd              0x080239e9          Code  Gb  DblAdd.o [4]
+__iar_data_init3        0x08026131    0x28  Code  Gb  data_init.o [5]
+__iar_dlib_perthread_access
+                        0x08023abd     0x2  Code  Gb  xtls.o [3]
+__iar_dsub              0x080201cd          Code  Gb  DblSub.o [4]
+__iar_dsubStart         0x080201df          Code  Gb  DblSub.o [4]
+__iar_lz77_init_single3
+                        0x08026007    0x78  Code  Gb  lz77_init_single.o [5]
+__iar_program_start     0x080261d5          Code  Gb  cstartup_M.o [5]
+__iar_ui2d              0x080201a1          Code  Gb  I32ToDbl.o [4]
+__iar_unaligned___aeabi_memcpy
+                        0x08013c65          Code  Gb  ABImemcpy_unaligned.o [5]
+__iar_unaligned___aeabi_memcpy4
+                        0x08013c85          Code  Gb  ABImemcpy_unaligned.o [5]
+__iar_unaligned___aeabi_memcpy8
+                        0x08013c85          Code  Gb  ABImemcpy_unaligned.o [5]
+__iar_unaligned_memcmp  0x08018d11          Code  Gb  memcmp_unaligned.o [5]
+__iar_unaligned_strncpy
+                        0x08025629          Code  Gb  strncpy_unaligned.o [5]
+__iar_zero_init3        0x080260ef    0x40  Code  Gb  zero_init3.o [5]
+__low_level_init        0x080261af     0x4  Code  Gb  low_level_init.o [3]
+__mktime32              0x0801fb89    0xf4  Code  Gb  mktime.o [3]
+__vector_table          0x08010000          Data  Gb  startup_stm32f2xx.o [1]
+_call_main              0x080261a1          Code  Gb  cmain.o [5]
+_exit                   0x080261b9          Code  Gb  cexit.o [5]
+_main                   0x080261ab          Code  Gb  cmain.o [5]
+_millisCounter          0x2001d82c     0x4  Data  Gb  modem.o [1]
+_sysinfo                0x2001d32c    0x60  Data  Gb  sys_struct.o [1]
+abort                   0x08025701     0x6  Code  Gb  abort.o [3]
+abs                     0x08023b9d     0x8  Code  Gb  abs.o [3]
+adcdata                 0x2001d7cc     0x4  Data  Gb  bsp_free.o [1]
+argument                0x2000002c    0x20  Data  Lc  cli.o [1]
+atof                    0x08025621     0x8  Code  Gb  atof.o [4]
+atoi                    0x080256f9     0x8  Code  Gb  atoi.o [3]
+buzerflag               0x2001d85c     0x1  Data  Gb  extern.o [1]
+ch_num                  0x0801e5cc     0xc  Data  Gb  key.o [1]
+ch_num1                 0x0801e42c     0xc  Data  Gb  key.o [1]
+check_fs                0x0802130b    0x6e  Code  Lc  ff.o [1]
+chk_chr                 0x0802092f    0x12  Code  Lc  ff.o [1]
+clust2sect              0x08020a73    0x18  Code  Gb  ff.o [1]
+cmd_cnt                 0x20000024     0x4  Data  Lc  cli.o [1]
+command_line            0x20000004    0x20  Data  Lc  cli.o [1]
+crc16tab                0x08010260   0x200  Data  Gb  modem.o [1]
+create_chain            0x08020cb9    0xaa  Code  Lc  ff.o [1]
+create_name             0x080210cb   0x15e  Code  Lc  ff.o [1]
+current_mode            0x20000000     0x1  Data  Lc  cli.o [1]
+dbg_system_reset        0x08017b0f     0xe  Code  Gb  bsp_free.o [1]
+delay_ms                0x0801ad47    0x14  Code  Gb  delay.o [1]
+delay_us                0x0801ad39     0xe  Code  Gb  delay.o [1]
+digits                  0x080242ec    0x28  Data  Lc  xstoul.o [3]
+dir_alloc               0x08020ed7    0x48  Code  Lc  ff.o [1]
+dir_find                0x08020f51    0x48  Code  Lc  ff.o [1]
+dir_next                0x08020df1    0xe6  Code  Lc  ff.o [1]
+dir_read                0x08020f99    0x5c  Code  Lc  ff.o [1]
+dir_register            0x08020ff5    0x38  Code  Lc  ff.o [1]
+dir_remove              0x0802102d    0x34  Code  Lc  ff.o [1]
+dir_sdi                 0x08020d63    0x8e  Code  Lc  ff.o [1]
+disk_initialize         0x08023ac1    0x16  Code  Gb  diskio.o [1]
+disk_ioctl              0x08023b45    0x28  Code  Gb  diskio.o [1]
+disk_read               0x08023aed    0x2a  Code  Gb  diskio.o [1]
+disk_status             0x08023ad7    0x16  Code  Gb  diskio.o [1]
+disk_write              0x08023b17    0x2e  Code  Gb  diskio.o [1]
+div                     0x080207a1     0xe  Code  Gb  div.o [3]
+dlMode                  0x2001d720     0x1  Data  Gb  can.o [1]
+dmul                    0x08025b61    0x52  Code  Lc  xdtento.o [4]
+dprint_buf              0x2001c3bc   0x200  Data  Lc  cli.o [1]
+dput_ch_console         0x080139f9    0x2c  Code  Gb  cli.o [1]
+eepread_multi           0x08014005    0x7c  Code  Gb  i2cfram_FM24CL64B.o [1]
+eepwrite_multi          0x08013f05   0x100  Code  Gb  i2cfram_FM24CL64B.o [1]
+exit                    0x080261b3     0x4  Code  Gb  exit.o [3]
+f_close                 0x08021bd5    0x1c  Code  Gb  ff.o [1]
+f_closedir              0x08021db1    0x12  Code  Gb  ff.o [1]
+f_getfree               0x08021e11    0xe0  Code  Gb  ff.o [1]
+f_lseek                 0x08021c09   0x13a  Code  Gb  ff.o [1]
+f_mount                 0x0802169b    0x56  Code  Gb  ff.o [1]
+f_open                  0x080216f1   0x152  Code  Gb  ff.o [1]
+f_opendir               0x08021d43    0x6e  Code  Gb  ff.o [1]
+f_printf                0x08021ff9   0x20a  Code  Gb  ff.o [1]
+f_read                  0x08021843   0x156  Code  Gb  ff.o [1]
+f_readdir               0x08021dc3    0x4e  Code  Gb  ff.o [1]
+f_sync                  0x08021b33    0xa2  Code  Gb  ff.o [1]
+f_unlink                0x08021ef1    0xc0  Code  Gb  ff.o [1]
+f_write                 0x08021999   0x19a  Code  Gb  ff.o [1]
+find_volume             0x08021379   0x2f2  Code  Lc  ff.o [1]
+firstfile               0x2001d608     0x1  Data  Gb  drivefree.o [1]
+flashSemaphore_Init     0x0801a52d    0x38  Code  Gb  spiflash_W25Q64BV.o [1]
+fnd_callback_fun        0x0801fb41    0x1a  Code  Gb  fnd.o [1]
+fnd_callback_fun::nCount
+                        0x2001d860     0x1  Data  Lc  fnd.o [1]
+follow_path             0x08021239    0x8a  Code  Lc  ff.o [1]
+fp                      0x2001bf74   0x224  Data  Gb  extern.o [1]
+fp1                     0x2001c198   0x224  Data  Gb  extern.o [1]
+framSemaphore_Init      0x08013cdd    0x2e  Code  Gb  i2cfram_FM24CL64B.o [1]
+fre_clust               0x2001d610     0x4  Data  Gb  drivefree.o [1]
+fre_sect                0x2001d614     0x4  Data  Gb  drivefree.o [1]
+free                    0x0801fe11    0x7a  Code  Gb  xxmemxfree.o [3]
+fs                      0x2001d60c     0x4  Data  Gb  drivefree.o [1]
+getCRCBuf               0x200191c4  0x1000  Data  Lc  nv.o [1]
+get_fat                 0x08020a8b    0xd4  Code  Gb  ff.o [1]
+get_fattime             0x08023b6d    0x2a  Code  Wk  diskio.o [1]
+get_fileinfo            0x08021061    0x6a  Code  Lc  ff.o [1]
+get_ldnumber            0x080212c3    0x48  Code  Lc  ff.o [1]
+getcrc16                0x08010221    0x2a  Code  Gb  modem.o [1]
+getcrc16c               0x0801024b    0x16  Code  Gb  modem.o [1]
+getint                  0x0802401d    0x2c  Code  Lc  xgetdst.o [3]
+gga                     0x2001ba50    0x38  Data  Gb  nmeap.o [1]
+gmtime_conv             0x080192e5    0x5c  Code  Gb  bsp_util.o [1]
+gpgga_callout           0x0802520f     0xe  Code  Lc  nmeap.o [1]
+gpgsa_callout           0x0802528f     0xe  Code  Lc  nmeap.o [1]
+gprmc_callout           0x0802525d     0xe  Code  Lc  nmeap.o [1]
+gps_on                  0x2001d7c3     0x1  Data  Gb  nmeap.o [1]
+gsa                     0x2001ba88    0x18  Data  Gb  nmeap.o [1]
+i2c_read                0x08013df3    0xf4  Code  Gb  i2cfram_FM24CL64B.o [1]
+i2c_read::__func__      0x08014124     0xc  Data  Lc  i2cfram_FM24CL64B.o [1]
+i2c_write               0x08013d0b    0xe8  Code  Gb  i2cfram_FM24CL64B.o [1]
+i2c_write::__func__     0x08014110     0xc  Data  Lc  i2cfram_FM24CL64B.o [1]
+init_millis             0x08010481     0xa  Code  Gb  modem.o [1]
+isalnum                 0x080256c1    0x1a  Code  Gb  isalnum.o [3]
+isalpha                 0x0802417b    0x14  Code  Gb  isxxx.o [3]
+isspace                 0x0802418f    0x14  Code  Gb  isxxx.o [3]
+isxdigit                0x080256db    0x1e  Code  Gb  isxdigit.o [3]
+key                     0x2001d744     0xc  Data  Gb  extern.o [1]
+key_check               0x0801e5fb    0x4c  Code  Gb  key.o [1]
+key_process             0x0801e719   0x236  Code  Gb  key.o [1]
+key_scan                0x0801e671    0xa8  Code  Gb  key.o [1]
+keyflag                 0x2001d79c     0x8  Data  Gb  extern.o [1]
+kprint_buf              0x2001c5bc   0x200  Data  Lc  cli.o [1]
+ld_clust                0x08020f1f    0x1e  Code  Lc  ff.o [1]
+lmos                    0x08023818    0x18  Data  Lc  xttotm.o [3]
+localeconv              0x0802076f    0x16  Code  Gb  localeconv.o [3]
+main                    0x080187cd   0x1d4  Code  Gb  main.o [1]
+malloc                  0x0801fd45    0xac  Code  Gb  xxmemxmalloc.o [3]
+mem_cmp                 0x08020911    0x1e  Code  Lc  ff.o [1]
+mem_cpy                 0x080208ed    0x14  Code  Lc  ff.o [1]
+mem_set                 0x08020901    0x10  Code  Lc  ff.o [1]
+memchr                  0x0801fce1          Code  Gb  memchr.o [5]
+millis                  0x08010479     0x8  Code  Gb  modem.o [1]
+mktime_conv             0x0801928d    0x3a  Code  Gb  bsp_util.o [1]
+modemPutCharStr         0x08013071    0x28  Code  Gb  commrtos.o [1]
+modem_sendstr           0x08010533     0x4  Code  Gb  modem.o [1]
+mos                     0x08023830    0x18  Data  Lc  xttotm.o [3]
+move_window             0x08020993    0x36  Code  Lc  ff.o [1]
+nDlStatus               0x2001d858     0x1  Data  Gb  extern.o [1]
+ndigs                   0x08024314    0x28  Data  Lc  xstoul.o [3]
+nmea                    0x2001b6f4   0x358  Data  Lc  nmeap.o [1]
+nmeap_addParser         0x08024cbd    0x66  Code  Gb  nmeap.o [1]
+nmeap_altitude          0x08024c8d    0x30  Code  Gb  nmeap.o [1]
+nmeap_gpgga             0x08024f81    0xce  Code  Gb  nmeap.o [1]
+nmeap_gpgsa             0x08025137    0x98  Code  Gb  nmeap.o [1]
+nmeap_gprmc             0x0802504f    0xe8  Code  Gb  nmeap.o [1]
+nmeap_latitude          0x08024b11    0xbe  Code  Gb  nmeap.o [1]
+nmeap_longitude         0x08024bcf    0xbe  Code  Gb  nmeap.o [1]
+nmeap_parse             0x08024de9   0x198  Code  Gb  nmeap.o [1]
+nmeap_process           0x08024d77    0x72  Code  Gb  nmeap.o [1]
+nmeap_tokenize          0x08024d23    0x54  Code  Gb  nmeap.o [1]
+nvxSemaphore_init       0x0801ac89    0x10  Code  Gb  nv.o [1]
+open_append             0x08022203    0x24  Code  Gb  ff.o [1]
+pUART_BASE              0x2000007c     0x8  Data  Gb  commrtos.o [1]
+pows                    0x08025d18    0x48  Data  Lc  xdtento.o [4]
+print_gga               0x080251cf    0x40  Code  Lc  nmeap.o [1]
+print_gsa               0x0802526b    0x24  Code  Lc  nmeap.o [1]
+print_rmc               0x0802521d    0x40  Code  Lc  nmeap.o [1]
+printd                  0x08013a27    0x42  Code  Gb  cli.o [1]
+printk                  0x08013a69    0x68  Code  Gb  cli.o [1]
+prompt_buffer           0x20000054    0x20  Data  Lc  cli.o [1]
+prvAddCurrentTaskToDelayedList
+                        0x0801388b    0x30  Code  Lc  tasks.o [1]
+prvAllocateTCBAndStack  0x080138bb    0x3a  Code  Lc  tasks.o [1]
+prvCheckForValidListAndQueue
+                        0x080186bb    0x3e  Code  Lc  Rtimers.o [1]
+prvCheckTasksWaitingTermination
+                        0x08013845    0x46  Code  Lc  tasks.o [1]
+prvCopyDataFromQueue    0x08017f7b    0x26  Code  Lc  queue.o [1]
+prvCopyDataToQueue      0x08017f07    0x74  Code  Lc  queue.o [1]
+prvDeleteTCB            0x080138f5    0x14  Code  Lc  tasks.o [1]
+prvGetNextExpireTime    0x0801855b    0x1a  Code  Lc  Rtimers.o [1]
+prvHeapInit             0x08018e43    0x22  Code  Lc  heap_2.o [1]
+prvIdleTask             0x08013795    0x16  Code  Lc  tasks.o [1]
+prvInitialiseTCBVariables
+                        0x080137ab    0x4c  Code  Lc  tasks.o [1]
+prvInitialiseTaskLists  0x080137f7    0x4e  Code  Lc  tasks.o [1]
+prvInsertTimerInActiveList
+                        0x0801859b    0x3e  Code  Lc  Rtimers.o [1]
+prvIsQueueEmpty         0x08018009    0x18  Code  Lc  queue.o [1]
+prvIsQueueFull          0x08018021    0x1e  Code  Lc  queue.o [1]
+prvProcessExpiredTimer  0x080184af    0x48  Code  Lc  Rtimers.o [1]
+prvProcessReceivedCommands
+                        0x080185d9    0x8c  Code  Lc  Rtimers.o [1]
+prvProcessTimerOrBlockTask
+                        0x0801850d    0x4e  Code  Lc  Rtimers.o [1]
+prvSampleTimeNow        0x08018575    0x26  Code  Lc  Rtimers.o [1]
+prvSampleTimeNow::xLastTime
+                        0x2001d830     0x4  Data  Lc  Rtimers.o [1]
+prvSwitchTimerLists     0x08018665    0x56  Code  Lc  Rtimers.o [1]
+prvTaskExitError        0x0801809d     0x8  Code  Lc  port.o [1]
+prvTimerCallback        0x08018a95    0x28  Code  Lc  main.o [1]
+prvTimerCallback1000msec
+                        0x080189a1    0xd8  Code  Lc  main.o [1]
+prvTimerCallbackFND     0x08018abd     0x4  Code  Lc  main.o [1]
+prvTimerTask            0x080184f9    0x14  Code  Lc  Rtimers.o [1]
+prvUnlockQueue          0x08017fa1    0x68  Code  Lc  queue.o [1]
+prvwatchdogCallback     0x08018ac1   0x102  Code  Lc  main.o [1]
+put_ch_console          0x08013a25     0x2  Code  Gb  cli.o [1]
+put_fat                 0x08020b5f    0xfa  Code  Gb  ff.o [1]
+putc_bfd                0x08021fb1    0x48  Code  Lc  ff.o [1]
+pvPortMalloc            0x08018d75    0x98  Code  Gb  heap_2.o [1]
+pvPortMalloc::xHeapHasBeenInitialised
+                        0x20000098     0x4  Data  Lc  heap_2.o [1]
+pxCurrentTCB            0x200040d8     0x4  Data  Gb  tasks.o [1]
+pxCurrentTimerList      0x2001d52c     0x4  Data  Lc  Rtimers.o [1]
+pxDelayedTaskList       0x200040dc     0x4  Data  Lc  tasks.o [1]
+pxOverflowDelayedTaskList
+                        0x200040e0     0x4  Data  Lc  tasks.o [1]
+pxOverflowTimerList     0x2001d530     0x4  Data  Lc  Rtimers.o [1]
+pxPortInitialiseStack   0x0801807d    0x1e  Code  Gb  port.o [1]
+pxReadyTasksLists       0x2001cec8    0xf0  Data  Lc  tasks.o [1]
+ramCRC                  0x2001d726     0x2  Data  Gb  can.o [1]
+remove_chain            0x08020c59    0x60  Code  Lc  ff.o [1]
+remove_files            0x0802302d    0x82  Code  Gb  obd.o [1]
+rmc                     0x2001b6b8    0x38  Data  Gb  nmeap.o [1]
+rx_buffer_ix            0x2001b2b2     0x1  Data  Gb  i2cfram_FM24CL64B.o [1]
+rx_buffer_len           0x2001b2af     0x1  Data  Gb  i2cfram_FM24CL64B.o [1]
+rx_buffer_ptr           0x2001b2b4     0x4  Data  Gb  i2cfram_FM24CL64B.o [1]
+scan_files              0x08023ba5    0xd8  Code  Gb  drivefree.o [1]
+sendATcommand           0x08010779    0x9c  Code  Gb  modem.o [1]
+sprintf                 0x08014131    0x34  Code  Gb  sprintf.o [3]
+st_clust                0x08020f3d    0x14  Code  Lc  ff.o [1]
+strchr                  0x0801fb71          Code  Gb  strchr.o [5]
+strlen                  0x0801fca9          Code  Gb  strlen.o [5]
+strncmp                 0x08025695    0x2c  Code  Gb  strncmp.o [3]
+strstr                  0x08013bf7     0x4  Code  Gb  modem_sms.o [1]
+struct_init             0x0801f71d    0x64  Code  Gb  sys_struct.o [1]
+sync_fs                 0x080209c9    0xaa  Code  Lc  ff.o [1]
+sync_window             0x08020941    0x52  Code  Lc  ff.o [1]
+sys_struct_init         0x0801f781     0x4  Code  Gb  sys_struct.o [1]
+system_power_off        0x08017b07     0x8  Code  Gb  bsp_free.o [1]
+systick_uptime          0x0801911f     0x8  Code  Gb  bsp_util.o [1]
+systick_uptime_millis   0x2001d7d0     0x4  Data  Gb  bsp_util.o [1]
+tPrjcode                0x2001d684    0x1c  Data  Gb  sys_struct.o [1]
+tm_rtc                  0x2001d500    0x2c  Data  Gb  key.o [1]
+tm_time                 0x2001d5c4    0x2c  Data  Gb  bsp_util.o [1]
+tolower                 0x080248b3    0x14  Code  Gb  tolower.o [3]
+tot_sect                0x2001d618     0x4  Data  Gb  drivefree.o [1]
+tx_buffer               0x2001b2b8   0x400  Data  Gb  i2cfram_FM24CL64B.o [1]
+tx_buffer_ix            0x2001b2b1     0x1  Data  Gb  i2cfram_FM24CL64B.o [1]
+tx_buffer_len           0x2001b2b0     0x1  Data  Gb  i2cfram_FM24CL64B.o [1]
+tx_stat                 0x20000074     0x8  Data  Gb  commrtos.o [1]
+uart_console::esc_mode  0x20000001     0x1  Data  Lc  cli.o [1]
+uart_console::line_ptr  0x20000050     0x4  Data  Lc  cli.o [1]
+ucHeap                  0x2000009c  0x4000  Data  Lc  heap_2.o [1]
+ulArgumentCount         0x2000004c     0x4  Data  Lc  cli.o [1]
+ulPortSetInterruptMask  0x0801873f          Code  Gb  portasm.o [1]
+uxCriticalNesting       0x2000409c     0x4  Data  Lc  port.o [1]
+uxCurrentNumberOfTasks  0x200040fc     0x4  Data  Lc  tasks.o [1]
+uxListRemove            0x080183b5    0x24  Code  Gb  list.o [1]
+uxPendedTicks           0x20004110     0x4  Data  Lc  tasks.o [1]
+uxSchedulerSuspended    0x2000410c     0x4  Data  Lc  tasks.o [1]
+uxTaskNumber            0x2000411c     0x4  Data  Lc  tasks.o [1]
+uxTasksDeleted          0x200040e4     0x4  Data  Lc  tasks.o [1]
+uxTopReadyPriority      0x20004104     0x4  Data  Lc  tasks.o [1]
+vApplicationStackOverflowHook
+                        0x08018c29     0xc  Code  Gb  main.o [1]
+vListInitialise         0x08018349    0x1a  Code  Gb  list.o [1]
+vListInitialiseItem     0x08018363     0x6  Code  Gb  list.o [1]
+vListInsert             0x08018381    0x34  Code  Gb  list.o [1]
+vListInsertEnd          0x08018369    0x18  Code  Gb  list.o [1]
+vPortClearInterruptMask
+                        0x0801874d          Code  Gb  portasm.o [1]
+vPortEndScheduler       0x080180cb     0x2  Code  Gb  port.o [1]
+vPortEnterCritical      0x080180df    0x18  Code  Gb  port.o [1]
+vPortExitCritical       0x080180f7    0x12  Code  Gb  port.o [1]
+vPortFree               0x08018e0d    0x36  Code  Gb  heap_2.o [1]
+vPortSVCHandler         0x08018753          Code  Gb  portasm.o [1]
+vPortSetupTimerInterrupt
+                        0x08018129     0xc  Code  Wk  port.o [1]
+vPortStartFirstTask     0x0801876f          Code  Gb  portasm.o [1]
+vPortYield              0x080180cd    0x12  Code  Gb  port.o [1]
+vQueueWaitForMessageRestricted
+                        0x0801803f    0x3e  Code  Gb  queue.o [1]
+vTaskDelay              0x08013301    0x36  Code  Gb  tasks.o [1]
+vTaskEndScheduler       0x08013459    0x16  Code  Gb  tasks.o [1]
+vTaskMissedYield        0x08013789     0xa  Code  Gb  tasks.o [1]
+vTaskPlaceOnEventList   0x08013677    0x38  Code  Gb  tasks.o [1]
+vTaskPlaceOnEventListRestricted
+                        0x080136af    0x22  Code  Gb  tasks.o [1]
+vTaskPriorityDisinherit
+                        0x0801397f    0x40  Code  Gb  tasks.o [1]
+vTaskPriorityInherit    0x08013929    0x56  Code  Gb  tasks.o [1]
+vTaskResume             0x080133b9    0x58  Code  Gb  tasks.o [1]
+vTaskSetTimeOutState    0x0801372d     0xe  Code  Gb  tasks.o [1]
+vTaskStartScheduler     0x08013411    0x48  Code  Gb  tasks.o [1]
+vTaskSuspend            0x08013337    0x5e  Code  Gb  tasks.o [1]
+vTaskSuspendAll         0x0801346f     0xc  Code  Gb  tasks.o [1]
+vTaskSwitchContext      0x080135f3    0x84  Code  Gb  tasks.o [1]
+vTaskSwitchContext{1}{3}{6}::ucExpectedStackBytes
+                        0x080139d0    0x14  Data  Lc  tasks.o [1]
+validate                0x0802166b    0x30  Code  Lc  ff.o [1]
+vsprintf                0x08018e69    0x2c  Code  Gb  vsprintf.o [3]
+xActiveTimerList1       0x2001d538    0x14  Data  Lc  Rtimers.o [1]
+xActiveTimerList2       0x2001d54c    0x14  Data  Lc  Rtimers.o [1]
+xDelayedTaskList1       0x20004124    0x14  Data  Lc  tasks.o [1]
+xDelayedTaskList2       0x20004138    0x14  Data  Lc  tasks.o [1]
+xEnd                    0x2000008c     0x8  Data  Lc  heap_2.o [1]
+xFreeBytesRemaining     0x20000094     0x4  Data  Lc  heap_2.o [1]
+xHandle_can             0x2001d7e0     0x4  Data  Gb  extern.o [1]
+xNextTaskUnblockTime    0x20004120     0x4  Data  Lc  tasks.o [1]
+xNumOfOverflows         0x20004118     0x4  Data  Lc  tasks.o [1]
+xPendingReadyList       0x200040b0    0x14  Data  Lc  tasks.o [1]
+xPortPendSVHandler      0x08018709          Code  Gb  portasm.o [1]
+xPortStartScheduler     0x080180a5    0x26  Code  Gb  port.o [1]
+xPortSysTickHandler     0x08018109    0x20  Code  Gb  port.o [1]
+xQueueCreateMutex       0x08017c75    0x4e  Code  Gb  queue.o [1]
+xQueueGenericCreate     0x08017c21    0x54  Code  Gb  queue.o [1]
+xQueueGenericReceive    0x08017df9   0x10e  Code  Gb  queue.o [1]
+xQueueGenericReset      0x08017bb9    0x68  Code  Gb  queue.o [1]
+xQueueGenericSend       0x08017cc3    0xd0  Code  Gb  queue.o [1]
+xQueueGenericSendFromISR
+                        0x08017d93    0x66  Code  Gb  queue.o [1]
+xSchedulerRunning       0x20004108     0x4  Data  Lc  tasks.o [1]
+xStart                  0x20000084     0x8  Data  Lc  heap_2.o [1]
+xSuspendedTaskList      0x200040e8    0x14  Data  Lc  tasks.o [1]
+xTaskCheckForTimeOut    0x0801373b    0x4e  Code  Gb  tasks.o [1]
+xTaskGenericCreate      0x08013231    0xd0  Code  Gb  tasks.o [1]
+xTaskGetCurrentTaskHandle
+                        0x08013909     0x6  Code  Gb  tasks.o [1]
+xTaskGetSchedulerState  0x0801390f    0x1a  Code  Gb  tasks.o [1]
+xTaskGetTickCount       0x08013511    0x14  Code  Gb  tasks.o [1]
+xTaskIncrementTick      0x08013525    0xce  Code  Gb  tasks.o [1]
+xTaskIsTaskSuspended    0x08013395    0x24  Code  Gb  tasks.o [1]
+xTaskRemoveFromEventList
+                        0x080136d1    0x5c  Code  Gb  tasks.o [1]
+xTaskResumeAll          0x0801347b    0x96  Code  Gb  tasks.o [1]
+xTasksWaitingTermination
+                        0x200040c4    0x14  Data  Lc  tasks.o [1]
+xTickCount              0x20004100     0x4  Data  Lc  tasks.o [1]
+xTimer01                0x2001d6f0     0x4  Data  Gb  main.o [1]
+xTimer02                0x2001d6f4     0x4  Data  Gb  main.o [1]
+xTimer03                0x2001d6f8     0x4  Data  Gb  main.o [1]
+xTimer04                0x2001d6fc     0x4  Data  Gb  main.o [1]
+xTimerCreate            0x0801840f    0x4c  Code  Gb  Rtimers.o [1]
+xTimerCreateTimerTask   0x080183d9    0x36  Code  Gb  Rtimers.o [1]
+xTimerGenericCommand    0x0801845b    0x54  Code  Gb  Rtimers.o [1]
+xTimerQueue             0x2001d534     0x4  Data  Lc  Rtimers.o [1]
+xYieldPending           0x20004114     0x4  Data  Lc  tasks.o [1]
+
+
+[1] = E:\LOOP\SCRDPF\OBD\freeRTOS_STM32F2xx_Modem_CC_Large\Project\Debug\Obj
+[2] = command line
+[3] = dl7M_tlf.a
+[4] = m7M_tl.a
+[5] = rt7M_tl.a
+[6] = shb_l.a
+
+   90 816 bytes of readonly  code memory
+      307 bytes of readonly  data memory
+  120 934 bytes of readwrite data memory
+
+Errors: none
+Warnings: none

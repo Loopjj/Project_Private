@@ -1,0 +1,226 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V7.60.1.11101/W32 for ARM       09/Jan/2023  17:31:19
+# Copyright 1999-2016 IAR Systems AB.
+#
+#    Cpu mode     =  thumb
+#    Endian       =  little
+#    Source file  =  
+#        E:\LOOP\SCRDPF\OBD\freeRTOS_STM32F2xx_Modem_CC_Large\Libraries\FAT_FS\option\syscall.c
+#    Command line =  
+#        E:\LOOP\SCRDPF\OBD\freeRTOS_STM32F2xx_Modem_CC_Large\Libraries\FAT_FS\option\syscall.c
+#        -D USE_STDPERIPH_DRIVER -D STM32F2XX -D USE_USB_OTG_FS -lC
+#        E:\LOOP\SCRDPF\OBD\freeRTOS_STM32F2xx_Modem_CC_Large\Project\Debug\List
+#        --diag_suppress Pa050 -o
+#        E:\LOOP\SCRDPF\OBD\freeRTOS_STM32F2xx_Modem_CC_Large\Project\Debug\Obj
+#        --no_unroll --no_inline --no_tbaa --no_scheduling --debug
+#        --endian=little --cpu=Cortex-M3 -e --fpu=None --dlib_config
+#        "C:\Program Files (x86)\IAR Systems\Embedded Workbench
+#        7.4\arm\INC\c\DLib_Config_Full.h" -I
+#        E:\LOOP\SCRDPF\OBD\freeRTOS_STM32F2xx_Modem_CC_Large\Project\ -I
+#        E:\LOOP\SCRDPF\OBD\freeRTOS_STM32F2xx_Modem_CC_Large\Project\..\cpu\
+#        -I
+#        E:\LOOP\SCRDPF\OBD\freeRTOS_STM32F2xx_Modem_CC_Large\Project\..\Drv\
+#        -I
+#        E:\LOOP\SCRDPF\OBD\freeRTOS_STM32F2xx_Modem_CC_Large\Project\..\App\
+#        -I
+#        E:\LOOP\SCRDPF\OBD\freeRTOS_STM32F2xx_Modem_CC_Large\Project\..\App\fat\
+#        -I
+#        E:\LOOP\SCRDPF\OBD\freeRTOS_STM32F2xx_Modem_CC_Large\Project\..\bsp\
+#        -I
+#        E:\LOOP\SCRDPF\OBD\freeRTOS_STM32F2xx_Modem_CC_Large\Project\..\Dev\
+#        -I
+#        E:\LOOP\SCRDPF\OBD\freeRTOS_STM32F2xx_Modem_CC_Large\Project\..\OsConfig\
+#        -I
+#        E:\LOOP\SCRDPF\OBD\freeRTOS_STM32F2xx_Modem_CC_Large\Project\..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F2xx\
+#        -I
+#        E:\LOOP\SCRDPF\OBD\freeRTOS_STM32F2xx_Modem_CC_Large\Project\..\Libraries\FAT_FS\inc\
+#        -I
+#        E:\LOOP\SCRDPF\OBD\freeRTOS_STM32F2xx_Modem_CC_Large\Project\..\Libraries\STM32F2xx_StdPeriph_Driver\inc\
+#        -I
+#        E:\LOOP\SCRDPF\OBD\freeRTOS_STM32F2xx_Modem_CC_Large\Project\..\Libraries\USB\STM32_USB_HOST_Library\Class\MSC\inc\
+#        -I
+#        E:\LOOP\SCRDPF\OBD\freeRTOS_STM32F2xx_Modem_CC_Large\Project\..\Libraries\USB\STM32_USB_HOST_Library\Core\inc\
+#        -I
+#        E:\LOOP\SCRDPF\OBD\freeRTOS_STM32F2xx_Modem_CC_Large\Project\..\Libraries\USB\STM32_USB_OTG_Driver\inc\
+#        -I
+#        E:\LOOP\SCRDPF\OBD\freeRTOS_STM32F2xx_Modem_CC_Large\Project\..\Util\Third_Party\FreeRTOS_v7.6.0\portable\IAR\ARM_CM3\
+#        -I
+#        E:\LOOP\SCRDPF\OBD\freeRTOS_STM32F2xx_Modem_CC_Large\Project\..\Util\Third_Party\FreeRTOS_v7.6.0\include\
+#        -I
+#        E:\LOOP\SCRDPF\OBD\freeRTOS_STM32F2xx_Modem_CC_Large\Project\..\OsConfig\usbConf\
+#        -I
+#        E:\LOOP\SCRDPF\OBD\freeRTOS_STM32F2xx_Modem_CC_Large\Project\..\Libraries\FAT_FS\
+#        -I
+#        E:\LOOP\SCRDPF\OBD\freeRTOS_STM32F2xx_Modem_CC_Large\Project\..\Libraries\FAT_FS\drivers\
+#        -Om --use_c++_inline -I "C:\Program Files (x86)\IAR Systems\Embedded
+#        Workbench 7.4\arm\CMSIS\Include\"
+#    Locale       =  C
+#    List file    =  
+#        E:\LOOP\SCRDPF\OBD\freeRTOS_STM32F2xx_Modem_CC_Large\Project\Debug\List\syscall.lst
+#    Object file  =  
+#        E:\LOOP\SCRDPF\OBD\freeRTOS_STM32F2xx_Modem_CC_Large\Project\Debug\Obj\syscall.o
+#
+###############################################################################
+
+E:\LOOP\SCRDPF\OBD\freeRTOS_STM32F2xx_Modem_CC_Large\Libraries\FAT_FS\option\syscall.c
+      1          /*------------------------------------------------------------------------*/
+      2          /* Sample code of OS dependent controls for FatFs                         */
+      3          /* (C)ChaN, 2014                                                          */
+      4          /*------------------------------------------------------------------------*/
+      5          
+      6          
+      7          #include "../ff.h"
+      8          
+      9          
+     10          #if _FS_REENTRANT
+     11          /*------------------------------------------------------------------------*/
+     12          /* Create a Synchronization Object                                        */
+     13          /*------------------------------------------------------------------------*/
+     14          /* This function is called in f_mount() function to create a new
+     15          /  synchronization object, such as semaphore and mutex. When a 0 is returned,
+     16          /  the f_mount() function fails with FR_INT_ERR.
+     17          */
+     18          
+     19          int ff_cre_syncobj (	/* !=0:Function succeeded, ==0:Could not create due to any error */
+     20          	BYTE vol,			/* Corresponding logical drive being processed */
+     21          	_SYNC_t *sobj		/* Pointer to return the created sync object */
+     22          )
+     23          {
+     24          	int ret;
+     25          
+     26          
+     27          	*sobj = CreateMutex(NULL, FALSE, NULL);		/* Win32 */
+     28          	ret = (int)(*sobj != INVALID_HANDLE_VALUE);
+     29          
+     30          //	*sobj = SyncObjects[vol];			/* uITRON (give a static created sync object) */
+     31          //	ret = 1;							/* The initial value of the semaphore must be 1. */
+     32          
+     33          //	*sobj = OSMutexCreate(0, &err);		/* uC/OS-II */
+     34          //	ret = (int)(err == OS_NO_ERR);
+     35          
+     36          //	*sobj = xSemaphoreCreateMutex();	/* FreeRTOS */
+     37          //	ret = (int)(*sobj != NULL);
+     38          
+     39          	return ret;
+     40          }
+     41          
+     42          
+     43          
+     44          /*------------------------------------------------------------------------*/
+     45          /* Delete a Synchronization Object                                        */
+     46          /*------------------------------------------------------------------------*/
+     47          /* This function is called in f_mount() function to delete a synchronization
+     48          /  object that created with ff_cre_syncobj function. When a 0 is returned,
+     49          /  the f_mount() function fails with FR_INT_ERR.
+     50          */
+     51          
+     52          int ff_del_syncobj (	/* !=0:Function succeeded, ==0:Could not delete due to any error */
+     53          	_SYNC_t sobj		/* Sync object tied to the logical drive to be deleted */
+     54          )
+     55          {
+     56          	int ret;
+     57          
+     58          
+     59          	ret = CloseHandle(sobj);	/* Win32 */
+     60          
+     61          //	ret = 1;					/* uITRON (nothing to do) */
+     62          
+     63          //	OSMutexDel(sobj, OS_DEL_ALWAYS, &err);	/* uC/OS-II */
+     64          //	ret = (int)(err == OS_NO_ERR);
+     65          
+     66          //  vSemaphoreDelete(sobj);		/* FreeRTOS */
+     67          //	ret = 1;
+     68          
+     69          	return ret;
+     70          }
+     71          
+     72          
+     73          
+     74          /*------------------------------------------------------------------------*/
+     75          /* Request Grant to Access the Volume                                     */
+     76          /*------------------------------------------------------------------------*/
+     77          /* This function is called on entering file functions to lock the volume.
+     78          /  When a 0 is returned, the file function fails with FR_TIMEOUT.
+     79          */
+     80          
+     81          int ff_req_grant (	/* 1:Got a grant to access the volume, 0:Could not get a grant */
+     82          	_SYNC_t sobj	/* Sync object to wait */
+     83          )
+     84          {
+     85          	int ret;
+     86          
+     87          	ret = (int)(WaitForSingleObject(sobj, _FS_TIMEOUT) == WAIT_OBJECT_0);	/* Win32 */
+     88          
+     89          //	ret = (int)(wai_sem(sobj) == E_OK);			/* uITRON */
+     90          
+     91          //	OSMutexPend(sobj, _FS_TIMEOUT, &err));		/* uC/OS-II */
+     92          //	ret = (int)(err == OS_NO_ERR);
+     93          
+     94          //	ret = (int)(xSemaphoreTake(sobj, _FS_TIMEOUT) == pdTRUE);	/* FreeRTOS */
+     95          
+     96          	return ret;
+     97          }
+     98          
+     99          
+    100          
+    101          /*------------------------------------------------------------------------*/
+    102          /* Release Grant to Access the Volume                                     */
+    103          /*------------------------------------------------------------------------*/
+    104          /* This function is called on leaving file functions to unlock the volume.
+    105          */
+    106          
+    107          void ff_rel_grant (
+    108          	_SYNC_t sobj	/* Sync object to be signaled */
+    109          )
+    110          {
+    111          	ReleaseMutex(sobj);		/* Win32 */
+    112          
+    113          //	sig_sem(sobj);			/* uITRON */
+    114          
+    115          //	OSMutexPost(sobj);		/* uC/OS-II */
+    116          
+    117          //	xSemaphoreGive(sobj);	/* FreeRTOS */
+    118          }
+    119          
+    120          #endif
+    121          
+    122          
+    123          
+    124          
+    125          #if _USE_LFN == 3	/* LFN with a working buffer on the heap */
+    126          /*------------------------------------------------------------------------*/
+    127          /* Allocate a memory block                                                */
+    128          /*------------------------------------------------------------------------*/
+    129          /* If a NULL is returned, the file function fails with FR_NOT_ENOUGH_CORE.
+    130          */
+    131          
+    132          void* ff_memalloc (	/* Returns pointer to the allocated memory block */
+    133          	UINT msize		/* Number of bytes to allocate */
+    134          )
+    135          {
+    136          	return malloc(msize);	/* Allocate a new memory block with POSIX API */
+    137          }
+    138          
+    139          
+    140          /*------------------------------------------------------------------------*/
+    141          /* Free a memory block                                                    */
+    142          /*------------------------------------------------------------------------*/
+    143          
+    144          void ff_memfree (
+    145          	void* mblock	/* Pointer to the memory block to free */
+    146          )
+    147          {
+    148          	free(mblock);	/* Discard the memory block with POSIX API */
+    149          }
+    150          
+    151          #endif
+
+
+ 
+
+ 
+
+
+Errors: none
+Warnings: none

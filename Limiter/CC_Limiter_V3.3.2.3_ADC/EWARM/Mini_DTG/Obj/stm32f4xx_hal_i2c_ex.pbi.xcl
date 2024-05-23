@@ -1,0 +1,111 @@
+"E:\Today\240502_11Limiter\V3.3.2.3_CC_Limiter_V2.0_ADC\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_i2c_ex.c"
+-std=c99
+-ferror-limit=100
+-I
+E:\Today\240502_11Limiter\V3.3.2.3_CC_Limiter_V2.0_ADC\EWARM/../Src/App
+-I
+E:\Today\240502_11Limiter\V3.3.2.3_CC_Limiter_V2.0_ADC\EWARM/../Src/Bsp
+-I
+E:\Today\240502_11Limiter\V3.3.2.3_CC_Limiter_V2.0_ADC\EWARM/../Src/Cpu
+-I
+E:\Today\240502_11Limiter\V3.3.2.3_CC_Limiter_V2.0_ADC\EWARM/../Src/Dev
+-I
+E:\Today\240502_11Limiter\V3.3.2.3_CC_Limiter_V2.0_ADC\EWARM/../Src/Drv
+-I
+E:\Today\240502_11Limiter\V3.3.2.3_CC_Limiter_V2.0_ADC\EWARM/../Src/Lib
+-I
+E:\Today\240502_11Limiter\V3.3.2.3_CC_Limiter_V2.0_ADC\EWARM/../Inc
+-I
+E:\Today\240502_11Limiter\V3.3.2.3_CC_Limiter_V2.0_ADC\EWARM/../Drivers/STM32F4xx_HAL_Driver/Inc
+-I
+E:\Today\240502_11Limiter\V3.3.2.3_CC_Limiter_V2.0_ADC\EWARM/../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy
+-I
+E:\Today\240502_11Limiter\V3.3.2.3_CC_Limiter_V2.0_ADC\EWARM/../Middlewares/Third_Party/FreeRTOS/Source/portable/IAR/ARM_CM4F
+-I
+E:\Today\240502_11Limiter\V3.3.2.3_CC_Limiter_V2.0_ADC\EWARM/../Middlewares/ST/STM32_USB_Host_Library/Core/Inc
+-I
+E:\Today\240502_11Limiter\V3.3.2.3_CC_Limiter_V2.0_ADC\EWARM/../Middlewares/ST/STM32_USB_Host_Library/Class/MSC/Inc
+-I
+E:\Today\240502_11Limiter\V3.3.2.3_CC_Limiter_V2.0_ADC\EWARM/../Drivers/CMSIS/Device/ST/STM32F4xx/Include
+-I
+E:\Today\240502_11Limiter\V3.3.2.3_CC_Limiter_V2.0_ADC\EWARM/../Middlewares/Third_Party/FatFs/src
+-I
+E:\Today\240502_11Limiter\V3.3.2.3_CC_Limiter_V2.0_ADC\EWARM/../Middlewares/Third_Party/FreeRTOS/Source/include
+-I
+E:\Today\240502_11Limiter\V3.3.2.3_CC_Limiter_V2.0_ADC\EWARM/../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS
+-I
+E:\Today\240502_11Limiter\V3.3.2.3_CC_Limiter_V2.0_ADC\EWARM/../Drivers/CMSIS/Include
+-I
+C:\Program Files (x86)\IAR Systems\Embedded Workbench 7.4\arm\CMSIS\Include
+-I
+C:\Program Files (x86)\IAR Systems\Embedded Workbench 7.4\arm\inc
+-I
+C:\Program Files (x86)\IAR Systems\Embedded Workbench 7.4\arm\inc\c
+-I
+E:\Today\240502_11Limiter\V3.3.2.3_CC_Limiter_V2.0_ADC\Src\App
+-I
+E:\Today\240502_11Limiter\V3.3.2.3_CC_Limiter_V2.0_ADC\Src\Bsp
+-I
+E:\Today\240502_11Limiter\V3.3.2.3_CC_Limiter_V2.0_ADC\Src\Cpu
+-I
+E:\Today\240502_11Limiter\V3.3.2.3_CC_Limiter_V2.0_ADC\Src\Dev
+-I
+E:\Today\240502_11Limiter\V3.3.2.3_CC_Limiter_V2.0_ADC\Src\Drv
+-I
+E:\Today\240502_11Limiter\V3.3.2.3_CC_Limiter_V2.0_ADC\Src\Lib
+-I
+E:\Today\240502_11Limiter\V3.3.2.3_CC_Limiter_V2.0_ADC\Inc
+-I
+E:\Today\240502_11Limiter\V3.3.2.3_CC_Limiter_V2.0_ADC\Drivers\STM32F4xx_HAL_Driver\Inc
+-I
+E:\Today\240502_11Limiter\V3.3.2.3_CC_Limiter_V2.0_ADC\Drivers\STM32F4xx_HAL_Driver\Inc\Legacy
+-I
+E:\Today\240502_11Limiter\V3.3.2.3_CC_Limiter_V2.0_ADC\Middlewares\Third_Party\FreeRTOS\Source\portable\IAR\ARM_CM4F
+-I
+E:\Today\240502_11Limiter\V3.3.2.3_CC_Limiter_V2.0_ADC\Middlewares\ST\STM32_USB_Host_Library\Core\Inc
+-I
+E:\Today\240502_11Limiter\V3.3.2.3_CC_Limiter_V2.0_ADC\Middlewares\ST\STM32_USB_Host_Library\Class\MSC\Inc
+-I
+E:\Today\240502_11Limiter\V3.3.2.3_CC_Limiter_V2.0_ADC\Drivers\CMSIS\Device\ST\STM32F4xx\Include
+-I
+E:\Today\240502_11Limiter\V3.3.2.3_CC_Limiter_V2.0_ADC\Middlewares\Third_Party\FatFs\src
+-I
+E:\Today\240502_11Limiter\V3.3.2.3_CC_Limiter_V2.0_ADC\Middlewares\Third_Party\FreeRTOS\Source\include
+-I
+E:\Today\240502_11Limiter\V3.3.2.3_CC_Limiter_V2.0_ADC\Middlewares\Third_Party\FreeRTOS\Source\CMSIS_RTOS
+-I
+E:\Today\240502_11Limiter\V3.3.2.3_CC_Limiter_V2.0_ADC\Drivers\CMSIS\Include
+-I
+C:\Program Files (x86)\IAR Systems\Embedded Workbench 7.4\arm\CMSIS\Include
+-DUSE_HAL_DRIVER=1
+-DSTM32F407xx=1
+-D__CODE_MEMORY_LIST1__()=__CODE_MEM_HELPER1__(__code, 0 )
+-D__CODE_MEMORY_LIST2__(_P1)=__CODE_MEM_HELPER2__(__code, 0 ,  _P1 )
+-D__CODE_MEMORY_LIST3__(_P1, _P2)=__CODE_MEM_HELPER3__(__code, 0 ,  _P1 ,  _P2 )
+-D__DATA_MEMORY_LIST1__()=__DATA_MEM_HELPER1__(__data, 0 )
+-D__DATA_MEMORY_LIST2__(_P1)=__DATA_MEM_HELPER2__(__data, 0 ,  _P1 )
+-D__DATA_MEMORY_LIST3__(_P1, _P2)=__DATA_MEM_HELPER3__(__data, 0 ,  _P1 ,  _P2 )
+-D__CODE_PTR_MEMORY_LIST1__()=__CODE_PTR_MEM_HELPER1__(__code, 0 )
+-D__CODE_PTR_MEMORY_LIST2__(_P1)=__CODE_PTR_MEM_HELPER2__(__code, 0 ,  _P1 )
+-D__CODE_PTR_MEMORY_LIST3__(_P1, _P2)=__CODE_PTR_MEM_HELPER3__(__code, 0 ,  _P1 ,  _P2 )
+-D__DATA_PTR_MEMORY_LIST1__()=__DATA_PTR_MEM_HELPER1__(__data, 0 )
+-D__DATA_PTR_MEMORY_LIST2__(_P1)=__DATA_PTR_MEM_HELPER2__(__data, 0 ,  _P1 )
+-D__DATA_PTR_MEMORY_LIST3__(_P1, _P2)=__DATA_PTR_MEM_HELPER3__(__data, 0 ,  _P1 ,  _P2 )
+-D__VAR_MEMORY_LIST1__()=__VAR_MEM_HELPER1__(__data, 0 )
+-D__VAR_MEMORY_LIST2__(_P1)=__VAR_MEM_HELPER2__(__data, 0 ,  _P1 )
+-D__VAR_MEMORY_LIST3__(_P1, _P2)=__VAR_MEM_HELPER3__(__data, 0 ,  _P1 ,  _P2 )
+-D__VARD_MEMORY_LIST1__()=__VARD_MEM_HELPER1__(__data, 0, _ )
+-D__HEAP_MEMORY_LIST1__()=__HEAP_MEM_HELPER1__(__data, 0 )
+-D__HEAP_MEMORY_LIST2__(_P1)=__HEAP_MEM_HELPER2__(__data, 0 ,  _P1 )
+-D__HEAP_MEMORY_LIST3__(_P1, _P2)=__HEAP_MEM_HELPER3__(__data, 0 ,  _P1 ,  _P2 )
+-D__HVAR_MEMORY_LIST1__()=__HVAR_MEM_HELPER1__(__data, 0 )
+-D__HEAPD_MEMORY_LIST1__()=__HEAPD_MEM_HELPER1__(__data, 0, _ )
+-D__HEAPU_MEMORY_LIST1__()=__HEAPU_MEM_HELPER1__(__data, 0 )
+-D__TOPM_DATA_MEMORY_LIST1__()=
+-D__TOPM_DATA_MEMORY_LIST2__(_P1)=
+-D__TOPM_DATA_MEMORY_LIST3__(_P1, _P2)=
+-D__TOPP_DATA_MEMORY_LIST1__()=__TOPP_DATA_MEM_HELPER1__(__data, 0 )
+-D__TOPP_DATA_MEMORY_LIST2__(_P1)=__TOPP_DATA_MEM_HELPER2__(__data, 0 ,  _P1 )
+-D__TOPP_DATA_MEMORY_LIST3__(_P1, _P2)=__TOPP_DATA_MEM_HELPER3__(__data, 0 ,  _P1 ,  _P2 )
+-D__DATA_MEM0_SIZE_TYPE__=unsigned int
+-D__DATA_MEM0_INDEX_TYPE__=signed int

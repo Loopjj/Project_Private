@@ -1,0 +1,100 @@
+[DebugChecksum]
+Checksum=393188921
+[Exceptions]
+StopOnUncaught=_ 0
+StopOnThrow=_ 0
+[CodeCoverage]
+Enabled=_ 0
+[Stack]
+FillEnabled=0
+OverflowWarningsEnabled=1
+WarningThreshold=90
+SpWarningsEnabled=1
+WarnLogOnly=1
+UseTrigger=1
+TriggerName=main
+LimitSize=0
+ByteLimit=50
+[CallStack]
+ShowArgs=0
+[Disassembly]
+MixedMode=1
+[JLinkDriver]
+CStepIntDis=_ 0
+LeaveTargetRunning=_ 0
+TraceBufferSize=0x00010000
+TraceStallIfFIFOFull=0x00000000
+TracePortSize=0x00000004
+[struct_types]
+Fmt0=st_Setting-UreaAlEn	3	0
+Fmt1=st_Setting-UreaAlHr1	3	0
+Fmt2=st_Setting-UreaAlHr2	3	0
+Fmt3=st_Setting-UreaBuzInt	3	0
+Fmt4=st_Setting-UreaConHi	3	0
+Fmt5=st_Setting-UreaConLo	3	0
+Fmt6=st_Setting-UreaLvlAL	3	0
+Fmt7=st_Setting-UreaLvlHi	3	0
+Fmt8=st_Setting-UreaLvlLo	3	0
+Fmt9=tsSecData-TM	4	0
+Fmt10=tsSecData-UreaAccFlag	4	0
+Fmt11=tsSecData-Vbat	4	0
+[array_types]
+Fmt0=u8[8]	3	0
+Fmt1=unsigned char[6]	3	0
+[watch_formats]
+Fmt0={W}42:Setting.UreaAlHr1	3	0
+Fmt1={W}42:Setting.UreaAlHr2	3	0
+Fmt2={W}42:Setting.UreaBuzInt	3	0
+Fmt3={W}42:Setting.UreaConHi	3	0
+Fmt4={W}42:Setting.UreaConLo	3	0
+Fmt5={W}42:Setting.UreaLvlAL	3	0
+Fmt6={W}42:Setting.UreaLvlHi	3	0
+Fmt7={W}42:Setting.UreaLvlLo	3	0
+Fmt8={W}42:TJ_ComBuf[10]	3	0
+Fmt9={W}42:TJ_ComBuf[11]	3	0
+Fmt10={W}42:TJ_ComBuf[12]	3	0
+Fmt11={W}42:TJ_ComBuf[13]	3	0
+Fmt12={W}42:TJ_ComBuf[14]	3	0
+Fmt13={W}42:TJ_ComBuf[1]	3	0
+Fmt14={W}42:TJ_ComBuf[9]	3	0
+Fmt15={W}42:Test	3	0
+Fmt16={W}42:Test1	3	0
+Fmt17={W}42:Test2	3	0
+Fmt18={W}42:Test3	3	0
+Fmt19={W}42:Test4	3	0
+Fmt20={W}42:UreaAlarm.B	3	0
+Fmt21={W}42:UreaAlarm.Level	3	0
+Fmt22={W}42:check_sum	4	0
+Fmt23={W}42:confirm	4	0
+[Trace1]
+Enabled=0
+ShowSource=1
+[Log file]
+LoggingEnabled=_ 0
+LogFile=_ ""
+Category=_ 0
+[TermIOLog]
+LoggingEnabled=_ 0
+LogFile=_ ""
+[DriverProfiling]
+Enabled=0
+Mode=1
+Graph=0
+Symbiont=0
+Exclusions=
+[CallStackLog]
+Enabled=0
+[CallStackStripe]
+ShowTiming=1
+[Disassemble mode]
+mode=0
+[Breakpoints2]
+Count=0
+[Aliases]
+A0=_ "C:\Users\0tool\Desktop\Development\CC_Limiter_V2.0_ADC\Src\App\rtc.c" ""
+A1=_ "D:\2_DPF\Cercomb\CC_Limiter_V2.0\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_can.c" ""
+A2=_ "D:\2_DPF\Cercomb\CC_Limiter_V2.0_ADC\Middlewares\Third_Party\FreeRTOS\Source\timers.c" ""
+A3=_ "D:\2_DPF\Cercomb\CC_Limiter_V2.0_ADC\Src\App\rtc.c" ""
+A4=_ "E:\Today\240423_compare\CC_Limiter_V2.0_ADC 2\Src\App\rtc.c" ""
+Count=5
+SuppressDialog=1
