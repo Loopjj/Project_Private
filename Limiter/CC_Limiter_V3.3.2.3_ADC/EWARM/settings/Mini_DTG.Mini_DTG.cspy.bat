@@ -25,7 +25,7 @@ if not "%~1" == "" goto debugFile
 
 @echo on 
 
-"C:\Program Files (x86)\IAR Systems\Embedded Workbench 7.4\common\bin\cspybat" -f "E:\Today\240523_Limiter_OBE_NOX_Modi\V3.3.2.3_CC_Limiter_V2.0_ADC\EWARM\settings\Mini_DTG.Mini_DTG.general.xcl" --backend -f "E:\Today\240523_Limiter_OBE_NOX_Modi\V3.3.2.3_CC_Limiter_V2.0_ADC\EWARM\settings\Mini_DTG.Mini_DTG.driver.xcl" 
+"C:\Program Files (x86)\IAR Systems\Embedded Workbench 7.4\common\bin\cspybat" -f "E:\Private\Project_Private\Limiter\CC_Limiter_V3.3.2.3_ADC\EWARM\settings\Mini_DTG.Mini_DTG.general.xcl" --backend -f "E:\Private\Project_Private\Limiter\CC_Limiter_V3.3.2.3_ADC\EWARM\settings\Mini_DTG.Mini_DTG.driver.xcl" 
 
 @echo off 
 goto end 
@@ -34,7 +34,7 @@ goto end
 
 @echo on 
 
-"C:\Program Files (x86)\IAR Systems\Embedded Workbench 7.4\common\bin\cspybat" -f "E:\Today\240523_Limiter_OBE_NOX_Modi\V3.3.2.3_CC_Limiter_V2.0_ADC\EWARM\settings\Mini_DTG.Mini_DTG.general.xcl" "--debug_file=%~1" --backend -f "E:\Today\240523_Limiter_OBE_NOX_Modi\V3.3.2.3_CC_Limiter_V2.0_ADC\EWARM\settings\Mini_DTG.Mini_DTG.driver.xcl" 
+"C:\Program Files (x86)\IAR Systems\Embedded Workbench 7.4\common\bin\cspybat" -f "E:\Private\Project_Private\Limiter\CC_Limiter_V3.3.2.3_ADC\EWARM\settings\Mini_DTG.Mini_DTG.general.xcl" "--debug_file=%~1" --backend -f "E:\Private\Project_Private\Limiter\CC_Limiter_V3.3.2.3_ADC\EWARM\settings\Mini_DTG.Mini_DTG.driver.xcl" 
 
 @echo off 
 :end

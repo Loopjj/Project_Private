@@ -25,7 +25,7 @@ if not "%~1" == "" goto debugFile
 
 @echo on 
 
-"C:\Program Files (x86)\IAR Systems\Embedded Workbench 7.4\common\bin\cspybat" -f "E:\Today\240523_Limiter_OBE_NOX_Modi\freeRTOS_STM32F2xx_Modem_CC_Large\Project\settings\OBDPro.Debug.general.xcl" --backend -f "E:\Today\240523_Limiter_OBE_NOX_Modi\freeRTOS_STM32F2xx_Modem_CC_Large\Project\settings\OBDPro.Debug.driver.xcl" 
+"C:\Program Files (x86)\IAR Systems\Embedded Workbench 7.4\common\bin\cspybat" -f "E:\Private\Project_Private\Limiter\freeRTOS_STM32F2xx_Modem_CC_Large\Project\settings\OBDPro.Debug.general.xcl" --backend -f "E:\Private\Project_Private\Limiter\freeRTOS_STM32F2xx_Modem_CC_Large\Project\settings\OBDPro.Debug.driver.xcl" 
 
 @echo off 
 goto end 
@@ -34,7 +34,7 @@ goto end
 
 @echo on 
 
-"C:\Program Files (x86)\IAR Systems\Embedded Workbench 7.4\common\bin\cspybat" -f "E:\Today\240523_Limiter_OBE_NOX_Modi\freeRTOS_STM32F2xx_Modem_CC_Large\Project\settings\OBDPro.Debug.general.xcl" "--debug_file=%~1" --backend -f "E:\Today\240523_Limiter_OBE_NOX_Modi\freeRTOS_STM32F2xx_Modem_CC_Large\Project\settings\OBDPro.Debug.driver.xcl" 
+"C:\Program Files (x86)\IAR Systems\Embedded Workbench 7.4\common\bin\cspybat" -f "E:\Private\Project_Private\Limiter\freeRTOS_STM32F2xx_Modem_CC_Large\Project\settings\OBDPro.Debug.general.xcl" "--debug_file=%~1" --backend -f "E:\Private\Project_Private\Limiter\freeRTOS_STM32F2xx_Modem_CC_Large\Project\settings\OBDPro.Debug.driver.xcl" 
 
 @echo off 
 :end
