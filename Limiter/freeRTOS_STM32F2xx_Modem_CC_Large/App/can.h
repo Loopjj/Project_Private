@@ -80,6 +80,7 @@ CAN_EXT void CAN_Decode(void);
 CAN_EXT void MakeCanMassage(CanTxMsg *ptarget, INT32U id, INT8U type, INT8U rtr, INT8U *src, INT8U len);
 CAN_EXT void SendSaveFlag(void);
 CAN_EXT void SendResetFlag(void);
+CAN_EXT void SendNOx(void);
 
 CAN_EXT INT16U dbg_ob_debug_test(void);
 

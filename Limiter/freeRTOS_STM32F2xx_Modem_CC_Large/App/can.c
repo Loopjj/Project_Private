@@ -934,3 +934,27 @@ void SendResetFlag(void)
    MakePackMassage(&msg, 0x704, CAN_STAN, CAN_RTR_DATA, buf, CANDATALEN);
    SendCanMassage(&msg);	
 }
+INT16U Test1;
+INT16U Test2;
+/*
+********************************************************************************
+* Description : Send NOx In, Out to Limiter 
+* Arguments   : *none
+* Return      : 
+* Note        :
+******************************************************************************** 
+*/
+void SendNOx(void)
+{
+  INT16U buf16b;
+  INT8U buf[20];
+	CanTxMsg msg;	
+ 
+		buf16b = Test1; //ReadValue.NOxIn;
+		memcpy(&buf[0], (char *)&buf16b, 2);
+		buf16b = Test2; //ReadValue.NOxOut;
+		memcpy(&buf[2], (char *)&buf16b, 2);
+        
+   MakePackMassage(&msg, 0x307, CAN_STAN, CAN_RTR_DATA, buf, CANDATALEN);
+   SendCanMassage(&msg);	
+}

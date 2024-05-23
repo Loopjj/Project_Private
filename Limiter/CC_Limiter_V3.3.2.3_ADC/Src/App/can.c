@@ -441,7 +441,7 @@ void CAN_Std_Decode(CAN_HandleTypeDef* hcan) //ID 2.0A 세라컴 전용
         CAN_Enable.Concentration = 1;
         Cur_CanEnableCnt.Concentration++;      
         break;        
-		case 0x102:    //NOxIn,NOxOut,MAF 
+		case 0x307:    //NOxIn,NOxOut,MAF 
         memcpy((char *)&buf16b,&hcan->pRxMsg->Data[0],2);
         SecData.NOxIn = (INT16S)buf16b;
         if (SecData.NOxIn <= 0 || SecData.NOxIn > 3012) 

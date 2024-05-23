@@ -988,6 +988,7 @@ void Task_OBD(void *p_arg)
                   PreDay = s->tm_ptr.tm_mday;
                 }
                 MMCSaveData();
+                SendNOx();
                 Flags.MMCSaveFlag = 0;
               }
             }
