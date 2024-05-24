@@ -149,7 +149,7 @@ void DecodeRxData(unsigned char rdata)
     }
      Decode_Command();
 }
-unsigned char Test[6];
+
 /*
 ********************************************************************************
 * Description : Decode RxData (PC UI) 
@@ -165,9 +165,9 @@ void Decode_Command(void)
   
   switch(TJ_RxCommand) {
     case 0x48: // 출력신호 데이터
-      Pedal_ADC[0] = (Test[0]<<8) + Test[1];
-      Pedal_ADC[1] = (Test[2]<<8) + Test[3];
-      Pedal_ADC[2] = (Test[4]<<8) + Test[5];
+      Pedal_ADC[0] = (TJ_ComBuf[9]<<8) + TJ_ComBuf[10];
+      Pedal_ADC[1] = (TJ_ComBuf[11]<<8) + TJ_ComBuf[12];
+      Pedal_ADC[2] = (TJ_ComBuf[13]<<8) + TJ_ComBuf[14];
       if(Pedal_ADC[0] < 300) Pedal_ADC[2] |= 0x02;
       if(Pedal_ADC[1] < 300) Pedal_ADC[2] |= 0x20;
       limit = Pedal_ADC[0] - Pedal_ADC[1];
@@ -271,7 +271,6 @@ void Decode_Command(void)
     case 0x70: // Parameter Read Command
       Wait_flag = 1;
       TestJIgTxData(1, 0x3B,(unsigned char*) &Setting,sizeof(Setting));
-      //TestJIgTxData(1, 0x1A,(unsigned char*) &SecData,64);
       Wait_flag = 0;
       break;
 
@@ -300,7 +299,6 @@ void Send_SecData(void)  //100ms마다
 {    
   if(!Wait_flag) 
   TestJIgTxData(1, 0x1A,(unsigned char*) &SecData,64);
-  //TestJIgTxData(1, 0x3B,(unsigned char*) &Setting,sizeof(Setting));
    
 //  TJ_RxLength = 0;
 //  TJ_RxCommand = 0;

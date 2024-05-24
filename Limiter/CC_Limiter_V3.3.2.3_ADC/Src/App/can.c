@@ -1005,7 +1005,7 @@ void Send_LimitStep(void)
 {
   INT8U buf[8];
 	CanTxMsgTypeDef msg;	
- 
+    
    buf[0] = SecData.UreaAccFlag; //Limit Step 
    buf[1] = UreaTestFlag;        //Test Flag 판독을 위함   
    memcpy(&buf[2],(char *)&Pedal_ADC,4);  //(1 - (Pedal_ADC[1] / Pedal_ADC[0])) * 100.0;
