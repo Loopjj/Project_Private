@@ -388,45 +388,6 @@ __packed typedef union{
   };
 }stStatus;
 
-__packed typedef union{
-  INT16U K;
-  struct {
-    INT16U CIRC_DIAG  : 1;
-    INT16U SELF_DIAG  : 1;
-    INT16U HEATR_DIAG : 1;
-    INT16U POS_DIAG   : 1;
-    INT16U HEATR_ON   : 1;
-    INT16U TEMP_MEAS  : 1;
-    INT16U HEATR_OFF  : 1;
-    INT16U NOT_RDY    : 1;
-    INT16U BYTT       : 1;
-    INT16U CAN        : 1;
-    INT16U Reserved   : 6;  
-  };
-}stPM1_Error;
-
-__packed typedef union{
-  INT16U K;
-  struct {
-    INT16U CIRC_DIAG  : 1;
-    INT16U SELF_DIAG  : 1;
-    INT16U HEATR_DIAG : 1;
-    INT16U POS_DIAG   : 1;
-    INT16U HEATR_ON   : 1;
-    INT16U TEMP_MEAS  : 1;
-    INT16U HEATR_OFF  : 1;
-    INT16U NOT_RDY    : 1;
-    INT16U BYTT       : 1;
-    INT16U CAN        : 1;
-   /* ONLY PM2 ERROR */  
-    INT16U DPF_CRACK  : 1;
-    INT16U MEM        : 1;
-    INT16U SD         : 1;
-    INT16U DPF_COM    : 1;
-    INT16U Reserved   : 2;
-  };
-}stPM2_Error;
-
 __packed typedef struct {
   INT32S curXk;         //94
   INT32S Xc;            //98
@@ -501,9 +462,9 @@ __packed typedef struct {
   INT32S Formula3;      //116
   INT16U Reduction;     //118
   INT16U UreaQuality;   //120
-  INT16U DPF_Crack;       //PM_Senser1;    //122
-  stPM1_Error PM1_Error ;    //124
-  stPM2_Error PM2_Error ;    //126
+  INT16U PM_Senser1;    //122
+  INT16U PM_Senser2;    //124
+  INT16U PM_Senser3;    //126
   INT16U PM_Senser4;    //128
 }stREAD_VALUE;    // 128 byte
 
@@ -624,7 +585,7 @@ extern stSTATUS Sts;
 extern Flags_t  Flags;
 extern Flags_t1  Flags1;
 //extern stPM1_Error PM1_Error;
-extern stPM2_Error PM2_Error;
+//extern stPM2_Error PM2_Error;
 
 // CAN Variables
 extern xTaskHandle xHandle_can;

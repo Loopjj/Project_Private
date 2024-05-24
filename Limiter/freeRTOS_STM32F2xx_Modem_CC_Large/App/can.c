@@ -574,8 +574,8 @@ void CAN_Decode(void)
 //       memcpy((char *)&buf16b,&Can_RxMsg.data[0],2);
 //       ReadValue.Ver   = buf16b;
        ReadValue.Ver = (Can_RxMsg.data[1] / 0x10*1000) + (Can_RxMsg.data[1] % 0x10*100) + (Can_RxMsg.data[0] / 0x10*10) + (Can_RxMsg.data[0] % 0x10);
-       memcpy((char *)&buf16b,&Can_RxMsg.data[6],2);
-       ReadValue.TankTemp = buf16b;      
+//       memcpy((char *)&buf16b,&Can_RxMsg.data[6],2);
+//       ReadValue.TankTemp = buf16b;      
     }
     else if(Can_RxMsg.id == 0x101) {
       ReadValue.Err.B = Can_RxMsg.data[0];
@@ -606,8 +606,8 @@ void CAN_Decode(void)
       ReadValue.TempOut = buf16b;
   		memcpy((char *)&buf16b,&Can_RxMsg.data[4],2);
       ReadValue.Tavg = buf16b;
-  		//memcpy((char *)&buf16b,&Can_RxMsg.data[6],2);
-      //ReadValue.TankTemp = buf16b;
+  		memcpy((char *)&buf16b,&Can_RxMsg.data[6],2);
+      ReadValue.TankTemp = buf16b;
     }
     else if(Can_RxMsg.id == 0x104) {
       memcpy((char *)&buf32b,&Can_RxMsg.data[0],4);
@@ -742,25 +742,25 @@ void CAN_Decode(void)
      addr = MODEM_INFO + (u8 *)&ModemInfo.LpIP - (u8 *)&ModemInfo;
      FRAMMultiWrite((u8 *)&ModemInfo.LpIP, addr, sizeof(ModemInfo.LpIP)+sizeof(ModemInfo.LpPort));
     }
-    else if(Can_RxMsg.id == 0x703) { //DPF Crack Signal
-      ReadValue.DPF_Crack = Can_RxMsg.data[0];
-    }
-    else if(Can_RxMsg.id == 0x705) { //PM Sensor Error    
-      memcpy((char *)&buf16b,&Can_RxMsg.data[0],2);
-      ReadValue.PM1_Error.K = buf16b;  
-      memcpy((char *)&buf16b,&Can_RxMsg.data[4],2);
-      ReadValue.PM2_Error.K = buf16b;
-    }    
-//    else if(Can_RxMsg.id == 0x14FF0055) {           //PM 센서
-//      memcpy((char *)&buf16b, &Can_RxMsg.data[0], 2 );
-//      ReadValue.PM_Senser1 = buf16b;
-//      memcpy((char *)&buf16b, &Can_RxMsg.data[2], 2 );
-//      ReadValue.PM_Senser2 = buf16b;
-//      memcpy((char *)&buf16b, &Can_RxMsg.data[4], 2 );
-//      ReadValue.PM_Senser3 = buf16b;
-//      memcpy((char *)&buf16b, &Can_RxMsg.data[6], 2 );
-//      ReadValue.PM_Senser4 = buf16b;
-//    }  
+//    else if(Can_RxMsg.id == 0x703) { //DPF Crack Signal
+//      ReadValue.DPF_Crack = Can_RxMsg.data[0];
+//    }
+//    else if(Can_RxMsg.id == 0x705) { //PM Sensor Error    
+//      memcpy((char *)&buf16b,&Can_RxMsg.data[0],2);
+//      PM1_Error.K = buf16b;  
+//      memcpy((char *)&buf16b,&Can_RxMsg.data[4],2);
+//      PM2_Error.K = buf16b;
+//    }    
+    else if(Can_RxMsg.id == 0x14FF0055) {           //PM 센서
+      memcpy((char *)&buf16b, &Can_RxMsg.data[0], 2 );
+      ReadValue.PM_Senser1 = buf16b;
+      memcpy((char *)&buf16b, &Can_RxMsg.data[2], 2 );
+      ReadValue.PM_Senser2 = buf16b;
+      memcpy((char *)&buf16b, &Can_RxMsg.data[4], 2 );
+      ReadValue.PM_Senser3 = buf16b;
+      memcpy((char *)&buf16b, &Can_RxMsg.data[6], 2 );
+      ReadValue.PM_Senser4 = buf16b;
+    }  
   }
 	if (SendCount )
 		SendCanMassage(&msg);  
@@ -950,11 +950,11 @@ void SendNOx(void)
   INT8U buf[20];
 	CanTxMsg msg;	
  
-		buf16b = Test1; //ReadValue.NOxIn;
+		buf16b = ReadValue.NOxIn;
 		memcpy(&buf[0], (char *)&buf16b, 2);
-		buf16b = Test2; //ReadValue.NOxOut;
+		buf16b = ReadValue.NOxOut; //ReadValue.NOxOut;
 		memcpy(&buf[2], (char *)&buf16b, 2);
         
-   MakePackMassage(&msg, 0x307, CAN_STAN, CAN_RTR_DATA, buf, CANDATALEN);
+   MakePackMassage(&msg, 0x12f, CAN_STAN, CAN_RTR_DATA, buf, CANDATALEN);
    SendCanMassage(&msg);	
 }

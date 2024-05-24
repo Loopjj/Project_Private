@@ -391,7 +391,7 @@ void key_process(void)
         if(!keyflag.hidden) {    
           if(!keyflag.longflag) {
             keyflag.mode++;
-            if(keyflag.mode > 17) {
+            if(keyflag.mode > 15) {
               keyflag.mode = 0;
               Flags.Blink = 0;
               Flags.OneEx = 0;            	
@@ -519,13 +519,11 @@ void key_process(void)
        }
        break;          
      case CMODE:
-       if(!keyflag.hidden) {
-           BuzzerOn(1);
-           SendResetFlag();  //Send Reset Signal to Device
-//			   keyflag.twinkflag = 0;  
-//			   keyflag.setcnt = 0;
-//         keyflag.cmode = 0; 
-//         keyflag.hidden = 2;
+       if(!keyflag.hidden) {  
+			   keyflag.twinkflag = 0;  
+			   keyflag.setcnt = 0;
+         keyflag.cmode = 0; 
+         keyflag.hidden = 2;
        }
        break; 
     }
@@ -1072,20 +1070,6 @@ void Display_Parm(void)
       }
     }
     else if(keyflag.mode == 15) {
-      if(!keyflag.setcnt)
-        Disp(ch_K, ch_C, ch_A, ch_R, ch_C);		        // Display DPF Crack Ststus
-      else {
-        DispVal(ReadValue.DPF_Crack);
-      }
-    }
-    else if(keyflag.mode == 16) {
-      if(!keyflag.setcnt)
-        Disp(ch_ba, ch_ba, ch_S, ch_P, ch_G);		        // GPS Valid
-      else {
-        DispVal(GPS_Valid);
-      }
-    } 
-    else if(keyflag.mode == 17) {
       if(!keyflag.setcnt)
         Disp(ch_ba, ch_ba, ch_P, ch_U, ch_B);		    // Display 'buP-'		
       else if(keyflag.setcnt==1) {

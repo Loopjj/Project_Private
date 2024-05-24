@@ -562,21 +562,16 @@ void MMCSaveData(void)
                     ReadValue.Tavg,ReadValue.NOxIn,ReadValue.NOxOut,ReadValue.MAF);
     f_printf(&fp, "%02d.%02d\t%02d.%02d\t", 
                     ReadValue.DosingRatehouer/100, ReadValue.DosingRatehouer%100,ReadValue.BV/100, ReadValue.BV%100);
-    f_printf(&fp, "%01d\t%01d\t%01d.%01d\t%01d\t%01d\t", 
-                    ReadValue.UreaLevel,ReadValue.TankTemp,ReadValue.DpfValue.IHC/100,ReadValue.DpfValue.IHC%100,ReadValue.DpfValue.Sig.Igniter,ReadValue.DpfValue.Sig.Motor);
+    f_printf(&fp, "%01d\t%01d.%01d\t%01d\t%01d\t", 
+                    ReadValue.UreaLevel,ReadValue.DpfValue.IHC/100,ReadValue.DpfValue.IHC%100,ReadValue.DpfValue.Sig.Igniter,ReadValue.DpfValue.Sig.Motor);
     f_printf(&fp, "%01d\t%01d\t%01d\t", 
                     ReadValue.SupplyP,ReadValue.DpfValue.Error.B,ReadValue.DpfValue.Check.B);
     f_printf(&fp, "%01d\t%01d\t%01d\t%01d\t", 
                     ReadValue.Err.B,ReadValue.Chk.W,ReadValue.DpfValue.DrvTime/3600,((ReadValue.DpfValue.Sig.B>>5)&0x03));
 //    f_printf(&fp, "%01d\t%01d\t%01d\t%01d\t", 
 //                    ReadValue.PM_Senser1,ReadValue.PM_Senser2,ReadValue.PM_Senser3,ReadValue.PM_Senser4);
-    f_printf(&fp, "%01d\t%01d\t%01d.%01d\t%01d\t%01d\t%0ld\t%01d%01d%01d%01d%01d%01d%01d%01d%01d%01d\t%01d%01d%01d%01d%01d%01d%01d%01d%01d%01d%01d%01d%01d%01d", 
-                    ReadValue.DpfValue.RegenStartKey,ReadValue.Speed,ReadValue.UreaQuality/10,ReadValue.UreaQuality%10,ReadValue.DpfValue.CarType+1,ReadValue.LimitStep,ReadValue.DPF_Crack,
-                     ReadValue.PM1_Error.CIRC_DIAG, ReadValue.PM1_Error.SELF_DIAG, ReadValue.PM1_Error.HEATR_DIAG, ReadValue.PM1_Error.POS_DIAG, ReadValue.PM1_Error.HEATR_ON, ReadValue.PM1_Error.TEMP_MEAS,
-                     ReadValue.PM1_Error.HEATR_OFF, ReadValue.PM1_Error.NOT_RDY, ReadValue.PM1_Error.BYTT, ReadValue.PM1_Error.CAN, //PM1 Error 
-                       
-                     ReadValue.PM2_Error.CIRC_DIAG, ReadValue.PM2_Error.SELF_DIAG, ReadValue.PM2_Error.HEATR_DIAG, ReadValue.PM2_Error.POS_DIAG, ReadValue.PM2_Error.HEATR_ON, ReadValue.PM2_Error.TEMP_MEAS, ReadValue.PM2_Error.HEATR_OFF,
-                     ReadValue.PM2_Error.NOT_RDY, ReadValue.PM2_Error.BYTT, ReadValue.PM2_Error.CAN, ReadValue.PM2_Error.DPF_CRACK, ReadValue.PM2_Error.MEM, ReadValue.PM2_Error.SD, ReadValue.PM2_Error.DPF_COM);
+     f_printf(&fp, "%01d\t%01d\t%01d.%01d\t%01d\t%01d", 
+                    ReadValue.DpfValue.RegenStartKey,ReadValue.Speed,ReadValue.UreaQuality/10,ReadValue.UreaQuality%10,ReadValue.DpfValue.CarType+1,ReadValue.LimitStep);
 //    f_printf(&fp, "\t%01d\t%01d\t%X\t%X", 
 //                    NoxFail[0],NoxFail[1],NoxErr[0],NoxErr[1]);
 //    f_printf(&fp, "\t%X\t%X\t%X\t%X\t%X\t%X", 
@@ -633,9 +628,9 @@ unsigned char FileCreate(void)
 #else
       f_printf(&fp, "Date\tTime\tStep\tRegTime\tscrStep\tscrRegTime\tT-up\tT2\tT3\tT4\tP1\tBaseP1\tFPD\tReady\t");
   		f_printf(&fp, "Tavg\tNOx-up\tNOx-dn\tMAF\tDosingRate\t");
-  		f_printf(&fp, "BV\tUreaLevel\tTankTemp\tCurrent\tIgniter\tMotor\tSupplyP\t");
+  		f_printf(&fp, "BV\tUreaLevel\tCurrent\tIgniter\tMotor\tSupplyP\t");
   		f_printf(&fp, "DpfError\tDpfCheck\tScrError\tScrCheck\tdrvH\tRegenSts\t");
-  		f_printf(&fp, "RegenMode\tSpeed\tUreaQuality\tCarType\tLimitStep\tDPFCrack\tPM1Err\tPM2Err\t");
+  		f_printf(&fp, "RegenMode\tSpeed\tUreaQuality\tCarType\tLimitStep\t");
 //  		f_printf(&fp, "NOxFail1\tNOxFail2\tNOxErr1\tNOxErr2\t");
 //  		f_printf(&fp, "NOxData15\tNOxData16\tNOxData17\tNOxData25\tNOxData26\tNOxData27\t");
       f_printf(&fp, "OBD V%01d.%02d\tECU V%01d.%02d", DMS_ver/100, DMS_ver%100, ReadValue.Ver/100, ReadValue.Ver%100);
@@ -652,6 +647,7 @@ unsigned char FileCreate(void)
   else {
 	  f_close(&fp);
   	MMCSaveData();
+    SendNOx();
   	return 1; 
   }       		
 }

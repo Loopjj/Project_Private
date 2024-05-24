@@ -441,7 +441,24 @@ void CAN_Std_Decode(CAN_HandleTypeDef* hcan) //ID 2.0A 세라컴 전용
         CAN_Enable.Concentration = 1;
         Cur_CanEnableCnt.Concentration++;      
         break;        
-		case 0x307:    //NOxIn,NOxOut,MAF 
+		case 0x102:    //NOxIn,NOxOut,MAF 
+//        memcpy((char *)&buf16b,&hcan->pRxMsg->Data[0],2);
+//        SecData.NOxIn = (INT16S)buf16b;
+//        if (SecData.NOxIn <= 0 || SecData.NOxIn > 3012) 
+//          SecData.NOxIn = 0;  
+//        //Cur_CanEnableCnt.NOxIn++;
+//        memcpy((char *)&buf16b,&hcan->pRxMsg->Data[2],2);
+//        SecData.NOxOut = (INT16S)buf16b;
+//        if (SecData.NOxOut <= 0 || SecData.NOxOut > 3012)
+//          SecData.NOxOut = 0;
+        //Cur_CanEnableCnt.NOxOut++;
+        memcpy((char *)&buf16b,&hcan->pRxMsg->Data[4],2);
+        SecData.MAF = buf16b;
+        if (SecData.MAF > 5000) SecData.MAF = 0;  // MAF 최초값 65526 수신문제 방어      
+        //CAN_Enable.MAF = 1;
+        //Cur_CanEnableCnt.MAF++;
+        break;
+		case 0x12f:    //NOxIn,NOxOut
         memcpy((char *)&buf16b,&hcan->pRxMsg->Data[0],2);
         SecData.NOxIn = (INT16S)buf16b;
         if (SecData.NOxIn <= 0 || SecData.NOxIn > 3012) 
@@ -452,12 +469,7 @@ void CAN_Std_Decode(CAN_HandleTypeDef* hcan) //ID 2.0A 세라컴 전용
         if (SecData.NOxOut <= 0 || SecData.NOxOut > 3012)
           SecData.NOxOut = 0;
         //Cur_CanEnableCnt.NOxOut++;
-        memcpy((char *)&buf16b,&hcan->pRxMsg->Data[4],2);
-        SecData.MAF = buf16b;
-        if (SecData.MAF > 5000) SecData.MAF = 0;  // MAF 최초값 65526 수신문제 방어      
-        //CAN_Enable.MAF = 1;
-        //Cur_CanEnableCnt.MAF++;
-        break;          
+        break;            
 		case 0x103:    //Temp In,Out,  
         memcpy((char *)&buf16b,&hcan->pRxMsg->Data[0],2);
         SecData.TempIn = buf16b;
