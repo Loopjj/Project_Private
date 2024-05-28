@@ -73,6 +73,9 @@ ShowSource=1
 LoggingEnabled=_ 0
 LogFile=_ ""
 Category=_ 0
+[TermIOLog]
+LoggingEnabled=_ 0
+LogFile=_ ""
 [DriverProfiling]
 Enabled=0
 Mode=1
@@ -95,6 +98,3 @@ A3=_ "D:\2_DPF\Cercomb\CC_Limiter_V2.0_ADC\Src\App\rtc.c" ""
 A4=_ "E:\Today\240423_compare\CC_Limiter_V2.0_ADC 2\Src\App\rtc.c" ""
 Count=5
 SuppressDialog=1
-[TermIOLog]
-LoggingEnabled=_ 0
-LogFile=_ ""

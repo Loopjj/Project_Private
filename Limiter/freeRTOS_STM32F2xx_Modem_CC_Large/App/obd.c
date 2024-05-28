@@ -646,8 +646,8 @@ unsigned char FileCreate(void)
   }
   else {
 	  f_close(&fp);
-  	MMCSaveData();
-    SendNOx();
+  	SendNOx();
+    MMCSaveData();    
   	return 1; 
   }       		
 }
@@ -983,8 +983,8 @@ void Task_OBD(void *p_arg)
                   FileCreate();
                   PreDay = s->tm_ptr.tm_mday;
                 }
-                MMCSaveData();
                 SendNOx();
+                MMCSaveData();                
                 Flags.MMCSaveFlag = 0;
               }
             }
