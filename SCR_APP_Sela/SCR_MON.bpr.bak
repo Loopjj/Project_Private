@@ -1,0 +1,157 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<!-- C++Builder XML Project -->
+<PROJECT>
+  <MACROS>
+    <VERSION value="BCB.06.00"/>
+    <PROJECT value="SCR_MON.exe"/>
+    <OBJFILES value="SCR_MON.obj TMain.obj TSettings.obj TProg.obj TGraph.obj TStatus.obj 
+      TConvert.obj TProg1.obj TMap.obj TCalib.obj TFactor.obj TRTC.obj TSaveAs.obj"/>
+    <RESFILES value="SCR_MON.res"/>
+    <IDLFILES value=""/>
+    <IDLGENFILES value=""/>
+    <DEFFILE value=""/>
+    <RESDEPEN value="$(RESFILES) TMain.dfm TSettings.dfm TProg.dfm TGraph.dfm TStatus.dfm 
+      TConvert.dfm TProg1.dfm TMap.dfm TCalib.dfm TFactor.dfm TRTC.dfm TSaveAs.dfm"/>
+    <LIBFILES value=""/>
+    <LIBRARIES value="dclocx.lib acntBCB6_R.lib tee.lib vclx.lib A406_R61.lib rtl.lib vcl.lib"/>
+    <SPARELIBS value="vcl.lib rtl.lib A406_R61.lib vclx.lib tee.lib acntBCB6_R.lib dclocx.lib"/>
+    <PACKAGES value="vcl.bpi rtl.bpi dbrtl.bpi adortl.bpi vcldb.bpi vclx.bpi bdertl.bpi 
+      vcldbx.bpi ibxpress.bpi dsnap.bpi cds.bpi bdecds.bpi qrpt.bpi teeui.bpi 
+      teedb.bpi tee.bpi dss.bpi teeqr.bpi visualclx.bpi visualdbclx.bpi 
+      dsnapcrba.bpi dsnapcon.bpi bcbsmp.bpi vclie.bpi xmlrtl.bpi inet.bpi 
+      inetdbbde.bpi inetdbxpress.bpi inetdb.bpi nmfast.bpi webdsnap.bpi 
+      bcbie.bpi websnap.bpi soaprtl.bpi dclocx.bpi dbexpress.bpi dbxcds.bpi 
+      indy.bpi bcb2kaxserver.bpi A406_R61.bpi acntBCB6_R.bpi"/>
+    <PATHCPP value=".;"/>
+    <PATHPAS value=".;"/>
+    <PATHRC value=".;"/>
+    <PATHASM value=".;"/>
+    <DEBUGLIBPATH value="$(BCB)\lib\debug"/>
+    <RELEASELIBPATH value="$(BCB)\lib\release"/>
+    <LINKER value="ilink32"/>
+    <USERDEFINES value="_DEBUG"/>
+    <SYSDEFINES value="NO_STRICT"/>
+    <MAINSOURCE value="SCR_MON.cpp"/>
+    <INCLUDEPATH value="&quot;C:\Program Files\Alite\CB6&quot;;&quot;C:\Program Files\Borland\CBuilder6\Projects&quot;;$(BCB)\include;$(BCB)\include\vcl;&quot;C:\Program Files\AsyncPro\source&quot;"/>
+    <LIBPATH value="&quot;C:\Program Files\Alite\CB6&quot;;&quot;C:\Program Files\Borland\CBuilder6\Projects&quot;;$(BCB)\Projects\Lib;$(BCB)\lib\obj;$(BCB)\lib;&quot;C:\Program Files\AsyncPro\source&quot;"/>
+    <WARNINGS value="-w-par"/>
+    <OTHERFILES value=""/>
+  </MACROS>
+  <OPTIONS>
+    <IDLCFLAGS value="-I&quot;C:\Program Files\Alite\CB6&quot; 
+      -I&quot;C:\Program Files\Borland\CBuilder6\Projects&quot; -I$(BCB)\include 
+      -I$(BCB)\include\vcl -I&quot;C:\Program Files\AsyncPro\source&quot; -src_suffix cpp 
+      -D_DEBUG -boa"/>
+    <CFLAG1 value="-Od -H=$(BCB)\lib\vcl60.csm -Hc -Vx -Ve -X- -r- -a8 -b- -k -y -v -vi- -c 
+      -tW -tWM"/>
+    <PFLAGS value="-$Y+ -$W -$O- -$A8 -v -JPHNE -M"/>
+    <RFLAGS value=""/>
+    <AFLAGS value="/mx /w2 /zi"/>
+    <LFLAGS value="-D&quot;&quot; -aa -Tpe -x -Gn -v"/>
+    <OTHERFILES value=""/>
+  </OPTIONS>
+  <LINKER>
+    <ALLOBJ value="c0w32.obj sysinit.obj $(OBJFILES)"/>
+    <ALLRES value="$(RESFILES)"/>
+    <ALLLIB value="$(LIBFILES) $(LIBRARIES) import32.lib cp32mt.lib"/>
+    <OTHERFILES value=""/>
+  </LINKER>
+  <FILELIST>
+      <FILE FILENAME="SCR_MON.res" FORMNAME="" UNITNAME="SCR_MON.res" CONTAINERID="ResTool" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="SCR_MON.cpp" FORMNAME="" UNITNAME="SCR_MON" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="TMain.cpp" FORMNAME="MainForm" UNITNAME="TMain" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="TSettings.cpp" FORMNAME="ParmForm" UNITNAME="TSettings" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="TProg.cpp" FORMNAME="ProgForm" UNITNAME="TProg" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="TGraph.cpp" FORMNAME="GraphForm" UNITNAME="TGraph" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="TStatus.cpp" FORMNAME="StatusForm" UNITNAME="TStatus" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="TConvert.cpp" FORMNAME="ConvertForm" UNITNAME="TConvert" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="TProg1.cpp" FORMNAME="Prog1Form" UNITNAME="TProg1" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="TMap.cpp" FORMNAME="TMapForm" UNITNAME="TMap" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="TCalib.cpp" FORMNAME="CalibForm" UNITNAME="TCalib" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="TFactor.cpp" FORMNAME="FactorForm" UNITNAME="TFactor" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="TRTC.cpp" FORMNAME="RTCForm" UNITNAME="TRTC" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="TSaveAs.cpp" FORMNAME="SaveAsForm" UNITNAME="TSaveAs" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+  </FILELIST>
+  <BUILDTOOLS>
+  </BUILDTOOLS>
+
+  <IDEOPTIONS>
+[Version Info]
+IncludeVerInfo=1
+AutoIncBuild=0
+MajorVer=0
+MinorVer=1
+Release=0
+Build=0
+Debug=0
+PreRelease=0
+Special=0
+Private=0
+DLL=0
+Locale=1042
+CodePage=949
+
+[Version Info Keys]
+CompanyName=(주)루프
+FileDescription=
+FileVersion=0.1.0.0
+InternalName=
+LegalCopyright=
+LegalTrademarks=
+OriginalFilename=
+ProductName=
+ProductVersion=1.0.0.0
+Comments=
+
+[Excluded Packages]
+c:\program files\borland\cbuilder6\Bin\dclite60.bpl=Borland Integrated Translation Environment
+
+[HistoryLists\hlIncludePath]
+Count=4
+Item0=C:\Program Files\Alite\CB6;C:\Program Files\Borland\CBuilder6\Projects;$(BCB)\include;$(BCB)\include\vcl;C:\Program Files\AsyncPro\source
+Item1=C:\Program Files\Alite\CB6;$(BCB)\Component\AsyncPro\source;C:\Program Files\Borland\CBuilder6\Projects;$(BCB)\include;$(BCB)\include\vcl;C:\Program Files\AsyncPro\source
+Item2=$(BCB)\Component\AsyncPro\source;C:\Program Files\Borland\CBuilder6\Projects;$(BCB)\include;$(BCB)\include\vcl;C:\Program Files\AsyncPro\source
+Item3=$(BCB)\Component\AsyncPro\source;C:\Program Files\Borland\CBuilder6\Projects;;$(BCB)\include;$(BCB)\include\vcl
+
+[HistoryLists\hlLibraryPath]
+Count=4
+Item0=C:\Program Files\Alite\CB6;C:\Program Files\Borland\CBuilder6\Projects;$(BCB)\Projects\Lib;$(BCB)\lib\obj;$(BCB)\lib;C:\Program Files\AsyncPro\source
+Item1=C:\Program Files\Alite\CB6;$(BCB)\Component\AsyncPro\source;C:\Program Files\Borland\CBuilder6\Projects;\\Looplabsrv\project\AB-0901(SK BMI 복합재생)\10 (소프트웨어)\12 (응용프로그램)\V0.1;$(BCB)\Projects\Lib;$(BCB)\lib\obj;$(BCB)\lib;C:\Program Files\AsyncPro\source
+Item2=$(BCB)\Component\AsyncPro\source;C:\Program Files\Borland\CBuilder6\Projects;\\Looplabsrv\project\AB-0901(SK BMI 복합재생)\10 (소프트웨어)\12 (응용프로그램)\V0.1;$(BCB)\Projects\Lib;$(BCB)\lib\obj;$(BCB)\lib;C:\Program Files\AsyncPro\source
+Item3=$(BCB)\Component\AsyncPro\source;C:\Program Files\Borland\CBuilder6\Projects;\\Looplabsrv\project\AB-0901(SK BMI 복합재생)\10 (소프트웨어)\12 (응용프로그램)\V0.1;$(BCB)\Projects\Lib;$(BCB)\lib\obj;$(BCB)\lib
+
+[HistoryLists\hlDebugSourcePath]
+Count=2
+Item0=$(BCB)\source\vcl;C:\Program Files\Alite\CB6\
+Item1=$(BCB)\source\vcl
+
+[HistoryLists\hlConditionals]
+Count=1
+Item0=_DEBUG
+
+[Debugging]
+DebugSourceDirs=$(BCB)\source\vcl;C:\Program Files\Alite\CB6\
+
+[Parameters]
+RunParams=
+Launcher=
+UseLauncher=0
+DebugCWD=
+HostApplication=
+RemoteHost=
+RemotePath=
+RemoteLauncher=
+RemoteCWD=
+RemoteDebug=0
+
+[Compiler]
+ShowInfoMsgs=0
+LinkDebugVcl=0
+LinkCGLIB=0
+
+[CORBA]
+AddServerUnit=1
+AddClientUnit=1
+PrecompiledHeaders=1
+  </IDEOPTIONS>
+</PROJECT>

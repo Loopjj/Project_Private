@@ -1,0 +1,48 @@
+//---------------------------------------------------------------------------
+
+#ifndef ManualH
+#define ManualH
+//---------------------------------------------------------------------------
+#include <Classes.hpp>
+#include <Controls.hpp>
+#include <StdCtrls.hpp>
+#include <Forms.hpp>
+#include "sButton.hpp"
+#include <ComCtrls.hpp>
+//---------------------------------------------------------------------------
+class TManualForm : public TForm
+{
+__published:	// IDE-managed Components
+        TGroupBox *GroupBox8;
+        TsButton *sButton_ACOn;
+        TsButton *sButton_ACOff;
+        TsButton *sButton_ASOn;
+        TsButton *sButton_ASOff;
+        TGroupBox *GroupBox7;
+        TLabel *Label2;
+        TEdit *Edit_IGN_PWM;
+        TUpDown *UD_IGN;
+        TsButton *sButton_IGNSet;
+        TsButton *sButton_IGNOn;
+        TsButton *sButton_IGNOff;
+        TGroupBox *GroupBox9;
+        TLabel *Label3;
+        TEdit *Edit_FP_PWM;
+        TUpDown *UD_FP;
+        TsButton *sButton_FPSet;
+        TsButton *sButton_FPROn;
+        TsButton *sButton_FPROff;
+        TsButton *sButton_FPSOn;
+        TsButton *sButton_FPSOff;
+        TGroupBox *GroupBox6;
+        TsButton *sButton_InitDrvTime;
+        TsButton *sButton_InitGegenCnt;
+        TsButton *sButton_AlarmClear;
+private:	// User declarations
+public:		// User declarations
+        __fastcall TManualForm(TComponent* Owner);
+};
+//---------------------------------------------------------------------------
+extern PACKAGE TManualForm *ManualForm;
+//---------------------------------------------------------------------------
+#endif

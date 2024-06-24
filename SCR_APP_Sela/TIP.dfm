@@ -1,0 +1,160 @@
+object IPForm: TIPForm
+  Left = 173
+  Top = 146
+  Width = 396
+  Height = 173
+  Caption = 'IP Setting'
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'MS Sans Serif'
+  Font.Style = []
+  OldCreateOrder = False
+  PixelsPerInch = 96
+  TextHeight = 13
+  object Label1: TLabel
+    Left = 78
+    Top = 16
+    Width = 23
+    Height = 16
+    Caption = 'IP :'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -13
+    Font.Name = 'MS Sans Serif'
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object Label2: TLabel
+    Left = 48
+    Top = 48
+    Width = 51
+    Height = 16
+    Caption = 'PORT :'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -13
+    Font.Name = 'MS Sans Serif'
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object Edit_IP1: TEdit
+    Left = 112
+    Top = 16
+    Width = 49
+    Height = 28
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'MS Sans Serif'
+    Font.Style = [fsBold]
+    ParentFont = False
+    TabOrder = 0
+    Text = '0'
+  end
+  object Edit_IP2: TEdit
+    Left = 168
+    Top = 16
+    Width = 49
+    Height = 28
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'MS Sans Serif'
+    Font.Style = [fsBold]
+    ParentFont = False
+    TabOrder = 1
+    Text = '0'
+  end
+  object Edit_IP3: TEdit
+    Left = 224
+    Top = 16
+    Width = 49
+    Height = 28
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'MS Sans Serif'
+    Font.Style = [fsBold]
+    ParentFont = False
+    TabOrder = 2
+    Text = '0'
+  end
+  object Edit_IP4: TEdit
+    Left = 280
+    Top = 16
+    Width = 49
+    Height = 28
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'MS Sans Serif'
+    Font.Style = [fsBold]
+    ParentFont = False
+    TabOrder = 3
+    Text = '0'
+  end
+  object Edit_Port: TEdit
+    Left = 112
+    Top = 48
+    Width = 105
+    Height = 28
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'MS Sans Serif'
+    Font.Style = [fsBold]
+    ParentFont = False
+    TabOrder = 4
+    Text = '0'
+  end
+  object sButton_Read: TsButton
+    Left = 58
+    Top = 90
+    Width = 79
+    Height = 30
+    Caption = 'Read'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clBlack
+    Font.Height = -11
+    Font.Name = 'MS Sans Serif'
+    Font.Style = [fsBold]
+    ParentFont = False
+    TabOrder = 5
+    OnClick = sButton_ReadClick
+    SkinData.SkinSection = 'BUTTON'
+  end
+  object sButton_Set: TsButton
+    Left = 146
+    Top = 90
+    Width = 79
+    Height = 30
+    Caption = 'Set'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clBlack
+    Font.Height = -11
+    Font.Name = 'MS Sans Serif'
+    Font.Style = [fsBold]
+    ParentFont = False
+    TabOrder = 6
+    OnClick = sButton_SetClick
+    SkinData.SkinSection = 'BUTTON'
+  end
+  object sButton_End: TsButton
+    Left = 242
+    Top = 90
+    Width = 79
+    Height = 30
+    Caption = 'Close'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clBlack
+    Font.Height = -11
+    Font.Name = 'MS Sans Serif'
+    Font.Style = [fsBold]
+    ParentFont = False
+    TabOrder = 7
+    OnClick = sButton_EndClick
+    SkinData.SkinSection = 'BUTTON'
+  end
+end
